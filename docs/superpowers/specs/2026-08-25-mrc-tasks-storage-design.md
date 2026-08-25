@@ -93,7 +93,7 @@ Astro Content Collections generate these as static paths at build time (`getStat
 - **Palette**: dark by default (near-black background, high-contrast off-white text, single amber accent for active/hover/current-block state). Light theme is a neutral off-white/gray inversion of the same token set. Toggle button in the header; choice persisted to `localStorage`; a tiny inline `<script>` in `<head>` applies the stored theme before first paint to avoid a flash.
 - **Type**: `ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace` for timestamps, filenames, badges, nav chrome. System sans stack (`system-ui, -apple-system, "Segoe UI", sans-serif`) for mentor-prompt/response prose. No web fonts.
 - **Density**: tight consistent grid (CSS Grid, `auto-fill`/`minmax` for thumbnail rows), small gutters, no card padding bloat. Every grid cell maps to a real image or entry — no filler cells.
-- **Anti-slop compliance** (from `BRIEF.md`'s hard bans): zero em-dashes in any UI copy or generated text; no gradient/glassmorphism; no decorative icon set — the few icons needed (theme toggle, close, chevron) are hand-drawn inline SVG, used only where they carry meaning.
+- **Anti-slop compliance** (from `BRIEF.md`'s hard bans): zero em-dashes in any UI copy or generated text; no gradient/glassmorphism; no decorative icon set — the few icons needed (theme toggle, close, chevron) are plain text/HTML-entity glyphs (e.g. `&times;`, `&lsaquo;`), not an SVG icon library, reinforcing the monospace/data-forward register rather than importing a generic icon set.
 
 ## Build & deploy
 
