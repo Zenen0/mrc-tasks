@@ -1,0 +1,30 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+export interface Props {
+  href: string;
+  badge: string;
+  title: string;
+  cover: ImageMetadata | null;
+  imageCount: number;
+  promptExcerpt: string;
+}
+
+const { href, badge, title, cover, imageCount, promptExcerpt } = Astro.props;
+---
+<a class="card" href={href}>
+  <div class="card-thumb">
+    {cover ? (
+      <Image src={cover} width={320} alt="" />
+    ) : (
+      <div class="card-thumb-empty">No captures yet</div>
+    )}
+    <span class="card-count mono">{imageCount}</span>
+  </div>
+  <div class="card-body">
+    <span class="card-badge">{badge}</span>
+    <h3 class="card-title">{title}</h3>
+    {promptExcerpt && <p class="card-excerpt">{promptExcerpt}</p>}
+  </div>
+</a>
