@@ -1,0 +1,39 @@
+---
+import { Image, getImage } from 'astro:assets';
+import type { HourBlock } from '../lib/images';
+
+export interface Props {
+  blocks: HourBlock[];
+}
+
+const { blocks } = Astro.props;
+---
+{blocks.map((block) => (
+  <details class="hour-block" open>
+    <summary>
+      {block.label} <span class="hour-count mono">{block.images.length}</span>
+    </summary>
+    <div class="thumb-grid">
+      {block.images.map(async (img) => {
+        const full = await getImage({ src: img.src, width: 1600 });
+        const timestamp =
+          img.parsed.hour !== null && img.parsed.minute !== null
+            ? `${String(img.parsed.hour).padStart(2, '0')}:${String(img.parsed.minute).padStart(2, '0')}`
+            : img.parsed.raw;
+        return (
+          <button
+            type="button"
+            class="thumb"
+            data-full-src={full.src}
+            data-timestamp={timestamp}
+            data-label={img.parsed.label}
+            data-caption={img.caption ?? ''}
+          >
+            <Image src={img.src} width={320} alt={img.parsed.label} />
+            <span class="thumb-time mono">{timestamp}</span>
+          </button>
+        );
+      })}
+    </div>
+  </details>
+))}
