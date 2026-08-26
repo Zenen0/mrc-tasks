@@ -14,10 +14,10 @@
      09-14_entry.png: "Optional short note for this specific image."
    ---
 
-   ## My read
-
    Your written explanation goes here.
    ```
+   The page already shows a "My read" heading above this section, so don't repeat it in your markdown, just start writing.
+
 3. Drop your annotated TradingView screenshots into the same folder, named `HH-MM_label.png` in capture order (for example `09-14_entry.png`, `10-02_management.png`, `11-30_exit.png`). If a subtask spans more than one day, prefix with the date: `2026-08-25_09-14_entry.png`.
 4. If the mentor posted his own reference images, name them `mentor_<anything>.png` so they show up in the assignment section instead of the capture sequence.
 5. `captions` is optional. Any image without an entry there just shows its filename label (for example `entry` becomes "Entry") in the lightbox.

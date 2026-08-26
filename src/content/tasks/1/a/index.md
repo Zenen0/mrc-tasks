@@ -11,8 +11,6 @@ captions:
   11-30_exit.png: "Full sweep confirmed, zone held as resistance for the rest of the session."
 ---
 
-## My read
-
 Placeholder response, drop your own here. This is a placeholder subtask
 proving the folder convention end to end. Replace the images, prompt,
 and this section with a real backtest once you have pulled it from
