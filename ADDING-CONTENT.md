@@ -46,6 +46,18 @@ Once those three are set, every push to `main` rebuilds and republishes the site
 4. If the mentor posted his own reference images, name them `mentor_<anything>.png` so they show up in the assignment section instead of the capture sequence.
 5. `captions` is optional. Any image without an entry there just shows its filename label (for example `entry` becomes "Entry") in the lightbox.
 
+### Naming a task
+
+On the home page, each task shows up as its own block ("Task 1", "Task 2", etc.) leading to a page listing that task's subtasks. If you want a task to show a real name instead of the bare number, add `src/content/tasks/<task-number>/task.md`:
+
+```yaml
+---
+title: "Liquidity Marking"
+---
+```
+
+This file is optional. A task with no `task.md` just shows as "Task N".
+
 ## New Misc entry
 
 Same as above, but under `src/content/misc/<slug>/` instead of `src/content/tasks/...`, and no task/subtask numbering.

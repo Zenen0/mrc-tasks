@@ -5,7 +5,10 @@ import { Image, getImage } from 'astro:assets';
 import Layout from '../../../components/Layout.astro';
 import ThumbnailGrid from '../../../components/ThumbnailGrid.astro';
 import Lightbox from '../../../components/Lightbox.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
 import { buildEntryPageData } from '../../../lib/entry-page';
+import { withBase } from '../../../lib/paths';
+import { getTaskTitle, siblingSubtasks, subtasksForTask } from '../../../lib/tasks';
 
 export async function getStaticPaths() {
   const entries = await getCollection('tasks');
@@ -32,8 +35,35 @@ const { captureImages, mentorImages, blocks, description, hasResponse } = buildE
 const cover = captureImages[0]?.src;
 const ogImageResult = cover ? await getImage({ src: cover, width: 1200 }) : null;
 const ogImage = ogImageResult ? new URL(ogImageResult.src, Astro.site).toString() : undefined;
+
+const allEntries = await getCollection('tasks');
+const taskMetaEntries = await getCollection('taskMeta');
+const taskTitle = getTaskTitle(taskMetaEntries, task);
+const siblings = subtasksForTask(allEntries, task);
+const { prev, next } = siblingSubtasks(siblings, entry.id);
 ---
 <Layout title={`${task}${subtask.toUpperCase()}: ${entry.data.title}`} description={description} ogImage={ogImage}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', import.meta.env.BASE_URL) },
+      { label: taskTitle, href: withBase(`/tasks/${task}/`, import.meta.env.BASE_URL) },
+      { label: `${task}${subtask.toUpperCase()}` },
+    ]}
+  />
+  {(prev || next) && (
+    <nav class="subtask-pager" aria-label="Subtask navigation">
+      {prev && (
+        <a class="pager-prev" href={withBase(`/tasks/${prev.id}/`, import.meta.env.BASE_URL)}>
+          &lsaquo; {prev.id.split('/')[1].toUpperCase()}: {prev.data.title}
+        </a>
+      )}
+      {next && (
+        <a class="pager-next" href={withBase(`/tasks/${next.id}/`, import.meta.env.BASE_URL)}>
+          {next.id.split('/')[1].toUpperCase()}: {next.data.title} &rsaquo;
+        </a>
+      )}
+    </nav>
+  )}
   <article class="subtask">
     <header class="subtask-header">
       <span class="subtask-badge mono">{task}{subtask.toUpperCase()}</span>

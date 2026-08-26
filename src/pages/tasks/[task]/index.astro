@@ -1,0 +1,53 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../../components/Layout.astro';
+import SubtaskCard from '../../../components/SubtaskCard.astro';
+import Breadcrumb from '../../../components/Breadcrumb.astro';
+import { filterImagesForEntry, getCoverImage } from '../../../lib/images';
+import { withBase } from '../../../lib/paths';
+import { distinctTaskNumbers, getTaskTitle, subtasksForTask } from '../../../lib/tasks';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('tasks');
+  return distinctTaskNumbers(entries).map((task) => ({ params: { task } }));
+}
+
+const { task } = Astro.params as { task: string };
+const allEntries = await getCollection('tasks');
+const taskMetaEntries = await getCollection('taskMeta');
+const subtasks = subtasksForTask(allEntries, task);
+const taskTitle = getTaskTitle(taskMetaEntries, task);
+
+const globMap = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+---
+<Layout title={taskTitle} description={`Subtasks for ${taskTitle}.`}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', import.meta.env.BASE_URL) },
+      { label: taskTitle },
+    ]}
+  />
+  <h1>{taskTitle}</h1>
+  {subtasks.length === 0 && <p class="empty-state">No subtasks yet.</p>}
+  <div class="card-grid">
+    {subtasks.map((entry) => {
+      const [taskNumber, letter] = entry.id.split('/');
+      const images = filterImagesForEntry(globMap, `/src/content/tasks/${entry.id}`, entry.data.captions ?? {});
+      const { cover, count } = getCoverImage(images);
+      return (
+        <SubtaskCard
+          href={withBase(`/tasks/${taskNumber}/${letter}/`, import.meta.env.BASE_URL)}
+          badge={`${taskNumber}${letter.toUpperCase()}`}
+          title={entry.data.title}
+          cover={cover}
+          imageCount={count}
+          promptExcerpt={entry.data.mentorPrompt ?? ''}
+        />
+      );
+    })}
+  </div>
+</Layout>

@@ -5,49 +5,44 @@ import Layout from '../components/Layout.astro';
 import SubtaskCard from '../components/SubtaskCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../lib/images';
 import { withBase } from '../lib/paths';
+import { distinctTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
   { eager: true },
 );
 
-const entries = await getCollection('tasks');
-const byTask = new Map<string, typeof entries>();
-for (const entry of entries) {
-  const [task] = entry.id.split('/');
-  if (!byTask.has(task)) byTask.set(task, []);
-  byTask.get(task)!.push(entry);
-}
-const sortedTasks = [...byTask.entries()].sort((a, b) => Number(a[0]) - Number(b[0]));
+const allEntries = await getCollection('tasks');
+const taskMetaEntries = await getCollection('taskMeta');
+const taskNumbers = distinctTaskNumbers(allEntries);
 ---
-<Layout title="Tasks" description="Backtesting task review, organized by task and subtask.">
-  {sortedTasks.length === 0 && <p class="empty-state">No tasks yet.</p>}
-  {sortedTasks.map(([task, subtasks]) => (
-    <section class="task-group">
-      <h2>Task {task}</h2>
-      <div class="card-grid">
-        {subtasks
-          .sort((a, b) => a.id.localeCompare(b.id))
-          .map((entry) => {
-            const [, letter] = entry.id.split('/');
-            const images = filterImagesForEntry(
-              globMap,
-              `/src/content/tasks/${entry.id}`,
-              entry.data.captions ?? {},
-            );
-            const { cover, count } = getCoverImage(images);
-            return (
-              <SubtaskCard
-                href={withBase(`/tasks/${task}/${letter}/`, import.meta.env.BASE_URL)}
-                badge={`${task}${letter.toUpperCase()}`}
-                title={entry.data.title}
-                cover={cover}
-                imageCount={count}
-                promptExcerpt={entry.data.mentorPrompt ?? ''}
-              />
-            );
-          })}
-      </div>
-    </section>
-  ))}
+<Layout title="Tasks" description="Backtesting task review, organized by task.">
+  {taskNumbers.length === 0 && <p class="empty-state">No tasks yet.</p>}
+  <div class="card-grid">
+    {taskNumbers.map((task) => {
+      const subtasks = subtasksForTask(allEntries, task);
+      const taskTitle = getTaskTitle(taskMetaEntries, task);
+
+      let cover: ImageMetadata | null = null;
+      for (const entry of subtasks) {
+        const images = filterImagesForEntry(globMap, `/src/content/tasks/${entry.id}`, entry.data.captions ?? {});
+        const { cover: entryCover } = getCoverImage(images);
+        if (entryCover) {
+          cover = entryCover;
+          break;
+        }
+      }
+
+      return (
+        <SubtaskCard
+          href={withBase(`/tasks/${task}/`, import.meta.env.BASE_URL)}
+          badge={`TASK ${task}`}
+          title={taskTitle}
+          cover={cover}
+          imageCount={subtasks.length}
+          promptExcerpt=""
+        />
+      );
+    })}
+  </div>
 </Layout>
