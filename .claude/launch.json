@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mrc-tasks-preview",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "preview"],
+      "port": 4321
+    },
+    {
+      "name": "mrc-tasks-add-content",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "add-content"],
+      "port": 4322
+    }
+  ]
+}

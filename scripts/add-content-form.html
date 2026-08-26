@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Add content · MrC Tasks</title>
+<style>
+  :root {
+    --color-bg: #0a0c0f;
+    --color-bg-raised: #12151a;
+    --color-border: #23272e;
+    --color-text: #e6e8eb;
+    --color-text-muted: #8b93a1;
+    --color-accent: #d99a3c;
+    --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+    --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --radius: 3px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    padding: 24px;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    margin: 0 0 4px;
+  }
+  .subtitle {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    margin: 0 0 24px;
+  }
+  fieldset {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-bg-raised);
+    margin: 0 0 16px;
+    padding: 12px 16px 16px;
+  }
+  legend {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    padding: 0 4px;
+  }
+  label {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin: 10px 0 4px;
+  }
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    color: var(--color-text);
+    padding: 6px 8px;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  textarea { resize: vertical; min-height: 70px; }
+  .radio-row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 4px;
+  }
+  .radio-row label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    color: var(--color-text);
+  }
+  .field-row {
+    display: flex;
+    gap: 12px;
+  }
+  .field-row > div { flex: 1; }
+  #dropzone {
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius);
+    padding: 24px;
+    text-align: center;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  #dropzone.dragging {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .image-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 8px;
+    margin-top: 10px;
+  }
+  .thumb {
+    width: 72px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+  }
+  .image-fields { flex: 1; min-width: 0; }
+  .image-fields-row {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .image-fields-row label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 4px 0;
+    white-space: nowrap;
+  }
+  .image-fields-row input[type="number"] { width: 3.5em; }
+  .mentor-check { font-size: 0.8rem; }
+  .remove-image {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 4px 8px;
+    flex-shrink: 0;
+  }
+  .remove-image:hover { color: var(--color-accent); border-color: var(--color-accent); }
+  button[type="submit"] {
+    background: var(--color-accent);
+    color: #1a1305;
+    border: none;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover { opacity: 0.9; }
+  .status {
+    margin-top: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    white-space: pre-wrap;
+  }
+  .status-ok { color: #8fd67a; }
+  .status-error { color: #e07a6b; }
+</style>
+</head>
+<body>
+  <h1>Add content</h1>
+  <p class="subtitle">Writes files to this project locally. Nothing is committed or published until you run git yourself.</p>
+
+  <form id="entry-form">
+    <fieldset>
+      <legend>Entry type</legend>
+      <div class="radio-row">
+        <label><input type="radio" name="collection" value="tasks" checked /> Task</label>
+        <label><input type="radio" name="collection" value="misc" /> Misc</label>
+      </div>
+
+      <div id="task-fields" class="field-row">
+        <div>
+          <label for="task">Task number</label>
+          <input type="text" id="task" placeholder="2" />
+        </div>
+        <div>
+          <label for="subtask">Subtask</label>
+          <input type="text" id="subtask" placeholder="a" />
+        </div>
+      </div>
+
+      <div id="misc-fields" style="display: none;">
+        <label for="slug">Slug</label>
+        <input type="text" id="slug" placeholder="liquidity-sweep-notes" />
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Details</legend>
+      <label for="title">Title</label>
+      <input type="text" id="title" required placeholder="Short descriptive title" />
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required />
+
+      <label for="mentor-prompt">Mentor's prompt</label>
+      <textarea id="mentor-prompt" placeholder="Paste the mentor's assignment text here."></textarea>
+
+      <label for="response">Your response / My read</label>
+      <textarea id="response" placeholder="Your written explanation goes here."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Screenshots</legend>
+      <div id="dropzone">Drag and drop screenshots here, or click to browse.</div>
+      <input type="file" id="file-input" accept="image/png,image/jpeg,image/webp" multiple hidden />
+      <div id="image-list"></div>
+    </fieldset>
+
+    <button type="submit">Save entry</button>
+    <div id="status" class="status"></div>
+  </form>
+
+  <script>
+    let images = [];
+    let nextId = 1;
+
+    const dropzone = document.getElementById('dropzone');
+    const fileInput = document.getElementById('file-input');
+    const imageList = document.getElementById('image-list');
+    const collectionRadios = document.querySelectorAll('input[name="collection"]');
+    const taskFields = document.getElementById('task-fields');
+    const miscFields = document.getElementById('misc-fields');
+    const form = document.getElementById('entry-form');
+    const statusEl = document.getElementById('status');
+    const dateInput = document.getElementById('date');
+
+    dateInput.value = new Date().toISOString().slice(0, 10);
+
+    function updateCollectionFields() {
+      const value = document.querySelector('input[name="collection"]:checked').value;
+      taskFields.style.display = value === 'tasks' ? 'flex' : 'none';
+      miscFields.style.display = value === 'misc' ? 'block' : 'none';
+    }
+    collectionRadios.forEach((r) => r.addEventListener('change', updateCollectionFields));
+    updateCollectionFields();
+
+    function labelFromFilename(name) {
+      const base = name.replace(/\.[^.]+$/, '');
+      const cleaned = base.replace(/[_-]+/g, ' ').trim();
+      return cleaned || 'Capture';
+    }
+
+    function addFiles(fileList) {
+      const files = Array.from(fileList).filter(
+        (f) => /^image\//.test(f.type) || /\.(png|jpe?g|webp)$/i.test(f.name),
+      );
+      const now = new Date();
+      files.forEach((file, index) => {
+        const id = nextId++;
+        images.push({
+          id,
+          file,
+          hour: now.getHours(),
+          minute: Math.min(59, now.getMinutes() + index),
+          label: labelFromFilename(file.name),
+          isMentor: false,
+          caption: '',
+          previewUrl: URL.createObjectURL(file),
+        });
+      });
+      renderImages();
+    }
+
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.classList.add('dragging');
+    });
+    dropzone.addEventListener('dragleave', () => dropzone.classList.remove('dragging'));
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('dragging');
+      if (e.dataTransfer && e.dataTransfer.files) addFiles(e.dataTransfer.files);
+    });
+    dropzone.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', () => {
+      addFiles(fileInput.files);
+      fileInput.value = '';
+    });
+
+    function removeImage(id) {
+      images = images.filter((img) => img.id !== id);
+      renderImages();
+    }
+
+    function renderImages() {
+      imageList.innerHTML = '';
+      images.forEach((img) => {
+        const row = document.createElement('div');
+        row.className = 'image-row';
+
+        const thumb = document.createElement('img');
+        thumb.className = 'thumb';
+        thumb.src = img.previewUrl;
+        thumb.alt = '';
+
+        const fields = document.createElement('div');
+        fields.className = 'image-fields';
+
+        const fieldsRow = document.createElement('div');
+        fieldsRow.className = 'image-fields-row';
+
+        const timeLabel = document.createElement('label');
+        timeLabel.textContent = 'Time ';
+        const hourInput = document.createElement('input');
+        hourInput.type = 'number';
+        hourInput.min = '0';
+        hourInput.max = '23';
+        hourInput.value = String(img.hour);
+        hourInput.className = 'hour';
+        const sep = document.createTextNode(' : ');
+        const minuteInput = document.createElement('input');
+        minuteInput.type = 'number';
+        minuteInput.min = '0';
+        minuteInput.max = '59';
+        minuteInput.value = String(img.minute);
+        minuteInput.className = 'minute';
+        timeLabel.appendChild(hourInput);
+        timeLabel.appendChild(sep);
+        timeLabel.appendChild(minuteInput);
+
+        const mentorLabel = document.createElement('label');
+        mentorLabel.className = 'mentor-check';
+        const mentorCheck = document.createElement('input');
+        mentorCheck.type = 'checkbox';
+        mentorCheck.className = 'is-mentor';
+        mentorCheck.checked = img.isMentor;
+        mentorLabel.appendChild(mentorCheck);
+        mentorLabel.appendChild(document.createTextNode(" Mentor's own image"));
+
+        fieldsRow.appendChild(timeLabel);
+        fieldsRow.appendChild(mentorLabel);
+
+        const labelField = document.createElement('label');
+        labelField.textContent = 'Label';
+        const labelInput = document.createElement('input');
+        labelInput.type = 'text';
+        labelInput.className = 'label';
+        labelInput.value = img.label;
+        labelField.appendChild(labelInput);
+
+        const captionField = document.createElement('label');
+        captionField.textContent = 'Caption (optional)';
+        const captionInput = document.createElement('input');
+        captionInput.type = 'text';
+        captionInput.className = 'caption';
+        captionInput.value = img.caption;
+        captionField.appendChild(captionInput);
+
+        fields.appendChild(fieldsRow);
+        fields.appendChild(labelField);
+        fields.appendChild(captionField);
+
+        const removeButton = document.createElement('button');
+        removeButton.type = 'button';
+        removeButton.className = 'remove-image';
+        removeButton.setAttribute('aria-label', 'Remove');
+        removeButton.textContent = '×';
+
+        hourInput.addEventListener('input', (e) => {
+          img.hour = Number(e.target.value) || 0;
+        });
+        minuteInput.addEventListener('input', (e) => {
+          img.minute = Number(e.target.value) || 0;
+        });
+        labelInput.addEventListener('input', (e) => {
+          img.label = e.target.value;
+        });
+        captionInput.addEventListener('input', (e) => {
+          img.caption = e.target.value;
+        });
+        mentorCheck.addEventListener('change', (e) => {
+          img.isMentor = e.target.checked;
+        });
+        removeButton.addEventListener('click', () => removeImage(img.id));
+
+        row.appendChild(thumb);
+        row.appendChild(fields);
+        row.appendChild(removeButton);
+        imageList.appendChild(row);
+      });
+    }
+
+    function readAsDataURL(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      statusEl.textContent = 'Saving...';
+      statusEl.className = 'status';
+
+      const collection = document.querySelector('input[name="collection"]:checked').value;
+      const payload = {
+        collection,
+        title: document.getElementById('title').value,
+        date: document.getElementById('date').value,
+        mentorPrompt: document.getElementById('mentor-prompt').value,
+        response: document.getElementById('response').value,
+      };
+      if (collection === 'tasks') {
+        payload.task = document.getElementById('task').value;
+        payload.subtask = document.getElementById('subtask').value;
+      } else {
+        payload.slug = document.getElementById('slug').value;
+      }
+
+      payload.images = await Promise.all(
+        images.map(async (img) => ({
+          filename: img.file.name,
+          hour: img.hour,
+          minute: img.minute,
+          label: img.label,
+          isMentor: img.isMentor,
+          caption: img.caption,
+          dataBase64: await readAsDataURL(img.file),
+        })),
+      );
+
+      try {
+        const res = await fetch('/api/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const result = await res.json();
+        if (result.ok) {
+          statusEl.textContent =
+            'Saved to ' +
+            result.path +
+            ' (' +
+            result.filesWritten.join(', ') +
+            "). Run git add / commit / push when you're ready to publish it.";
+          statusEl.className = 'status status-ok';
+          form.reset();
+          dateInput.value = new Date().toISOString().slice(0, 10);
+          images = [];
+          renderImages();
+          updateCollectionFields();
+        } else {
+          statusEl.textContent = result.error || 'Something went wrong.';
+          statusEl.className = 'status status-error';
+        }
+      } catch (err) {
+        statusEl.textContent = 'Could not reach the local server. Is it still running?';
+        statusEl.className = 'status status-error';
+      }
+    });
+  </script>
+</body>
+</html>

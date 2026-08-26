@@ -1,5 +1,19 @@
 # Adding content
 
+There are two ways to add a task, subtask, or misc entry: by hand (below), or with a small local form that writes the same files for you. Either way produces identical results, use whichever is easier at the time.
+
+## Using the local form
+
+Run:
+
+```bash
+npm run add-content
+```
+
+This starts a server on `http://localhost:4322` (your machine only, nothing is exposed publicly). Open that URL, fill in the task/subtask (or misc slug), title, date, mentor's prompt, and your response, then drag your screenshots onto the page: each one gets a row where you set its capture time and a short label (and a checkbox if it's one of the mentor's own reference images), plus an optional caption.
+
+Hitting "Save entry" writes the `index.md` and renamed image files straight into `src/content/`, exactly matching the folder/filename convention described below. It does **not** run git for you. Review what was created, then `git add` / `commit` / `push` yourself (see Publishing below) whenever you're ready to make it live. Stop the server with Ctrl+C when you're done.
+
 ## First-time setup
 
 Before the deploy workflow can publish anything, the GitHub repo needs three things in place, once:
@@ -10,7 +24,7 @@ Before the deploy workflow can publish anything, the GitHub repo needs three thi
 
 Once those three are set, every push to `main` rebuilds and republishes the site automatically.
 
-## New task or subtask
+## New task or subtask (by hand)
 
 1. Create a folder: `src/content/tasks/<task-number>/<subtask-letter>/` (for example `src/content/tasks/2/a/`).
 2. Add an `index.md` inside it:
@@ -28,7 +42,7 @@ Once those three are set, every push to `main` rebuilds and republishes the site
    ```
    The page already shows a "My read" heading above this section, so don't repeat it in your markdown, just start writing.
 
-3. Drop your annotated TradingView screenshots into the same folder, named `HH-MM_label.png` in capture order (for example `09-14_entry.png`, `10-02_management.png`, `11-30_exit.png`). If a subtask spans more than one day, prefix with the date: `2026-08-25_09-14_entry.png`.
+3. Drop your annotated TradingView screenshots into the same folder, named `HH-MM_label.png` in capture order (for example `09-14_entry.png`, `10-02_management.png`, `11-30_exit.png`). If a subtask spans more than one day, date-prefix **every** file for that subtask, including the first day's (for example `2026-08-25_09-14_entry.png`, `2026-08-26_08-00_continuation.png`). Mixing bare and date-prefixed filenames within the same subtask sorts incorrectly.
 4. If the mentor posted his own reference images, name them `mentor_<anything>.png` so they show up in the assignment section instead of the capture sequence.
 5. `captions` is optional. Any image without an entry there just shows its filename label (for example `entry` becomes "Entry") in the lightbox.
 
