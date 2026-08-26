@@ -1,5 +1,15 @@
 # Adding content
 
+## First-time setup
+
+Before the deploy workflow can publish anything, the GitHub repo needs three things in place, once:
+
+1. The repo must be named exactly `mrc-tasks`. This has to match the `base: '/mrc-tasks'` setting in `astro.config.mjs`, or every link on the built site will point at the wrong path.
+2. In the repo's Settings > Pages, set the Source to "GitHub Actions". The workflow file alone does not turn this on, it has to be selected in the repo settings first.
+3. The default branch must be `main`, since `.github/workflows/deploy.yml` only triggers on pushes to `main`.
+
+Once those three are set, every push to `main` rebuilds and republishes the site automatically.
+
 ## New task or subtask
 
 1. Create a folder: `src/content/tasks/<task-number>/<subtask-letter>/` (for example `src/content/tasks/2/a/`).
