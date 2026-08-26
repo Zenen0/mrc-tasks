@@ -5,7 +5,7 @@ import { Image, getImage } from 'astro:assets';
 import Layout from '../../components/Layout.astro';
 import ThumbnailGrid from '../../components/ThumbnailGrid.astro';
 import Lightbox from '../../components/Lightbox.astro';
-import { filterImagesForEntry, getMentorImages, groupIntoHourBlocks, sortCaptureImages } from '../../lib/images';
+import { buildEntryPageData } from '../../lib/entry-page';
 
 export async function getStaticPaths() {
   const entries = await getCollection('misc');
@@ -19,22 +19,15 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/misc/**/*.{png,jpg,jpeg,webp}',
   { eager: true },
 );
-const allImages = filterImagesForEntry(globMap, `/src/content/misc/${entry.id}`, entry.data.captions ?? {});
-
-for (const filename of Object.keys(entry.data.captions ?? {})) {
-  if (!allImages.some((img) => img.parsed.raw === filename)) {
-    console.warn(`[mrc-tasks] Misc ${entry.id}: caption references missing file "${filename}"`);
-  }
-}
-
-const captureImages = sortCaptureImages(allImages);
-const mentorImages = getMentorImages(allImages);
-const blocks = groupIntoHourBlocks(captureImages);
+const { captureImages, mentorImages, blocks, description, hasResponse } = buildEntryPageData(
+  globMap,
+  `/src/content/misc/${entry.id}`,
+  entry,
+);
 
 const cover = captureImages[0]?.src;
 const ogImageResult = cover ? await getImage({ src: cover, width: 1200 }) : null;
 const ogImage = ogImageResult ? new URL(ogImageResult.src, Astro.site).toString() : undefined;
-const description = (entry.data.mentorPrompt ?? '').slice(0, 160);
 ---
 <Layout title={entry.data.title} description={description} ogImage={ogImage}>
   <article class="subtask">
@@ -45,7 +38,7 @@ const description = (entry.data.mentorPrompt ?? '').slice(0, 160);
 
     <section class="assignment">
       <h2>Context</h2>
-      {entry.data.mentorPrompt && <p>{entry.data.mentorPrompt}</p>}
+      {entry.data.mentorPrompt ? <p>{entry.data.mentorPrompt}</p> : <p class="empty-state">Pending.</p>}
       {mentorImages.length > 0 && (
         <div class="mentor-images">
           {mentorImages.map((img) => (
@@ -61,7 +54,7 @@ const description = (entry.data.mentorPrompt ?? '').slice(0, 160);
     </section>
 
     <section class="response">
-      <Content />
+      {hasResponse ? <Content /> : <p class="empty-state">Pending.</p>}
     </section>
   </article>
 
