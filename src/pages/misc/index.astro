@@ -1,0 +1,36 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../components/Layout.astro';
+import SubtaskCard from '../../components/SubtaskCard.astro';
+import { filterImagesForEntry, getCoverImage } from '../../lib/images';
+import { withBase } from '../../lib/paths';
+
+const globMap = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/misc/**/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+
+const entries = await getCollection('misc');
+---
+<Layout title="Misc" description="Extra reference material that doesn't fit a task or subtask.">
+  {entries.length === 0 && <p class="empty-state">No misc entries yet.</p>}
+  <div class="card-grid">
+    {entries
+      .sort((a, b) => a.id.localeCompare(b.id))
+      .map((entry) => {
+        const images = filterImagesForEntry(globMap, `/src/content/misc/${entry.id}`, entry.data.captions ?? {});
+        const { cover, count } = getCoverImage(images);
+        return (
+          <SubtaskCard
+            href={withBase(`/misc/${entry.id}/`, import.meta.env.BASE_URL)}
+            badge="MISC"
+            title={entry.data.title}
+            cover={cover}
+            imageCount={count}
+            promptExcerpt={entry.data.mentorPrompt ?? ''}
+          />
+        );
+      })}
+  </div>
+</Layout>
