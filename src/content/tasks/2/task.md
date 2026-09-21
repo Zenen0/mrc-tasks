@@ -82,6 +82,52 @@ Nonetheless, the main point is - you are amongst fierce opposition. Many have gi
 
 ![1 min doji / negation + HCS / big wick fill markup. Major liquidity taken, major liquidity opposite. The LAOL accounted for in the moment with full bias](./1min-full-methodology-example.jpg)
 
+## Extension - new assignment (1 min only)
+
+To mark out 10 such charts purely on the 1 min. Really try to understand the flow of price action from your own eyes - see how price is attracted to liquidity and forms HCS + negations to refine potential entries (1-5 pip SL). You have to mark out all your reasoning considering the flow of liquidity (determine at base which side is stronger, by default, in the signs shown).
+
+**For personal learning:** 10 charts really isn't much - do 30 more without text annotations this time (extra task, personal learning).
+
+## Full multi-timeframe breakdown (worked example)
+
+Look at the 4hr solely (and remember we are still not looking at odd TF). A picture starts to formulate. Each arrow, whilst marking the full candle, represents the refined area we would look to enter (HTF HCS/negation forming):
+
+![The 4hr solely - each arrow marks the full candle, the refined area to look to enter (HTF HCS/negation forming). A picture starts to formulate](./breakdown-4hr.jpg)
+
+**Now on the 1hr.** More refinement and RR opportunities, plus aligned confidence. Blue = liquidity was taken almost instantly (the reasoning for the reversal in the next few candles - 80% of occurrences). Black = liquidity left behind for the future - the areas to note especially why it was so (in a significant negation/HCS, overpowered by liquidity opposite):
+
+![The 1hr - more refinement and RR opportunities with aligned confidence. Blue = liquidity taken almost instantly (reversal reasoning, ~80% of occurrences). Black = liquidity left behind for the future](./breakdown-1hr.jpg)
+
+**On the 15 min.** Any refinement past the 15 min is where the real RR and full potential is found - entries on the 15 min solely will never give that same result. However, the base for every main entry is to enter at a 15 min manipulated low/high. The more HTF alignment the better, but sometimes we will be entering after exact swing highs/lows and so 15 min will suffice.
+
+A rule can be formulated: take the markets in a 15 min increment. You do not need to be in every move but extract your consistent % compound.
+
+Combining down to the 1-15 min? Now we are in the real playground:
+
+![The 15 min - refinement past the 15 min is where the real RR and full potential is found. The base for every main entry is a 15 min manipulated low/high](./breakdown-15min-1.jpg)
+
+![The 15 min, continued - combining down to the 1-15 min is where the real playground begins](./breakdown-15min-2.jpg)
+
+**The 5 min.** Looking for entries at the 5 min lows/highs on the minimum 15 min + HTF alignment. Note why some liquidity holds in the moment - all with a perfectly calculated reasoning (liquidity opposite overpowers, most of its RR potential already manipulated):
+
+![The 5 min - entries at the 5 min lows/highs on the minimum 15 min + HTF alignment. Note why some liquidity holds in the moment (liquidity opposite overpowers, RR potential already manipulated)](./breakdown-5min.jpg)
+
+**The 1 min.** Self-explanatory - you must see the RR advantages yourself. We go more in depth on the 1 min at a later date:
+
+![The 1 min - self-explanatory, see the RR advantage for yourself](./breakdown-1min-1.jpg)
+
+![The 1 min, continued](./breakdown-1min-2.jpg)
+
+![The 1 min, continued](./breakdown-1min-3.jpg)
+
+## Extension - new assignment (full breakdown)
+
+Complete only one example as shown above - a full 4hr to 1 min breakdown showing full reasoning and refined entries.
+
+And then one more example - this time starting from the 1 min to 4hr.
+
+**Deadline: next Friday** - upon which Task 3 will be set (an extremely elongated period for such a small task, but there are other important aspects to highlight before that period). If any confusion, retrace your steps to more repetition of the previous, purely mechanical marking tasks.
+
 ---
 
 Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) (the 3 concepts this task builds on, plus its corrections) and [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/).

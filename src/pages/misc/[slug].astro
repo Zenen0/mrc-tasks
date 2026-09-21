@@ -45,9 +45,9 @@ const ogImage = ogImageResult ? new URL(ogImageResult.src, Astro.site).toString(
     ]}
   />
   <article class="subtask">
-    <header class="subtask-header">
-      <span class="subtask-badge mono">MISC</span>
+    <header class="misc-header">
       <h1>{entry.data.title}</h1>
+      <span class="misc-badge mono">MISC</span>
     </header>
     {relatedTaskLabel && (
       <p class="related-task-tag">

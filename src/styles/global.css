@@ -282,6 +282,28 @@ main {
   font-size: 0.9rem;
 }
 
+.misc-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-4);
+}
+
+.misc-header h1 {
+  margin: 0;
+}
+
+.misc-badge {
+  color: var(--color-accent);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.misc-header h1 {
+  margin: 0;
+}
+
 .assignment,
 .captures,
 .response {
