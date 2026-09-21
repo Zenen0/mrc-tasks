@@ -63,3 +63,23 @@ Make your backtesting suited for your preference. Write upon charts or store dat
 React with a 👀 when seen and a ✅ when complete. Will randomly check (one only cheats self by missing) and point out adjustments.
 
 Keep discussions to #understanding-manipulation, as not to disturb the daily flow of trading - know all that is needed for the task is in this message. The more questions one asks (acceptable only for those new, and of the advanced level) generally only weakens ones self resolve and undermines ability to learn. Your power is now mainly in your hours of backtesting (stored chart data to prove).
+
+## Update - before Task 2
+
+For yesterday's task:
+
+1) Mark every unmanipulated doji/notable big wick/HCS taking care not to miss any.
+2) Do not restrict or concern yourselves to the minimum 30 screenshots but produce even more. The efforts are what matter firstly.
+3) Be free in your markings - there is no pressure but upon yourself to learn for your own benefits. Deadlines are only the minimum pace one should be going.
+
+We will showcase final corrections on Friday upon task completion.
+
+A congratulations to all those who completed the task. Be proud of your efforts thus far. However 30 backtest examples on 1 timeframe is not too strenuous a task. Task 1 was an exercise purely based on mechanicals (doji, big wicks, HCS - all patterns, not a combined final liquidity calculation). Perhaps for some unaccustomed to the repetitions, the strain on the working memory is getting used to. This first task requires little thinking - it is always an exercise that will power your foundation. So do not be shy mastering it until instinct.
+
+**Before moving onto Task 2 - 100 such repetitions should be done.**
+
+Over the weekends and until the completion of Task 2, we will strengthen on this foundation. It is not possible to check everyone's charts, but there is no real need with the clear strict definitions given (still will be randomly checking in DMs). Instead attention will be drawn towards the variations and key usages - building from the lower to higher levels of understanding.
+
+---
+
+See also: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) - his foundational note posted between this task and Task 2.
