@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-21.
+Last updated: 2026-09-21 (after Task 2 extension import).
 
 Note: `STATUS.md` also exists in this repo but is stale (pre-dates this
 session's restructuring - still describes the old placeholder content
@@ -79,11 +79,29 @@ still done by hand.
   task across 4hr/15min/1min, deadline **20/09/24**, advanced-pacing
   notes, 3 foundational objectives). No subtask data imported yet
   either - "My task" is empty. See "Open question" below.
+- **Task 2 extension** (same `task.md`, appended as new `##` sections -
+  judged not to warrant its own task/folder since the mentor framed it
+  as "we expand on task 2" ahead of Task 3): a new 1-min-only marking
+  assignment (10 charts + 30 extra without annotations), Mr Casino's
+  own worked full breakdown example (8 charts: 4hr/1hr/15min x2/5min/
+  1min x3, saved as `breakdown-4hr.jpg` etc. in
+  `src/content/tasks/2/`), and the follow-up assignment (one 4hr-to-1min
+  example, one 1min-to-4hr example). Deadline "next Friday" (mentor
+  gave no explicit date this time - kept verbatim, not invented).
+  Image-to-chart mapping was inferred from each chart's own timeframe
+  label rather than the literal position of the "image N" marker in
+  the pasted text, since the two didn't line up 1:1 - flagged to the
+  user, not corrected silently.
 - **Misc**: one entry, "Rationality & Backtesting Discipline" (general
   mentor content, not task-specific - cross-linked to Task 1).
   Misc/Task cards were polished to match (title fills the empty
   thumbnail, centered badge) via new `TaskCard.astro` /
-  `MiscCard.astro` components.
+  `MiscCard.astro` components. This session: the Misc entry page's own
+  header (`src/pages/misc/[slug].astro`, new `.misc-header`/
+  `.misc-badge` CSS) now stacks the title above the "MISC" badge
+  instead of side by side, matching the Task-card visual treatment -
+  the shared `.subtask-header`/`.subtask-badge` classes used by
+  task/subtask pages were deliberately left untouched.
 - All placeholder content (old Task 1/2, old Misc example) deleted.
 
 ## Open question - flagged to user, unresolved
@@ -98,11 +116,12 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-**The Task 2 extension / new task.** The user's last message paused
-here explicitly ("we can pause here as then we have another task 2
-extension / new task u will see"), after finishing Task 2's assignment
-and the Misc cleanup. Pick up the same workflow (see below) for
-whatever he sends next.
+**More Misc content.** The user's last message paused here explicitly
+("thats all for this bit after this is a bit more misc stuff i feel"),
+right after the Task 2 extension and Misc header fix were committed
+and pushed (commit `6ae137a`, deploy confirmed green). Pick up the
+same content-intake workflow (see below) for whatever misc material he
+sends next - check `~/Downloads` for newly saved images first.
 
 ## Working conventions from this session (not elsewhere in the repo)
 
