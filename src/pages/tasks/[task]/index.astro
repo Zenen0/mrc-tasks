@@ -1,30 +1,24 @@
 ---
-import type { ImageMetadata } from 'astro';
 import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
-import SubtaskCard from '../../../components/SubtaskCard.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
-import { filterImagesForEntry, getCoverImage } from '../../../lib/images';
 import { withBase } from '../../../lib/paths';
-import { distinctTaskNumbers, getTaskTitle, subtasksForTask } from '../../../lib/tasks';
+import { allTaskNumbers, getTaskTitle, subtasksForTask } from '../../../lib/tasks';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('tasks');
-  return distinctTaskNumbers(entries).map((task) => ({ params: { task } }));
+  const subtaskEntries = await getCollection('tasks');
+  const taskMetaEntries = await getCollection('taskMeta');
+  return allTaskNumbers(subtaskEntries, taskMetaEntries).map((task) => ({ params: { task } }));
 }
 
 const { task } = Astro.params as { task: string };
-const allEntries = await getCollection('tasks');
+const subtaskEntries = await getCollection('tasks');
 const taskMetaEntries = await getCollection('taskMeta');
-const subtasks = subtasksForTask(allEntries, task);
 const taskTitle = getTaskTitle(taskMetaEntries, task);
-
-const globMap = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
-  { eager: true },
-);
+const hasAssignment = taskMetaEntries.some((entry) => entry.id === task);
+const subtaskCount = subtasksForTask(subtaskEntries, task).length;
 ---
-<Layout title={taskTitle} description={`Subtasks for ${taskTitle}.`}>
+<Layout title={taskTitle} description={`Mr Casino's assignment and my own work for ${taskTitle}.`}>
   <Breadcrumb
     items={[
       { label: 'Tasks', href: withBase('/', import.meta.env.BASE_URL) },
@@ -32,22 +26,24 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
     ]}
   />
   <h1>{taskTitle}</h1>
-  {subtasks.length === 0 && <p class="empty-state">No subtasks yet.</p>}
-  <div class="card-grid">
-    {subtasks.map((entry) => {
-      const [taskNumber, letter] = entry.id.split('/');
-      const images = filterImagesForEntry(globMap, `/src/content/tasks/${entry.id}`, entry.data.captions ?? {});
-      const { cover, count } = getCoverImage(images);
-      return (
-        <SubtaskCard
-          href={withBase(`/tasks/${taskNumber}/${letter}/`, import.meta.env.BASE_URL)}
-          badge={`${taskNumber}${letter.toUpperCase()}`}
-          title={entry.data.title}
-          cover={cover}
-          imageCount={count}
-          promptExcerpt={entry.data.mentorPrompt ?? ''}
-        />
-      );
-    })}
+  <div class="branch-grid">
+    {hasAssignment ? (
+      <a class="branch-card" href={withBase(`/tasks/${task}/assignment/`, import.meta.env.BASE_URL)}>
+        <span class="card-badge">MR CASINO&apos;S TASK</span>
+        <h2>The assignment</h2>
+        <p>His original brief, worked example, and reference images.</p>
+      </a>
+    ) : (
+      <div class="branch-card branch-card-pending">
+        <span class="card-badge">MR CASINO&apos;S TASK</span>
+        <h2>The assignment</h2>
+        <p class="empty-state">Not written up yet.</p>
+      </div>
+    )}
+    <a class="branch-card" href={withBase(`/tasks/${task}/mine/`, import.meta.env.BASE_URL)}>
+      <span class="card-badge">MY TASK</span>
+      <h2>My work</h2>
+      <p>{subtaskCount > 0 ? `${subtaskCount} subtask${subtaskCount === 1 ? '' : 's'} so far.` : 'Nothing added yet.'}</p>
+    </a>
   </div>
 </Layout>

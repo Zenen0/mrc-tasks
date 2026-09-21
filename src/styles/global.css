@@ -265,6 +265,75 @@ main {
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.branch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+}
+
+.branch-card {
+  display: block;
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-4);
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.branch-card:hover,
+.branch-card:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.branch-card-pending {
+  opacity: 0.6;
+}
+
+.branch-card h2 {
+  margin: var(--space-2) 0 var(--space-1);
+}
+
+.branch-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.assignment-page {
+  max-width: 760px;
+}
+
+.assignment-body {
+  line-height: 1.7;
+}
+
+.assignment-body p {
+  margin: 0 0 var(--space-3);
+}
+
+.assignment-body img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--space-3) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.assignment-body hr {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-5) 0;
+}
+
+.assignment-body strong {
+  color: var(--color-accent);
 }
 
 .hour-block {

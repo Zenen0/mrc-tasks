@@ -1,18 +1,31 @@
 import { describe, expect, it } from 'vitest';
-import { distinctTaskNumbers, getTaskTitle, siblingSubtasks, subtasksForTask } from './tasks';
+import { allTaskNumbers, getTaskTitle, siblingSubtasks, subtasksForTask } from './tasks';
 
 function entry(id: string) {
   return { id, data: { title: `Title for ${id}` } };
 }
 
-describe('distinctTaskNumbers', () => {
-  it('returns each task number once, sorted numerically', () => {
-    const entries = [entry('2/a'), entry('1/b'), entry('1/a'), entry('10/a')];
-    expect(distinctTaskNumbers(entries)).toEqual(['1', '2', '10']);
+describe('allTaskNumbers', () => {
+  it('includes a task that has a task.md but no subtasks yet', () => {
+    const subtasks = [entry('2/a')];
+    const taskMeta = [entry('1'), entry('2')];
+    expect(allTaskNumbers(subtasks, taskMeta)).toEqual(['1', '2']);
   });
 
-  it('returns an empty array when there are no entries', () => {
-    expect(distinctTaskNumbers([])).toEqual([]);
+  it('includes a task that has subtasks but no task.md', () => {
+    const subtasks = [entry('3/a')];
+    const taskMeta: ReturnType<typeof entry>[] = [];
+    expect(allTaskNumbers(subtasks, taskMeta)).toEqual(['3']);
+  });
+
+  it('de-duplicates and sorts numerically across both sources', () => {
+    const subtasks = [entry('2/a'), entry('10/a')];
+    const taskMeta = [entry('1'), entry('2')];
+    expect(allTaskNumbers(subtasks, taskMeta)).toEqual(['1', '2', '10']);
+  });
+
+  it('returns an empty array when both sources are empty', () => {
+    expect(allTaskNumbers([], [])).toEqual([]);
   });
 });
 

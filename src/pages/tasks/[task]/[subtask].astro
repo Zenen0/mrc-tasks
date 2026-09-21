@@ -47,6 +47,7 @@ const { prev, next } = siblingSubtasks(siblings, entry.id);
     items={[
       { label: 'Tasks', href: withBase('/', import.meta.env.BASE_URL) },
       { label: taskTitle, href: withBase(`/tasks/${task}/`, import.meta.env.BASE_URL) },
+      { label: 'My task', href: withBase(`/tasks/${task}/mine/`, import.meta.env.BASE_URL) },
       { label: `${task}${subtask.toUpperCase()}` },
     ]}
   />
@@ -70,17 +71,19 @@ const { prev, next } = siblingSubtasks(siblings, entry.id);
       <h1>{entry.data.title}</h1>
     </header>
 
-    <section class="assignment">
-      <h2>Assignment</h2>
-      {entry.data.mentorPrompt ? <p>{entry.data.mentorPrompt}</p> : <p class="empty-state">Pending.</p>}
-      {mentorImages.length > 0 && (
-        <div class="mentor-images">
-          {mentorImages.map((img) => (
-            <Image src={img.src} width={480} alt={img.parsed.label} />
-          ))}
-        </div>
-      )}
-    </section>
+    {(entry.data.mentorPrompt || mentorImages.length > 0) && (
+      <section class="assignment">
+        <h2>Assignment</h2>
+        {entry.data.mentorPrompt && <p>{entry.data.mentorPrompt}</p>}
+        {mentorImages.length > 0 && (
+          <div class="mentor-images">
+            {mentorImages.map((img) => (
+              <Image src={img.src} width={480} alt={img.parsed.label} />
+            ))}
+          </div>
+        )}
+      </section>
+    )}
 
     <section class="captures">
       <h2>Captures</h2>

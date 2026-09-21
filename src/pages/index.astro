@@ -5,7 +5,7 @@ import Layout from '../components/Layout.astro';
 import SubtaskCard from '../components/SubtaskCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../lib/images';
 import { withBase } from '../lib/paths';
-import { distinctTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
+import { allTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
@@ -14,7 +14,7 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
 
 const allEntries = await getCollection('tasks');
 const taskMetaEntries = await getCollection('taskMeta');
-const taskNumbers = distinctTaskNumbers(allEntries);
+const taskNumbers = allTaskNumbers(allEntries, taskMetaEntries);
 ---
 <Layout title="Tasks" description="Backtesting task review, organized by task.">
   {taskNumbers.length === 0 && <p class="empty-state">No tasks yet.</p>}

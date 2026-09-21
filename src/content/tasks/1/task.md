@@ -1,3 +1,61 @@
 ---
 title: "Major Liquidity"
 ---
+
+In this first collective backtesting assignment we go over the most major liquidity.
+
+Explanations will be given in bullet point explicit fashion - concise rules to follow.
+
+We know Liquidity to be the base of all market decisions. All other concepts explain the algebra for its final macro calculation embedded in truth.
+
+Yet oftentimes it is most commonly misinterpreted as it is the first step in the exposing of market manipulation - most come with previous bias upon misinformation in doubts. Hence it is the first area to clear.
+
+There are many types, we will categorise further as we go on. "Major liquidity" is the term we use for the main overpowering HTF targets - around its manipulation the main daily true moves are resolved.
+
+A doji can be met partially only when major liquidity of opposite overpowers. In such cases new HCS/doji manipulation is observed.
+
+The task is to produce 30 charts (10x3) on the 4hr timeframe in the following manner:
+
+1) Mark all the major doji purely on the 4hr timeframe. The doji we Mark is separate from the attempted FU - a subject of later discussion.
+
+Must be within a previous wick and a non FU high or low. The most major form of liquidity (HTF, pure doji).
+
+![Step 1 - only the unmanipulated doji marked](./step1-doji-marking.jpg)
+
+2) Mark the large wicks that are yet to be "filled". I.e an area of large momentum that would entice retailers (albeit with the poorest RR - their BE trade potential considered).
+
+A special note to those areas where we have coinciding liquidity.
+
+![Step 2 - big wicks added. Big wick = excited retail reaction seeing volatility, pure liquidity terms](./step2-wick-marking.jpg)
+
+3) Observe the flow of price action major targets using HCS + HCS negations alone.
+
+Major Liquidity taken or overpowering major liquidity to target - will be the base reasoning.
+
+This is only looking at that one timeframe HCS + major liquidity (true stop + swing targets).
+
+![Step 3 - main HCS marked after liquidity. HCS negation = liquidity targets not yet taken](./step3-hcs-marking.jpg)
+
+![Step 3 note - true doji, within a previous wick and does not manipulate the last high or low, versus a manipulated doji / FU high](./step4-doji-vs-fu-note.jpg)
+
+Each step = 1 chart. 3 charts on one 4hr example (roughly 1 month data). Produce 10 examples this way - 30 charts total.
+
+It is specifically mentioned for one must learn to store data that serves as a proof of efforts. The methods and focused thought given in your backtests will also be observed.
+
+No need (but no harm done either) to share your charts but for discussion - will be checked privately upon completion.
+
+---
+
+**For personal advanced studies** (extra depth, not part of the 30-chart count):
+
+Mark out the 1hr similarly, giving an extra attention to the 4hr HCS which is of more power (TFS). And then the 15 min. Repeat many times.
+
+Explore the reasonings why the major liquidity held in the moment, or captioning on its extreme liquidity grab (last area of liquidity entry).
+
+Make your backtesting suited for your preference. Write upon charts or store data electronically - more charts, less notes - you aim to build your working memory and ability to recognise recurring themes. The mind must enjoy the process. You know yourselves best. Be creative in your approach and take pride in your works.
+
+---
+
+React with a 👀 when seen and a ✅ when complete. Will randomly check (one only cheats self by missing) and point out adjustments.
+
+Keep discussions to #understanding-manipulation, as not to disturb the daily flow of trading - know all that is needed for the task is in this message. The more questions one asks (acceptable only for those new, and of the advanced level) generally only weakens ones self resolve and undermines ability to learn. Your power is now mainly in your hours of backtesting (stored chart data to prove).

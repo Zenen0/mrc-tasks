@@ -7,10 +7,17 @@ export interface SubtaskLike {
   id: string;
 }
 
-export function distinctTaskNumbers(entries: SubtaskLike[]): string[] {
+/**
+ * Union of task numbers derived from subtasks and from taskMeta (task.md) entries, so a task
+ * shows up once it has either - not only once its first subtask exists.
+ */
+export function allTaskNumbers(subtaskEntries: SubtaskLike[], taskMetaEntries: SubtaskLike[]): string[] {
   const seen = new Set<string>();
-  for (const entry of entries) {
+  for (const entry of subtaskEntries) {
     seen.add(entry.id.split('/')[0]);
+  }
+  for (const entry of taskMetaEntries) {
+    seen.add(entry.id);
   }
   return [...seen].sort((a, b) => Number(a) - Number(b));
 }
