@@ -2,6 +2,8 @@
 title: "Major Liquidity"
 ---
 
+## Overview
+
 In this first collective backtesting assignment we go over the most major liquidity.
 
 Explanations will be given in bullet point explicit fashion - concise rules to follow.
@@ -14,7 +16,9 @@ There are many types, we will categorise further as we go on. "Major liquidity" 
 
 A doji can be met partially only when major liquidity of opposite overpowers. In such cases new HCS/doji manipulation is observed.
 
-The task is to produce 30 charts (10x3) on the 4hr timeframe in the following manner:
+## The 30-chart task
+
+Produce 30 charts (10x3) on the 4hr timeframe in the following manner:
 
 1) Mark all the major doji purely on the 4hr timeframe. The doji we Mark is separate from the attempted FU - a subject of later discussion.
 
@@ -44,9 +48,9 @@ It is specifically mentioned for one must learn to store data that serves as a p
 
 No need (but no harm done either) to share your charts but for discussion - will be checked privately upon completion.
 
----
+## For personal advanced studies
 
-**For personal advanced studies** (extra depth, not part of the 30-chart count):
+Extra depth, not part of the 30-chart count:
 
 Mark out the 1hr similarly, giving an extra attention to the 4hr HCS which is of more power (TFS). And then the 15 min. Repeat many times.
 
@@ -54,7 +58,7 @@ Explore the reasonings why the major liquidity held in the moment, or captioning
 
 Make your backtesting suited for your preference. Write upon charts or store data electronically - more charts, less notes - you aim to build your working memory and ability to recognise recurring themes. The mind must enjoy the process. You know yourselves best. Be creative in your approach and take pride in your works.
 
----
+## Process notes
 
 React with a 👀 when seen and a ✅ when complete. Will randomly check (one only cheats self by missing) and point out adjustments.
 

@@ -2,7 +2,7 @@
 import type { ImageMetadata } from 'astro';
 import { getCollection } from 'astro:content';
 import Layout from '../components/Layout.astro';
-import SubtaskCard from '../components/SubtaskCard.astro';
+import TaskCard from '../components/TaskCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../lib/images';
 import { withBase } from '../lib/paths';
 import { allTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
@@ -34,13 +34,12 @@ const taskNumbers = allTaskNumbers(allEntries, taskMetaEntries);
       }
 
       return (
-        <SubtaskCard
+        <TaskCard
           href={withBase(`/tasks/${task}/`, import.meta.env.BASE_URL)}
           badge={`TASK ${task}`}
           title={taskTitle}
           cover={cover}
-          imageCount={subtasks.length}
-          promptExcerpt=""
+          subtaskCount={subtasks.length}
         />
       );
     })}
