@@ -1,0 +1,28 @@
+---
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+export interface Props {
+  href: string;
+  title: string;
+  cover: ImageMetadata | null;
+  imageCount: number;
+  relatedTaskLabel: string | null;
+}
+
+const { href, title, cover, imageCount, relatedTaskLabel } = Astro.props;
+---
+<a class="card task-card" href={href}>
+  <div class="card-thumb">
+    {cover ? (
+      <Image src={cover} width={320} alt="" />
+    ) : (
+      <div class="card-thumb-title">{title}</div>
+    )}
+    <span class="card-count mono">{imageCount}</span>
+  </div>
+  <div class="card-body task-card-body">
+    <span class="card-badge task-card-badge">MISC</span>
+    {relatedTaskLabel && <span class="card-related mono">&rarr; {relatedTaskLabel}</span>}
+  </div>
+</a>

@@ -1,6 +1,7 @@
 ---
 title: "Rationality & Backtesting Discipline"
 date: 2026-09-21
+relatedTask: "1"
 mentorPrompt: |
   Mr Casino's foundational note on rationality as the base beneath all trading
   psychology, plus the rule that backtesting has to be stored as real proof of

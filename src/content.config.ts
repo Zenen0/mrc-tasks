@@ -6,6 +6,7 @@ const entrySchema = z.object({
   date: z.coerce.date(),
   mentorPrompt: z.string().optional(),
   captions: z.record(z.string(), z.string()).optional(),
+  relatedTask: z.string().optional(),
 });
 
 const stripIndexSuffix = ({ entry }: { entry: string }) => entry.replace(/\/index\.md$/, '');

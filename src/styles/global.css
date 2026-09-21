@@ -155,6 +155,27 @@ main {
   letter-spacing: 0.05em;
 }
 
+.card-related {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.related-task-tag {
+  margin: calc(var(--space-4) * -1) 0 var(--space-4);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.related-task-tag a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.related-task-tag a:hover,
+.related-task-tag a:focus-visible {
+  text-decoration: underline;
+}
+
 .card-count {
   position: absolute;
   top: var(--space-2);

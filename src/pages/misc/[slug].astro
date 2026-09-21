@@ -8,6 +8,7 @@ import Lightbox from '../../components/Lightbox.astro';
 import Breadcrumb from '../../components/Breadcrumb.astro';
 import { buildEntryPageData } from '../../lib/entry-page';
 import { withBase } from '../../lib/paths';
+import { getTaskTitle } from '../../lib/tasks';
 
 export async function getStaticPaths() {
   const entries = await getCollection('misc');
@@ -16,6 +17,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+
+const taskMetaEntries = await getCollection('taskMeta');
+const relatedTaskLabel = entry.data.relatedTask
+  ? `Task ${entry.data.relatedTask}: ${getTaskTitle(taskMetaEntries, entry.data.relatedTask)}`
+  : null;
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/misc/**/*.{png,jpg,jpeg,webp}',
@@ -43,6 +49,13 @@ const ogImage = ogImageResult ? new URL(ogImageResult.src, Astro.site).toString(
       <span class="subtask-badge mono">MISC</span>
       <h1>{entry.data.title}</h1>
     </header>
+    {relatedTaskLabel && (
+      <p class="related-task-tag">
+        <a href={withBase(`/tasks/${entry.data.relatedTask}/assignment/`, import.meta.env.BASE_URL)}>
+          &rarr; {relatedTaskLabel}
+        </a>
+      </p>
+    )}
 
     <section class="assignment">
       <h2>Context</h2>
