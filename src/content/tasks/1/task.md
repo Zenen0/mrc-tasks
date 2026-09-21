@@ -80,6 +80,14 @@ A congratulations to all those who completed the task. Be proud of your efforts 
 
 Over the weekends and until the completion of Task 2, we will strengthen on this foundation. It is not possible to check everyone's charts, but there is no real need with the clear strict definitions given (still will be randomly checking in DMs). Instead attention will be drawn towards the variations and key usages - building from the lower to higher levels of understanding.
 
+## Corrections
+
+Noted alongside the Task 2 brief:
+
+![Seeing the wick, retailers' hasty sell. Then the doji within its wick (retailers perceive as a sign of reversal)](./correction-doji-in-wick.jpg)
+
+![The major liquidity above the doji (within the last wick) was a first reason for retailers to sell. Not below - this is not under the classification of the major unmanipulated doji](./correction-major-liquidity-classification.jpg)
+
 ---
 
-See also: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) - his foundational note posted between this task and Task 2.
+See also: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) - his foundational note posted between this task and Task 2. [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) follows on directly.
