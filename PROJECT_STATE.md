@@ -1,12 +1,11 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-21 (after Task 2 extension import).
+Last updated: 2026-09-25 (after Misc batch 2026-09-25 implemented, not yet committed).
 
-Note: `STATUS.md` also exists in this repo but is stale (pre-dates this
-session's restructuring - still describes the old placeholder content
-and a flat task/subtask hierarchy). This file supersedes it. No
-`CLAUDE.md` exists yet.
+Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
+read it first. `STATUS.md` also exists but is stale (pre-dates the
+two-branch restructuring); this file supersedes it.
 
 ## Goal
 
@@ -103,6 +102,29 @@ still done by hand.
   the shared `.subtask-header`/`.subtask-badge` classes used by
   task/subtask pages were deliberately left untouched.
 - All placeholder content (old Task 1/2, old Misc example) deleted.
+- **Misc batch 2026-09-25** (first import via the new raw-source
+  workflow - source + analysis in `sources/misc/2026-09-25-misc-batch/`).
+  A long text-only mentor post (moral relativism, fundamentals, 2023-24
+  geopolitics timeline vs gold, discipline). Implemented as two entries,
+  both `relatedTask: "2"`:
+  - `misc/morality-rationality-and-the-opposing-side/` - rationality +
+    "correct morality", market = opposing minds, personal practice,
+    discipline (Task 3 "on Friday", repeat Tasks 1-2, **500-1000+
+    hours** with stored data, no entitlement, learn from mistakes).
+  - `misc/fundamentals-usd-banks-and-gold/` - USD/banks/XAU control
+    model, banks' tolerance limit -> swing holds, FU + fractal
+    approach, "news reinforces a liquidity-derived bias, doesn't create
+    it", the mentor's event timeline, speculation caveats.
+  - Existing rationality entry got a "Follow-up" link to the first.
+  - Editorial decision (user-approved): geopolitical/worldview material
+    kept secondary and attributed; contested claims not stated as fact.
+    The "loyal to a different creed" banking passage and the detailed
+    Gaza/Israel claims stay in `raw.md`/`ANALYSIS.md` only.
+  - Two source links (Instagram footage, Amnesty report) were never
+    supplied - judged not needed.
+  - The mentor deferred follow-ups (final banking segment, "to whom
+    their loyalties lie", Trump attempt, "apocalypse prophecies") -
+    cross-link/extend the fundamentals entry when they arrive.
 
 ## Open question - flagged to user, unresolved
 
@@ -116,20 +138,23 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-**More Misc content.** The user's last message paused here explicitly
-("thats all for this bit after this is a bit more misc stuff i feel"),
-right after the Task 2 extension and Misc header fix were committed
-and pushed (commit `6ae137a`, deploy confirmed green). Pick up the
-same content-intake workflow (see below) for whatever misc material he
-sends next - check `~/Downloads` for newly saved images first.
+1. **Commit and push the Misc batch 2026-09-25** once the user approves:
+   the `sources/` folder, the two new Misc entries, the rationality
+   entry's follow-up link, and this file. Build and tests pass locally;
+   confirm the deploy afterwards.
+2. Then the **next mentor material** (likely Task 3, or more Misc) via
+   the raw-source workflow below.
 
 ## Working conventions from this session (not elsewhere in the repo)
 
-- **Content intake workflow**: the user pastes the mentor's Discord
-  text in chat, with inline `image N` markers at the point each image
-  belongs. He separately saves the actual files to `~/Downloads`
-  (named inconsistently, e.g. `Image 1.jpg` / `image 2.jpg`) before or
-  after pasting the text - check there. He is on holiday without his
+- **Raw-source workflow** (per `CLAUDE.md`, in use since 2026-09-25):
+  each import gets `sources/<misc|tasks>/<YYYY-MM-DD>-<label>/` with
+  `raw.md` (the user's paste, never edited), `images/` (original
+  files), and `ANALYSIS.md` (Claude's interpretation, approved by the
+  user before implementation). `sources/` is outside `src/`, so the
+  build never loads it. Images may still arrive in `~/Downloads` first
+  (named inconsistently, e.g. `Image 1.jpg` / `image 2.jpg`) - copy
+  originals into `images/`. He is on holiday without his
   PC, so he cannot yet produce his own backtest data (the "My task"
   side) - only mentor content is being imported for now.
 - **Content triage rule**: preserve mentor text close to verbatim,
