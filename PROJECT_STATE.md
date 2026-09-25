@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-25 (after Misc batch 2026-09-25 implemented, not yet committed).
+Last updated: 2026-09-25 (Task 3 implemented, awaiting user approval - not yet committed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -41,7 +41,12 @@ Each Task now has **two branches**, not a flat subtask list:
 - Section headings inside `task.md` bodies use `## Heading` and render
   styled (amber, uppercase) via `.assignment-body h2` in
   `src/styles/global.css`. `**bold**` renders amber too - used for
-  load-bearing callouts (deadlines, scope changes).
+  load-bearing callouts (deadlines, scope changes). Added for Task 3
+  (all scoped to `.assignment-body`, reusable by any task): `### h3`
+  sub-headings, markdown tables, list spacing, `> blockquote` styled
+  as an amber-edged callout box (used only for formal deliverables -
+  not for ordinary mentor quotes), and `scroll-margin-top` on h2/h3 so
+  in-page `#anchor` links clear the sticky header.
 - Misc entries (`src/content/misc/<slug>/index.md`) are for mentor
   material that isn't specific to one task. They support an optional
   `relatedTask: "N"` frontmatter field (added this session to
@@ -105,6 +110,30 @@ still done by hand.
   the shared `.subtask-header`/`.subtask-badge` classes used by
   task/subtask pages were deliberately left untouched.
 - All placeholder content (old Task 1/2, old Misc example) deleted.
+- **Task 3 - RR, Timeframe Strength & Timing** (source + approved
+  analysis in `sources/tasks/2026-09-25-task-3/`; 18 images copied
+  into `src/content/tasks/3/` with descriptive names - mapping in
+  `ANALYSIS.md` section 9). One assignment page, no sub-pages: Overview
+  (mentor's 3-subsection list) -> At a glance table (3.1/3.2/3.3 +
+  timing + deadline, with in-page links) -> `## 1 · Risk to reward and
+  the % compound` (-> Task 3.1 callout) -> `## 2 · Timeframe strength
+  and the HTF true stop` (refresh Img 25-30, TFS definition, 5 rules,
+  TF tier table, 15m->1hr->3hr, Task 3.2, 11hr->1min, Task 3.3, Task
+  aid) -> `## 3 · Key timing` -> Deadline -> After the deadline.
+  Chart annotations reproduced as text under each image. Decisions
+  (user-approved): "3.1" is marked as an editorial label (mentor's own
+  labels are only 3.2/3.3); "breakdown of each swing low..." is the
+  lead-in to 3.3; forming-vs-established explained conservatively in
+  one italic note (10 min+ backing established, HTF may be forming);
+  ATT FU / LAOL / x3 entry model left undefined as written; "1min -
+  4hr" kept verbatim; post-deadline summary shown verbatim plus a
+  two-column enter/target table introduced as "appears to split";
+  Claude's maths/calendar/DST notes kept out of the site. Rule 3's raw
+  "complete to our manual capability" published as "compete" (obvious
+  typo, per analysis). Dropped: the three "react ✅ when complete"
+  lines, Discord reply markers, emoji chatter. Cross-links added from
+  Task 2's Related line and the Misc morality entry ("Task 3 will be
+  given on Friday") to Task 3. `/tasks/3/mine/` is empty.
 - **Misc batch 2026-09-25** (first import via the new raw-source
   workflow - source + analysis in `sources/misc/2026-09-25-misc-batch/`).
   A long text-only mentor post (moral relativism, fundamentals, 2023-24
@@ -141,12 +170,15 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. **Commit and push the Misc batch 2026-09-25** once the user approves:
-   the `sources/` folder, the two new Misc entries, the rationality
-   entry's follow-up link, and this file. Build and tests pass locally;
-   confirm the deploy afterwards.
-2. Then the **next mentor material** (likely Task 3, or more Misc) via
-   the raw-source workflow below.
+1. **Commit and push Task 3** once the user approves the implementation:
+   `sources/tasks/2026-09-25-task-3/`, `src/content/tasks/3/`,
+   `src/styles/global.css`, the two cross-link edits (Task 2 `task.md`,
+   Misc morality entry) and this file. Tests + clean build pass
+   locally; confirm the deploy afterwards. (The Misc batch 2026-09-25
+   is already committed and deployed - commits `304b640`, `d820ad9`,
+   `6acff89`.)
+2. Then the **next mentor material** (more tasks or Misc) via the
+   raw-source workflow below.
 
 ## Working conventions from this session (not elsewhere in the repo)
 

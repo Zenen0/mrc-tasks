@@ -130,4 +130,4 @@ And then one more example - this time starting from the 1 min to 4hr.
 
 ---
 
-Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) (the 3 concepts this task builds on, plus its corrections) and [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/).
+Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) (the 3 concepts this task builds on, plus its corrections), [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) (set after this deadline) and [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/).

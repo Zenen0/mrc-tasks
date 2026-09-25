@@ -49,7 +49,7 @@ The minds that matter most are the banks. They control the flow of money and gol
 
 ## Discipline: repetition, hours, self-reliance
 
-**Task 3 will be given on Friday.** Until then:
+**Task 3 will be given on Friday** (see [Task 3](/mrc-tasks/tasks/3/assignment/)). Until then:
 
 - **Keep repeating the previous tasks.** "You are setting the foundations by refining a true top down to the 1 min and that is already a step above most in RR extraction." (See [Task 1](/mrc-tasks/tasks/1/assignment/) and [Task 2](/mrc-tasks/tasks/2/assignment/).)
 - **Focus on your own backtesting.** "Everything you need is already provided."
