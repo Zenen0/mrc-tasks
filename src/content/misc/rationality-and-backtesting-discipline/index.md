@@ -1,6 +1,7 @@
 ---
 title: "Rationality & Backtesting Discipline"
 date: 2026-09-21
+order: 1
 relatedTask: "1"
 mentorPrompt: |
   Mr Casino's foundational note on rationality as the base beneath all trading

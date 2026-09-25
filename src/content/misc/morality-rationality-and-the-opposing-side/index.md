@@ -1,6 +1,7 @@
 ---
 title: "Morality, Rationality & the Opposing Side"
 date: 2026-09-25
+order: 2
 relatedTask: "2"
 mentorPrompt: |
   Mr Casino's follow-up to the earlier rationality note: why a "correct morality" sits

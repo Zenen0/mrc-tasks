@@ -19,7 +19,7 @@ const tasks = defineCollection({
 
 const misc = defineCollection({
   loader: glob({ pattern: '**/index.md', base: './src/content/misc', generateId: stripIndexSuffix }),
-  schema: entrySchema,
+  schema: entrySchema.extend({ order: z.number().optional() }),
 });
 
 const taskMeta = defineCollection({

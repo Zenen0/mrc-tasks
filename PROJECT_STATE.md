@@ -46,7 +46,10 @@ Each Task now has **two branches**, not a flat subtask list:
   material that isn't specific to one task. They support an optional
   `relatedTask: "N"` frontmatter field (added this session to
   `src/content.config.ts`), which shows a clickable "-> Task N: title"
-  tag on both the Misc card and the entry page.
+  tag on both the Misc card and the entry page. They also support an
+  optional `order: N` field: `/misc/` sorts by `order`, then `date`,
+  then `title`. The current teaching order is 1 Rationality, 2 Morality,
+  3 Fundamentals. Give new entries an explicit `order`.
 - Subtask `index.md` no longer needs `mentorPrompt` repeated in its
   frontmatter now that the task-level assignment page exists - only
   set it for a note specific to that one subtask. The subtask

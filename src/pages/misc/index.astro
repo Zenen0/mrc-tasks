@@ -19,7 +19,12 @@ const taskMetaEntries = await getCollection('taskMeta');
   {entries.length === 0 && <p class="empty-state">No misc entries yet.</p>}
   <div class="card-grid">
     {entries
-      .sort((a, b) => a.id.localeCompare(b.id))
+      .sort(
+        (a, b) =>
+          (a.data.order ?? Infinity) - (b.data.order ?? Infinity) ||
+          a.data.date.getTime() - b.data.date.getTime() ||
+          a.data.title.localeCompare(b.data.title),
+      )
       .map((entry) => {
         const images = filterImagesForEntry(globMap, `/src/content/misc/${entry.id}`, entry.data.captions ?? {});
         const { cover, count } = getCoverImage(images);

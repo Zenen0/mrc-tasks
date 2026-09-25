@@ -1,6 +1,7 @@
 ---
 title: "Fundamentals: USD, the Banks & Gold"
 date: 2026-09-25
+order: 3
 relatedTask: "2"
 mentorPrompt: |
   Mr Casino's fundamental model of the market: the USD banking system, the
