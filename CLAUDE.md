@@ -79,6 +79,21 @@ When text, filenames, numbering, timeframe labels, chart content, or ordering co
 
 Do not blindly follow an obviously incorrect image label simply because it appears in the raw source.
 
+### Source wording and fidelity
+
+- Raw mentor wording must always remain preserved in `raw.md`.
+- In analysed and published material, paraphrase freely where this improves clarity without changing meaning.
+- Preserve the mentor's exact wording for:
+  - formal task instructions,
+  - definitions,
+  - quantitative requirements,
+  - important rules,
+  - distinctive teaching phrases,
+  - warnings,
+  - and any wording where paraphrasing could alter interpretation.
+- Avoid unnecessary repeated phrases such as "the mentor says". Use direct instructional prose where attribution is obvious.
+- Explicitly attribute opinions, claims, or viewpoints where needed.
+
 ---
 
 ## Raw import workflow
