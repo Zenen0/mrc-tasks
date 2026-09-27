@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-25 (Task 3 implemented, awaiting user approval - not yet committed).
+Last updated: 2026-09-27 (Misc batch 2 implemented, awaiting user approval - not yet committed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -53,8 +53,17 @@ Each Task now has **two branches**, not a flat subtask list:
   `src/content.config.ts`), which shows a clickable "-> Task N: title"
   tag on both the Misc card and the entry page. They also support an
   optional `order: N` field: `/misc/` sorts by `order`, then `date`,
-  then `title`. The current teaching order is 1 Rationality, 2 Morality,
-  3 Fundamentals. Give new entries an explicit `order`.
+  then `title`. The current order is 1 Rationality, 2 Morality,
+  3 Fundamentals, 4 Earning the Advanced Stage, 5 Mr Casino's Worldview.
+  Give new entries an explicit `order`.
+- **Inline images in Misc bodies** (added for Misc batch 2): images go
+  in `src/assets/misc/<topic>/` (NOT the entry folder - anything in
+  `src/content/misc/<slug>/` is auto-shown in the page's "Images" grid)
+  and are referenced from the markdown with a relative path. Styled by
+  `.response img`; `.response img` added to the lightbox trigger. A
+  `<details class="response-gallery"><summary>..</summary>` wrapper
+  (blank lines around the images) gives a collapsible thumbnail grid;
+  alt text doubles as the lightbox caption.
 - Subtask `index.md` no longer needs `mentorPrompt` repeated in its
   frontmatter now that the task-level assignment page exists - only
   set it for a note specific to that one subtask. The subtask
@@ -133,7 +142,9 @@ still done by hand.
   typo, per analysis). Dropped: the three "react ✅ when complete"
   lines, Discord reply markers, emoji chatter. Cross-links added from
   Task 2's Related line and the Misc morality entry ("Task 3 will be
-  given on Friday") to Task 3. `/tasks/3/mine/` is empty.
+  given on Friday") to Task 3. `/tasks/3/mine/` is empty. Committed as
+  `628b69d` and deployed (GitHub Actions success; `/tasks/3/assignment/`
+  live, HTTP 200).
 - **Misc batch 2026-09-25** (first import via the new raw-source
   workflow - source + analysis in `sources/misc/2026-09-25-misc-batch/`).
   A long text-only mentor post (moral relativism, fundamentals, 2023-24
@@ -157,6 +168,37 @@ still done by hand.
   - The mentor deferred follow-ups (final banking segment, "to whom
     their loyalties lie", Trump attempt, "apocalypse prophecies") -
     cross-link/extend the fundamentals entry when they arrive.
+    (Batch 2 delivered the banking/"loyalties"/"apocalypse" threads;
+    only the Trump assassination-attempt thread is still open.)
+- **Misc batch 2026-09-25 (2)** (source + approved analysis in
+  `sources/misc/2026-09-25-misc-batch-2/`; the mentor's long
+  "Miscellaneous" worldview post, ~late Oct-early Nov 2024, plus the
+  advanced-stage announcement). Implemented, not yet committed:
+  - New `misc/earning-the-advanced-stage/` (order 4, no relatedTask):
+    criteria verbatim, following-instructions test, "value what is
+    shared already", what is watched. Framed as a future stage to be
+    earned (the user is not a member); the private server is not named
+    ("advanced, invite-only stage"), no operational details.
+  - New `misc/mr-casinos-worldview-banking-power-and-history/` (order 5,
+    no relatedTask): banking critique, Freemasonry account, claims
+    list, present-day reading, forecast. Every claim labelled
+    (Documented / his interpretation / forecast / disputed /
+    unsupported / contradicted / fabricated). Per the user's
+    instruction this batch, disputed material is **included with status
+    labels** rather than kept raw-only (JFK, 9/11, Pike letter, the
+    Zevi/Frank "entwined" claim labelled as a recognised antisemitic
+    conspiracy narrative). 12 images (source images 1-12) in
+    `src/assets/misc/worldview/`; images 13-17 raw-only.
+  - Morality entry: new section "Knowledge as an edge: be informed,
+    verify everything" (before "Personal practice").
+  - Fundamentals entry: new section "The wider picture: challenges to
+    USD dominance (late 2024)" (before "Caveats"); "Still to come"
+    replaced by "Deferred threads" with per-thread status.
+  - Rationality entry: cross-link to Earning the Advanced Stage.
+  - Raw-only: channel logistics, sign-offs, "xd", "don't bash those
+    who make the mistake", images 13-17, the user's own annotations.
+  - Batch 1's raw-only "loyal to a different creed" passage was NOT
+    revisited.
 
 ## Open question - flagged to user, unresolved
 
@@ -170,15 +212,18 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. **Commit and push Task 3** once the user approves the implementation:
-   `sources/tasks/2026-09-25-task-3/`, `src/content/tasks/3/`,
-   `src/styles/global.css`, the two cross-link edits (Task 2 `task.md`,
-   Misc morality entry) and this file. Tests + clean build pass
-   locally; confirm the deploy afterwards. (The Misc batch 2026-09-25
-   is already committed and deployed - commits `304b640`, `d820ad9`,
-   `6acff89`.)
-2. Then the **next mentor material** (more tasks or Misc) via the
-   raw-source workflow below.
+1. **Commit and push Misc batch 2** once the user approves:
+   `sources/misc/2026-09-25-misc-batch-2/`, the two new Misc entries,
+   the three edited Misc entries, `src/assets/misc/worldview/`,
+   `src/styles/global.css`, `src/scripts/lightbox.js` and this file
+   (which also carries the uncommitted correction marking Task 3 as
+   committed/deployed). Confirm the deploy afterwards.
+2. Then the **next mentor-material batch** via the raw-source workflow
+   below (`raw.md`, `images/`, `ANALYSIS.md`; approval before
+   implementing).
+
+All prior work is committed and deployed: Misc batch 2026-09-25
+(`304b640`, `d820ad9`, `6acff89`) and Task 3 (`628b69d`).
 
 ## Working conventions from this session (not elsewhere in the repo)
 

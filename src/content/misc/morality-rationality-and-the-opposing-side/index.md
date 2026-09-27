@@ -8,7 +8,9 @@ mentorPrompt: |
   alongside rationality as a trading edge, why every trade means understanding
   the minds on the other side, and a firm reminder on backtesting hours,
   repetition and self-reliance. Posted late Sep 2024 (inferred), in the gap
-  between the Task 2 extension and Task 3.
+  between the Task 2 extension and Task 3. Extended with "Knowledge as an
+  edge", from his later "Miscellaneous" post (late Oct - early Nov 2024,
+  inferred).
 ---
 
 ## From rationality to correct morality
@@ -41,6 +43,29 @@ The earlier note ([Rationality & Backtesting Discipline](/mrc-tasks/misc/rationa
 
 The minds that matter most are the banks. They control the flow of money and gold, and theirs is the footprint we follow (see [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)). Mr Casino also describes a wider split in the world: a power-seeking financial elite; those who oppose it with rational thought; and those without a firm rational morality, who "can be bought/manipulated". No specific trading rule is drawn from this.
 
+## Knowledge as an edge: be informed, verify everything
+
+*From a later post (late Oct - early Nov 2024, inferred).* Mr Casino returns to the same idea: trading against the banks is also a contest of knowledge.
+
+> To trade as we do and extract against the manipulation means one has to be intrinsically in mind the side of good "red pill".
+
+He relates this "to your trading confidently at the highest level", and calls it "a responsibility for your own benefit to attain maximum potential - to be informed and break free from the programming."
+
+How he says to go about it:
+
+- **Keep fact and opinion apart.** "The facts matter more than my complete take on the subject (can always be wrong in opinion, not in fact)." Opinions can be revised; facts have to be right.
+- **Use tools, don't lean on them.** "Chat GPT is a wonderful tool for ease of research. When one has the right questions. Use its resource, do not be reliant."
+- **Verify.** "One should be open-minded. Verify all facts. Be open for discussion. Find the real truth to act from." What he shares is meant to be "verified with proven sources and rationality", not taken on trust.
+- **Learn from history.** "What is history there for if not to learn? To grow, one must be up to date and use the lessons of the past for further true growth."
+- **Perspective, even when it is uncomfortable.** "It is one's decision how to react to the uncomfortable truths. The genuine mind is happy to at least gain perspective."
+
+Two lines sum it up:
+
+- **"All are human no matter their perceived might - the only power is the barrier of knowledge that separates."** The opposing side's advantage is knowledge, and knowledge can be closed.
+- **"And only with knowledge only do we transcend..."**
+
+This is the practical side of that post. The worldview he applies it to (banking, Freemasonry, geopolitics) is recorded separately, with each claim's status marked, in [Mr Casino's Worldview: Banking, Power & History](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/).
+
 ## Personal practice
 
 - **Perspective:** appreciate the blessings others are unable to have. Focus on the true purpose of doing good and eliminate everything else, "for your own power". "Why squabble over trivial affairs."
@@ -60,4 +85,4 @@ The minds that matter most are the banks. They control the flow of money and gol
 
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/)

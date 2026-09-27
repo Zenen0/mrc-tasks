@@ -10,7 +10,8 @@ mentorPrompt: |
   of 2023-24 events against gold. This is Mr Casino's framework and
   interpretation, not independently verified fact - in his own words, some of
   it "may fall under speculation although highly likely". Posted late Sep 2024
-  (inferred).
+  (inferred); "The wider picture" section comes from his later
+  "Miscellaneous" post (late Oct - early Nov 2024, inferred).
 ---
 
 ## Where this fits
@@ -76,6 +77,36 @@ Mr Casino's recurring pattern: war and escalation mean more spending and inflati
 - **Pager and radio explosions in Lebanon:** "Global security is undermined. Gold prices go higher."
 - **Nasrallah killed; open war with Lebanon:** "Gold price shooting up before market closure - the fundamental at play." See *Reading news against the chart* above.
 
+## The wider picture: challenges to USD dominance (late 2024)
+
+*From his later "Miscellaneous" post (late Oct - early Nov 2024, inferred).* This extends step 2 of the model above ("control is incomplete"). Each point separates the observable context from his reading and his forecasts, which were made as of late 2024.
+
+**The frame.** "Although the banking power is vast and strong, much of the world has caught on." There are many resisting powers: "Some are whole countries, some financially, some militarily, some via proxies, some via freedom movements - there are many, but not united - each with their own benefits in mind only, some causes more just than others." They are not a single bloc, and not all of them are on the right side in his view.
+
+**Russia**
+- *Context:* the war in Ukraine continues, and Russia remains under Western sanctions.
+- *His reading:* "Russia is no ordinary 'enemy' but a self-sustaining superpower of its own. Each day their strength grows is a threat to the world's USD banking dominance."
+
+**China, Taiwan and BRICS**
+- *Context:* the US and China are in an ongoing trade and technology conflict. BRICS exists and has discussed alternatives to settling trade in USD.
+- *His reading:* "Already in economic war, a Chinese-Taiwan conflict would be most disastrous for the world economy (supply of major goods disrupted/major war costs)." This is the supply-shock channel: fewer goods and higher war spending, the same mechanism as the Houthi shipping disruption above.
+- *Forecast:* "China knows of this and so likely prepares for that moment to strike when it is most advantageous. They will let the USD hegemony fall naturally until then - BRICS being one means."
+
+**North Korea**
+- *His reading:* "a wildcard that possesses immense destruction potential, with a formidable military power", with "some powerful allies (China/Russia - for now)".
+- *Forecast:* "A build-up for an invasion of South Korea is on the horizon."
+
+**Wider instability**
+- *Context:* the 2024 Bangladesh uprising, the India/Pakistan/Kashmir conflict, and Afghanistan under the Taliban since 2021. He lists these as part of a broadly unstable world.
+
+**The Middle East as the centre**
+- "It all leads back to the present age", above all the war in Gaza, "a war that spills over the whole Middle East (a significant portion of the world and thereby everyone else)."
+- *Forecast:* it "will only escalate for peace is not the motive", relations are "beyond repair", and "an inevitable major change is undoubtedly coming."
+
+**What this means for the model.** Nothing here is a trading rule. It widens the backdrop behind the worked example: every rival that grows stronger, and every war or supply shock that raises spending, puts more pressure on the USD and so, in his framework, more upward pressure on gold that the banks have to manage. As with the news section above, the bias still comes from the chart first. The macro backdrop supports conviction in holding.
+
+His broader views on the banking system, power and the Middle East from the same post are in [Mr Casino's Worldview: Banking, Power & History](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/).
+
 ## Caveats
 
 - This is "a more complex affair" that needs personal research: "do not be fooled by false sources and know what to look for. Everything linked back to rationality."
@@ -86,10 +117,14 @@ Mr Casino's recurring pattern: war and escalation mean more spending and inflati
 
 This material came inside Mr Casino's first public statement on the Israel-Gaza war and wider geopolitics. He had avoided such a statement until then "for the greater purpose of the team and security". He ties that stance to this framework in three ways: fundamentals (war spending drives gold), market psychology (understanding the opposing side), and his choice not to give the full step-by-step system to those he sees as supporting what he calls "genocidal causes". His broader political claims are kept in the source archive rather than presented here.
 
-## Still to come
+## Deferred threads
 
-Several parts of this discussion were deferred: a final segment on the banking system, more on the Trump assassination attempt, and "apocalypse prophecies" as a fundamentals topic the team "is not ready for at this stage". They'll be added here or cross-linked when they arrive.
+This discussion promised several follow-ups. Their status:
+
+- **A final segment on the banking system, and "to whom their loyalties lie":** delivered in his later "Miscellaneous" post. See [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) (*The banking-system critique*, *Freemasonry and power*, and *"Why?" - his answer*).
+- **"Apocalypse prophecies"** (a topic he said the team "is not ready for at this stage"): addressed in the same post, as a motive he attributes to those in power rather than as a market topic. See *"Why?" - his answer* in the [Worldview entry](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/), where its status is marked.
+- **More on the Trump assassination attempt:** still to come. The later post only mentions Trump in passing.
 
 ---
 
-Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/)
+Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/)

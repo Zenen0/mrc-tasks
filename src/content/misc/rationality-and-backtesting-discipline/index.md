@@ -40,4 +40,4 @@ One must store all your backtesting data - it is an obligation. However it does 
 
 ---
 
-Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · Follow-up: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/)
+Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · Follow-up: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · Completing all backtesting tasks is the first criterion in [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/)

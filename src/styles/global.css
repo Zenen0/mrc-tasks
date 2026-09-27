@@ -334,6 +334,46 @@ main {
   cursor: pointer;
 }
 
+/* Images embedded in a Misc entry's markdown body (click-to-zoom via lightbox). */
+.response img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--space-3) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+/* Collapsible group of supporting screenshots: <details class="response-gallery">. */
+.response-gallery {
+  margin: var(--space-3) 0;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.response-gallery summary {
+  cursor: pointer;
+  color: var(--color-accent);
+}
+
+.response-gallery p {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-2);
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+.response-gallery img {
+  width: 100%;
+  margin: 0;
+}
+
+.response > p > img {
+  max-width: min(100%, 420px);
+}
+
 .branch-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

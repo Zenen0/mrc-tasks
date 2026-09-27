@@ -3,7 +3,7 @@ const imageEl = document.getElementById('lightbox-image');
 const timestampEl = document.getElementById('lightbox-timestamp');
 const captionEl = document.getElementById('lightbox-caption');
 
-const TRIGGER_SELECTOR = '.thumb, .assignment-body img, .mentor-images img';
+const TRIGGER_SELECTOR = '.thumb, .assignment-body img, .mentor-images img, .response img';
 
 let thumbs = [];
 let currentIndex = -1;
