@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-27 (Misc batch 2 implemented, awaiting user approval - not yet committed).
+Last updated: 2026-09-27 (Misc batch 2 committed and deployed as `1f4853f`; mentor workflow skills added).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -173,7 +173,7 @@ still done by hand.
 - **Misc batch 2026-09-25 (2)** (source + approved analysis in
   `sources/misc/2026-09-25-misc-batch-2/`; the mentor's long
   "Miscellaneous" worldview post, ~late Oct-early Nov 2024, plus the
-  advanced-stage announcement). Implemented, not yet committed:
+  advanced-stage announcement). Committed as `1f4853f` and deployed:
   - New `misc/earning-the-advanced-stage/` (order 4, no relatedTask):
     criteria verbatim, following-instructions test, "value what is
     shared already", what is watched. Framed as a future stage to be
@@ -212,18 +212,26 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. **Commit and push Misc batch 2** once the user approves:
-   `sources/misc/2026-09-25-misc-batch-2/`, the two new Misc entries,
-   the three edited Misc entries, `src/assets/misc/worldview/`,
-   `src/styles/global.css`, `src/scripts/lightbox.js` and this file
-   (which also carries the uncommitted correction marking Task 3 as
-   committed/deployed). Confirm the deploy afterwards.
-2. Then the **next mentor-material batch** via the raw-source workflow
-   below (`raw.md`, `images/`, `ANALYSIS.md`; approval before
-   implementing).
+1. The **next mentor-material batch**, using the skills below: run
+   `/mentor-new task <N>` or `/mentor-new misc` (no batch is scaffolded yet).
 
-All prior work is committed and deployed: Misc batch 2026-09-25
-(`304b640`, `d820ad9`, `6acff89`) and Task 3 (`628b69d`).
+All work is committed and deployed: Misc batch 2026-09-25 (`304b640`,
+`d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2 (`1f4853f`).
+
+## Mentor workflow skills (project-local, `.claude/skills/`)
+
+Tested and committed 2026-09-27. They automate the raw-source workflow
+below. `CLAUDE.md` stays the authority:
+1. `/mentor-new task <N>` | `misc` - scaffold `sources/...` (raw.md header,
+   `images/.gitkeep`).
+2. The user populates `raw.md` (each image label on its own line) and
+   downloads the referenced images to `~/Downloads`.
+3. `/mentor-analyse <batch>` - import and verify the images, write
+   `ANALYSIS.md`, stop for user approval.
+4. `/mentor-implement <batch>/ANALYSIS.md` - fresh session, approved
+   architecture only, full validation, update this file.
+5. User review, then commit/push/deploy. `/mentor-implement` deliberately
+   stops before committing or pushing and needs explicit user approval.
 
 ## Working conventions from this session (not elsewhere in the repo)
 
