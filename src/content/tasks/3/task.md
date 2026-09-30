@@ -148,6 +148,8 @@ These are the only rules that are set for now that will become more clear upon T
 4. **Only on the 3hr + will we pay attention to confirmed FU closures that indicate a prevalent direction, on the lower timeframes we are only concerned with HCS + negation.**
 5. **A negation can be counted two candles after an FU** (if the first candle after doesn't make a complete FU wick but reacts - ATT FU).
 
+*ATT FU (attempted FU), negation, HCS and x3 were later defined with his charts: see [Terminology](/mrc-tasks/reference/terminology/#attempted-fu). The "x3 entry model" is still undefined.*
+
 | True stop on | Trade type |
 |---|---|
 | 10 min + | scalp (the minimum backing for any entry) |
@@ -158,6 +160,8 @@ These are the only rules that are set for now that will become more clear upon T
 The swing TFS ladder, from the 3hr chart below: "(3hr - 5hr - 7hr - 11hr TFS)".
 
 *Note on "forming" vs "established": rule 3 says "Established in most cases, sometimes taken as forming", while the task aid below says "Minimum 10 min + TS Established is mandatory (not as forms - TFS is too weak)". In the worked examples (11hr to 1 min, below) the higher timeframes are still "forming" while the 15 min TS is already "established". Read together: the 10 min + backing itself must be established; the higher timeframe structure above it may still be forming.*
+
+*A later worked example also shows an entry on a still-forming 10 min TS, which he labels "More aggressive but with full TFS factors and 10 min TS forming" (valid, but more aggressive), alongside the standard entry "After 10 min TS EST": see [Worked Example · 1 min entries](/mrc-tasks/reference/worked-example-3000-reversal/#1-min-the-entries).*
 
 ### 15 min → 1hr → 3hr (worked example)
 
@@ -412,4 +416,4 @@ These tasks set the strong foundation. Of course it has not all the elements rel
 
 ---
 
-Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/), [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) (the 4hr - 1 min breakdown this task refreshes) and [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (the discipline notes given just before Task 3 was set).
+Related: [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/), [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) (the 4hr - 1 min breakdown this task refreshes) and [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (the discipline notes given just before Task 3 was set). Taught after this task: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/), which applies these rules, and the [Worked Example at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/); terms in [Terminology](/mrc-tasks/reference/terminology/).

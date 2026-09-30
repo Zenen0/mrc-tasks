@@ -21,6 +21,24 @@ this file.
 - The user's own work lives at `/tasks/N/mine/` (subtasks `src/content/tasks/N/<id>/index.md`).
   Never mix mentor material into it.
 
+## Reference entry (taught technical framework)
+
+- File: `src/content/reference/<slug>/index.md`, rendered at
+  `/reference/<slug>/`, listed at `/reference/` (nav: Tasks · Reference ·
+  Misc). Same frontmatter as Misc (`title`, `date`, `order`, optional
+  `mentorPrompt`); no `relatedTask` - Reference pages relate to several Tasks,
+  so use a closing "Related:" line instead.
+- Body renders inside `.assignment-body` (same styling as Task assignments:
+  amber h2, h3, tables, `scroll-margin-top`). Here `> blockquote` is the
+  mentor's own definition or rule statement, verbatim.
+- Images: `src/assets/reference/<topic>/` (never the entry folder), referenced
+  as `![alt](../../../assets/reference/<topic>/file.jpg)`, full width,
+  click-to-zoom, annotations transcribed under each image.
+- Pages so far: `terminology` (1), `rules-of-analysis` (2),
+  `worked-example-3000-reversal` (3). Stable anchors: Terminology `#fu`,
+  `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
+  Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`.
+
 ## Misc entry
 
 - File: `src/content/misc/<slug>/index.md`, rendered at `/misc/<slug>/`.
@@ -53,7 +71,7 @@ this file.
   `.response-gallery`, `.misc-header` / `.misc-badge`.
 - `src/scripts/lightbox.js`: triggers on `.thumb`, `.assignment-body img`,
   `.mentor-images img`, `.response img`.
-- `src/content.config.ts`: collection schemas. Add a field only if genuinely
+- `src/content.config.ts`: collection schemas (`tasks`, `misc`, `reference`, `taskMeta`). Add a field only if genuinely
   needed.
 - `ADDING-CONTENT.md`: user-facing how-to. Update it if a convention changes.
 

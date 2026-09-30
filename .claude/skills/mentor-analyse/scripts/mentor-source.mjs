@@ -14,7 +14,7 @@
 //       verify no other raw.md line changed. Refuses if anything is unresolved.
 //
 // A "reference line" is a line whose whole content is an image label such as
-// `image 25`, `Image 3.png`, `misc image 17` (up to two words before "image").
+// `image 25`, `Image 3.png`, `misc image 17`, `misc 18` (up to two words before "image"/"misc").
 // Mentions inside prose ("linking to image 31") are reported but never changed.
 // Run from the repository root.
 
@@ -24,9 +24,9 @@ import os from 'node:os';
 import crypto from 'node:crypto';
 
 const IMG_EXT = ['.jpg', '.jpeg', '.png', '.webp', '.gif', '.heic'];
-const REF_RE = /^((?:[A-Za-z][\w-]*\s+){0,2}image\s*\d+[a-z]?)(\.(?:jpe?g|png|webp|gif|heic))?$/i;
+const REF_RE = /^((?:[A-Za-z][\w-]*\s+){0,2}(?:image|misc)\s*\d+[a-z]?)(\.(?:jpe?g|png|webp|gif|heic))?$/i;
 const LINKED_RE = /^!\[([^\]]*)\]\(<?(\.?\/?images\/[^>)]+)>?\)$/;
-const INLINE_RE = /\b(?:[A-Za-z]+\s+)?image\s*\d+\b/gi;
+const INLINE_RE = /\b(?:[A-Za-z]+\s+)?(?:image|misc)\s*\d+\b/gi;
 const HEADER_END = '---';
 
 function fail(msg) {
@@ -187,7 +187,7 @@ function numberingReport(labels) {
   // Group by prefix ("image", "misc image") and report gaps / repeats.
   const groups = new Map();
   for (const l of labels) {
-    const m = norm(l).match(/^(.*?image)\s*(\d+)/);
+    const m = norm(l).match(/^(.*?(?:image|misc))\s*(\d+)/);
     if (!m) continue;
     if (!groups.has(m[1])) groups.set(m[1], []);
     groups.get(m[1]).push(Number(m[2]));

@@ -71,6 +71,24 @@ knowledge (economics, geopolitics, psychology, philosophy, morality, history,
 systems thinking, worldview) where it means something, and tie it to trading
 where he does.
 
+## Destination test: Task, Reference or Misc
+
+The `sources/tasks/` vs `sources/misc/` folder is only an intake location.
+Route each part of a batch by meaning (user-approved rule, 2026-09-30):
+
+1. **Is it assigned?** (deliverable, count, deadline, scope change or
+   correction to a Task) -> **Task** (`task.md` of that Task).
+2. **Is it technical trading framework taught for use across trading?**
+   (definitions, rules, checklists, models, worked examples, technical Q&A on
+   charts; execution psychology only when he places it inside his technical
+   rules) -> **Reference** (`src/content/reference/<slug>/`).
+3. **Otherwise** (psychology, rationality, morality, fundamentals and market
+   context, worldview, progression / advanced-stage) -> **Misc**.
+
+Prefer extending an existing Reference page (e.g. adding a term to
+Terminology) over creating a new one. Definitions already given inside a Task
+stay there; Reference quotes and links them.
+
 ## Epistemic labels (use consistently)
 
 | Label | Meaning |
@@ -90,8 +108,9 @@ raw-only), and let the user decide on sensitive material.
 
 ## Implementation architecture checklist (final section)
 
-- New entries to create (Task: sections inside `task.md`; Misc: entry slug,
-  title, `order`, `relatedTask`), and why.
+- New entries to create (Task: sections inside `task.md`; Reference or Misc:
+  entry slug, title, `order`, and `relatedTask` for Misc), and why, per the
+  destination test above.
 - Existing entries or sections to **extend** instead, with the exact target
   section and insertion point.
 - Broader knowledge worth preserving, and where it goes.

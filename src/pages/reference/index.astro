@@ -1,0 +1,42 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../components/Layout.astro';
+import MiscCard from '../../components/MiscCard.astro';
+import { filterImagesForEntry, getCoverImage } from '../../lib/images';
+import { withBase } from '../../lib/paths';
+
+const globMap = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/reference/**/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+
+const entries = await getCollection('reference');
+---
+<Layout title="Reference" description="Mr Casino's technical trading framework: terminology, rules and worked examples taught across the tasks.">
+  <p class="page-intro">Technical trading knowledge Mr Casino has taught but not assigned: definitions, rules and worked examples that apply across every task.</p>
+  {entries.length === 0 && <p class="empty-state">No reference entries yet.</p>}
+  <div class="card-grid">
+    {entries
+      .sort(
+        (a, b) =>
+          (a.data.order ?? Infinity) - (b.data.order ?? Infinity) ||
+          a.data.date.getTime() - b.data.date.getTime() ||
+          a.data.title.localeCompare(b.data.title),
+      )
+      .map((entry) => {
+        const images = filterImagesForEntry(globMap, `/src/content/reference/${entry.id}`, entry.data.captions ?? {});
+        const { cover, count } = getCoverImage(images);
+        return (
+          <MiscCard
+            href={withBase(`/reference/${entry.id}/`, import.meta.env.BASE_URL)}
+            title={entry.data.title}
+            cover={cover}
+            imageCount={count}
+            relatedTaskLabel={null}
+            badge="REFERENCE"
+          />
+        );
+      })}
+  </div>
+</Layout>

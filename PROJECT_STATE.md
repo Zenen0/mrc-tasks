@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-27 (Misc batch 2 committed and deployed as `1f4853f`; mentor workflow skills added).
+Last updated: 2026-09-30 (Misc batch 2026-09-30 "trading reference" implemented with the new Reference section; user-approved, committed and pushed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -53,9 +53,25 @@ Each Task now has **two branches**, not a flat subtask list:
   `src/content.config.ts`), which shows a clickable "-> Task N: title"
   tag on both the Misc card and the entry page. They also support an
   optional `order: N` field: `/misc/` sorts by `order`, then `date`,
-  then `title`. The current order is 1 Rationality, 2 Morality,
-  3 Fundamentals, 4 Earning the Advanced Stage, 5 Mr Casino's Worldview.
-  Give new entries an explicit `order`.
+  then `title`. The current order is 1 Rationality, 2 Trading
+  Psychology, 3 Morality, 4 Fundamentals, 5 Earning the Advanced Stage,
+  6 Mr Casino's Worldview. Give new entries an explicit `order`.
+- **Reference section** (added 2026-09-30, nav **Tasks · Reference ·
+  Misc**): `src/content/reference/<slug>/index.md` -> `/reference/<slug>/`,
+  index at `/reference/` (cards ordered by `order`). Collection `reference`
+  in `src/content.config.ts` (same schema as misc). Pages
+  `src/pages/reference/index.astro` + `[slug].astro` (cloned from misc; the
+  body renders in `.assignment-body` so it gets Task-style h2/h3/tables/
+  anchors; the empty "Images" section is omitted). `MiscCard.astro` now takes
+  a `badge` prop (default `MISC`). Images in `src/assets/reference/<topic>/`.
+  In Reference, `> blockquote` = the mentor's verbatim definition/rule.
+- **Permanent destination rule (user-approved 2026-09-30):** Tasks = formal
+  assigned mentor work (deliverables, counts, deadlines); Reference =
+  technical trading knowledge taught but not assigned (terms, rules,
+  checklists, worked examples, technical chart Q&A); Misc = broader mindset,
+  psychology, fundamentals, worldview, progression. The `sources/tasks|misc`
+  folder is only an intake location. Recorded in
+  `.claude/skills/mentor-analyse/reference/analysis-guide.md`.
 - **Inline images in Misc bodies** (added for Misc batch 2): images go
   in `src/assets/misc/<topic>/` (NOT the entry folder - anything in
   `src/content/misc/<slug>/` is auto-shown in the page's "Images" grid)
@@ -200,6 +216,47 @@ still done by hand.
   - Batch 1's raw-only "loyal to a different creed" passage was NOT
     revisited.
 
+- **Misc batch 2026-09-30 "trading reference"** (source + approved
+  analysis in `sources/misc/2026-09-30-misc-trading-reference/`; 21 images
+  `misc 18-38`; §16 of its ANALYSIS.md holds the binding user decisions).
+  Implemented, validated, user-approved, committed and pushed to `main`:
+  - New **Reference** section (see Architecture) with three pages:
+    `reference/terminology/` (order 1: FU, attempted FU forms 1/2,
+    negation, HCS, HCS + negation, x3 / x3 negation / self-negating x3,
+    strength table, LAOL, core liquidity, "used on the charts" (Trail,
+    EST, £), "defined elsewhere" pointers; Img 18-27 in
+    `src/assets/reference/terminology/`), `reference/rules-of-analysis/`
+    (order 2: the 12 rules verbatim + editorial entry checklist + closing
+    instruction), `reference/worked-example-3000-reversal/` (order 3:
+    XAUUSD 4hr -> 1 min, shown top-down, plus the student Q&A published
+    direction-neutral; Img 29-36, 38 in `src/assets/reference/worked-3000/`).
+  - New Misc `misc/trading-psychology-the-mindset-of-clarity/` (order 2,
+    relatedTask 3): chess vs trading, RR/probability, breaks, backtest more
+    than you trade, underlying causes (money, media, society, governments,
+    entertainment, habits, maturity/doublethink, faith - attributed, not
+    sanitised), supplements with a short "personal suggestion, not medical
+    advice" caveat, "still to come". Other Misc entries renumbered.
+  - Extensions: Task 1 italic pointer after "attempted FU - a subject of
+    later discussion"; Task 2 Related line; Task 3 pointer after rule 5,
+    one italic sentence after the forming-vs-established note (forming
+    10 min TS entry = "More aggressive but with full TFS factors"), Related
+    line; Fundamentals FU -> Terminology; Rationality and Morality Related
+    lines; Worldview new "Recommended viewing" section (*2073*, 2024, dir.
+    Asif Kapadia; no streaming link).
+  - Raw-only: misc 28 (homograph search snippet - "(or close)" kept
+    verbatim, no gloss), misc 37 (Discord screenshot of another student),
+    the user's notes, streaming links, chat mannerisms.
+  - CSS: `.page-intro` (Reference index intro) and `overflow-wrap:
+    break-word` on `.response` / `.assignment-body` (a long slash-joined
+    quote overflowed at 375px).
+  - Tooling: `mentor-source.mjs` label patterns accept `misc N` as well as
+    `image N` (from the analysis session - include in the commit).
+  - Threads closed: Task 1's "attempted FU - a subject of later
+    discussion"; Task 3's undefined ATT FU / LAOL / x3. Threads opened:
+    "psychology section to be updated in more depth" (mentor's words);
+    "x3 entry model" and "x3 by x3" still undefined (advanced stage). The
+    Trump assassination-attempt thread is still open.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -212,11 +269,13 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The **next mentor-material batch**, using the skills below: run
-   `/mentor-new task <N>` or `/mentor-new misc` (no batch is scaffolded yet).
+1. The next mentor-material batch (`/mentor-new task <N>` or
+   `/mentor-new misc`). The 2026-09-30 batch is committed and deployed;
+   route new material with the Task / Reference / Misc rule.
 
-All work is committed and deployed: Misc batch 2026-09-25 (`304b640`,
-`d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2 (`1f4853f`).
+Committed and deployed before this batch: Misc batch 2026-09-25
+(`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
+(`1f4853f`), mentor workflow skills (`3b766b5`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 

@@ -35,7 +35,9 @@ shorter.
 2. Read the batch's `raw.md` in full. Decide the type from the folder
    (`sources/tasks/` = formal Task, `sources/misc/` = Misc). If the content
    contradicts the folder (e.g. a "Misc" paste that is really Task 4's
-   instructions), flag it to the user before going further.
+   instructions), flag it to the user before going further. The folder is
+   only the intake: route each part by the Task / Reference / Misc
+   destination test in `reference/analysis-guide.md`.
 
 ## 2. Import images (mechanical, via script)
 

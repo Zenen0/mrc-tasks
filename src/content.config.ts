@@ -22,9 +22,14 @@ const misc = defineCollection({
   schema: entrySchema.extend({ order: z.number().optional() }),
 });
 
+const reference = defineCollection({
+  loader: glob({ pattern: '**/index.md', base: './src/content/reference', generateId: stripIndexSuffix }),
+  schema: entrySchema.extend({ order: z.number().optional() }),
+});
+
 const taskMeta = defineCollection({
   loader: glob({ pattern: '*/task.md', base: './src/content/tasks', generateId: stripTaskMetaSuffix }),
   schema: z.object({ title: z.string() }),
 });
 
-export const collections = { tasks, misc, taskMeta };
+export const collections = { tasks, misc, reference, taskMeta };

@@ -334,6 +334,12 @@ main {
   cursor: pointer;
 }
 
+/* Long slash-joined words in mentor text (e.g. "a/b/c/d") must wrap on narrow screens. */
+.response,
+.assignment-body {
+  overflow-wrap: break-word;
+}
+
 /* Images embedded in a Misc entry's markdown body (click-to-zoom via lightbox). */
 .response img {
   display: block;
@@ -570,6 +576,13 @@ main {
 .thumb:hover,
 .thumb:focus-visible {
   border-color: var(--color-accent);
+}
+
+/* One-line section intro above a card grid (e.g. /reference/). */
+.page-intro {
+  max-width: 760px;
+  margin: 0 0 var(--space-4);
+  color: var(--color-text-muted);
 }
 
 .empty-state {

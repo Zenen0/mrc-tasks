@@ -1,7 +1,7 @@
 ---
 title: "Earning the Advanced Stage"
 date: 2026-09-27
-order: 4
+order: 5
 mentorPrompt: |
   Mr Casino's announcement of an advanced, invite-only stage for the team, and
   the criteria for being included in it. It is a future progression stage,

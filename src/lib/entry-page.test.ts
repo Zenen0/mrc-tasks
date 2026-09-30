@@ -104,4 +104,14 @@ describe('buildEntryPageData', () => {
 
     expect(warn).toHaveBeenCalledWith(expect.stringContaining('Misc example: image filename "screenshot.png"'));
   });
+
+  it('labels warnings for reference entries distinctly', () => {
+    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {});
+    const globMap: GlobMap = {
+      '/src/content/reference/example/screenshot.png': { default: image('screenshot.png') },
+    };
+    buildEntryPageData(globMap, '/src/content/reference/example', { id: 'example', data: {} });
+
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining('Reference example: image filename "screenshot.png"'));
+  });
 });

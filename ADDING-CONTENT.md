@@ -83,6 +83,12 @@ Keep going the same way for the rest of his message.
 
 Same as above, but under `src/content/misc/<slug>/` instead of `src/content/tasks/...`, and no task/subtask numbering.
 
+## New Reference entry
+
+Reference holds the mentor's technical framework that is taught but not assigned (terminology, rules, worked examples, technical Q&A). Add it by hand under `src/content/reference/<slug>/index.md` with the same frontmatter as a Misc entry (`title`, `date`, `order`, optional `mentorPrompt`). Put its images in `src/assets/reference/<topic>/` (not the entry folder) and reference them from the markdown, e.g. `![alt](../../../assets/reference/<topic>/file.jpg)`. The local form doesn't cover Reference entries.
+
+Which section? Assigned work (deliverable, count, deadline) goes in a **Task**; taught technical framework goes in **Reference**; everything else (psychology, fundamentals, worldview, progression) goes in **Misc**.
+
 ## Publishing
 
 ```bash

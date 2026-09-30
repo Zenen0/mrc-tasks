@@ -1,7 +1,7 @@
 ---
 title: "Fundamentals: USD, the Banks & Gold"
 date: 2026-09-25
-order: 3
+order: 4
 relatedTask: "2"
 mentorPrompt: |
   Mr Casino's fundamental model of the market: the USD banking system, the
@@ -45,7 +45,7 @@ The banks can hold gold down only so far before fundamental buying pressure over
 
 ## On the chart: FU and the fractal approach
 
-- "Every move of price action shown is via all markets' base programmed nature based on liquidity manipulation via FU." FU is the manipulated high/low; see [Task 1](/mrc-tasks/tasks/1/assignment/) and Task 2's objectives.
+- "Every move of price action shown is via all markets' base programmed nature based on liquidity manipulation via FU." FU is the manipulated high/low (definitions and charts: [Terminology](/mrc-tasks/reference/terminology/#fu)); see [Task 1](/mrc-tasks/tasks/1/assignment/) and Task 2's objectives.
 - FU is "our weapon to study the true market order flow from the naked eye."
 - From it comes the **fractal approach** to extraction: scalp, intraday or swing. The link to XAU manipulation is always involved, so "we always follow the true value trace of price".
 

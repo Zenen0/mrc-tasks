@@ -1,7 +1,7 @@
 ---
 title: "Morality, Rationality & the Opposing Side"
 date: 2026-09-25
-order: 2
+order: 3
 relatedTask: "2"
 mentorPrompt: |
   Mr Casino's follow-up to the earlier rationality note: why a "correct morality" sits
@@ -85,4 +85,4 @@ This is the practical side of that post. The worldview he applies it to (banking
 
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) (doublethink, verified sources) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/)

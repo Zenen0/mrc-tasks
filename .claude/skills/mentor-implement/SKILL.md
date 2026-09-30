@@ -37,9 +37,10 @@ why.
 
 ## 2. Implement
 
-- Formal Tasks stay numbered Tasks (`src/content/tasks/N/task.md`). Misc stays
-  Misc (`src/content/misc/<slug>/index.md`). Keep mentor/assignment content
-  apart from the user's own work (`/mine/`).
+- Formal Tasks stay numbered Tasks (`src/content/tasks/N/task.md`). Reference
+  (taught technical framework) is `src/content/reference/<slug>/index.md`.
+  Misc stays Misc (`src/content/misc/<slug>/index.md`). Keep mentor/assignment
+  content apart from the user's own work (`/mine/`).
 - Build exactly the approved architecture: new vs extended entries, sections,
   order, relatedTask, cross-links, raw-only exclusions.
 - Wording: exact for instructions, definitions, counts, rules, warnings and

@@ -19,15 +19,16 @@ export interface EntryPageEntry {
   body?: string;
 }
 
-/** Derives the "Task" / "Misc" label used in console.warn diagnostics from the glob entry path. */
+/** Derives the "Task" / "Misc" / "Reference" label used in console.warn diagnostics from the glob entry path. */
 function collectionLabel(entryPath: string): string {
   if (entryPath.includes('/content/tasks/')) return 'Task';
   if (entryPath.includes('/content/misc/')) return 'Misc';
+  if (entryPath.includes('/content/reference/')) return 'Reference';
   return 'Entry';
 }
 
 /**
- * Builds everything a detail page (tasks/[task]/[subtask].astro, misc/[slug].astro) needs to
+ * Builds everything a detail page (tasks/[task]/[subtask].astro, misc/[slug].astro, reference/[slug].astro) needs to
  * render its gallery, assignment, and response sections, plus the OG description. Shared here so
  * the two near-identical pages don't independently re-implement (and drift on) the same pipeline.
  *

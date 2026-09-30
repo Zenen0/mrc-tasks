@@ -8,9 +8,10 @@ export interface Props {
   cover: ImageMetadata | null;
   imageCount: number;
   relatedTaskLabel: string | null;
+  badge?: string;
 }
 
-const { href, title, cover, imageCount, relatedTaskLabel } = Astro.props;
+const { href, title, cover, imageCount, relatedTaskLabel, badge = 'MISC' } = Astro.props;
 ---
 <a class="card task-card" href={href}>
   <div class="card-thumb">
@@ -22,7 +23,7 @@ const { href, title, cover, imageCount, relatedTaskLabel } = Astro.props;
     <span class="card-count mono">{imageCount}</span>
   </div>
   <div class="card-body task-card-body">
-    <span class="card-badge task-card-badge">MISC</span>
+    <span class="card-badge task-card-badge">{badge}</span>
     {relatedTaskLabel && <span class="card-related mono">&rarr; {relatedTaskLabel}</span>}
   </div>
 </a>

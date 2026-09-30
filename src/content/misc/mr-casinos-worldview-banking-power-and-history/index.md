@@ -1,7 +1,7 @@
 ---
 title: "Mr Casino's Worldview: Banking, Power & History"
 date: 2026-09-27
-order: 5
+order: 6
 mentorPrompt: |
   A reference record of Mr Casino's wider worldview: his critique of the
   banking system, his account of Freemasonry and power, the specific claims he
@@ -129,6 +129,16 @@ He asks why power would be "so ruthless with so much power already?" and gives t
 - **US election (opinion):** "Anyone supporting this (after true information) are not to be trusted and show their intrinsic corrupt morality." Of Trump and Musk: "if there was ever a meaning of controlled opposition it would be that pair". This does not cover the Trump assassination attempt he said he would return to; that thread is still open.
 - He also urged the team to watch the videos and content he shared. One link survives in the source: [YouTube](https://www.youtube.com/watch?v=NEYEcAd-tzQ) (its content has not been reviewed here).
 
+## Recommended viewing
+
+*From a later post.* He calls it "a fun (it may not be as you watch it) part of your syllabus": ***2073*** (2024, directed by Asif Kapadia), a "movie" he describes as "really a documentary". It mixes a dystopian drama set in the year 2073 with documentary footage of the present day.
+
+- **Why he recommends it:** "If this doesn't wake one up and provoke thought, few things will. Connect with your empathy and think deeper about the true state of the world and where we are headed if there is no resistance."
+- **How he frames it (his assessment):** "Perhaps the theme is a little morbid, but that should not make one feel hopeless (rather, be grateful for the insight that others are unaware of). There are other spiritual forces that are not taken into account. Yet 80% or so is fact, apart from the vision of the future—which no one can claim to know in its entirety—but it serves as a reminder of the stark reality we are being pushed toward if each individual does not wake up and take action."
+- "It is an impactful, all-too-relevant masterpiece that had to be shared. Don't skip by without watching it. It will help break past the manipulation. I encourage you all to share it as well."
+
+On breaking free from the manipulation as part of the trader's mindset, see [Trading Psychology · Underlying causes](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#underlying-causes-breaking-free-from-the-manipulation).
+
 ## His closing stance
 
 - "It really does not matter much what one thinks about the contents of this message." It is "much history condensed", and sharing "the truth and verifiable facts" once is, in his words, his duty.
@@ -137,4 +147,4 @@ He asks why power would be "so ruthless with so much power already?" and gives t
 
 ---
 
-Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
+Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/)

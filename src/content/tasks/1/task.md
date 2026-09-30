@@ -22,6 +22,8 @@ Produce 30 charts (10x3) on the 4hr timeframe in the following manner:
 
 1) Mark all the major doji purely on the 4hr timeframe. The doji we Mark is separate from the attempted FU - a subject of later discussion.
 
+*The attempted FU was later defined, with charts: see [Terminology · Attempted FU](/mrc-tasks/reference/terminology/#attempted-fu).*
+
 Must be within a previous wick and a non FU high or low. The most major form of liquidity (HTF, pure doji).
 
 ![Step 1 - only the unmanipulated doji marked](./step1-doji-marking.jpg)
