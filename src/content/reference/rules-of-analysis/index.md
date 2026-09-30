@@ -62,6 +62,8 @@ The timings are set out in [Task 3 · Key timing](/mrc-tasks/tasks/3/assignment/
 
 "task 3": [Task 3 - Timeframe strength and the HTF true stop](/mrc-tasks/tasks/3/assignment/#2--timeframe-strength-and-the-htf-true-stop), which gives the TFS definition, the trade-type tiers and the "(3hr - 5hr - 7hr - 11hr TFS)" ladder.
 
+Week 2 set out the full TFS framework: categories, established vs forming, the retest method: [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/).
+
 ### 9. Zones
 
 > Zones are secondary confirmations, similar to an HCS POI—their reactions make the true move.

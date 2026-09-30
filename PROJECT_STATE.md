@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Week 1: Zones implemented - Weekly Programme under Tasks, Reference Zones page, extensions. **Not yet committed**; awaiting user review).
+Last updated: 2026-09-30 (Week 2: Timeframe Strength implemented - Week 2 landing + 2 Tasks, new Reference TFS page, extensions. **Not yet committed**; awaiting user review).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -293,7 +293,7 @@ still done by hand.
 
 - **Week 1: Zones** (source + approved analysis, §18 authoritative, in
   `sources/tasks/2026-09-30-week-1/`; dated June 2025 by inference only, no
-  dates on the site). Implemented, **not committed**:
+  dates on the site). Committed and pushed as `8a3b374`:
   - Weekly Programme infrastructure (see Architecture) + Week 1 landing,
     3 assignments (Task 1 HTF Zones 2 years; Task 2 Session Zones 10 NY days;
     Task 3 10/7 min Zones & LTF HCS Refinement 30 sessions) and 3 empty My
@@ -324,6 +324,52 @@ still done by hand.
   - Threads opened: 3 fundamentals/geopolitics segments announced after
     Week 1 (link to Worldview *Still to come*); Week 2 on schedule.
 
+- **Week 2: Timeframe Strength** (source + approved analysis, **§20
+  authoritative**, in `sources/tasks/2026-09-30-week-2/`; June 2025 by
+  inference only, no dates on the site). Implemented, **not committed**:
+  - `src/content/weeks/2/`: `week.md` (summary, keyQuote "The LTF builds the
+    HTF but HTF commands the LTF", study -> TFS page, Focus for now, How the two
+    Tasks fit, Also from Week 2 -> Morality), `task-1/task.md` "Established
+    TFS Retest POI (2 months, 3hr–30 min)" (no target -> My Work "Not
+    started"), `task-2/task.md` "Swing TFS Forming & Zones (30 examples)"
+    (`target: 30`, `unit: "examples"` -> "0 / 30 examples"). No `mine/`
+    entries.
+  - New Reference `timeframe-strength/` (order 5): what TFS is, theory
+    (advanced, verbatim), five categories (verbatim + table + note that the
+    boundaries overlap and differ from Task 3's tiers / Rules § 8), LTF/HTF
+    statement, established vs forming (power POI), TFS and zones, the
+    established TFS retest (rules linking to W2 T1 charts; D5 neutral note on
+    Task 3 rule 4 vs FU closures down to 45/30 min, no reconciliation;
+    nullification; retest proximity table), both sides established, advanced
+    hints, and the live worked example (4hr -> 7 min, Img 128 exchange
+    paraphrased after the 30 min advanced chart).
+  - Extensions: Terminology (TFS pointer, Power POI bullet, Related), Rules
+    § 8 pointer, Zones (italic pointer after the "later explored with TFS"
+    blockquote - **closes that thread**; 7/10/15 min pointer; Related),
+    Worked example 3000 Related, standalone Task 3 one italic line after the
+    "(3hr - 5hr - 7hr - 11hr TFS)" ladder, Misc Morality new last section
+    "Success, privilege and intention (Week 2 closing lesson)" + mentorPrompt
+    + Related. Week 1 pages untouched.
+  - Images: 29 copied + `cmp`-verified (W2 T1 9, W2 T2 12, Ref TFS 8) +
+    `src/assets/weeks/2/task-1/model-answer-3hr.jpg`, a derived crop of Img
+    132 (chart only; student name/avatar/timestamp/share line removed; made
+    with `sips` from a scratch copy; the source file's hash is unchanged).
+  - D3 applied: spelling fixed only in prose/paraphrase/chart transcriptions;
+    `>` verbatim quotes keep his spelling. On Task pages the Q&A answer and the
+    model-answer comment are quoted inline/as a list, not `>` (Task-page
+    blockquote = formal deliverable only).
+  - Raw-only: Img 108 (superseded draft of 109), student screenshots Img 120,
+    128, 130, 131 (questions paraphrased anonymously), the user's notes,
+    student names, "xd".
+  - Unresolved, shown as unresolved: instrument (not stated; examples XAUUSD),
+    no standard-TF alternative (50/45 min, 18/14/12/11/7/5hr), "HCS x1 /
+    x2 / HCSx2", "x3 body retest", "advanced entry models", FU closures
+    below 3hr vs Task 3 rule 4 (worth asking the mentor), Task 2 depth below
+    3hr (requirement "3hr +"; his example continues to 30 min).
+  - Threads opened: "more on this when we speak about TS" (forming TFS);
+    "advanced entry models"; "x3 body retest". Still open: "x3 entry model",
+    "x3 by x3", Trump thread, Week 1's 3 fundamentals segments.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -336,14 +382,16 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. User review of Week 1 (local preview `/mrc-tasks/tasks/weeks/1/`,
-   `/mrc-tasks/reference/zones/`). After approval: commit (sources batch
-   folder + site changes + site-conventions.md + this file) and push, then
-   confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
-2. Then Week 2: `/mentor-new week 2` -> paste -> `/mentor-analyse`. A new
-   Week is a new `src/content/weeks/<N>/` folder; no template changes needed.
+1. User review of Week 2 (local preview `/mrc-tasks/tasks/weeks/2/`,
+   `/mrc-tasks/reference/timeframe-strength/`). After approval: commit
+   (`sources/tasks/2026-09-30-week-2/`, `src/content/weeks/2/`,
+   `src/assets/weeks/2/`, `src/content/reference/timeframe-strength/`,
+   `src/assets/reference/timeframe-strength/`, the 7 extended content files,
+   site-conventions.md, this file) and push, then confirm the deploy
+   (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
+2. Then the next mentor batch (`/mentor-new week 3` or `misc`).
 
-Committed and deployed before this batch: Misc batch 2026-09-25
+Committed and deployed before this batch: Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch

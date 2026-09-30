@@ -75,12 +75,15 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   as `![alt](../../../assets/reference/<topic>/file.jpg)`, full width,
   click-to-zoom, annotations transcribed under each image.
 - Pages so far: `terminology` (1), `rules-of-analysis` (2),
-  `worked-example-3000-reversal` (3), `zones` (4). Stable anchors: Terminology `#fu`,
+  `worked-example-3000-reversal` (3), `zones` (4), `timeframe-strength` (5). Stable anchors: Terminology `#fu`,
   `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
   Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`;
   Zones `#the-four-zone-types`, `#the-rules`, `#which-part-of-the-wick`,
   `#the-weakest-att-fu-in-depth`, `#three-levels-of-use`,
-  `#reactions-and-expiry`, `#full-zone-mark-up-for-a-ny-session`.
+  `#reactions-and-expiry`, `#full-zone-mark-up-for-a-ny-session`;
+  TFS `#the-five-tfs-categories`, `#established`, `#forming-the-power-poi`,
+  `#tfs-and-zones`, `#the-established-tfs-retest`, `#how-close-is-a-retest`,
+  `#both-sides-established`, `#worked-example-zones-and-tfs-on-current-price`.
 
 ## Misc entry
 

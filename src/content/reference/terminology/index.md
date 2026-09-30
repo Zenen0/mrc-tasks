@@ -182,7 +182,8 @@ These appear on his charts but are not formally defined. The explanations are re
 Used on these charts, but defined elsewhere. Their definitions stay where he gave them:
 
 - **TS** (true stop) and the HTF true stop: [Task 3, rule 1](/mrc-tasks/tasks/3/assignment/#the-rules).
-- **TFS** (timeframe strength): "when price establishes a confirmed prevalent direction" ([Task 3](/mrc-tasks/tasks/3/assignment/#timeframe-strength---definition)).
+- **TFS** (timeframe strength): "when price establishes a confirmed prevalent direction" ([Task 3](/mrc-tasks/tasks/3/assignment/#timeframe-strength---definition)). Full framework: [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/).
+- **Power POI**: the forming TFS, which "Presents the power POI ... - the premium level for that category" ([Timeframe Strength · Forming](/mrc-tasks/reference/timeframe-strength/#forming-the-power-poi)).
 - **Doji** (unmanipulated doji, major liquidity): "Must be within a previous wick and a non FU high or low. The most major form of liquidity (HTF, pure doji)." ([Task 1](/mrc-tasks/tasks/1/assignment/#the-30-chart-task)).
 - **Big wick to fill**: "an area of large momentum that would entice retailers" ([Task 1](/mrc-tasks/tasks/1/assignment/#the-30-chart-task)).
 - **Zone** and the four zone types (FU wick, HCS, weakest ATT FU / failed FU, body-in-wick orderblock): [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/).
@@ -190,4 +191,4 @@ Used on these charts, but defined elsewhere. Their definitions stay where he gav
 
 ---
 
-Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

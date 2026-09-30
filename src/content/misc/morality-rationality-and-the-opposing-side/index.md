@@ -10,7 +10,7 @@ mentorPrompt: |
   repetition and self-reliance. Posted late Sep 2024 (inferred), in the gap
   between the Task 2 extension and Task 3. Extended with "Knowledge as an
   edge", from his later "Miscellaneous" post (late Oct - early Nov 2024,
-  inferred).
+  inferred), and with the closing lesson of Week 2 of the weekly programme.
 ---
 
 ## From rationality to correct morality
@@ -84,6 +84,20 @@ This is the practical side of that post. The worldview he applies it to (banking
 - **Rationality applied to learning:** "Rationality would tell you to stop wasting time asking others in substitute of your own efforts."
 - **Mistakes:** "Your mistakes are the only additional aid you need to learn from."
 
+## Success, privilege and intention (Week 2 closing lesson)
+
+He ended [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) with "A lesson that matters", after thanking the students for their appreciation and hoping they would show it "in your results , efforts and reaching even greater heights". What follows is his view, grounded in his faith.
+
+He shares "the famous eastern proverb as a deeper reminder" of a different perspective on success:
+
+> "There are many people unknown on earth, but known in the heavens".
+
+- **Success is not wealth.** Some people society looks down on, "through their simple genuine nature and faith in god and heaven as the ultimate prize", still have more inner contentment and better character and morality than most billionaires. On the other hand, "with power comes greater responsibility". "Do we count someone as successful merely because they are rich and yet sold their souls?"
+- **Privilege is a trust.** "Every privilege is a trust that must be accounted for."
+- **Intention.** "Every good action is judged by the intentions being for God's pleasure". Praise can affect that intention, which is why, as he puts it, it is said not to praise someone to their face.
+- **A lifelong duty.** No one with power can ever truly repay God for the privilege upon them, so the effort of keeping that trust and the correct intention goes on "until we expire". "Not something special but a duty one is bound to."
+- **The "law of attraction".** He calls this "The closer truth of the "law of attraction" (which is fundamentally based on positivity, and faith)".
+
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) (doublethink, verified sources) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) (doublethink, verified sources) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/)

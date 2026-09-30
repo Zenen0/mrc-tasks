@@ -190,7 +190,7 @@ Chart annotations (7 min):
 
 - "On the 7/10/15 min we use zones just as we would on the HTF- only at a faster pace and without weakest ATT FU/failed FU zones / However the dynamics change as they are updated and expire more frequently- and Top down analysis matters more / Mainly to see banks intentions and confirm relevant POI (every true move starts from some zone)"
 
-TS and TFS are defined in [Task 3 · The rules](/mrc-tasks/tasks/3/assignment/#the-rules) and [Task 3 · Timeframe strength](/mrc-tasks/tasks/3/assignment/#timeframe-strength---definition).
+TS and TFS are defined in [Task 3 · The rules](/mrc-tasks/tasks/3/assignment/#the-rules) and [Task 3 · Timeframe strength](/mrc-tasks/tasks/3/assignment/#timeframe-strength---definition). The full TFS framework is in [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/).
 
 ### 1 min
 
@@ -318,6 +318,8 @@ Chart annotations (10 min):
 
 "Task 1" here is [Week 1 Task 1](/mrc-tasks/tasks/weeks/1/task-1/assignment/). TFS is covered in [Task 3 · Timeframe strength and the HTF true stop](/mrc-tasks/tasks/3/assignment/#2--timeframe-strength-and-the-htf-true-stop).
 
+*Week 2: "When we have matching TFS with the same TF zone - the strongest true move potential/power POI". See [Timeframe Strength · TFS and zones](/mrc-tasks/reference/timeframe-strength/#tfs-and-zones).*
+
 ## Full zone mark-up for a NY session
 
 Posted to close the topic, straight after [Week 1 Task 3](/mrc-tasks/tasks/weeks/1/task-3/assignment/):
@@ -399,4 +401,4 @@ A zone reaction used inside a full analysis: "4hr HCS Zone reaction - secondary 
 
 ---
 
-Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
+Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)

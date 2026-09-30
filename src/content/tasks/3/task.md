@@ -159,6 +159,8 @@ These are the only rules that are set for now that will become more clear upon T
 
 The swing TFS ladder, from the 3hr chart below: "(3hr - 5hr - 7hr - 11hr TFS)".
 
+*Week 2 later set out five TFS categories with average ranges, and the two ways TFS is used: see [Timeframe Strength](/mrc-tasks/reference/timeframe-strength/).*
+
 *Note on "forming" vs "established": rule 3 says "Established in most cases, sometimes taken as forming", while the task aid below says "Minimum 10 min + TS Established is mandatory (not as forms - TFS is too weak)". In the worked examples (11hr to 1 min, below) the higher timeframes are still "forming" while the 15 min TS is already "established". Read together: the 10 min + backing itself must be established; the higher timeframe structure above it may still be forming.*
 
 *A later worked example also shows an entry on a still-forming 10 min TS, which he labels "More aggressive but with full TFS factors and 10 min TS forming" (valid, but more aggressive), alongside the standard entry "After 10 min TS EST": see [Worked Example · 1 min entries](/mrc-tasks/reference/worked-example-3000-reversal/#1-min-the-entries).*
