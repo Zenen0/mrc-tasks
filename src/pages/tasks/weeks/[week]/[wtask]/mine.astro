@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../../components/Breadcrumb.astro';
 import SubtaskCard from '../../../../../components/SubtaskCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../../../../../lib/images';
 import { withBase } from '../../../../../lib/paths';
-import { parseWeekTaskId, workForWeekTask, workProgress } from '../../../../../lib/weeks';
+import { parseWeekTaskId, partProgress, weekTaskLabel, workForWeekTask, workProgress } from '../../../../../lib/weeks';
 
 export async function getStaticPaths() {
   const weekTasks = await getCollection('weekTasks');
@@ -17,7 +17,8 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { week, number } = parseWeekTaskId(entry.id);
+const { week, slug } = parseWeekTaskId(entry.id);
+const label = weekTaskLabel(slug, entry.data.label);
 const { wtask } = Astro.params as { wtask: string };
 
 const weekMeta = (await getCollection('weekMeta')).find((meta) => meta.id === week);
@@ -30,24 +31,32 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 ---
-<Layout title={`Week ${week} · Task ${number}: my work`} description={`My own backtesting work for Week ${week} · Task ${number}: ${entry.data.title}.`}>
+<Layout title={`Week ${week} · ${label}: my work`} description={`My own backtesting work for Week ${week} · ${label}: ${entry.data.title}.`}>
   <Breadcrumb
     items={[
       { label: 'Tasks', href: withBase('/', base) },
       { label: 'Weekly Programme', href: withBase('/tasks/weeks/', base) },
       { label: weekTitle, href: withBase(`/tasks/weeks/${week}/`, base) },
-      { label: `Task ${number}`, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
+      { label, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
       { label: 'My Work' },
     ]}
   />
   <header class="subtask-header week-header">
-    <span class="subtask-badge mono">WEEK {week} · TASK {number}</span>
+    <span class="subtask-badge mono">WEEK {week} · {label.toUpperCase()}</span>
     <h1>My work</h1>
   </header>
   <p class="page-intro">
-    For <a href={withBase(`/tasks/weeks/${week}/${wtask}/assignment/`, base)}>{entry.data.title}</a>.
-    Progress: <span class="mono">{workProgress(work.length, entry.data.target, entry.data.unit)}</span>
+    For <a href={withBase(`/tasks/weeks/${week}/${wtask}/assignment/`, base)}>{entry.data.title}</a>.{!entry.data.parts && (
+      <>{' '}Progress: <span class="mono">{workProgress(work.length, entry.data.target, entry.data.unit)}</span></>
+    )}
   </p>
+  {entry.data.parts && (
+    <ul class="page-intro week-parts">
+      {partProgress(work, entry.data.parts).map((part) => (
+        <li>{part.label}: <span class="mono">{part.text}</span></li>
+      ))}
+    </ul>
+  )}
 
   {work.length === 0 && <p class="empty-state">No entries yet.</p>}
   <div class="card-grid">

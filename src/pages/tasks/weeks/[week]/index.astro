@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../../../components/Layout.astro';
 import Breadcrumb from '../../../../components/Breadcrumb.astro';
 import { withBase } from '../../../../lib/paths';
-import { parseWeekTaskId, tasksForWeek, workForWeekTask, workProgress } from '../../../../lib/weeks';
+import { parseWeekTaskId, partProgress, tasksForWeek, weekTaskLabel, workForWeekTask, workProgress } from '../../../../lib/weeks';
 
 export async function getStaticPaths() {
   const weekMetaEntries = await getCollection('weekMeta');
@@ -43,21 +43,25 @@ const base = import.meta.env.BASE_URL;
     </div>
 
     {weekTasks.map((task) => {
-      const { slug, number } = parseWeekTaskId(task.id);
+      const { slug } = parseWeekTaskId(task.id);
       const work = workForWeekTask(weekWork, week, slug);
       return (
         <section class="task-group week-task" id={slug}>
-          <h2>Task {number} · {task.data.short}</h2>
+          <h2>{weekTaskLabel(slug, task.data.label)} · {task.data.short}</h2>
           <div class="branch-grid">
             <a class="branch-card" href={withBase(`/tasks/weeks/${week}/${slug}/assignment/`, base)}>
-              <span class="card-badge">MR CASINO&apos;S TASK</span>
+              <span class="card-badge">MR CASINO&apos;S {task.data.label ? task.data.label.toUpperCase() : 'TASK'}</span>
               <h3>Assignment</h3>
               <p>{task.data.title}</p>
             </a>
             <a class="branch-card" href={withBase(`/tasks/weeks/${week}/${slug}/mine/`, base)}>
               <span class="card-badge">MY WORK</span>
               <h3>My work</h3>
-              <p>{workProgress(work.length, task.data.target, task.data.unit)}</p>
+              {task.data.parts ? (
+                partProgress(work, task.data.parts).map((part) => <p>{part.label}: {part.text}</p>)
+              ) : (
+                <p>{workProgress(work.length, task.data.target, task.data.unit)}</p>
+              )}
             </a>
           </div>
         </section>

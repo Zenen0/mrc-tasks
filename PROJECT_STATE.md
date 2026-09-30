@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Week 2: Timeframe Strength implemented - Week 2 landing + 2 Tasks, new Reference TFS page, extensions. **Not yet committed**; awaiting user review).
+Last updated: 2026-09-30 (Week 3: Liquidity implemented - Week 3 landing + one Assignment, new Reference Liquidity page, Week helper `label`/`parts`/`part`, extensions. **Not yet committed**; awaiting user review).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -99,6 +99,12 @@ Each Task now has **two branches**, not a flat subtask list:
   `.claude/skills/mentor-implement/reference/site-conventions.md`.
   Standalone Tasks 1-3 untouched. Breadcrumbs now wrap on narrow screens
   (`.breadcrumb` flex-wrap, site-wide).
+  Week 3 added optional `weekTasks` fields `label` (replaces "Task M" in all
+  Week UI via `weekTaskLabel()`; a labelled Task's assignment breadcrumb ends
+  at the label, and its landing card badge reads "MR CASINO'S <LABEL>") and
+  `parts: [{key,label,target,unit}]` (one progress line per part via
+  `partProgress()`), and `weekWork` field `part`. Weeks 1-2 HTML verified
+  identical to the previous build.
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does
@@ -326,7 +332,7 @@ still done by hand.
 
 - **Week 2: Timeframe Strength** (source + approved analysis, **§20
   authoritative**, in `sources/tasks/2026-09-30-week-2/`; June 2025 by
-  inference only, no dates on the site). Implemented, **not committed**:
+  inference only, no dates on the site). Committed and pushed as `66bb7d9`:
   - `src/content/weeks/2/`: `week.md` (summary, keyQuote "The LTF builds the
     HTF but HTF commands the LTF", study -> TFS page, Focus for now, How the two
     Tasks fit, Also from Week 2 -> Morality), `task-1/task.md` "Established
@@ -370,6 +376,48 @@ still done by hand.
     "advanced entry models"; "x3 body retest". Still open: "x3 entry model",
     "x3 by x3", Trump thread, Week 1's 3 fundamentals segments.
 
+- **Week 3: Liquidity** (source + approved analysis, **§13 authoritative**,
+  in `sources/tasks/2026-09-30-week-3/`; one post, no date published).
+  Implemented, **not committed**:
+  - Structure (user decision): ONE Assignment with two required parts, not
+    numbered Tasks. `src/content/weeks/3/week.md` (summary quotes
+    "Liquidity  Foundational stage", keyQuote "This should now be the base of
+    how you backtest.", study -> Liquidity, body `## How it builds` + closing
+    L71 quote) and `task-1/task.md` (internal slug only; `label: "Assignment"`,
+    `parts` A = 30 sessions, B = 10 price points; body: the two instruction
+    paragraphs as `>`, italic note that Part A/B are editorial labels, At a
+    glance with A/B columns, What "like so" means + U2 note, On the
+    repetitions). Landing shows one Assignment | My Work pair; My Work shows
+    "0 / 30 sessions" and "0 / 10 price points". No `mine/` entries. No
+    images on Week pages.
+  - New Reference `liquidity/` (order 6, title "Liquidity"): definition,
+    statements (S2-S6 as h3; Img 133-135 transcribed + collapsed
+    `response-gallery`, framed as "appears to be a ChatGPT answer, shared as
+    research material"; 134/135 cut-off noted), basic vs advanced table +
+    U2 note, worked example (Step 1 zones 12hr -> 50 min, one h4 per chart,
+    Img 144 question -> `practice-answer` "Show the answer" with 145-146;
+    Step 2 30 min; LAOL; 45/10/1 min), Unresolved list, Related. All 21
+    images in `src/assets/reference/liquidity/` (`cmp`-verified, names per
+    ANALYSIS §11). Annotations transcribed exactly (typos kept); "xd" dropped.
+  - Extensions: Terminology (LAOL "no definition chart" sentence replaced by
+    pointer to Liquidity · the last area of liquidity; Defined elsewhere +
+    Liquidity, basic/advanced, partially manipulated doji; Related), Zones
+    (`#### More refinement rules (Week 3)` under Priority and refinement;
+    italic "fade" evidence note after the Final clarity rule - still not a
+    definition; Related), TFS (Week 3 "bank order pressure" line alongside the
+    existing definitions; Related), Rules + Worked example 3000 (Related),
+    standalone Task 1 (italic pointer after step 2: Week 3 calls doji/big
+    wick the "basic" types), Misc Fundamentals (one sentence + link after
+    "Reading news against the chart").
+  - Unresolved, shown as unresolved: manipulated (Img 152) vs unmanipulated
+    (Task 1) doji as "most major" - neutral, not reconciled, worth asking the
+    mentor; basic vs advanced list; "TFS settings" names vs Week 2 categories;
+    "ITF"; instrument/session/deadline; "core LTF liquidity" and "advanced
+    entry model TS" (join the "advanced entry models" thread); 134/135
+    cut-offs; "fade" (evidence noted, still undefined).
+  - "(Task 1)" on Img 140: verbatim + note that it *appears* to mean Week 1
+    Task 1.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -382,16 +430,17 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. User review of Week 2 (local preview `/mrc-tasks/tasks/weeks/2/`,
-   `/mrc-tasks/reference/timeframe-strength/`). After approval: commit
-   (`sources/tasks/2026-09-30-week-2/`, `src/content/weeks/2/`,
-   `src/assets/weeks/2/`, `src/content/reference/timeframe-strength/`,
-   `src/assets/reference/timeframe-strength/`, the 7 extended content files,
-   site-conventions.md, this file) and push, then confirm the deploy
+1. User review of Week 3 (local preview `/mrc-tasks/tasks/weeks/3/`,
+   `/mrc-tasks/reference/liquidity/`). After approval: commit
+   (`sources/tasks/2026-09-30-week-3/`, `src/content/weeks/3/`,
+   `src/content/reference/liquidity/`, `src/assets/reference/liquidity/`,
+   `src/content.config.ts`, `src/lib/weeks.ts` + test, the 5 Week page
+   templates under `src/pages/tasks/weeks/[week]/`, the 7 extended content
+   files, site-conventions.md, this file) and push, then confirm the deploy
    (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
-2. Then the next mentor batch (`/mentor-new week 3` or `misc`).
+2. Then the next mentor batch (`/mentor-new week 4` or `misc`).
 
-Committed and deployed before this batch: Week 1 (`8a3b374`), Misc batch 2026-09-25
+Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch

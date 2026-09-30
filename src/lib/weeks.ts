@@ -44,6 +44,33 @@ export function workForWeekTask<T extends IdLike>(weekWork: T[], week: string, t
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/**
+ * Display label for a Week Task: its optional frontmatter `label` (e.g. "Assignment" for a Week with a single,
+ * unnumbered assignment), otherwise "Task M".
+ */
+export function weekTaskLabel(taskSlug: string, label?: string): string {
+  return label ?? `Task ${weekTaskNumber(taskSlug)}`;
+}
+
+export interface WeekTaskPart {
+  key: string;
+  label: string;
+  target: number;
+  unit: string;
+}
+
+/** One progress line per Part ("Part A · Sessions: 0 / 30 sessions"), counting My Work entries tagged with that part. */
+export function partProgress(
+  work: { data: { part?: string } }[],
+  parts: WeekTaskPart[],
+): { key: string; label: string; text: string }[] {
+  return parts.map((part) => ({
+    key: part.key,
+    label: part.label,
+    text: workProgress(work.filter((entry) => entry.data.part === part.key).length, part.target, part.unit),
+  }));
+}
+
 /** Progress text for a My Work card: "0 / 10 sessions" with a target, otherwise an entry count. */
 export function workProgress(count: number, target?: number, unit = 'entries'): string {
   if (target) return `${count} / ${target} ${unit}`;

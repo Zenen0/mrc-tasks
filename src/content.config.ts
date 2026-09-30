@@ -50,15 +50,20 @@ const weekTasks = defineCollection({
   schema: z.object({
     title: z.string(),
     short: z.string(),
+    // Optional display label replacing "Task M" (e.g. "Assignment" when the mentor did not number the Week's Tasks).
+    label: z.string().optional(),
     target: z.number().optional(),
     unit: z.string().optional(),
+    // Optional separately counted components; My Work then shows one progress line per part.
+    parts: z.array(z.object({ key: z.string(), label: z.string(), target: z.number(), unit: z.string() })).optional(),
     mineGuide: z.array(z.string()).optional(),
   }),
 });
 
 const weekWork = defineCollection({
   loader: glob({ pattern: '*/*/mine/**/index.md', base: './src/content/weeks', generateId: stripIndexSuffix }),
-  schema: entrySchema,
+  // `part` = the key of the Week Task part this entry counts toward (see weekTasks `parts`).
+  schema: entrySchema.extend({ part: z.string().optional() }),
 });
 
 export const collections = { tasks, misc, reference, taskMeta, weekMeta, weekTasks, weekWork };

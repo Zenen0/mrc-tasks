@@ -11,7 +11,7 @@ import Breadcrumb from '../../../../../../components/Breadcrumb.astro';
 import { buildEntryPageData } from '../../../../../../lib/entry-page';
 import { withBase } from '../../../../../../lib/paths';
 import { siblingSubtasks } from '../../../../../../lib/tasks';
-import { weekTaskNumber, workForWeekTask } from '../../../../../../lib/weeks';
+import { weekTaskLabel, weekTaskNumber, workForWeekTask } from '../../../../../../lib/weeks';
 
 export async function getStaticPaths() {
   const work = await getCollection('weekWork');
@@ -24,6 +24,10 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { week, wtask, entry: entryId } = Astro.params as { week: string; wtask: string; entry: string };
 const number = weekTaskNumber(wtask);
+const taskEntry = (await getCollection('weekTasks')).find((task) => task.id === `${week}/${wtask}`);
+const label = weekTaskLabel(wtask, taskEntry?.data.label);
+// Short badge form: "T2" for numbered Tasks, the uppercased label otherwise.
+const badgeLabel = taskEntry?.data.label ? label.toUpperCase() : `T${number}`;
 const { Content } = await render(entry);
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
@@ -43,13 +47,13 @@ const { prev, next } = siblingSubtasks(siblings, entry.id);
 const base = import.meta.env.BASE_URL;
 const mineHref = `/tasks/weeks/${week}/${wtask}/mine/`;
 ---
-<Layout title={`Week ${week} · Task ${number} · ${entryId.toUpperCase()}: ${entry.data.title}`} description={description}>
+<Layout title={`Week ${week} · ${label} · ${entryId.toUpperCase()}: ${entry.data.title}`} description={description}>
   <Breadcrumb
     items={[
       { label: 'Tasks', href: withBase('/', base) },
       { label: 'Weekly Programme', href: withBase('/tasks/weeks/', base) },
       { label: weekTitle, href: withBase(`/tasks/weeks/${week}/`, base) },
-      { label: `Task ${number}`, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
+      { label, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
       { label: 'My Work', href: withBase(mineHref, base) },
       { label: entryId.toUpperCase() },
     ]}
@@ -70,7 +74,7 @@ const mineHref = `/tasks/weeks/${week}/${wtask}/mine/`;
   )}
   <article class="subtask">
     <header class="subtask-header week-header">
-      <span class="subtask-badge mono">W{week} · T{number} · {entryId.toUpperCase()}</span>
+      <span class="subtask-badge mono">W{week} · {badgeLabel} · {entryId.toUpperCase()}</span>
       <h1>{entry.data.title}</h1>
     </header>
 

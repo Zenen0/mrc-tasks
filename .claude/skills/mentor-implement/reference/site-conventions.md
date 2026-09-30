@@ -38,8 +38,17 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
     optional `mineGuide` (editorial "What goes here" list). Body = the
     assignment, same conventions as a standalone `task.md` (`> blockquote` =
     formal deliverable only; At a glance table; notes in italics).
+    Optional (added for Week 3): `label` replaces "Task M" everywhere it is
+    shown (landing row, badges, titles, breadcrumbs, pager, redirect) via
+    `weekTaskLabel()` - use it when the mentor did not number the Week's Tasks
+    (Week 3: `label: "Assignment"`, internal slug still `task-1`); `parts:
+    [{key, label, target, unit}]` for separately counted components - the
+    landing card and My Work page then show one progress line per part
+    (`partProgress()`), instead of `target`/`unit`. Weeks without these fields
+    render exactly as before.
   - `task-<M>/mine/<entry>/index.md`: future My Work entries (standalone
-    subtask schema; zero-padded ids, e.g. `s01`). Leave `mine/` absent until
+    subtask schema plus optional `part: "A"` = the `parts` key the entry counts
+    toward; zero-padded ids, e.g. `s01`). Leave `mine/` absent until
     the user has real work. Never mix mentor material in.
 - Collections (`src/content.config.ts`): `weekMeta` (`*/week.md`, id `1`),
   `weekTasks` (`*/*/task.md`, id `1/task-2`), `weekWork`
@@ -75,7 +84,8 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   as `![alt](../../../assets/reference/<topic>/file.jpg)`, full width,
   click-to-zoom, annotations transcribed under each image.
 - Pages so far: `terminology` (1), `rules-of-analysis` (2),
-  `worked-example-3000-reversal` (3), `zones` (4), `timeframe-strength` (5). Stable anchors: Terminology `#fu`,
+  `worked-example-3000-reversal` (3), `zones` (4), `timeframe-strength` (5),
+  `liquidity` (6). Stable anchors: Terminology `#fu`,
   `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
   Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`;
   Zones `#the-four-zone-types`, `#the-rules`, `#which-part-of-the-wick`,
@@ -83,7 +93,14 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   `#reactions-and-expiry`, `#full-zone-mark-up-for-a-ny-session`;
   TFS `#the-five-tfs-categories`, `#established`, `#forming-the-power-poi`,
   `#tfs-and-zones`, `#the-established-tfs-retest`, `#how-close-is-a-retest`,
-  `#both-sides-established`, `#worked-example-zones-and-tfs-on-current-price`.
+  `#both-sides-established`, `#worked-example-zones-and-tfs-on-current-price`;
+  Liquidity `#what-liquidity-is`, `#the-statements`,
+  `#liquidity-types-basic-and-advanced`,
+  `#the-complete-picture-a-worked-example`, `#step-1-zones-12hr-to-50-min`,
+  `#step-2-tfs-and-liquidity-on-30-min`, `#the-last-area-of-liquidity`,
+  `#45-min-the-directional-outlook`, `#10-min-which-side-is-more-major`,
+  `#1-min-the-banks-execution`, `#unresolved`; Zones also
+  `#more-refinement-rules-week-3`.
 
 ## Misc entry
 

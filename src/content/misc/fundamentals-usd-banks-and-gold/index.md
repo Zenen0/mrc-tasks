@@ -59,6 +59,8 @@ This is the key practical point from the timeline below. On the Nasrallah news:
 - **Fundamentals raise conviction in holding.** Here the news made it more important to be positioned for buys into the market open and to cover new incidents over the weekend gap.
 - The source gives **no fundamentals-based entry or exit rule** beyond this. Fundamentals support holds and bias; the chart (liquidity, FU) stays the basis.
 
+Week 3 puts it more strongly: "All news is an excuse for volatility" ([Liquidity · News is an excuse for volatility](/mrc-tasks/reference/liquidity/#news-is-an-excuse-for-volatility)).
+
 ## Worked example: 2023-24 events and gold
 
 Mr Casino's recurring pattern: war and escalation mean more spending and inflation pressure on the USD, so gold must go higher. Each event below is paired with his stated reading of its effect. The readings are his interpretation, not verified cause and effect.

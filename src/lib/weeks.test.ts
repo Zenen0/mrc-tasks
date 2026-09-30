@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
-import { parseWeekTaskId, tasksForWeek, weekNumbers, weekTaskNumber, workForWeekTask, workProgress } from './weeks';
+import {
+  parseWeekTaskId,
+  partProgress,
+  tasksForWeek,
+  weekNumbers,
+  weekTaskLabel,
+  weekTaskNumber,
+  workForWeekTask,
+  workProgress,
+} from './weeks';
 
 const e = (id: string) => ({ id });
 
@@ -49,5 +58,34 @@ describe('workProgress', () => {
     expect(workProgress(0)).toBe('Not started');
     expect(workProgress(1)).toBe('1 entry');
     expect(workProgress(3)).toBe('3 entries');
+  });
+});
+
+describe('weekTaskLabel', () => {
+  it('defaults to "Task M"', () => {
+    expect(weekTaskLabel('task-2')).toBe('Task 2');
+  });
+
+  it('uses the frontmatter label when set', () => {
+    expect(weekTaskLabel('task-1', 'Assignment')).toBe('Assignment');
+  });
+});
+
+describe('partProgress', () => {
+  const parts = [
+    { key: 'A', label: 'Part A · Sessions', target: 30, unit: 'sessions' },
+    { key: 'B', label: 'Part B · LTF price points', target: 10, unit: 'price points' },
+  ];
+
+  it('shows zero for every part with no work', () => {
+    expect(partProgress([], parts).map((p) => p.text)).toEqual(['0 / 30 sessions', '0 / 10 price points']);
+  });
+
+  it('counts entries by their part; untagged entries count toward none', () => {
+    const work = [{ data: { part: 'A' } }, { data: { part: 'A' } }, { data: { part: 'B' } }, { data: {} }];
+    expect(partProgress(work, parts)).toEqual([
+      { key: 'A', label: 'Part A · Sessions', text: '2 / 30 sessions' },
+      { key: 'B', label: 'Part B · LTF price points', text: '1 / 10 price points' },
+    ]);
   });
 });

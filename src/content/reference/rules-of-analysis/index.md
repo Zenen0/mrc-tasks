@@ -117,4 +117,4 @@ His own compressed version, written on the worked example's 4hr chart as the "Ba
 
 ---
 
-Related: [Terminology](/mrc-tasks/reference/terminology/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) · [Task 1](/mrc-tasks/tasks/1/assignment/) · [Task 2](/mrc-tasks/tasks/2/assignment/) · [Task 3](/mrc-tasks/tasks/3/assignment/)
+Related: [Terminology](/mrc-tasks/reference/terminology/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) · [Task 1](/mrc-tasks/tasks/1/assignment/) · [Task 2](/mrc-tasks/tasks/2/assignment/) · [Task 3](/mrc-tasks/tasks/3/assignment/)

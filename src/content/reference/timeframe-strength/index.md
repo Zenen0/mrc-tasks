@@ -22,6 +22,8 @@ Week 2 opens by placing it next to zones:
 
 > Zones contain the energy from which all subsequent market reactions occur. Timeframe strength contains the signature of the directional energy release (overpowering true profitable move - from utmost premium - contrarian lowest liquidity move)
 
+Week 3 adds a further description, alongside (not replacing) the two above: TFS as "bank order pressure - their signature of how much they want to move price" ([Liquidity · Step 2](/mrc-tasks/reference/liquidity/#step-2-tfs-and-liquidity-on-30-min)).
+
 Zones are covered in [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) (Week 1). TFS is the release of the energy those zones hold.
 
 ## The theory (advanced)
@@ -244,4 +246,4 @@ Chart annotations (7 min):
 
 ---
 
-Related: [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

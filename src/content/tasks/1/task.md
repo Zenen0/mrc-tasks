@@ -34,6 +34,8 @@ A special note to those areas where we have coinciding liquidity.
 
 ![Step 2 - big wicks added. Big wick = excited retail reaction seeing volatility, pure liquidity terms](./step2-wick-marking.jpg)
 
+*Week 3 calls the unmanipulated doji and the big wick to fill the "basic" liquidity types: see [Liquidity · Basic and advanced](/mrc-tasks/reference/liquidity/#liquidity-types-basic-and-advanced).*
+
 3) Observe the flow of price action major targets using HCS + HCS negations alone.
 
 Major Liquidity taken or overpowering major liquidity to target - will be the base reasoning.

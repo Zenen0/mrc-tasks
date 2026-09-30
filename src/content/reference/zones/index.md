@@ -125,6 +125,18 @@ The Q&A added the following.
 >
 > If a zone is too close to another , something is amiss in your zone refinement. You will expand your zone to include the full area, and find the refined area- equally spaced from the next zone (same process, expand and refine in top down)
 
+#### More refinement rules (Week 3)
+
+From the annotations on his Week 3 zone walkthrough ([Liquidity · Step 1](/mrc-tasks/reference/liquidity/#step-1-zones-12hr-to-50-min)):
+
+- **Extend rather than add.** "Instead of drawing a new zone we can extend the 12hr to include this refinement" ([7hr](/mrc-tasks/reference/liquidity/#7hr-extend-rather-than-draw-a-new-zone)).
+- **Limit overlaps.** "Dont have too many overlaps (max 4, ideally 3) / Especially when we are on the HTF with much more important ITF refinement yet to go" ([7hr](/mrc-tasks/reference/liquidity/#7hr-overlaps-and-fading)).
+- **Its own timeframe first.** A zone "matters most for its aligned TF reaction" ([7hr](/mrc-tasks/reference/liquidity/#7hr-overlaps-and-fading)).
+- **Remove or hide parent zones once refined.** "Lets remove this zone for visibility now that refinement is drawn" and "Can also remove this one or remove visibility not to show on minutes TF" ([50 min](/mrc-tasks/reference/liquidity/#50-min-remove-the-parent-zones)).
+- **Body in wick on 4hr is extreme refinement.** "More likley used live time if we didnt have any other notable zone in the area" ([4hr](/mrc-tasks/reference/liquidity/#4hr-adjustment-and-extreme-refinement)).
+- **Fewer zones on 1hr/50 min.** "We mark a few - but dont overdo refinement" ([50 min](/mrc-tasks/reference/liquidity/#50-min-dont-overdo-refinement)).
+- **Zone counts vary.** "Some timeframes will have more zones than others -all depends on placement" ([3hr](/mrc-tasks/reference/liquidity/#3hr-refine-further)).
+
 ### When a zone becomes active
 
 *From the Week 1 Q&A.* A student marked a zone at the point where it "becomes active":
@@ -330,6 +342,8 @@ Posted to close the topic, straight after [Week 1 Task 3](/mrc-tasks/tasks/weeks
 >
 > Study in detail the text annotations of the following charts
 
+*He never defines "fade". Two Week 3 annotations suggest it means reducing a zone's visual prominence or visibility on the chart: "At least fade visability of larger HTF zones" and "remove visibility not to show on minutes TF" ([Liquidity · 7hr](/mrc-tasks/reference/liquidity/#7hr-overlaps-and-fading), [50 min](/mrc-tasks/reference/liquidity/#50-min-remove-the-parent-zones)). This is a reading of his charts, not his definition.*
+
 ### 1 · 11hr
 
 ![11hr - deactive zones and the natural equal spacing between 11hr zones](../../../assets/reference/zones/ny-markup-1-11hr.jpg)
@@ -401,4 +415,4 @@ A zone reaction used inside a full analysis: "4hr HCS Zone reaction - secondary 
 
 ---
 
-Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
+Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
