@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Misc batch 2026-09-30 "trading reference" implemented with the new Reference section; user-approved, committed and pushed).
+Last updated: 2026-09-30 (Misc batch 2026-09-30 "economy" (war of disinformation) implemented; awaiting user review, NOT yet committed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -256,6 +256,26 @@ still done by hand.
     "psychology section to be updated in more depth" (mentor's words);
     "x3 entry model" and "x3 by x3" still undefined (advanced stage). The
     Trump assassination-attempt thread is still open.
+- **Misc batch 2026-09-30 "economy"** (source + approved analysis in
+  `sources/misc/2026-09-30-misc-economy/`; no images). Despite the intake
+  label, the content is worldview/media ("the war of disinformation"), late
+  2024 or later (date not verified). User approved all recommended options:
+  - No new entry. **Worldview** gets a new `## The war of disinformation (a
+    later post)` section (after *Recommended viewing*): why he raised it,
+    "Take a side", the team (1000+ members, "traitors"), Zionism as he frames
+    it (disclaimer first, Herzl documented-simplified, the Frankism/"elite
+    satanism" claim labelled unsupported + antisemitic trope, Icke named with
+    his caveat + status note), the trading link blockquote ("to beat the
+    manipulation, you can not be the manipulated"), Still to come.
+    `mentorPrompt` updated. **Morality** *Knowledge as an edge*: new bullet
+    "Independent sources for facts, your own research for conclusions".
+    **Psychology** *Media*: one sentence + cross-link.
+  - Raw-only: the user's notes, the Instagram/Telegram link lists (only the
+    fact they were shared is published), "Forgive me ... I really do not
+    care", "they live through the real deal". Folder name left as-is.
+  - Thread opened: "next post: the political state of affairs the world is
+    reaching for" / "a even deeper exposé". Trump assassination-attempt
+    thread still open.
 
 ## Open question - flagged to user, unresolved
 
@@ -269,13 +289,16 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The next mentor-material batch (`/mentor-new task <N>` or
-   `/mentor-new misc`). The 2026-09-30 batch is committed and deployed;
-   route new material with the Task / Reference / Misc rule.
+1. After user review: commit and push the Misc batch 2026-09-30
+   "economy" (3 edited Misc `index.md` files, `sources/misc/2026-09-30-misc-economy/`,
+   this file), then confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
+2. Then the next mentor-material batch (`/mentor-new task <N>` or
+   `/mentor-new misc`), routed with the Task / Reference / Misc rule.
 
 Committed and deployed before this batch: Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
-(`1f4853f`), mentor workflow skills (`3b766b5`).
+(`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
+"trading reference" (`814bf9c`), chart-page house style (`4392a68`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 

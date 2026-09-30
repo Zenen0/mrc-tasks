@@ -9,7 +9,8 @@ mentorPrompt: |
   trading instruction. Opinions and interpretations are his; historical and
   factual claims are marked by their evidential status. From his long
   "Miscellaneous" post, around late Oct - early Nov 2024 (inferred), which he
-  called a "crash course" of "public education you should know".
+  called a "crash course" of "public education you should know". A later post
+  on "the war of disinformation" is included near the end.
 ---
 
 ## How to read this page
@@ -138,6 +139,56 @@ He asks why power would be "so ruthless with so much power already?" and gives t
 - "It is an impactful, all-too-relevant masterpiece that had to be shared. Don't skip by without watching it. It will help break past the manipulation. I encourage you all to share it as well."
 
 On breaking free from the manipulation as part of the trader's mindset, see [Trading Psychology · Underlying causes](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#underlying-causes-breaking-free-from-the-manipulation).
+
+## The war of disinformation (a later post)
+
+*From a later post, after the* 2073 *recommendation (late 2024 or later; the exact date is unknown).* He returns to the Gaza and media material because "This subject was more important to refresh", and frames it as a condition of membership and of trading success. Opinions, forecasts and claims are his and are marked as on the rest of this page.
+
+### Why he raised it again
+
+"The war of disinformation is upon us stronger than ever." He says some in the team have apathy towards the situation, or "have fallen for the lies and have fostered hate towards certain groups (racism/fascism/ bigotry) and have lost touch with their own humanity."
+
+He ties this directly to trading:
+
+- **"Those who are still manipulated will never succeed in the beating of the markets until they break free, especially at our highest levels"**, because "they are subject to weak irrational thinking and minds with no powerful purpose".
+- **"Remember it is not only technical analysis but the breaking the mental bondages and have deep clarity of thought."**
+- *His claim about his own team:* the high-level traders "have achieved success due to this clarity at foremost, including myself and the creation of this system". Not all of the team, he says, are "really comprehending the gravity of the situation", which makes him "hesitant to share sometimes". "But know breaking free from the 'matrix' was never going to be a pretty sight."
+- **Priority:** "There should be more focus on the matter, before your trading even. Only by understanding the situation and evil forces can one truly be free. All of you here have a higher responsibility that exceeds the individual."
+
+### "Take a side"
+
+"It's not about losing hope, but being more fierce in resistance. Good will prevail eventually, but we are in testing times." Beyond the events themselves, he points to "the war on the minds and those who would rather ignore (or attempt to justify) what is going on": **"The time has come for all to take a side. Humanity or evil and brainwashing?"**
+
+He shared a set of video links under the heading "Genocide, war crimes, evil hearts of moral relativism/ satanic agendas, corruption at the highest levels" (not reproduced here), calling them "undeniable documentation to break the media brainwashing". On the genocide and war-crimes characterisation, see the note under [The present day, as he reads it](#the-present-day-as-he-reads-it). "Satanic agendas" is his claim and is unsupported.
+
+- "I will not stay silent, it is my (and your) responsibility to spread the truth. It is time all to stop being self centered and focus energies on the larger picture."
+- *Forecast:* "These crimes will have a ripple effect on the world, as we will see in these coming months and years. Really ultimately one will be forced to pick a side."
+- **"In this team we have no room for those without true empathy. And true empathy and understanding of these matters you must have to succeed in beating the market manipulation."**
+
+### The team
+
+With "Over 1000 members" (his figure), he says, "it is only statistics that many are not aware and we will have those racists/bigots/fascists/ brainwashed due media, personal societies, culture or excessive blind nationalism." He adds: "This is not a dig at anyone. I call them out. I have hope for all to be forces for good. But account for the possibility of traitors amongst us."
+
+### Zionism, as he frames it
+
+He opens with a disclaimer: **"Do not take this as an attack on any religion 'Judaism is not zionism'".** The distinction between Judaism (a religion) and Zionism (a political movement) is widely made, including by Jewish anti-Zionist groups.
+
+- **Origins.** "A movement created by Theodor Herzl, an atheist - in the late 1890s." *Documented, simplified:* Herzl founded *political* Zionism (*Der Judenstaat*, 1896; the First Zionist Congress in Basel, 1897). Earlier proto-Zionist groups such as Hovevei Zion existed from the 1880s. Herzl was secular and non-observant; "atheist" is his label.
+- **His claim.** "Empowered by frankism and elite satanism (as most secret societies we spoke of previously are at the high levels)." *Status: unsupported, and a recognised antisemitic conspiracy narrative.* Frankism was an 18th-century heretical Sabbatean sect around Jacob Frank that had largely dissolved by the 19th century. There is no evidence that it shaped Herzl's political Zionism. Casting Jews or Zionists as a secret Satanic or Frankist cabal is a long-standing antisemitic trope. This continues his ["Why?" answer](#why---his-answer) above.
+- **The source he points to.** "See David Icke's works on this matter (although he is not correct in all, presents a robust history of their ideology 'all good is evil, and all evil is good')". *Status:* Icke is widely documented as a promoter of antisemitic conspiracy theories (see *Specific claims he makes* above). The quoted slogan is Icke's gloss on Sabbatean/Frankist antinomianism, not a reliable historical source.
+- "I will not speak more on it. Free yourselves from the lies they propagate." He points back to [*2073*](#recommended-viewing): "That's a world they aim for without the resistance they would have you hate." *Forecast / opinion:* "Know this is a pivotal time in history and it all starts from this matter. Which pertains to us all".
+
+### The trading link
+
+In his words:
+
+> It really is linked to the trading lesson : to beat the manipulation, you can not be the manipulated.
+
+This restates the principle in [Trading Psychology · Underlying causes](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#underlying-causes-breaking-free-from-the-manipulation). The practical side, using independent sources for the facts and your own research for the conclusions, is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything). He also shared a list of independent live-news channels (not reproduced here). *His opinion:* public media "have partnered with genocide (powered by racism and hate campaigns) and known to spew lies". He closes: "A true outlook for a powerful global, free-minded perspective. Beat the manipulation, and you are the only ones to be rewarded for it with life fulfillment and success in beating the manipulation of the markets (and mind)".
+
+### Still to come
+
+"In the next post we will discuss the political state of affairs the world is reaching for, I'm sure most are interested in what is to come (note how each passing month comes with a velocity of change like never before)." Only after this refresh, he says, "can we move forward with a even deeper exposé." That post has not been imported yet.
 
 ## His closing stance
 

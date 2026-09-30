@@ -84,7 +84,7 @@ In his view, "The world is lied to about the true nature of money." Societies ru
 
 ### Media
 
-"False narratives, subconscious programming, stirs low vibrational feelings (divide and conquer strategy)." **"Be only as informed as you need to - via verified independent outlets. A respect for true journalism, not a blind following."** The same principle is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything).
+"False narratives, subconscious programming, stirs low vibrational feelings (divide and conquer strategy)." **"Be only as informed as you need to - via verified independent outlets. A respect for true journalism, not a blind following."** The same principle is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything). In a later post he calls this "the war of disinformation" and restates the principle: **"to beat the manipulation, you can not be the manipulated."** See [Worldview · The war of disinformation](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#the-war-of-disinformation-a-later-post).
 
 ### Society
 
