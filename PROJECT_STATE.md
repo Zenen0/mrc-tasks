@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Misc batch 2026-09-30 "economy" (war of disinformation) implemented, committed (`d6605b5`) and deployed).
+Last updated: 2026-09-30 (Week 1: Zones implemented - Weekly Programme under Tasks, Reference Zones page, extensions. **Not yet committed**; awaiting user review).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -85,6 +85,20 @@ Each Task now has **two branches**, not a flat subtask list:
   set it for a note specific to that one subtask. The subtask
   assignment section simply doesn't render when there's nothing to
   show (no more awkward "Pending.").
+
+- **Weekly Programme** (added 2026-09-30 for Week 1; part of Tasks, nav
+  unchanged): content `src/content/weeks/<N>/` (`week.md`,
+  `task-<M>/task.md`, future `task-<M>/mine/<entry>/index.md`), collections
+  `weekMeta`/`weekTasks`/`weekWork`, helpers `src/lib/weeks.ts`, pages
+  `src/pages/tasks/weeks/` -> `/tasks/weeks/`, `/tasks/weeks/N/` (landing:
+  Assignment | My Work card pair per Task, rows `#task-M`),
+  `/tasks/weeks/N/task-M/{assignment,mine}/`, `.../mine/<entry>/`,
+  `.../task-M/` (redirect to the landing row). Week assignment pages use
+  `chart-page`. Home page: "Weekly Programme" section above "Standalone
+  tasks". Images `src/assets/weeks/N/task-M/`. Details in
+  `.claude/skills/mentor-implement/reference/site-conventions.md`.
+  Standalone Tasks 1-3 untouched. Breadcrumbs now wrap on narrow screens
+  (`.breadcrumb` flex-wrap, site-wide).
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does
@@ -277,6 +291,39 @@ still done by hand.
     reaching for" / "a even deeper exposé". Trump assassination-attempt
     thread still open.
 
+- **Week 1: Zones** (source + approved analysis, §18 authoritative, in
+  `sources/tasks/2026-09-30-week-1/`; dated June 2025 by inference only, no
+  dates on the site). Implemented, **not committed**:
+  - Weekly Programme infrastructure (see Architecture) + Week 1 landing,
+    3 assignments (Task 1 HTF Zones 2 years; Task 2 Session Zones 10 NY days;
+    Task 3 10/7 min Zones & LTF HCS Refinement 30 sessions) and 3 empty My
+    Work pages (progress "Not started" / "0 / 10 sessions" / "0 / 30
+    sessions", editorial "What goes here" list; no fabricated work).
+  - New Reference `zones/` (order 4): theory, 4 zone types, rules + Q&A
+    answers (questions paraphrased, no names), weakest ATT FU, three levels,
+    HTF sequence, reactions/expiry, try-first practice (answers in
+    `details.practice-answer`), live-time application, full NY session
+    mark-up, "Where zones sit".
+  - Extensions: Terminology (Attempted FU pointer; "Zone" under Defined
+    elsewhere; Related), Rules § 9 pointer + Related, worked example Related,
+    Misc Psychology new section "Asking questions well (Week 1 reflection)"
+    + "Using ChatGPT" + Img 87 collapsed (before *Still to come*).
+  - Images: 44 copied and `cmp`-verified - Ref Zones 21, W1 T1 7, W1 T2 11,
+    W1 T3 4, Misc 1. The analysis's "Ref Zones 23" total was a miscount (its
+    own list has 21; 21+7+11+4+1+11 raw-only = 55).
+  - Raw-only: all 11 student screenshots (Img 68, 69, 72-75, 81-85; Img 81's
+    mentor text is transcribed), the user's notes, the Week 2 postponement
+    reasons ("leak potential", "events since yesterday"), emoji/"xd",
+    "A "happy" intensive backtesting now".
+  - Unresolved, shown as unresolved on the site (not inferred): U1
+    instrument, U2 Task 3 "later" clause (shown as a later step), U3
+    standard timeframes for Tasks 1-2 (a student asked; no answer in the
+    source - worth asking the mentor), U4 Task 2 HTF TFs, U5 Task 3 session
+    type, U6 "HCS x1" (no gloss), U7 body-in-wick expiry, U8 "fade", U9
+    1 min "strong FU", U10 chart colours.
+  - Threads opened: 3 fundamentals/geopolitics segments announced after
+    Week 1 (link to Worldview *Still to come*); Week 2 on schedule.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -289,12 +336,12 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. Week 1 of the mentor's new weekly programme: `/mentor-new week 1`, user
-   pastes the whole Week in source order, then `/mentor-analyse` on that one
-   batch. The analysis proposes the Week/Task site architecture (nested under
-   Tasks, no collision with standalone Tasks 1-3; preferred UX: Week landing
-   page pairing each Task's assignment with its My Work) for user approval.
-   `week N` intake support added and committed 2026-09-30.
+1. User review of Week 1 (local preview `/mrc-tasks/tasks/weeks/1/`,
+   `/mrc-tasks/reference/zones/`). After approval: commit (sources batch
+   folder + site changes + site-conventions.md + this file) and push, then
+   confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
+2. Then Week 2: `/mentor-new week 2` -> paste -> `/mentor-analyse`. A new
+   Week is a new `src/content/weeks/<N>/` folder; no template changes needed.
 
 Committed and deployed before this batch: Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2

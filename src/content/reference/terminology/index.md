@@ -56,6 +56,8 @@ Chart annotations (1hr):
 
 Task 3 uses the same term in its negation rule: "if the first candle after doesn't make a complete FU wick but reacts - ATT FU" ([rule 5](/mrc-tasks/tasks/3/assignment/#the-rules)).
 
+*Week 1 uses a zone built from the "weakest ATT FU" wick, which he also calls "failed FU" (3hr + only, one reaction): see [Zones · Weakest ATT FU zone](/mrc-tasks/reference/zones/#weakest-att-fu-zone-failed-fu).*
+
 ## Negation
 
 > **Negation** = "Negates" (Look up definition) previous FU manipulation - more powerful than the sole FU
@@ -177,14 +179,15 @@ These appear on his charts but are not formally defined. The explanations are re
 
 ## Defined elsewhere
 
-Used on these charts, but defined in the Tasks. Their definitions stay where he gave them:
+Used on these charts, but defined elsewhere. Their definitions stay where he gave them:
 
 - **TS** (true stop) and the HTF true stop: [Task 3, rule 1](/mrc-tasks/tasks/3/assignment/#the-rules).
 - **TFS** (timeframe strength): "when price establishes a confirmed prevalent direction" ([Task 3](/mrc-tasks/tasks/3/assignment/#timeframe-strength---definition)).
 - **Doji** (unmanipulated doji, major liquidity): "Must be within a previous wick and a non FU high or low. The most major form of liquidity (HTF, pure doji)." ([Task 1](/mrc-tasks/tasks/1/assignment/#the-30-chart-task)).
 - **Big wick to fill**: "an area of large momentum that would entice retailers" ([Task 1](/mrc-tasks/tasks/1/assignment/#the-30-chart-task)).
+- **Zone** and the four zone types (FU wick, HCS, weakest ATT FU / failed FU, body-in-wick orderblock): [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/).
 - **POI**: used throughout but never spelled out. Task 3's aid gives "The base definition of a POI one must wait for on the 10 min + to establish" ([task aid](/mrc-tasks/tasks/3/assignment/#task-aid---clarifications-on-timeframe-strength)).
 
 ---
 
-Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

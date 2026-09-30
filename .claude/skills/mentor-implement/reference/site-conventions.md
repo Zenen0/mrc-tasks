@@ -23,11 +23,43 @@ this file.
 
 ## Weekly programme (Week N, Task M)
 
-Not implemented yet. Week batches (`sources/tasks/<date>-week-N/`) sit under
-the Tasks section, but Week N Task M must never reuse the standalone Task
-routes or folders (`/tasks/M/`, `src/content/tasks/M/`). Build exactly the
-Week/Task architecture the approved ANALYSIS.md specifies. Once built, record
-the concrete files and routes here.
+Part of the Tasks system (not a fourth section; nav stays Tasks · Reference ·
+Misc). Built for Week 1 (2026-09-30). Week N Task M never reuses the
+standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
+
+- Content: `src/content/weeks/<N>/` (never under `src/content/tasks/`, whose
+  globs would sweep Week files into the standalone Tasks).
+  - `week.md`: frontmatter `title` (topic, e.g. "Zones"), `summary`, optional
+    `keyQuote`, optional `study: {label, href, note}` ("Study first" callout;
+    `href` without the base, e.g. `/reference/zones/`). Body = the landing
+    page's closing sections (pacing, also-from, after).
+  - `task-<M>/task.md`: frontmatter `title`, `short` (row heading / pager
+    label), optional `target` + `unit` (My Work progress "0 / 10 sessions"),
+    optional `mineGuide` (editorial "What goes here" list). Body = the
+    assignment, same conventions as a standalone `task.md` (`> blockquote` =
+    formal deliverable only; At a glance table; notes in italics).
+  - `task-<M>/mine/<entry>/index.md`: future My Work entries (standalone
+    subtask schema; zero-padded ids, e.g. `s01`). Leave `mine/` absent until
+    the user has real work. Never mix mentor material in.
+- Collections (`src/content.config.ts`): `weekMeta` (`*/week.md`, id `1`),
+  `weekTasks` (`*/*/task.md`, id `1/task-2`), `weekWork`
+  (`*/*/mine/**/index.md`, id `1/task-2/mine/s01`). Helpers:
+  `src/lib/weeks.ts` (+ tests).
+- Routes (`src/pages/tasks/weeks/`): `/tasks/weeks/` (Weekly Programme
+  index), `/tasks/weeks/<N>/` (landing: summary, study-first, one
+  `#task-<M>` row per Task with Assignment | My Work cards, then the body),
+  `/tasks/weeks/<N>/task-<M>/assignment/` (`chart-page`, prev/next pager),
+  `.../mine/`, `.../mine/<entry>/`, and `.../task-<M>/` (meta-refresh to the
+  landing row). Breadcrumbs: Tasks › Weekly Programme › Week N: Topic ›
+  Task M › Assignment | My Work.
+- Home page (`src/pages/index.astro`): "Weekly Programme" section (WEEK N
+  cards, oldest first) above "Standalone tasks".
+- Images: `src/assets/weeks/<N>/task-<M>/`, referenced as
+  `![alt](../../../../assets/weeks/<N>/task-<M>/file.jpg)`. Week-level
+  technical teaching goes to Reference, not the Week pages.
+- `.assignment-body h4` exists for chart headings under an h3 phase (e.g.
+  Week 1 Task 2's exercise 2). `details.practice-answer` = collapsible answer
+  charts for a try-first practice exercise, full chart width on `chart-page`.
 
 ## Reference entry (taught technical framework)
 
@@ -43,9 +75,12 @@ the concrete files and routes here.
   as `![alt](../../../assets/reference/<topic>/file.jpg)`, full width,
   click-to-zoom, annotations transcribed under each image.
 - Pages so far: `terminology` (1), `rules-of-analysis` (2),
-  `worked-example-3000-reversal` (3). Stable anchors: Terminology `#fu`,
+  `worked-example-3000-reversal` (3), `zones` (4). Stable anchors: Terminology `#fu`,
   `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
-  Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`.
+  Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`;
+  Zones `#the-four-zone-types`, `#the-rules`, `#which-part-of-the-wick`,
+  `#the-weakest-att-fu-in-depth`, `#three-levels-of-use`,
+  `#reactions-and-expiry`, `#full-zone-mark-up-for-a-ny-session`.
 
 ## Misc entry
 
@@ -101,8 +136,9 @@ the Reference pages are the model.
   so a chart shows up to its native width. Prose, headings, lists,
   blockquotes, the header and the Context block are capped at 820px (a
   readable measure). Chart paragraphs (`p:has(> img)`) and tables keep the
-  full width. Task assignment pages don't use it yet (`article.assignment-page`
-  is capped at 760px, text and charts alike).
+  full width. Standalone Task assignment pages don't use it
+  (`article.assignment-page` is capped at 760px, text and charts alike); Week
+  assignment pages do (user-approved).
 - For a new chart-heavy page that isn't a Task, use the Reference template
   or add `chart-page` to its article. Converting Task or Misc templates to
   `chart-page` needs the user's approval.
@@ -131,7 +167,7 @@ Don't mass-convert older pages to this style without the user's approval.
   `.response-gallery`, `.misc-header` / `.misc-badge`.
 - `src/scripts/lightbox.js`: triggers on `.thumb`, `.assignment-body img`,
   `.mentor-images img`, `.response img`.
-- `src/content.config.ts`: collection schemas (`tasks`, `misc`, `reference`, `taskMeta`). Add a field only if genuinely
+- `src/content.config.ts`: collection schemas (`tasks`, `misc`, `reference`, `taskMeta`, `weekMeta`, `weekTasks`, `weekWork`). Add a field only if genuinely
   needed.
 - `ADDING-CONTENT.md`: user-facing how-to. Update it if a convention changes.
 

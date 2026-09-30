@@ -1,0 +1,67 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../../../components/Layout.astro';
+import Breadcrumb from '../../../../../components/Breadcrumb.astro';
+import Lightbox from '../../../../../components/Lightbox.astro';
+import { withBase } from '../../../../../lib/paths';
+import { truncateExcerpt } from '../../../../../lib/og';
+import { siblingSubtasks } from '../../../../../lib/tasks';
+import { parseWeekTaskId, tasksForWeek } from '../../../../../lib/weeks';
+
+export async function getStaticPaths() {
+  const weekTasks = await getCollection('weekTasks');
+  return weekTasks.map((entry) => {
+    const { week, slug } = parseWeekTaskId(entry.id);
+    return { params: { week, wtask: slug }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const { week, number } = parseWeekTaskId(entry.id);
+const { wtask } = Astro.params as { wtask: string };
+const { Content } = await render(entry);
+
+const weekMeta = (await getCollection('weekMeta')).find((meta) => meta.id === week);
+const weekTitle = `Week ${week}: ${weekMeta?.data.title ?? ''}`;
+const { prev, next } = siblingSubtasks(tasksForWeek(await getCollection('weekTasks'), week), entry.id);
+const base = import.meta.env.BASE_URL;
+const description = truncateExcerpt(entry.body ?? '', 160);
+---
+<Layout title={`Week ${week} · Task ${number}: ${entry.data.title}`} description={description}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', base) },
+      { label: 'Weekly Programme', href: withBase('/tasks/weeks/', base) },
+      { label: weekTitle, href: withBase(`/tasks/weeks/${week}/`, base) },
+      { label: `Task ${number}`, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
+      { label: 'Assignment' },
+    ]}
+  />
+  <nav class="subtask-pager" aria-label="Week task navigation">
+    {prev && (
+      <a class="pager-prev" href={withBase(`/tasks/weeks/${prev.id}/assignment/`, base)}>
+        &lsaquo; Task {parseWeekTaskId(prev.id).number}: {prev.data.short}
+      </a>
+    )}
+    {next && (
+      <a class="pager-next" href={withBase(`/tasks/weeks/${next.id}/assignment/`, base)}>
+        Task {parseWeekTaskId(next.id).number}: {next.data.short} &rsaquo;
+      </a>
+    )}
+  </nav>
+  <article class="assignment-page chart-page">
+    <header class="subtask-header week-header">
+      <span class="subtask-badge mono">WEEK {week} · TASK {number}</span>
+      <h1>{entry.data.title}</h1>
+    </header>
+    <div class="assignment-body">
+      <Content />
+    </div>
+    <nav class="week-branch-links" aria-label="This task">
+      <a href={withBase(`/tasks/weeks/${week}/${wtask}/mine/`, base)}>My work for this task &rsaquo;</a>
+      <a href={withBase(`/tasks/weeks/${week}/`, base)}>All of {weekTitle}</a>
+    </nav>
+  </article>
+
+  <Lightbox />
+</Layout>

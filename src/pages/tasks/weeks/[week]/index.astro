@@ -1,0 +1,71 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../../components/Layout.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import { withBase } from '../../../../lib/paths';
+import { parseWeekTaskId, tasksForWeek, workForWeekTask, workProgress } from '../../../../lib/weeks';
+
+export async function getStaticPaths() {
+  const weekMetaEntries = await getCollection('weekMeta');
+  return weekMetaEntries.map((entry) => ({ params: { week: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { week } = Astro.params as { week: string };
+const { Content } = await render(entry);
+const weekTitle = `Week ${week}: ${entry.data.title}`;
+const weekTasks = tasksForWeek(await getCollection('weekTasks'), week);
+const weekWork = await getCollection('weekWork');
+const base = import.meta.env.BASE_URL;
+---
+<Layout title={weekTitle} description={entry.data.summary}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', base) },
+      { label: 'Weekly Programme', href: withBase('/tasks/weeks/', base) },
+      { label: weekTitle },
+    ]}
+  />
+  <article class="week-page">
+    <header class="subtask-header week-header">
+      <span class="subtask-badge mono">WEEK {week}</span>
+      <h1>{entry.data.title}</h1>
+    </header>
+
+    <div class="assignment-body">
+      <p>{entry.data.summary}</p>
+      {entry.data.keyQuote && <blockquote><p>{entry.data.keyQuote}</p></blockquote>}
+      {entry.data.study && (
+        <p class="week-study">
+          <strong>Study first:</strong> <a href={withBase(entry.data.study.href, base)}>{entry.data.study.label}</a>. {entry.data.study.note}
+        </p>
+      )}
+    </div>
+
+    {weekTasks.map((task) => {
+      const { slug, number } = parseWeekTaskId(task.id);
+      const work = workForWeekTask(weekWork, week, slug);
+      return (
+        <section class="task-group week-task" id={slug}>
+          <h2>Task {number} · {task.data.short}</h2>
+          <div class="branch-grid">
+            <a class="branch-card" href={withBase(`/tasks/weeks/${week}/${slug}/assignment/`, base)}>
+              <span class="card-badge">MR CASINO&apos;S TASK</span>
+              <h3>Assignment</h3>
+              <p>{task.data.title}</p>
+            </a>
+            <a class="branch-card" href={withBase(`/tasks/weeks/${week}/${slug}/mine/`, base)}>
+              <span class="card-badge">MY WORK</span>
+              <h3>My work</h3>
+              <p>{workProgress(work.length, task.data.target, task.data.unit)}</p>
+            </a>
+          </div>
+        </section>
+      );
+    })}
+
+    <div class="assignment-body">
+      <Content />
+    </div>
+  </article>
+</Layout>

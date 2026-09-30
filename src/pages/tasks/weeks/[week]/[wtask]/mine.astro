@@ -1,0 +1,84 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../../../../components/Layout.astro';
+import Breadcrumb from '../../../../../components/Breadcrumb.astro';
+import SubtaskCard from '../../../../../components/SubtaskCard.astro';
+import { filterImagesForEntry, getCoverImage } from '../../../../../lib/images';
+import { withBase } from '../../../../../lib/paths';
+import { parseWeekTaskId, workForWeekTask, workProgress } from '../../../../../lib/weeks';
+
+export async function getStaticPaths() {
+  const weekTasks = await getCollection('weekTasks');
+  return weekTasks.map((entry) => {
+    const { week, slug } = parseWeekTaskId(entry.id);
+    return { params: { week, wtask: slug }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const { week, number } = parseWeekTaskId(entry.id);
+const { wtask } = Astro.params as { wtask: string };
+
+const weekMeta = (await getCollection('weekMeta')).find((meta) => meta.id === week);
+const weekTitle = `Week ${week}: ${weekMeta?.data.title ?? ''}`;
+const work = workForWeekTask(await getCollection('weekWork'), week, wtask);
+const base = import.meta.env.BASE_URL;
+
+const globMap = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/weeks/**/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+---
+<Layout title={`Week ${week} · Task ${number}: my work`} description={`My own backtesting work for Week ${week} · Task ${number}: ${entry.data.title}.`}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', base) },
+      { label: 'Weekly Programme', href: withBase('/tasks/weeks/', base) },
+      { label: weekTitle, href: withBase(`/tasks/weeks/${week}/`, base) },
+      { label: `Task ${number}`, href: withBase(`/tasks/weeks/${week}/#${wtask}`, base) },
+      { label: 'My Work' },
+    ]}
+  />
+  <header class="subtask-header week-header">
+    <span class="subtask-badge mono">WEEK {week} · TASK {number}</span>
+    <h1>My work</h1>
+  </header>
+  <p class="page-intro">
+    For <a href={withBase(`/tasks/weeks/${week}/${wtask}/assignment/`, base)}>{entry.data.title}</a>.
+    Progress: <span class="mono">{workProgress(work.length, entry.data.target, entry.data.unit)}</span>
+  </p>
+
+  {work.length === 0 && <p class="empty-state">No entries yet.</p>}
+  <div class="card-grid">
+    {work.map((item) => {
+      const entryId = item.id.split('/').pop()!;
+      const images = filterImagesForEntry(globMap, `/src/content/weeks/${item.id}`, item.data.captions ?? {});
+      const { cover, count } = getCoverImage(images);
+      return (
+        <SubtaskCard
+          href={withBase(`/tasks/weeks/${week}/${wtask}/mine/${entryId}/`, base)}
+          badge={entryId.toUpperCase()}
+          title={item.data.title}
+          cover={cover}
+          imageCount={count}
+          promptExcerpt={item.data.mentorPrompt ?? ''}
+        />
+      );
+    })}
+  </div>
+
+  {entry.data.mineGuide && (
+    <section class="week-guide">
+      <h2>What goes here</h2>
+      <ul>
+        {entry.data.mineGuide.map((line) => <li>{line}</li>)}
+      </ul>
+    </section>
+  )}
+
+  <nav class="week-branch-links" aria-label="This task">
+    <a href={withBase(`/tasks/weeks/${week}/${wtask}/assignment/`, base)}>&lsaquo; Assignment</a>
+    <a href={withBase(`/tasks/weeks/${week}/`, base)}>All of {weekTitle}</a>
+  </nav>
+</Layout>

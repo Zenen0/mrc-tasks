@@ -1,0 +1,30 @@
+---
+// /tasks/weeks/<N>/task-<M>/ has no page of its own: redirect to that Task's pair on the Week landing page.
+import { getCollection } from 'astro:content';
+import { withBase } from '../../../../../lib/paths';
+import { parseWeekTaskId } from '../../../../../lib/weeks';
+
+export async function getStaticPaths() {
+  const weekTasks = await getCollection('weekTasks');
+  return weekTasks.map((entry) => {
+    const { week, slug } = parseWeekTaskId(entry.id);
+    return { params: { week, wtask: slug } };
+  });
+}
+
+const { week, wtask } = Astro.params as { week: string; wtask: string };
+const target = withBase(`/tasks/weeks/${week}/#${wtask}`, import.meta.env.BASE_URL);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={target} />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting · MrC Tasks</title>
+  </head>
+  <body>
+    <p><a href={target}>Week {week} · Task {parseWeekTaskId(`${week}/${wtask}`).number}</a></p>
+  </body>
+</html>

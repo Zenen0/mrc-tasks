@@ -133,6 +133,44 @@ He says he does not want to go into theology, but has to mention it at least onc
 - For laziness, or to power through extra study sessions: "coffee (take breaks) or green tea".
 - For impulse: "ashwagandha (will alter emotional sensitivity so be careful and only use once or twice a fortnight)".
 
+## Asking questions well (Week 1 reflection)
+
+He closed [Week 1 of the weekly programme](/mrc-tasks/tasks/weeks/1/) with a reflection "In the art of the mind and correct thinking":
+
+**"To avoid making things unnecessarily difficult for yourselves."**
+
+He treats it as part of a larger subject for later ("this is a whole discussion of its own and we will explore it later - it matters now"), rooted in "the age old nature / psychological pattern behaviour of humans we are taught through the history". Some, he says, "ask questions merely for the sake of it without truly delving deep , or show a lack self confidence - it does not come from a genuine place (if done only subconsciously)".
+
+*His view of the cause:* "People who do not attempt to constantly think purely (key word - attempt- essentially the modern day "law of attraction") suffer sometimes from a tainted innate disposition and have apathy/arrogance/ subconsciously take comfort in wallowing in self pity. The root of self sabotage." For some it is "merely a lack of education- but that is not an excuse in the Internet age and one being here now".
+
+The remedy:
+
+> These are problems that can be fixed by rationality. Focus on the advantage first (80% of your thought power) and then any arising questions (20% of thought power). You are already given the researched facts. Remember to use all the contents provided in reflection and previously - they are all linked.
+
+"We do not point to anyone, but to serve reminder to all and to broaden minds. It pertains to, and will strengthen your trading ability. Questions are welcomed- but how much do you first work on your mind to ensure you are proposing your highest researched intellectual capacity and standard?"
+
+"Questions and exploring different analysis scenarios / live price action / reflection/ together are different- the latter is more encouraged and advantageous for your studies + mind power"
+
+He shared a ChatGPT answer alongside it:
+
+<details class="response-gallery">
+<summary>ChatGPT output shared by the mentor: "Arrogance vs Apathy in Questioning"</summary>
+
+![ChatGPT output shared by the mentor: "Arrogance vs Apathy in Questioning"](../../../assets/misc/psychology/chatgpt-arrogance-vs-apathy.jpg)
+
+</details>
+
+### Using ChatGPT
+
+That ChatGPT answer used the word "surrender". He clarified: "Some may have took that literally. We know the only one to worthy surrender to is god." Then, on the tool itself:
+
+- "Chat gpt is nothing more than a fun tool, the likes of its potential never accessible before in history , yet know the underlying answer you will receive is always linked to the type of question you ask."
+- "The objective in a sense is not to take everything it says as the 100% truth (it doesn't have your soul and instincts, and is programmed to say only as much as you ask) - but rather learn something new - to ask then the better question. Use it in this way."
+- "Any educational lapse can be filled." Asking it to take you to PhD or masters level on a subject such as maths "may be hard , but possible. Maybe even in an exceedingly shorter timespan. It is basic rationality to make use of this tool (again without being consumed, the human is more powerful). In the right way, to ask better questions and affirm new knowledge."
+- "(And no, I do not use it for these writings here)"
+
+The same principle, "Use its resource, do not be reliant", is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything).
+
 ## Still to come
 
 "This section will also be updated more in depth again in the future. It is much information condensed so was kept as much to the point as possible. I will always encourage all to study the points presented objectively, no matter how uncomfortable they may be."
@@ -141,4 +179,4 @@ He says he does not want to go into theology, but has to mention it at least onc
 
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) (including his [recommended viewing](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#recommended-viewing)) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) (including his [recommended viewing](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#recommended-viewing)) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/)

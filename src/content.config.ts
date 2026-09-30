@@ -32,4 +32,33 @@ const taskMeta = defineCollection({
   schema: z.object({ title: z.string() }),
 });
 
-export const collections = { tasks, misc, reference, taskMeta };
+// Weekly Programme (part of Tasks, routed under /tasks/weeks/). A separate folder so the
+// tasks/taskMeta globs above never sweep Week files into the standalone Tasks.
+const weekMeta = defineCollection({
+  loader: glob({ pattern: '*/week.md', base: './src/content/weeks', generateId: ({ entry }) => entry.replace(/\/week\.md$/, '') }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    keyQuote: z.string().optional(),
+    // "Study first" callout shown above the Task pairs (e.g. the Reference page the Week builds on).
+    study: z.object({ label: z.string(), href: z.string(), note: z.string() }).optional(),
+  }),
+});
+
+const weekTasks = defineCollection({
+  loader: glob({ pattern: '*/*/task.md', base: './src/content/weeks', generateId: stripTaskMetaSuffix }),
+  schema: z.object({
+    title: z.string(),
+    short: z.string(),
+    target: z.number().optional(),
+    unit: z.string().optional(),
+    mineGuide: z.array(z.string()).optional(),
+  }),
+});
+
+const weekWork = defineCollection({
+  loader: glob({ pattern: '*/*/mine/**/index.md', base: './src/content/weeks', generateId: stripIndexSuffix }),
+  schema: entrySchema,
+});
+
+export const collections = { tasks, misc, reference, taskMeta, weekMeta, weekTasks, weekWork };

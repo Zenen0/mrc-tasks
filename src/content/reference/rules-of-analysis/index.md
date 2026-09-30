@@ -68,6 +68,8 @@ The timings are set out in [Task 3 · Key timing](/mrc-tasks/tasks/3/assignment/
 
 On the worked example's 4hr chart: "4hr HCS Zone reaction - secondary confluence that makes up POI".
 
+*The full zone method (Week 1) is on [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/).*
+
 ### 10. Final entries
 
 > Your final entries are taken with confidence in liquidity direction, established 10 min TS, following TFS, in timing. Generally speaking, you will always have a refined HCS or negation POI, a LTF TS formed and respected (a strong entry model that occurred after previous liquidity was manipulated), LAOL taken, core + trail + LAOL to target.
@@ -113,4 +115,4 @@ His own compressed version, written on the worked example's 4hr chart as the "Ba
 
 ---
 
-Related: [Terminology](/mrc-tasks/reference/terminology/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) · [Task 1](/mrc-tasks/tasks/1/assignment/) · [Task 2](/mrc-tasks/tasks/2/assignment/) · [Task 3](/mrc-tasks/tasks/3/assignment/)
+Related: [Terminology](/mrc-tasks/reference/terminology/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) · [Task 1](/mrc-tasks/tasks/1/assignment/) · [Task 2](/mrc-tasks/tasks/2/assignment/) · [Task 3](/mrc-tasks/tasks/3/assignment/)
