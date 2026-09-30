@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Misc batch "fundamentals" implemented, awaiting user review; not committed).
+Last updated: 2026-09-30 (Misc batch "fundamentals" committed as `73ac2aa`, pushed and deployed; live verification passed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -443,7 +443,9 @@ still done by hand.
   authoritative**; no images). The mentor's numbered "Fundamentals" series:
   Part 1 (July 2025) and Part 2 (autumn 2025, inferred). By his definition
   fundamentals = "true facts", so it is geopolitics/worldview, not economics.
-  **Implemented and validated; NOT committed (awaiting user review).**
+  **User-approved; committed as `73ac2aa`, pushed to `main`, GitHub Pages
+  deploy succeeded, live verification passed; local `main` = `origin/main`,
+  working tree clean after deploy.**
   - New `misc/fundamentals-series-geopolitical-state-of-the-world/` (order 7,
     no relatedTask): How to read, Where this series fits, Part 1 (faith/
     mortality frame, 2025 timeline in calendar order, Iran, "one central
@@ -495,18 +497,15 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. User review of the Misc "fundamentals" batch; on approval commit and push
-   it (new page, 5 edited content files, `global.css`, site-conventions,
-   PROJECT_STATE, and the `sources/misc/2026-09-30-misc-fundamentals/` folder),
-   then confirm the deploy.
-2. Then the next mentor batch (`/mentor-new week 4` or `misc`), applying the
+1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
    "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch
-2026-09-30 "economy" (`d6605b5`).
+2026-09-30 "economy" (`d6605b5`), Misc batch 2026-09-30 "fundamentals"
+(`73ac2aa`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 
