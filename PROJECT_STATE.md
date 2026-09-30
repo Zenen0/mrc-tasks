@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Misc batch 2026-09-30 "economy" (war of disinformation) implemented; awaiting user review, NOT yet committed).
+Last updated: 2026-09-30 (Misc batch 2026-09-30 "economy" (war of disinformation) implemented, committed (`d6605b5`) and deployed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -289,16 +289,14 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. After user review: commit and push the Misc batch 2026-09-30
-   "economy" (3 edited Misc `index.md` files, `sources/misc/2026-09-30-misc-economy/`,
-   this file), then confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
-2. Then the next mentor-material batch (`/mentor-new task <N>` or
+1. The next mentor-material batch (`/mentor-new task <N>` or
    `/mentor-new misc`), routed with the Task / Reference / Misc rule.
 
 Committed and deployed before this batch: Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
-"trading reference" (`814bf9c`), chart-page house style (`4392a68`).
+"trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch
+2026-09-30 "economy" (`d6605b5`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 
