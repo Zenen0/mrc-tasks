@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (new permanent rule "Task material stays self-contained"; Week 3 Assignment now carries its 18 teaching charts alongside Reference).
+Last updated: 2026-09-30 (Misc batch "fundamentals" implemented, awaiting user review; not committed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -55,7 +55,10 @@ Each Task now has **two branches**, not a flat subtask list:
   optional `order: N` field: `/misc/` sorts by `order`, then `date`,
   then `title`. The current order is 1 Rationality, 2 Trading
   Psychology, 3 Morality, 4 Fundamentals, 5 Earning the Advanced Stage,
-  6 Mr Casino's Worldview. Give new entries an explicit `order`.
+  6 Mr Casino's Worldview, 7 Fundamentals Series (2025). Give new entries an explicit `order`.
+  Text-heavy Misc entries can opt into Task/Reference body styles by wrapping
+  the body in `<div class="assignment-body">` (760px measure; see
+  site-conventions).
 - **Reference section** (added 2026-09-30, nav **Tasks · Reference ·
   Misc**): `src/content/reference/<slug>/index.md` -> `/reference/<slug>/`,
   index at `/reference/` (cards ordered by `order`). Collection `reference`
@@ -435,6 +438,51 @@ still done by hand.
   - "(Task 1)" on Img 140: verbatim + note that it *appears* to mean Week 1
     Task 1.
 
+- **Misc batch 2026-09-30 "fundamentals"** (source + approved analysis in
+  `sources/misc/2026-09-30-misc-fundamentals/`; **§20 of its ANALYSIS.md is
+  authoritative**; no images). The mentor's numbered "Fundamentals" series:
+  Part 1 (July 2025) and Part 2 (autumn 2025, inferred). By his definition
+  fundamentals = "true facts", so it is geopolitics/worldview, not economics.
+  **Implemented and validated; NOT committed (awaiting user review).**
+  - New `misc/fundamentals-series-geopolitical-state-of-the-world/` (order 7,
+    no relatedTask): How to read, Where this series fits, Part 1 (faith/
+    mortality frame, 2025 timeline in calendar order, Iran, "one central
+    theme", dollar pointer, China, Armageddon prophecies, Gaza, his call +
+    definition), Part 2 (Subjects 1, 2, 3-4 incl. Kirk, Trump attempt,
+    hierarchy, rituals, mortality; recent updates; closing), Resources (4
+    YouTube links with clean URLs, "not reviewed here", + Orwell *1984* with
+    his caveat), Open threads. Body wrapped in `.assignment-body` (new CSS
+    rule `.response > .assignment-body { max-width: 760px }`).
+  - Labels per §13/§20: belief/theology kept in his voice; named hierarchy
+    shown as his unsupported framework (no individual allegation); Pizzagate
+    debunked; "Epstein Island frequenter" unsupported (association
+    documented); Netanyahu quote "unverified here"; "their messiah is the
+    antichrist" with antisemitic-trope note and his "never generalise" rule
+    beside it. Three fact notes: "2.5 years on", Kargil, evolution.
+  - Extensions: Fundamentals USD (definition in *Where this fits*; new
+    `## 2025: tariffs, debt and the dollar (Fundamentals series)` before
+    Caveats, with *Forecasts revisited*, *What this means for the model*, a
+    verified market-context line, and a collapsed "Background (editorial, not
+    Mr Casino's words)" box on tariffs/debt/rate cuts/shutdowns/sanctions;
+    Trump thread closed; Related; mentorPrompt); Worldview (How to read
+    pointer, Trump note, Still to come "appears to have been delivered",
+    Related); Psychology (later ChatGPT caution bullet; Media pointer);
+    Morality (local community news + "international, free, rational
+    thinker"); Week 1 landing (3 segments -> Part 1, marked strong inference).
+  - Editorial facts verified by web search (Vatican/USCCB, CSIS/Stimson/NPR,
+    CBO via Brookings/Yale Budget Lab, Fed/NBC, Ballotpedia, IPC, OHCHR, UN
+    CoI, CNN/NPR/Al Jazeera, FBI, CFR, UK Parliament library, World Gold
+    Council, JFK Library, etc.). Omitted: Malachy-prophecy note, UN snapback,
+    exact day of the UK digital-ID announcement (sources differ 25/26 Sep ->
+    "late September"). No later outcomes added (e.g. Venezuela).
+  - Source-only: Kirk-widow claims, "(often under the influence of
+    medicinal/trans drugs or self harming)", "hypothetical fiction xd",
+    student thread, the user's notes, `si=` IDs, "xd".
+  - Threads closed: Trump assassination attempt; Worldview "deeper exposé"
+    (appears delivered); Week 1 "3 segments" (inferred). Opened: China in
+    depth; eschatology in depth; "much more such incidents". No Part 3
+    announced or implied.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -447,7 +495,11 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
+1. User review of the Misc "fundamentals" batch; on approval commit and push
+   it (new page, 5 edited content files, `global.css`, site-conventions,
+   PROJECT_STATE, and the `sources/misc/2026-09-30-misc-fundamentals/` folder),
+   then confirm the deploy.
+2. Then the next mentor batch (`/mentor-new week 4` or `misc`), applying the
    "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25

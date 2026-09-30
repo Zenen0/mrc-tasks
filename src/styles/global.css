@@ -377,6 +377,11 @@ main {
   margin: 0;
 }
 
+/* Text-heavy Misc entry opted into Task/Reference body styles: wrap the markdown in <div class="assignment-body">. */
+.response > .assignment-body {
+  max-width: 760px;
+}
+
 .response > p > img {
   max-width: min(100%, 420px);
 }

@@ -24,6 +24,8 @@ This page documents how Mr Casino thinks, not a set of verified conclusions. Eac
 
 The trading-relevant parts of the same post live elsewhere: the principles on knowledge and verification in [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (*Knowledge as an edge*), and the macro view of USD dominance in [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) (*The wider picture*).
 
+His 2025 Fundamentals series continues these themes (the banking "shadow web", the prophecies, Gaza, the media and the "hierarchy"): see [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
+
 ## Why he shares it
 
 He frames the present as a choice between "the side of empathy, justice, and truth (red pill)" and "the flow of apathy, accepting collective brainwashing and distraction (blue pill)". In his words, "It has always been about the battle between good and evil."
@@ -127,7 +129,7 @@ He asks why power would be "so ruthless with so much power already?" and gives t
 ### His forecast and political view
 
 - **Forecast (late 2024):** the war "will only escalate for peace is not the motive"; "the good disposition of humans always wins"; relations are "beyond repair. The point of no return"; "an inevitable major change is undoubtedly coming."
-- **US election (opinion):** "Anyone supporting this (after true information) are not to be trusted and show their intrinsic corrupt morality." Of Trump and Musk: "if there was ever a meaning of controlled opposition it would be that pair". This does not cover the Trump assassination attempt he said he would return to; that thread is still open.
+- **US election (opinion):** "Anyone supporting this (after true information) are not to be trusted and show their intrinsic corrupt morality." Of Trump and Musk: "if there was ever a meaning of controlled opposition it would be that pair". This does not cover the Trump assassination attempt he said he would return to; he returned to it in his Fundamentals Part 2 (autumn 2025, inferred). See [Fundamentals Series · The Trump assassination attempt](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/#the-trump-assassination-attempt).
 - He also urged the team to watch the videos and content he shared. One link survives in the source: [YouTube](https://www.youtube.com/watch?v=NEYEcAd-tzQ) (its content has not been reviewed here).
 
 ## Recommended viewing
@@ -188,7 +190,7 @@ This restates the principle in [Trading Psychology · Underlying causes](/mrc-ta
 
 ### Still to come
 
-"In the next post we will discuss the political state of affairs the world is reaching for, I'm sure most are interested in what is to come (note how each passing month comes with a velocity of change like never before)." Only after this refresh, he says, "can we move forward with a even deeper exposé." That post has not been imported yet.
+"In the next post we will discuss the political state of affairs the world is reaching for, I'm sure most are interested in what is to come (note how each passing month comes with a velocity of change like never before)." Only after this refresh, he says, "can we move forward with a even deeper exposé." It appears to have been delivered by his **Fundamentals Part 1** (July 2025), which opens as "our deepest exposé yet" and covers "The current "geopolitical" state of the world". See [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
 
 ## His closing stance
 
@@ -198,4 +200,4 @@ This restates the principle in [Trading Psychology · Underlying causes](/mrc-ta
 
 ---
 
-Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/)
+Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Fundamentals Series (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/)

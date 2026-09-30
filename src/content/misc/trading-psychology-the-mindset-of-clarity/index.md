@@ -84,7 +84,7 @@ In his view, "The world is lied to about the true nature of money." Societies ru
 
 ### Media
 
-"False narratives, subconscious programming, stirs low vibrational feelings (divide and conquer strategy)." **"Be only as informed as you need to - via verified independent outlets. A respect for true journalism, not a blind following."** The same principle is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything). In a later post he calls this "the war of disinformation" and restates the principle: **"to beat the manipulation, you can not be the manipulated."** See [Worldview · The war of disinformation](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#the-war-of-disinformation-a-later-post).
+"False narratives, subconscious programming, stirs low vibrational feelings (divide and conquer strategy)." **"Be only as informed as you need to - via verified independent outlets. A respect for true journalism, not a blind following."** The same principle is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything). In a later post he calls this "the war of disinformation" and restates the principle: **"to beat the manipulation, you can not be the manipulated."** See [Worldview · The war of disinformation](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#the-war-of-disinformation-a-later-post). His Fundamentals Part 2 (autumn 2025) covers social media, algorithms and censorship in its "Subject 2": see [Fundamentals Series · Social media and news](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/#subject-2-social-media-and-news).
 
 ### Society
 
@@ -168,6 +168,7 @@ That ChatGPT answer used the word "surrender". He clarified: "Some may have took
 - "The objective in a sense is not to take everything it says as the 100% truth (it doesn't have your soul and instincts, and is programmed to say only as much as you ask) - but rather learn something new - to ask then the better question. Use it in this way."
 - "Any educational lapse can be filled." Asking it to take you to PhD or masters level on a subject such as maths "may be hard , but possible. Maybe even in an exceedingly shorter timespan. It is basic rationality to make use of this tool (again without being consumed, the human is more powerful). In the right way, to ask better questions and affirm new knowledge."
 - "(And no, I do not use it for these writings here)"
+- *In a later post (Fundamentals Part 2, autumn 2025) he is more cautious:* "And be even more careful of chat gpt and dependency. It may get more subtly manipulative  Especially for those who see it as a first form of knowledge (it should be used at the end and experimentally, unless learning a factual subject where there is no room for opinion- like math)"
 
 The same principle, "Use its resource, do not be reliant", is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything).
 

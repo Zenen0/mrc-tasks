@@ -111,6 +111,12 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   `mentorPrompt: |` (short framing shown above the body), optional
   `relatedTask: "N"` (shows a "-> Task N" tag).
 - Body renders inside `.response`.
+- **Text-heavy entries (opt-in):** wrap the whole markdown body in
+  `<div class="assignment-body">` ... `</div>` (blank line after the opening
+  tag and before the closing one). It gets the Task/Reference body styles
+  (amber h2, h3/h4, styled `>` quotes, lists) and a 760px measure
+  (`.response > .assignment-body`). First used by the Fundamentals Series
+  page; older Misc entries are not converted.
 - **Images:** put them in `src/assets/misc/<topic>/`, **not** in the entry
   folder (anything in the entry folder is auto-shown in the page's "Images"
   grid). Reference with
