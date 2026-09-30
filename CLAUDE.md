@@ -158,6 +158,14 @@ When adding new material:
 
 Claude may make sensible organisational and presentation decisions when they improve clarity while remaining faithful to the source.
 
+### Task material stays self-contained
+
+When mentor teaching, explanations, examples, charts or images are part of a formal Task or Week source and are relevant to understanding or performing that assignment, the Task/Assignment page must keep them. A student must be able to open the Task page and see exactly what the mentor taught for that assignment.
+
+Reference may duplicate, reorganise, expand, generalise and cross-link the same material, but it is an additional reusable layer, never a substitute that strips instructional context from the Task page. Avoiding duplication is secondary to source fidelity and task usability: the same mentor chart may appear on both pages, and a whole teaching sequence may appear on the Task page when it is all useful for doing the Task. Material that is only broader theory or background, without which the Task is still fully understandable, may stay Reference-only.
+
+Applies to standalone Tasks and Weekly Programme assignments. Implementation detail: `.claude/skills/mentor-implement/reference/site-conventions.md` ("Task pages stay self-contained").
+
 Present images according to their function:
 
 - A chart or image that is part of the teaching (definitions, rules, worked examples, charts that demonstrate a Task) goes inline at the point in the explanation it illustrates, large enough to read, at its original aspect ratio, with zoom kept. Do not reduce it to a thumbnail or a detached gallery just because it is a downloaded source image.

@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Week 3: Liquidity implemented - Week 3 landing + one Assignment, new Reference Liquidity page, Week helper `label`/`parts`/`part`, extensions. **Not yet committed**; awaiting user review).
+Last updated: 2026-09-30 (new permanent rule "Task material stays self-contained"; Week 3 Assignment now carries its 18 teaching charts alongside Reference).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -65,6 +65,13 @@ Each Task now has **two branches**, not a flat subtask list:
   anchors; the empty "Images" section is omitted). `MiscCard.astro` now takes
   a `badge` prop (default `MISC`). Images in `src/assets/reference/<topic>/`.
   In Reference, `> blockquote` = the mentor's verbatim definition/rule.
+- **Task material stays self-contained (permanent, user rule 2026-09-30):**
+  Task/Assignment pages keep all mentor teaching and charts relevant to doing
+  that Task; Reference is an extra reusable layer (duplication allowed), not
+  a substitute. Recorded in `CLAUDE.md`, site-conventions ("Task pages stay
+  self-contained"), mentor-implement SKILL, and the analysis guide (image
+  classes Task / Task + Reference / Reference-only). Not retrofitted to older
+  Tasks.
 - **Permanent destination rule (user-approved 2026-09-30):** Tasks = formal
   assigned mentor work (deliverables, counts, deadlines); Reference =
   technical trading knowledge taught but not assigned (terms, rules,
@@ -378,7 +385,7 @@ still done by hand.
 
 - **Week 3: Liquidity** (source + approved analysis, **§13 authoritative**,
   in `sources/tasks/2026-09-30-week-3/`; one post, no date published).
-  Implemented, **not committed**:
+  Committed and deployed as `48de2bc`:
   - Structure (user decision): ONE Assignment with two required parts, not
     numbered Tasks. `src/content/weeks/3/week.md` (summary quotes
     "Liquidity  Foundational stage", keyQuote "This should now be the base of
@@ -388,8 +395,15 @@ still done by hand.
     paragraphs as `>`, italic note that Part A/B are editorial labels, At a
     glance with A/B columns, What "like so" means + U2 note, On the
     repetitions). Landing shows one Assignment | My Work pair; My Work shows
-    "0 / 30 sessions" and "0 / 10 price points". No `mine/` entries. No
-    images on Week pages.
+    "0 / 30 sessions" and "0 / 10 price points". No `mine/` entries.
+  - **Amended after deploy (user decision):** the Assignment page now also
+    carries his worked example: `## Part A: his example (30 min and above)`
+    = Img 136-151 (Step 1 zones incl. the 144 -> 145-146 practice reveal,
+    Step 2 30 min incl. LAOL, 45 min outlook); `## Part B: his example
+    (below 15 min)` = Img 152 (with the U1 note) and 153. 18 charts, same
+    asset files as Reference (one shared build output). Img 133-135 stay
+    Reference-only (supporting screenshots). Reference unchanged (all 21).
+    Reasoning in ANALYSIS §13.1 amendment.
   - New Reference `liquidity/` (order 6, title "Liquidity"): definition,
     statements (S2-S6 as h3; Img 133-135 transcribed + collapsed
     `response-gallery`, framed as "appears to be a ChatGPT answer, shared as
@@ -430,15 +444,8 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. User review of Week 3 (local preview `/mrc-tasks/tasks/weeks/3/`,
-   `/mrc-tasks/reference/liquidity/`). After approval: commit
-   (`sources/tasks/2026-09-30-week-3/`, `src/content/weeks/3/`,
-   `src/content/reference/liquidity/`, `src/assets/reference/liquidity/`,
-   `src/content.config.ts`, `src/lib/weeks.ts` + test, the 5 Week page
-   templates under `src/pages/tasks/weeks/[week]/`, the 7 extended content
-   files, site-conventions.md, this file) and push, then confirm the deploy
-   (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
-2. Then the next mentor batch (`/mentor-new week 4` or `misc`).
+1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
+   "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2

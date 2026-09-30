@@ -115,6 +115,19 @@ Prefer extending an existing Reference page (e.g. adding a term to
 Terminology) over creating a new one. Definitions already given inside a Task
 stay there; Reference quotes and links them.
 
+The test decides where material *also* goes; it never takes Task teaching off
+the Task page (`CLAUDE.md`, "Task material stays self-contained"). Do not
+recommend moving teaching to Reference to avoid duplication. In a Task or Week
+batch, classify every image and teaching block in the image map as one of:
+
+- **Task**: on the Task page only;
+- **Task + Reference**: on the Task page, and also on Reference (same file);
+- **Reference-only**: broader theory/background; the Task stays fully
+  understandable without it. Give the reason.
+
+Default for charts from the Task's own teaching sequence: Task or
+Task + Reference.
+
 ## Epistemic labels (use consistently)
 
 | Label | Meaning |
@@ -142,7 +155,8 @@ raw-only), and let the user decide on sensitive material.
 - Broader knowledge worth preserving, and where it goes.
 - **Raw-only** material (kept in `raw.md`, not published), each with a reason.
 - Images per page or section, with descriptive target filenames and alt-text
-  intent. Irrelevant images stay raw-only.
+  intent, and for Task/Week batches the Task / Task + Reference /
+  Reference-only class (destination test). Irrelevant images stay raw-only.
 - Cross-links (both directions) and any PROJECT_STATE open threads this closes.
 - Any reusable styling need (prefer existing `.assignment-body` / `.response`
   patterns).

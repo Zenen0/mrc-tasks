@@ -53,6 +53,10 @@ why.
   Present them by function (teaching charts inline and large, supporting
   screenshots by judgement), per "Image presentation by function" in
   `reference/site-conventions.md`.
+- Task pages stay self-contained: publish every image/teaching block the
+  analysis marks Task or Task + Reference on the Task page too, never only on
+  Reference (`CLAUDE.md`; "Task pages stay self-contained" in
+  `reference/site-conventions.md`).
 - Styling: reuse the existing classes first. If something new is needed, make
   it a minimal, reusable, scoped rule. Don't redesign unrelated areas or
   remove useful content.

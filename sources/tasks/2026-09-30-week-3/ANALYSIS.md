@@ -674,6 +674,21 @@ Reference page):
    phrases quoted), or put this on `week.md` and link. One place only.
 No images on the Assignment page.
 
+*Amended after deploy (user decision, 2026-09-30), under the new permanent
+rule "Task material stays self-contained" (`CLAUDE.md`), overriding "No images
+on the Assignment page" above. Image classes:*
+- *Task + Reference (on the Assignment page, same files as Reference):
+  Img 136-147 (Step 1 zones, the "like so" zone mark-up done every Part A
+  session; 144 question with 145-146 in `practice-answer`), 148-151 (30 min
+  basic liquidity, EST TFS POI, the last area of liquidity that the 45 min
+  checklist's "major liquidity taken / to target" relies on, the 45 min
+  directional outlook) = Part A; 152-153 (his two sub-15 min TFs) = Part B.
+  18 charts.*
+- *Reference-only: Img 133-135, supporting screenshots (appear to be ChatGPT
+  answers) attached to the "muse over" study statements; neither Part needs
+  them to be understood or performed.*
+- *13.2 unchanged: the Reference page keeps all 21.*
+
 `week.md`: `title: "Liquidity"`; summary mentions "Foundational stage"
 verbatim; `keyQuote: '"This should now be the base of how you backtest."'`;
 `study` → `/reference/liquidity/` with the "muse over the following

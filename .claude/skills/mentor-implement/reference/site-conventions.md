@@ -65,7 +65,8 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   cards, oldest first) above "Standalone tasks".
 - Images: `src/assets/weeks/<N>/task-<M>/`, referenced as
   `![alt](../../../../assets/weeks/<N>/task-<M>/file.jpg)`. Week-level
-  technical teaching goes to Reference, not the Week pages.
+  technical teaching may *also* go to Reference, but the assignment page keeps
+  whatever is needed to do the Task (see "Task pages stay self-contained").
 - `.assignment-body h4` exists for chart headings under an h3 phase (e.g.
   Week 1 Task 2's exercise 2). `details.practice-answer` = collapsible answer
   charts for a try-first practice exercise, full chart width on `chart-page`.
@@ -127,6 +128,27 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   ```
 - Extending an existing entry: add a section at the insertion point the
   analysis names, and update any "Deferred threads" / follow-up links.
+
+## Task pages stay self-contained
+
+Principle in `CLAUDE.md` ("Task material stays self-contained"). In practice:
+
+- Every chart/teaching block the analysis classifies **Task** or
+  **Task + Reference** is published on the Task/Assignment page, beside the
+  instruction it illustrates, even when Reference shows it too. Do not replace
+  it with a "see Reference" link. Links to Reference are for going deeper.
+- One image file, two pages: store it once (in the Reference topic folder if
+  Reference uses it, else the Task/Week folder) and reference the same file
+  from both markdown bodies with the right relative depth (from a Week
+  `task.md`: `../../../../assets/...`; from a Reference `index.md`:
+  `../../../assets/...`). Astro emits one shared output file. Don't copy an
+  image just to have a second copy.
+- Keep the same transcribed annotations and unresolved notes on both pages;
+  the Task page may trim Reference-only cross-link commentary.
+- Only **Reference-only** material (broader theory/background the Task is
+  fully understandable without) is left off the Task page.
+- Don't mass-convert older Tasks to this; apply it to new batches and to
+  pages being edited anyway.
 
 ## Image presentation by function
 
