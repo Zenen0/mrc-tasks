@@ -33,7 +33,9 @@ shorter.
    entries, Task list, open threads and deferred items. You need these to
    recommend extend-vs-new).
 2. Read the batch's `raw.md` in full. Decide the type from the folder
-   (`sources/tasks/` = formal Task, `sources/misc/` = Misc). If the content
+   (`sources/tasks/<date>-task-N` = one standalone formal Task,
+   `sources/tasks/<date>-week-N` = a mentor Week holding several formal
+   Tasks - see "Week structure" in the guide, `sources/misc/` = Misc). If the content
    contradicts the folder (e.g. a "Misc" paste that is really Task 4's
    instructions), flag it to the user before going further. The folder is
    only the intake: route each part by the Task / Reference / Misc

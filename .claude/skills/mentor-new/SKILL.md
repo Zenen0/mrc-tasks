@@ -1,7 +1,7 @@
 ---
 name: mentor-new
-description: Scaffold a new mentor-material source batch (formal numbered Task or Misc) under sources/ with raw.md and images/. Use when the user wants to start importing new Discord mentor material. Scaffolding only - no analysis, no site changes, no commits.
-argument-hint: "task <N> [--label <slug>] [--date YYYY-MM-DD] | misc [--label <slug>] [--date YYYY-MM-DD]"
+description: Scaffold a new mentor-material source batch (formal numbered Task, a mentor Week of several Tasks, or Misc) under sources/ with raw.md and images/. Use when the user wants to start importing new Discord mentor material. Scaffolding only - no analysis, no site changes, no commits.
+argument-hint: "task <N> | week <N> | misc  [--label <slug>] [--date YYYY-MM-DD]"
 ---
 
 # /mentor-new - scaffold a raw source batch
@@ -13,7 +13,14 @@ Arguments: `$ARGUMENTS`
 ## Steps
 
 1. Work out the batch type from the arguments:
-   - `task <N>`: a formal numbered Task from the mentor (`sources/tasks/`).
+   - `task <N>`: one standalone formal numbered Task (`sources/tasks/`).
+   - `week <N>`: one Week of the mentor's weekly programme - a single
+     chronological batch (`sources/tasks/<date>-week-<N>/`) holding every
+     formal Task he grouped into that Week plus the surrounding teaching.
+     Keep it as **one** batch: do not create per-Task folders. Task
+     boundaries are found by `/mentor-analyse`; implementation may later
+     split it into per-Task assignment / My Work pages. Week *N* Task *M* is
+     distinct from standalone Task *M* - never merge them.
    - `misc`: anything not a formal numbered Task (`sources/misc/`).
    - Optional `--label <slug>`: a descriptive suffix (e.g. `--label extension`
      for a continuation of an existing Task, or `--label trump-thread` for Misc).
@@ -28,12 +35,14 @@ Arguments: `$ARGUMENTS`
    ```
    Use `--dry-run` first only if the user asked for a preview.
    The script:
-   - creates `sources/tasks/<date>-task-<N>[-label]/` or
+   - creates `sources/tasks/<date>-task-<N>[-label]/`,
+     `sources/tasks/<date>-week-<N>[-label]/` (its `raw.md` header notes that
+     the batch spans the whole Week), or
      `sources/misc/<date>-misc-batch/` (`<date>-misc-<label>/` with a label);
    - adds `-2`, `-3`, ... if a same-day folder already exists (never overwrites);
    - writes `raw.md` containing only the standard header, ending with `---`;
    - creates `images/.gitkeep`;
-   - notes any other existing batch for the same Task number.
+   - notes any other existing batch for the same Task or Week number.
 
 3. Stop. Do **not**: analyse anything, read Downloads, touch `src/`, edit
    `PROJECT_STATE.md`, or commit.

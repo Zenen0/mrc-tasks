@@ -21,6 +21,14 @@ this file.
 - The user's own work lives at `/tasks/N/mine/` (subtasks `src/content/tasks/N/<id>/index.md`).
   Never mix mentor material into it.
 
+## Weekly programme (Week N, Task M)
+
+Not implemented yet. Week batches (`sources/tasks/<date>-week-N/`) sit under
+the Tasks section, but Week N Task M must never reuse the standalone Task
+routes or folders (`/tasks/M/`, `src/content/tasks/M/`). Build exactly the
+Week/Task architecture the approved ANALYSIS.md specifies. Once built, record
+the concrete files and routes here.
+
 ## Reference entry (taught technical framework)
 
 - File: `src/content/reference/<slug>/index.md`, rendered at

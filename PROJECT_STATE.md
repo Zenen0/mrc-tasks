@@ -289,8 +289,12 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The next mentor-material batch (`/mentor-new task <N>` or
-   `/mentor-new misc`), routed with the Task / Reference / Misc rule.
+1. Week 1 of the mentor's new weekly programme: `/mentor-new week 1`, user
+   pastes the whole Week in source order, then `/mentor-analyse` on that one
+   batch. The analysis proposes the Week/Task site architecture (nested under
+   Tasks, no collision with standalone Tasks 1-3; preferred UX: Week landing
+   page pairing each Task's assignment with its My Work) for user approval.
+   `week N` intake support added and committed 2026-09-30.
 
 Committed and deployed before this batch: Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2
@@ -302,7 +306,9 @@ Committed and deployed before this batch: Misc batch 2026-09-25
 
 Tested and committed 2026-09-27. They automate the raw-source workflow
 below. `CLAUDE.md` stays the authority:
-1. `/mentor-new task <N>` | `misc` - scaffold `sources/...` (raw.md header,
+1. `/mentor-new task <N>` | `week <N>` | `misc` - scaffold (`week <N>` = one
+   chronological batch for a whole mentor Week of several Tasks, split into
+   Tasks only at analysis) `sources/...` (raw.md header,
    `images/.gitkeep`).
 2. The user populates `raw.md` (each image label on its own line) and
    downloads the referenced images to `~/Downloads`.

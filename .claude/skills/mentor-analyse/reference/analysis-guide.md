@@ -7,7 +7,7 @@ worked example. `CLAUDE.md` rules take precedence over anything here.
 ## File header (both types)
 
 ```
-# Analysis - <Task N | Misc batch DATE [(k)]>
+# Analysis - <Task N | Week N | Misc batch DATE [(k)]>
 
 Claude's interpretation of `raw.md` + `images/`. `raw.md` is the untouched
 source (only image-reference lines were linked). ...
@@ -49,6 +49,32 @@ Task priorities: exact requirements, wording, counts, timeframe rules,
 definitions, sequencing, warnings and chart relationships. Scope changes or
 corrections that concern a *different* Task are routed to that Task and
 cross-linked (see PROJECT_STATE "Content triage rule").
+
+## Week structure
+
+A `week-N` batch is one chronological paste of everything the mentor posted
+for Week N: several formal Tasks plus teaching and context. Week N Task M is
+**not** standalone Task M (`src/content/tasks/M/`); keep them apart and say
+so wherever confusion is possible. Use the Formal Task structure, with:
+
+1. **Source verification** and **chronology** for the whole Week (sections 1-2
+   above), then a **Task boundary map**: each formal Task in the Week with its
+   `L##` range, how the boundary was identified (his numbering, "task 2:",
+   a change of subject), and any material that sits between Tasks.
+2. **Week overview**: what the Week covers and how its Tasks progress.
+3. **Per Task** (Week N Task 1, 2, ...): sections 3-5 above - purpose,
+   analysed content with per-image notes, and a consolidated requirements
+   table. Keep the mentor's **teaching/context** separate from the actual
+   **deliverables**, and assign every image to exactly one Task (or to
+   shared Week context), with the evidence when it isn't obvious.
+4. Week-level teaching that is really taught technical framework -> also
+   recommend **Reference** entries/cross-links (destination test below).
+5. Ambiguities, exclusions and classification for the whole Week.
+6. **Implementation architecture**: the Week pages are not built yet. Propose
+   the Week/Task structure (routes, content folders, per-Task assignment and
+   My Work pairing, landing-page cards, Tasks index placement) so it cannot
+   collide with standalone Tasks 1-N, plus the image mapping table per Task.
+   This is a decision for the user; mark it as such.
 
 ## Misc structure
 
