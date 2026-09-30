@@ -403,7 +403,10 @@ still done by hand.
     (below 15 min)` = Img 152 (with the U1 note) and 153. 18 charts, same
     asset files as Reference (one shared build output). Img 133-135 stay
     Reference-only (supporting screenshots). Reference unchanged (all 21).
-    Reasoning in ANALYSIS §13.1 amendment.
+    Reasoning in ANALYSIS §13.1 amendment. The Week 3 landing (`week.md`)
+    also has `## Study before the assignment`: the intro, definition and five
+    statements verbatim (study material, not deliverables), linking to
+    Reference for the expansions and screenshots.
   - New Reference `liquidity/` (order 6, title "Liquidity"): definition,
     statements (S2-S6 as h3; Img 133-135 transcribed + collapsed
     `response-gallery`, framed as "appears to be a ChatGPT answer, shared as

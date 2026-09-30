@@ -688,6 +688,9 @@ on the Assignment page" above. Image classes:*
   answers) attached to the "muse over" study statements; neither Part needs
   them to be understood or performed.*
 - *13.2 unchanged: the Reference page keeps all 21.*
+- *The definition, intro (L15-L17) and five statements are also on the Week 3
+  landing page (`week.md`, `## Study before the assignment`), verbatim, as
+  study material, not deliverables; Img 133-135 not repeated there.*
 
 `week.md`: `title: "Liquidity"`; summary mentions "Foundational stage"
 verbatim; `keyQuote: '"This should now be the base of how you backtest."'`;
