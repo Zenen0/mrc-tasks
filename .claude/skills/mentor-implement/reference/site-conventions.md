@@ -65,6 +65,58 @@ this file.
 - Extending an existing entry: add a section at the insertion point the
   analysis names, and update any "Deferred threads" / follow-up links.
 
+## Image presentation by function
+
+The principle is in `CLAUDE.md`. This is how to build it.
+
+**Teaching charts** (Reference pages, technical worked examples, chart-heavy
+mentor explanations, Task charts that teach or demonstrate the assignment):
+the Reference pages are the model.
+
+- Render inside `.assignment-body` (Task assignment pages and Reference
+  pages already do). Its `img` rule is `display: block; max-width: 100%;
+  height: auto`, with a border, a `--space-3` vertical margin and lightbox
+  zoom. Astro writes the file's real `width`/`height`, so the aspect ratio is
+  kept and a chart never renders larger than its native pixels.
+- One chart per paragraph (`![alt](...)` on its own line with blank lines
+  around it), never several on one line and never in `<details>` galleries.
+- The sequence for each chart: the sentence or heading that introduces it,
+  then the chart, then `Chart annotations (<timeframe>):` as a list of the
+  annotations transcribed exactly, then a short explanation or rule link.
+  Sequential examples (e.g. 4hr -> 30 min -> 10 min -> 1 min) get their own
+  `##`/`###` heading each, so every chart stays attached to its text.
+- Alt text states the timeframe and the key annotation. It is also the
+  lightbox caption.
+- Width comes from the **`chart-page`** class (in `global.css`), the house
+  style for chart-heavy instructional pages. The Reference template uses it
+  (`<article class="subtask chart-page">`). The article is capped at 1280px,
+  so a chart shows up to its native width. Prose, headings, lists,
+  blockquotes, the header and the Context block are capped at 820px (a
+  readable measure). Chart paragraphs (`p:has(> img)`) and tables keep the
+  full width. Task assignment pages don't use it yet (`article.assignment-page`
+  is capped at 760px, text and charts alike).
+- For a new chart-heavy page that isn't a Task, use the Reference template
+  or add `chart-page` to its article. Converting Task or Misc templates to
+  `chart-page` needs the user's approval.
+
+**Supporting / contextual screenshots** (ChatGPT or web captures, news
+screenshots, Discord screenshots, portrait phone captures, image dumps):
+use judgement. In Misc (`.response`), a single inline image is capped at
+420px (`.response > p > img`), and a group goes in
+`<details class="response-gallery">` (160px thumbnail grid, zoom kept).
+That cap is deliberate for tall portrait screenshots, which would dominate
+the page at full width.
+
+A Misc entry currently has **no opt-in** for full-width teaching charts
+(the 420px cap applies). If a Misc batch has teaching charts, route them to
+Reference under the destination rule, or propose a style change to the user
+first.
+
+In the analysis's image map, record each image's function (teaching chart
+or supporting screenshot) so implementation can pick the presentation.
+
+Don't mass-convert older pages to this style without the user's approval.
+
 ## Shared code touched by earlier batches (reuse before adding)
 
 - `src/styles/global.css`: `.assignment-body ...`, `.response img`,

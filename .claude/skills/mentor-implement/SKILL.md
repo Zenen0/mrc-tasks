@@ -50,6 +50,9 @@ why.
 - Images: only the relevant ones. Copy from the batch `images/` to the site
   location under the descriptive names from the analysis, and byte-verify
   (`cmp`). Transcribe chart annotations as text where the analysis says so.
+  Present them by function (teaching charts inline and large, supporting
+  screenshots by judgement), per "Image presentation by function" in
+  `reference/site-conventions.md`.
 - Styling: reuse the existing classes first. If something new is needed, make
   it a minimal, reusable, scoped rule. Don't redesign unrelated areas or
   remove useful content.

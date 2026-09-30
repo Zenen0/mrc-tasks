@@ -158,6 +158,13 @@ When adding new material:
 
 Claude may make sensible organisational and presentation decisions when they improve clarity while remaining faithful to the source.
 
+Present images according to their function:
+
+- A chart or image that is part of the teaching (definitions, rules, worked examples, charts that demonstrate a Task) goes inline at the point in the explanation it illustrates, large enough to read, at its original aspect ratio, with zoom kept. Do not reduce it to a thumbnail or a detached gallery just because it is a downloaded source image.
+- Supporting or contextual screenshots (research captures, web pages, chat screenshots, image dumps) may use smaller, collapsible or gallery presentation where that suits their role.
+
+The concrete implementation is in `.claude/skills/mentor-implement/reference/site-conventions.md` ("Image presentation by function").
+
 ---
 
 ## Working efficiently
