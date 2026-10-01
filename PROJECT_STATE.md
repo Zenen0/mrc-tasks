@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-10-01 (Segments 1-3 implemented and validated locally; **not committed** - awaiting user review).
+Last updated: 2026-10-01 (Segments 1-3 committed as `8a6c9da`, pushed and deployed; live verification passed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -501,7 +501,11 @@ still done by hand.
 - **Segments 1-3** (source + approved analysis in
   `sources/misc/2026-09-30-misc-segments/`; **§21 of its ANALYSIS.md is
   authoritative**; intake folder is `misc` but the content is formal assigned
-  work). Implemented and validated, **not committed** (awaiting user review):
+  work). **User-approved; committed as `8a6c9da`, pushed to `main`, GitHub Pages
+  deploy succeeded, live verification passed** (all Segment/Reference/modified
+  pages 200, 14 charts + 13 shared Reference charts load, lightbox, no overflow
+  at 1280/375px, no console errors). Note: the Tasks home is `/mrc-tasks/`;
+  `/mrc-tasks/tasks/` has never existed (404 by design).
   - Segment 1 "Direction Through Swing & Intraday Points": his Task 1 / Task 2 /
     Task 3 kept as headings and My Work labels (10 days each, pure markings),
     then 10 days top-down repetition, then "Extension task for revision"
@@ -552,13 +556,7 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. User review of the Segments batch, then commit and push it (files: `src/content/segments/`,
-   `src/assets/segments/`, `src/pages/tasks/segments/`, `src/lib/segments.ts` + test,
-   `src/lib/weeks.ts` + test, `src/content.config.ts`, `src/components/TaskCard.astro`,
-   `src/pages/index.astro`, `src/content/reference/top-down-extraction-cycle/`, the six
-   extended Reference pages, the three Misc entries, site-conventions, this file, and
-   `sources/misc/2026-09-30-misc-segments/`), then confirm the deploy.
-2. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
+1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
    "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
@@ -566,7 +564,7 @@ Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`)
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch
 2026-09-30 "economy" (`d6605b5`), Misc batch 2026-09-30 "fundamentals"
-(`73ac2aa`).
+(`73ac2aa`), Segments 1-3 (`8a6c9da`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 
