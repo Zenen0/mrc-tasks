@@ -18,6 +18,8 @@ The advanced stage is a separate, invite-only step beyond the current team mater
 
 He keeps it deliberately quiet: "Its worth is great and its security most paramount. The less spoken of the more secure." Only "the most worthy, capable, trusted minds" are included, and those chosen do not speak of their participation publicly. **"The only mention will be the increased results seen."**
 
+*Later, in the [Segments](/mrc-tasks/tasks/segments/):* Segment 2 notes that "Serious learners will extract the meaning from the key themes discussed only through the repetition", with the third part "to be privately shared". Segment 3 ends by pointing to a "future (locked) final advanced segement". He does not say whether that segment is this stage; it remains an open thread ([Segment 3 · Still to come](/mrc-tasks/tasks/segments/3/assignment/#still-to-come)).
+
 ## The criteria
 
 The progression criteria, in his words:

@@ -71,6 +71,41 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   Week 1 Task 2's exercise 2). `details.practice-answer` = collapsible answer
   charts for a try-first practice exercise, full chart width on `chart-page`.
 
+## Segments (Segment N, one assignment each)
+
+Part of Tasks (nav unchanged), built 2026-10-01 for Mr Casino's three-part
+top-down programme given after the Weekly Programme. One Assignment + My Work
+pair per Segment, so there is **no `task-M` level**.
+
+- Content: `src/content/segments/<N>/`:
+  - `segment.md`: `title`, `summary`, `purpose` (his own one-line purpose,
+    shown on the Segments index), optional `keyQuote`, optional `study`
+    (as `week.md`). Body = a short closing note on the landing page.
+  - `assignment.md`: `title`, `short` (landing row heading), `parts: [{key,
+    label, target?, unit?}]` (required), optional `mineGuide`. Body = the
+    assignment page (same conventions as a Week `task.md`).
+  - `mine/<entry>/index.md`: future My Work entries (`part: "<key>"`).
+- Collections `segmentMeta`, `segmentAssignments`, `segmentWork`; helpers
+  `src/lib/segments.ts` (+ tests); progress lines reuse `partProgress()` from
+  `src/lib/weeks.ts`.
+- Routes (`src/pages/tasks/segments/`): `/tasks/segments/` (index: intro +
+  branch cards with `purpose`), `/tasks/segments/<N>/` (landing, pair at
+  `#assignment`), `/tasks/segments/<N>/assignment/` (`chart-page`, prev/next
+  Segment pager), `/tasks/segments/<N>/mine/`, `.../mine/<entry>/`.
+  Breadcrumbs: Tasks › Segments › Segment N: Title › Assignment | My Work.
+- Home page: "Segments" section directly above "Weekly Programme" (TaskCard
+  without a count; `subtaskCount` is optional).
+- Mentor labels stay visible: Segment 1's own "Task 1/2/3" are part labels
+  and headings; editorial labels (Segment 3 "Task A/B/C") need an italic note.
+- Images: `src/assets/segments/<N>/`, referenced as
+  `![alt](../../../assets/segments/<N>/file.jpg)` from both the Segment
+  `assignment.md` and a Reference `index.md` (same depth, one shared file).
+
+**Uncounted parts (Weeks and Segments):** `parts[].target` / `unit` are
+optional. A part without `target` is a requirement with no number from the
+mentor; My Work shows "No set count · Not started" (or "N entries · no set
+count"). Never invent a target.
+
 ## Reference entry (taught technical framework)
 
 - File: `src/content/reference/<slug>/index.md`, rendered at
@@ -86,7 +121,8 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   click-to-zoom, annotations transcribed under each image.
 - Pages so far: `terminology` (1), `rules-of-analysis` (2),
   `worked-example-3000-reversal` (3), `zones` (4), `timeframe-strength` (5),
-  `liquidity` (6). Stable anchors: Terminology `#fu`,
+  `liquidity` (6), `top-down-extraction-cycle` (7, images shared from
+`src/assets/segments/`). Stable anchors: Terminology `#fu`,
   `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
   Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`;
   Zones `#the-four-zone-types`, `#the-rules`, `#which-part-of-the-wick`,
@@ -100,7 +136,10 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   `#the-complete-picture-a-worked-example`, `#step-1-zones-12hr-to-50-min`,
   `#step-2-tfs-and-liquidity-on-30-min`, `#the-last-area-of-liquidity`,
   `#45-min-the-directional-outlook`, `#10-min-which-side-is-more-major`,
-  `#1-min-the-banks-execution`, `#unresolved`; Zones also
+  `#1-min-the-banks-execution`, `#unresolved`; Cycle `#the-cycle`,
+  `#the-base-execution-and-extraction-model`, `#ts-build`,
+  `#hcs-as-the-refinement`, `#laol-down-the-cycle`,
+  `#the-three-tradable-points`, `#choosing-a-style`, `#laol-ts-and-tfs`; Zones also
   `#more-refinement-rules-week-3`.
 
 ## Misc entry
@@ -215,7 +254,8 @@ Don't mass-convert older pages to this style without the user's approval.
   `.response-gallery`, `.misc-header` / `.misc-badge`.
 - `src/scripts/lightbox.js`: triggers on `.thumb`, `.assignment-body img`,
   `.mentor-images img`, `.response img`.
-- `src/content.config.ts`: collection schemas (`tasks`, `misc`, `reference`, `taskMeta`, `weekMeta`, `weekTasks`, `weekWork`). Add a field only if genuinely
+- `src/content.config.ts`: collection schemas (`tasks`, `misc`, `reference`, `taskMeta`, `weekMeta`, `weekTasks`, `weekWork`, `segmentMeta`,
+  `segmentAssignments`, `segmentWork`). Add a field only if genuinely
   needed.
 - `ADDING-CONTENT.md`: user-facing how-to. Update it if a convention changes.
 

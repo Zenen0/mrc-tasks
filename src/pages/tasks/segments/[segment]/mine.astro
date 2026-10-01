@@ -1,0 +1,84 @@
+---
+import type { ImageMetadata } from 'astro';
+import { getCollection } from 'astro:content';
+import Layout from '../../../../components/Layout.astro';
+import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import SubtaskCard from '../../../../components/SubtaskCard.astro';
+import { filterImagesForEntry, getCoverImage } from '../../../../lib/images';
+import { withBase } from '../../../../lib/paths';
+import { workForSegment } from '../../../../lib/segments';
+import { partProgress } from '../../../../lib/weeks';
+
+export async function getStaticPaths() {
+  const assignments = await getCollection('segmentAssignments');
+  return assignments.map((entry) => ({ params: { segment: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { segment } = Astro.params as { segment: string };
+
+const segmentMeta = (await getCollection('segmentMeta')).find((meta) => meta.id === segment);
+const segmentTitle = `Segment ${segment}: ${segmentMeta?.data.title ?? ''}`;
+const work = workForSegment(await getCollection('segmentWork'), segment);
+const base = import.meta.env.BASE_URL;
+
+const globMap = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/content/segments/**/*.{png,jpg,jpeg,webp}',
+  { eager: true },
+);
+---
+<Layout title={`Segment ${segment}: my work`} description={`My own backtesting work for Segment ${segment}: ${entry.data.title}.`}>
+  <Breadcrumb
+    items={[
+      { label: 'Tasks', href: withBase('/', base) },
+      { label: 'Segments', href: withBase('/tasks/segments/', base) },
+      { label: segmentTitle, href: withBase(`/tasks/segments/${segment}/`, base) },
+      { label: 'My Work' },
+    ]}
+  />
+  <header class="subtask-header week-header">
+    <span class="subtask-badge mono">SEGMENT {segment} · MY WORK</span>
+    <h1>My work</h1>
+  </header>
+  <p class="page-intro">
+    For <a href={withBase(`/tasks/segments/${segment}/assignment/`, base)}>{entry.data.title}</a>.
+  </p>
+  <ul class="page-intro week-parts">
+    {partProgress(work, entry.data.parts).map((part) => (
+      <li>{part.label}: <span class="mono">{part.text}</span></li>
+    ))}
+  </ul>
+
+  {work.length === 0 && <p class="empty-state">No entries yet.</p>}
+  <div class="card-grid">
+    {work.map((item) => {
+      const entryId = item.id.split('/').pop()!;
+      const images = filterImagesForEntry(globMap, `/src/content/segments/${item.id}`, item.data.captions ?? {});
+      const { cover, count } = getCoverImage(images);
+      return (
+        <SubtaskCard
+          href={withBase(`/tasks/segments/${segment}/mine/${entryId}/`, base)}
+          badge={entryId.toUpperCase()}
+          title={item.data.title}
+          cover={cover}
+          imageCount={count}
+          promptExcerpt={item.data.mentorPrompt ?? ''}
+        />
+      );
+    })}
+  </div>
+
+  {entry.data.mineGuide && (
+    <section class="week-guide">
+      <h2>What goes here</h2>
+      <ul>
+        {entry.data.mineGuide.map((line) => <li>{line}</li>)}
+      </ul>
+    </section>
+  )}
+
+  <nav class="week-branch-links" aria-label="This segment">
+    <a href={withBase(`/tasks/segments/${segment}/assignment/`, base)}>&lsaquo; Assignment</a>
+    <a href={withBase(`/tasks/segments/${segment}/`, base)}>All of {segmentTitle}</a>
+  </nav>
+</Layout>

@@ -88,4 +88,14 @@ describe('partProgress', () => {
       { key: 'B', label: 'Part B · LTF price points', text: '1 / 10 price points' },
     ]);
   });
+
+  it('shows an uncounted part (no target) as a status line, never a number to reach', () => {
+    const mixed = [
+      { key: 'flow', label: '1) Follow premium flow (minimum)', target: 30, unit: 'days' },
+      { key: 'ts', label: '2) TS build reading' },
+    ];
+    expect(partProgress([], mixed).map((p) => p.text)).toEqual(['0 / 30 days', 'No set count · Not started']);
+    expect(partProgress([{ data: { part: 'ts' } }], mixed)[1].text).toBe('1 entry · no set count');
+    expect(partProgress([{ data: { part: 'ts' } }, { data: { part: 'ts' } }], mixed)[1].text).toBe('2 entries · no set count');
+  });
 });

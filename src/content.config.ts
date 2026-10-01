@@ -45,6 +45,15 @@ const weekMeta = defineCollection({
   }),
 });
 
+// A separately counted component of an assignment (Week Task or Segment). Without `target` it is an
+// uncounted requirement: My Work shows "No set count" plus an entry count instead of "0 / N".
+const partSchema = z.object({
+  key: z.string(),
+  label: z.string(),
+  target: z.number().optional(),
+  unit: z.string().optional(),
+});
+
 const weekTasks = defineCollection({
   loader: glob({ pattern: '*/*/task.md', base: './src/content/weeks', generateId: stripTaskMetaSuffix }),
   schema: z.object({
@@ -55,7 +64,7 @@ const weekTasks = defineCollection({
     target: z.number().optional(),
     unit: z.string().optional(),
     // Optional separately counted components; My Work then shows one progress line per part.
-    parts: z.array(z.object({ key: z.string(), label: z.string(), target: z.number(), unit: z.string() })).optional(),
+    parts: z.array(partSchema).optional(),
     mineGuide: z.array(z.string()).optional(),
   }),
 });
@@ -66,4 +75,45 @@ const weekWork = defineCollection({
   schema: entrySchema.extend({ part: z.string().optional() }),
 });
 
-export const collections = { tasks, misc, reference, taskMeta, weekMeta, weekTasks, weekWork };
+// Segments (part of Tasks, routed under /tasks/segments/): Mr Casino's three-part top-down programme, given
+// after the Weekly Programme. One Assignment + My Work pair per Segment, so no task-M level.
+const segmentMeta = defineCollection({
+  loader: glob({ pattern: '*/segment.md', base: './src/content/segments', generateId: ({ entry }) => entry.replace(/\/segment\.md$/, '') }),
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    // His own one-line purpose for the Segment (shown on the Segments index and home cards' page).
+    purpose: z.string(),
+    keyQuote: z.string().optional(),
+    study: z.object({ label: z.string(), href: z.string(), note: z.string() }).optional(),
+  }),
+});
+
+const segmentAssignments = defineCollection({
+  loader: glob({ pattern: '*/assignment.md', base: './src/content/segments', generateId: ({ entry }) => entry.replace(/\/assignment\.md$/, '') }),
+  schema: z.object({
+    title: z.string(),
+    short: z.string(),
+    parts: z.array(partSchema),
+    mineGuide: z.array(z.string()).optional(),
+  }),
+});
+
+const segmentWork = defineCollection({
+  loader: glob({ pattern: '*/mine/**/index.md', base: './src/content/segments', generateId: stripIndexSuffix }),
+  // `part` = the key of the Segment assignment part this entry counts toward.
+  schema: entrySchema.extend({ part: z.string().optional() }),
+});
+
+export const collections = {
+  tasks,
+  misc,
+  reference,
+  taskMeta,
+  weekMeta,
+  weekTasks,
+  weekWork,
+  segmentMeta,
+  segmentAssignments,
+  segmentWork,
+};

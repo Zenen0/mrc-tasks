@@ -333,6 +333,8 @@ Chart annotations (30 min):
 
 This is his visual explanation of [LAOL](/mrc-tasks/reference/terminology/#laol). The liquidity grab at the high started the move down, and that target is "the last area of liquidity". It is refined on the lower timeframes. Every reversal starts from it, because once that target is taken, the opposite liquidity overpowers.
 
+*The LAOL carried from swing down to LTF timing in the Segments: [The Top-Down Extraction Cycle · LAOL down the cycle](/mrc-tasks/reference/top-down-extraction-cycle/#laol-down-the-cycle).*
+
 ### 45 min: the directional outlook
 
 ![45 min - "Zones, HTF TFS, EST TFS, major liquidity taken , Major liquidity to target"; "Directional outlook"](../../../assets/reference/liquidity/liquidity-04-45min-outlook.jpg)
@@ -399,4 +401,4 @@ Shown as written; not resolved here:
 
 ---
 
-Related: [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) ([Assignment](/mrc-tasks/tasks/weeks/3/task-1/assignment/)) · [Terminology](/mrc-tasks/reference/terminology/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
+Related: [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) ([Assignment](/mrc-tasks/tasks/weeks/3/task-1/assignment/)) · [Terminology](/mrc-tasks/reference/terminology/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)

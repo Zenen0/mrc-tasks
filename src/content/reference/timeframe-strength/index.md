@@ -56,6 +56,8 @@ He deliberately leaves this passage unexplained: **"Try to really understand thi
 
 *The boundaries are as written: 30 min, 3hr and 7hr each appear in two categories, and nothing is listed between 5 and 7 min. Standalone Task 3's earlier tier table (10 min + scalp, 1hr + intraday, 3hr + swing, 11hr + multi-day; [Task 3 · The rules](/mrc-tasks/tasks/3/assignment/#the-rules)) classifies trade types by the timeframe of the true stop and uses different boundaries, and [Rules of analysis § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) gives "1hr/3hr/4hr/5hr/7hr/11hr backed generally gives a 300 pip + AVG move". Each is kept as he wrote it.*
 
+*The Segments draw the swing on 3hr/4hr, the intraday on 30 min and the scalp on 10 min and on 5 min: see [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/#the-cycle).*
+
 ## "The LTF builds the HTF but HTF commands the LTF"
 
 > Study now this statement : "The LTF builds the HTF but HTF commands the LTF".
@@ -246,4 +248,4 @@ Chart annotations (7 min):
 
 ---
 
-Related: [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

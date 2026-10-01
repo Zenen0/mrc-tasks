@@ -92,6 +92,25 @@ Chart annotations (30 min, same chart):
 
 This is the same rule as [Task 3, rule 5](/mrc-tasks/tasks/3/assignment/#the-rules): "A negation can be counted two candles after an FU". Task 3's [task aid](/mrc-tasks/tasks/3/assignment/#task-aid---clarifications-on-timeframe-strength) adds: "For the HCS there is an FU from the left to react" and "When an FU is retested - the wick retest becomes part of the HCS range".
 
+### What HCS represents (Segments)
+
+The Segments add to the definition above; they do not replace it.
+
+- "Observing HCS refinement power - the retest of a true stop - a level above the ordinary FU retest - the first gist of entry (refinement and confirmation)" ([Segment 1](/mrc-tasks/tasks/segments/1/assignment/#the-segment-focus)).
+- "HCS auto assumes a TS from left is retested / VS Normal FU which is 1 TS only" ([Segment 2](/mrc-tasks/tasks/segments/2/assignment/#how-to-mark-10-min-scalp-fu-retest-and-hcs)).
+- "HCS is Inferred as entry model - it auto includes Liquidity manipulation and refinement point for reaction/TS retest" ([Segment 1 · Task 3](/mrc-tasks/tasks/segments/1/assignment/#task-3--hcs-points-base-executional-edge)).
+
+![1 min - "What does HCS represent? FU formed-LAOL taken-respected"; FU body retest = weak, FU wick retest = strong refinement area](../../../assets/segments/3/what-hcs-represents-1min.jpg)
+
+Chart annotations (1 min, [Segment 3](/mrc-tasks/tasks/segments/3/assignment/#what-does-hcs-represent)):
+
+> What does HCS represent?<br>
+> FU formed-LAOL taken-respected<br>
+> FU body retest=weak refinement area<br>
+> FU wick retest=Strong refinement area
+
+HCS in the cycle: [The Top-Down Extraction Cycle · HCS as the refinement](/mrc-tasks/reference/top-down-extraction-cycle/#hcs-as-the-refinement).
+
 ## x3
 
 > **x3** = Refers to that candle which has both FU and negation aspects embedded at a macro level within the single candle
@@ -159,6 +178,19 @@ His fuller statement, from the [rules of analysis](/mrc-tasks/reference/rules-of
 
 His visual explanation of "the last area of liquidity" is a Week 3 chart: [Liquidity · The last area of liquidity](/mrc-tasks/reference/liquidity/#the-last-area-of-liquidity) ("This is liquidiy grab that started the move / So we can refer to the target as "the last area of liquidty""). It is also shown in the [worked example](/mrc-tasks/reference/worked-example-3000-reversal/#lower-timeframe-the-laol-and-its-trail) ("LAOL example - we have a trail of liquidity onto this point"). Task 2 already uses the term: "last area of liquidity found on 4hr" and "The LAOL accounted for in the moment" ([Task 2](/mrc-tasks/tasks/2/assignment/)).
 
+### LAOL in practice (Segments)
+
+[Segment 3](/mrc-tasks/tasks/segments/3/assignment/#laol-and-early-buyerssellers) gives an operational definition:
+
+> Base defination -1st or 2nd candle after FU =LAOL
+
+His four "fractally applied concepts", in short: (1) that base definition; (2) an attempted FU / x3 self-negating high or low "serves as early buyers/sellers check mostly"; (3) an "x3 self negating taken within HCS can be LAOL"; (4) "A new LAOL from fresh price action needs twice the (general) proof". Two more statements from the same Segment:
+
+- "LAOL itself does not confirm an area. It is core Liquidity or macro calculation that does" (30 min origin chart).
+- "TS and TFS makes the confirmation -but LAOL premium levels are preset" and "For best confirmed flow each LAOL should be newer than its last cataogry" (1 min chart).
+
+The charts and the LAOL carried from 3hr down to 1 min: [The Top-Down Extraction Cycle · LAOL down the cycle](/mrc-tasks/reference/top-down-extraction-cycle/#laol-down-the-cycle).
+
 ## Core liquidity
 
 > **Core liquidity** = liquidity which has to be taken or manipulated greatly first (Swing hint always present)
@@ -176,6 +208,8 @@ These appear on his charts but are not formally defined. The explanations are re
 - **Trail / trail of liquidity**: used as a series of liquidity left behind during a move, leading onto a level. "core + trail + LAOL to target" ([final entries rule](/mrc-tasks/reference/rules-of-analysis/#10-final-entries)); "A future trail of liquidity especially on the LTF" (1hr chart above); a line labelled "Trail" on the worked-example charts.
 - **EST**: his short form for *established*, the opposite of *forming* (e.g. "10 min TS EST").
 - **£**: marks on his charts that sit on liquidity levels (dojis, wicks to fill, retail liquidity).
+- **Adv HCS / Adv FU retest / weaker HCS / "Weaker HCS-using ATT FU" / HCS-adv**: grades on his Segment 1 and 2 charts ([Segment 1 · Task 1](/mrc-tasks/tasks/segments/1/assignment/#task-1--intraday-and-swing-fu-retest-closures)). Not defined in the source.
+- **EM**: on his Segment 2 charts ("this can become EM Or negation or later HCS origin"). Not spelled out; probably "entry model" (an inference, not confirmed).
 
 ## Defined elsewhere
 
@@ -189,8 +223,11 @@ Used on these charts, but defined elsewhere. Their definitions stay where he gav
 - **Zone** and the four zone types (FU wick, HCS, weakest ATT FU / failed FU, body-in-wick orderblock): [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/).
 - **Liquidity** itself: "where orders exist to be consumed ,hunted, or used for movement" ([Liquidity · What liquidity is](/mrc-tasks/reference/liquidity/#what-liquidity-is)).
 - **Basic and advanced liquidity** (big wick to fill and unmanipulated doji; breakout liquidity and ATT FU liquidity) and the **partially manipulated doji**: [Liquidity · Basic and advanced](/mrc-tasks/reference/liquidity/#liquidity-types-basic-and-advanced).
+- **TS build**, the **predictive POI** and the **base execution and extraction model**: [The Top-Down Extraction Cycle · TS build](/mrc-tasks/reference/top-down-extraction-cycle/#ts-build) (from Segment 2).
+- **Early buyers/sellers**: described only on his Segment 3 charts ("Attempted fu /x3 self negating high/low serves as early buyers/sellers check mostly"; "Early buyers/sellers or can be interpreted as LAOL"): [LAOL down the cycle](/mrc-tasks/reference/top-down-extraction-cycle/#laol-and-early-buyerssellers-3hr).
+- **Origin, Swing Intraday Activation, Intraday Continuation** (the three tradable points): [The Top-Down Extraction Cycle · The three tradable points](/mrc-tasks/reference/top-down-extraction-cycle/#the-three-tradable-points).
 - **POI**: used throughout but never spelled out. Task 3's aid gives "The base definition of a POI one must wait for on the 10 min + to establish" ([task aid](/mrc-tasks/tasks/3/assignment/#task-aid---clarifications-on-timeframe-strength)).
 
 ---
 
-Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

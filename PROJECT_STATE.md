@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-09-30 (Misc batch "fundamentals" committed as `73ac2aa`, pushed and deployed; live verification passed).
+Last updated: 2026-10-01 (Segments 1-3 implemented and validated locally; **not committed** - awaiting user review).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -115,6 +115,19 @@ Each Task now has **two branches**, not a flat subtask list:
   `parts: [{key,label,target,unit}]` (one progress line per part via
   `partProgress()`), and `weekWork` field `part`. Weeks 1-2 HTML verified
   identical to the previous build.
+
+- **Segments** (added 2026-10-01; part of Tasks, nav unchanged): Mr Casino's
+  three-part top-down programme after the Weekly Programme. Content
+  `src/content/segments/<N>/` (`segment.md`, `assignment.md`, future
+  `mine/<entry>/index.md`), collections `segmentMeta`/`segmentAssignments`/
+  `segmentWork`, helpers `src/lib/segments.ts`, pages `src/pages/tasks/segments/`
+  -> `/tasks/segments/`, `/tasks/segments/N/`, `.../N/assignment/`
+  (`chart-page`), `.../N/mine/`, `.../N/mine/<entry>/`. **No `task-M` level**
+  (one Assignment | My Work pair per Segment; counted components are `parts`).
+  Home order: Segments -> Weekly Programme -> Standalone tasks. `parts[].target`/
+  `unit` are now optional (Weeks too): an uncounted part shows "No set count ·
+  Not started". `TaskCard` `subtaskCount` is optional (Segment cards show none).
+  Images `src/assets/segments/N/`. Details in site-conventions.
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does
@@ -485,6 +498,48 @@ still done by hand.
     depth; eschatology in depth; "much more such incidents". No Part 3
     announced or implied.
 
+- **Segments 1-3** (source + approved analysis in
+  `sources/misc/2026-09-30-misc-segments/`; **§21 of its ANALYSIS.md is
+  authoritative**; intake folder is `misc` but the content is formal assigned
+  work). Implemented and validated, **not committed** (awaiting user review):
+  - Segment 1 "Direction Through Swing & Intraday Points": his Task 1 / Task 2 /
+    Task 3 kept as headings and My Work labels (10 days each, pure markings),
+    then 10 days top-down repetition, then "Extension task for revision"
+    (optional, uncounted). Img 154-156.
+  - Segment 2 "Scalp Premium Flow & TS Build": his 1) premium flow (min. 30
+    days) and 2) TS build reading per trade (uncounted, four points). Img 157-159.
+  - Segment 3 "Bringing It All Together in Action": Task A 30 repetitions; Task
+    B 10 × Origin / Swing Intraday Activation / Intraday Continuation (three
+    counters); Task C essay (uncounted, after A and B). A/B/C marked editorial.
+    Img 160-167. Style advice and the zones "P.s." shown as guidance/optional.
+  - New Reference `top-down-extraction-cycle/` (order 7): cycle, base execution
+    and extraction model, TS build, HCS as the refinement, LAOL down the cycle,
+    three tradable points, LAOL/TS/TFS, Unresolved. Img 155-167 shared with the
+    Segment pages (same build files); Img 154 Segment-only.
+  - Extensions: Terminology (`### What HCS represents (Segments)` + Img 167,
+    `### LAOL in practice (Segments)`, Used on the charts: grades + "EM"
+    (probably entry model, inference), Defined elsewhere: TS build/predictive
+    POI, early buyers/sellers, tradable points; Related); pointer lines only in
+    TFS (after the categories note), Liquidity (*The last area of liquidity*),
+    Rules § 6 and § 11, Zones (*Where zones sit*); Related lines on those +
+    Worked example 3000. Misc: Psychology `## Choosing one trading style
+    (Segment 3)`; Advanced Stage one italic paragraph (open thread, no
+    server named); Rationality Related -> Segment 1.
+  - Segments index carries the one-line note that Week 1's "3 segments" are the
+    Fundamentals Series. Week 1 and Fundamentals pages unchanged.
+  - Conflicts shown neutrally: C1 (Negation focus vs TS build), C2 ("third and
+    final week - to be privately shared" vs "(locked) final advanced segement"),
+    C4 (Segment TFs vs TFS categories / Task 3 tiers, on the cycle page), C5
+    (10 min FU retests vs Task 3 rule 4, on the cycle page). Unresolved U1-U9
+    kept unresolved. No dates published.
+  - Raw-only: the user's L129 note; inferred chronology (§3).
+  - Validation: 74 tests pass; clean build (58 pages); check-dist OK (1467
+    refs); every pre-existing Weeks / standalone Task / Misc / Reference page
+    not listed above is byte-identical to the previous build; 375px no overflow;
+    lightbox OK; no console errors.
+  - Threads opened: "future (locked) final advanced segement"; "future origin
+    lesson". Joined: "advanced entry models", FU closures below 3hr (C5).
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -497,7 +552,13 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
+1. User review of the Segments batch, then commit and push it (files: `src/content/segments/`,
+   `src/assets/segments/`, `src/pages/tasks/segments/`, `src/lib/segments.ts` + test,
+   `src/lib/weeks.ts` + test, `src/content.config.ts`, `src/components/TaskCard.astro`,
+   `src/pages/index.astro`, `src/content/reference/top-down-extraction-cycle/`, the six
+   extended Reference pages, the three Misc entries, site-conventions, this file, and
+   `sources/misc/2026-09-30-misc-segments/`), then confirm the deploy.
+2. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
    "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25

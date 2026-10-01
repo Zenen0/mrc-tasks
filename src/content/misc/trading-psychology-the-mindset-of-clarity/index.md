@@ -172,6 +172,10 @@ That ChatGPT answer used the word "surrender". He clarified: "Some may have took
 
 The same principle, "Use its resource, do not be reliant", is in [Morality · Knowledge as an edge](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/#knowledge-as-an-edge-be-informed-verify-everything).
 
+## Choosing one trading style (Segment 3)
+
+In [Segment 3](/mrc-tasks/tasks/segments/3/assignment/#choosing-a-style) he adds: "For traders struggling with psychology it is recommended to choose one of the three as your trading style." The three are the tradable points of the top-down cycle: Origin, Swing Intraday Activation and Intraday Continuation.
+
 ## Still to come
 
 "This section will also be updated more in depth again in the future. It is much information condensed so was kept as much to the point as possible. I will always encourage all to study the points presented objectively, no matter how uncomfortable they may be."

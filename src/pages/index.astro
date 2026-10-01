@@ -7,6 +7,7 @@ import { filterImagesForEntry, getCoverImage } from '../lib/images';
 import { withBase } from '../lib/paths';
 import { allTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
 import { tasksForWeek, weekNumbers } from '../lib/weeks';
+import { segmentNumbers } from '../lib/segments';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
@@ -20,8 +21,30 @@ const taskNumbers = allTaskNumbers(allEntries, taskMetaEntries);
 const weekMetaEntries = await getCollection('weekMeta');
 const weekTaskEntries = await getCollection('weekTasks');
 const weeks = weekNumbers(weekMetaEntries);
+
+const segmentMetaEntries = await getCollection('segmentMeta');
+const segments = segmentNumbers(segmentMetaEntries);
 ---
 <Layout title="Tasks" description="Backtesting task review, organized by task.">
+  {segments.length > 0 && (
+    <section class="task-group">
+      <h2><a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments</a></h2>
+      <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme. Each Segment has one assignment.</p>
+      <div class="card-grid">
+        {segments.map((segment) => {
+          const meta = segmentMetaEntries.find((entry) => entry.id === segment)!;
+          return (
+            <TaskCard
+              href={withBase(`/tasks/segments/${segment}/`, import.meta.env.BASE_URL)}
+              badge={`SEGMENT ${segment}`}
+              title={meta.data.title}
+              cover={null}
+            />
+          );
+        })}
+      </div>
+    </section>
+  )}
   {weeks.length > 0 && (
     <section class="task-group">
       <h2><a href={withBase('/tasks/weeks/', import.meta.env.BASE_URL)}>Weekly Programme</a></h2>

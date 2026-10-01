@@ -413,6 +413,8 @@ Zones locate where moves start; the other analysis factors decide entries. His o
 
 A zone reaction used inside a full analysis: "4hr HCS Zone reaction - secondary confluence that makes up POI" in the [3,000 low worked example](/mrc-tasks/reference/worked-example-3000-reversal/). Final entries from "a refined HCS or negation POI": [rule 10](/mrc-tasks/reference/rules-of-analysis/#10-final-entries).
 
+*Segment 3 adds, as optional advanced practice: "P.s: Zones (50 min/1hr HCS - 3hr normal or HCS) can also create their own LAOL/ find the imperfect origin reasoning (advanced practice)" ([The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/#choosing-a-style)).*
+
 ---
 
-Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)
+Related: [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/)

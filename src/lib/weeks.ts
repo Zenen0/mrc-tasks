@@ -55,11 +55,15 @@ export function weekTaskLabel(taskSlug: string, label?: string): string {
 export interface WeekTaskPart {
   key: string;
   label: string;
-  target: number;
-  unit: string;
+  /** Omitted for an uncounted requirement (no number set by the mentor). */
+  target?: number;
+  unit?: string;
 }
 
-/** One progress line per Part ("Part A · Sessions: 0 / 30 sessions"), counting My Work entries tagged with that part. */
+/**
+ * One progress line per Part ("Part A · Sessions: 0 / 30 sessions"), counting My Work entries tagged with that part.
+ * Shared by the Weekly Programme and the Segments. A part without a target reads "No set count · Not started".
+ */
 export function partProgress(
   work: { data: { part?: string } }[],
   parts: WeekTaskPart[],
@@ -67,8 +71,14 @@ export function partProgress(
   return parts.map((part) => ({
     key: part.key,
     label: part.label,
-    text: workProgress(work.filter((entry) => entry.data.part === part.key).length, part.target, part.unit),
+    text: partText(work.filter((entry) => entry.data.part === part.key).length, part.target, part.unit),
   }));
+}
+
+function partText(count: number, target?: number, unit?: string): string {
+  if (target) return workProgress(count, target, unit);
+  if (count === 0) return 'No set count · Not started';
+  return `${workProgress(count)} · no set count`;
 }
 
 /** Progress text for a My Work card: "0 / 10 sessions" with a target, otherwise an entry count. */
