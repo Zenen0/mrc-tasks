@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-10-01 (final mixed batch implemented and validated, NOT yet committed - awaiting user review).
+Last updated: 2026-10-01 (final mixed batch committed as `c96a629`, pushed and deployed; live verification passed).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -549,8 +549,9 @@ still done by hand.
 
 - **Final mixed batch 2026-10-01** (source + analysis in
   `sources/misc/2026-10-01-misc-final-mixed-section/`; **§24 of its ANALYSIS.md
-  is authoritative**). Implemented and validated; **not committed** (awaiting
-  user review):
+  is authoritative**). **User-approved; committed as `c96a629`, pushed to `main`,
+  GitHub Pages deploy succeeded, live verification passed** (12 pages 200,
+  images/lightbox OK, no overflow at 1280/375px, no console errors):
   - New Segments follow-on `src/content/segments/4/` (`segment.md`,
     `assignment.md`; folder number internal only) - visible label **"Recap &
     Puzzle"**, title "Recap & the Direction Puzzle", routes `/tasks/segments/4/`,
@@ -622,11 +623,7 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. After user review: commit and push the final mixed batch (files in `git
-   status`, incl. the untracked source folder and `src/content/segments/4/`,
-   `src/assets/segments/4/`, `src/assets/misc/psychology/baseline-trap-*.jpg`),
-   then confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
-2. Then the next batch - ideally the 3 xauusd-main-focus sessions (`/mentor-new
+1. The next batch - ideally the 3 xauusd-main-focus sessions (`/mentor-new
    misc`), applying the "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
@@ -634,7 +631,7 @@ Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`)
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch
 2026-09-30 "economy" (`d6605b5`), Misc batch 2026-09-30 "fundamentals"
-(`73ac2aa`), Segments 1-3 (`8a6c9da`).
+(`73ac2aa`), Segments 1-3 (`8a6c9da`), final mixed batch / Recap & Puzzle (`c96a629`).
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 
