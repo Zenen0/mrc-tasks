@@ -32,7 +32,13 @@ standalone Task routes or folders (`/tasks/M/`, `src/content/tasks/M/`).
   - `week.md`: frontmatter `title` (topic, e.g. "Zones"), `summary`, optional
     `keyQuote`, optional `study: {label, href, note}` ("Study first" callout;
     `href` without the base, e.g. `/reference/zones/`). Body = the landing
-    page's closing sections (pacing, also-from, after).
+    page's closing sections (pacing, also-from, after), opening with
+    `## Study before the Tasks` (Week 3: `... the assignment`): the shared
+    Week teaching every Task needs (definitions, rules, Q&A answers, shared
+    worked examples, with their charts), verbatim, in source order. Reference
+    may expand it but never replaces it. The landing article is `week-page
+    chart-page` with the lightbox, so landing charts go full width while the
+    Task rows and prose keep the 820px measure.
   - `task-<M>/task.md`: frontmatter `title`, `short` (row heading / pager
     label), optional `target` + `unit` (My Work progress "0 / 10 sessions"),
     optional `mineGuide` (editorial "What goes here" list). Body = the
@@ -228,11 +234,11 @@ the Reference pages are the model.
   so a chart shows up to its native width. Prose, headings, lists,
   blockquotes, the header and the Context block are capped at 820px (a
   readable measure). Chart paragraphs (`p:has(> img)`) and tables keep the
-  full width. Standalone Task assignment pages don't use it
-  (`article.assignment-page` is capped at 760px, text and charts alike); Week
-  assignment pages do (user-approved).
+  full width. Every Tasks-area assignment page uses it: standalone Task,
+  Week and Segment (standalone Tasks 1-3 moved from the 760px
+  `article.assignment-page` cap to `chart-page` in the 2026-10-01 audit).
 - For a new chart-heavy page that isn't a Task, use the Reference template
-  or add `chart-page` to its article. Converting Task or Misc templates to
+  or add `chart-page` to its article. Converting the Misc template to
   `chart-page` needs the user's approval.
 
 **Supporting / contextual screenshots** (ChatGPT or web captures, news

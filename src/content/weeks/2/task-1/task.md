@@ -6,7 +6,7 @@ mineGuide:
   - "Each entry: the charts with every established-TFS retest POI arrowed, and notes on the prevalent direction."
 ---
 
-*Part of [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/). Study [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) first; this page doesn't re-teach the theory and categories. This is Week 2's Task 1, not [standalone Task 1](/mrc-tasks/tasks/1/) or [Week 1's Task 1](/mrc-tasks/tasks/weeks/1/task-1/assignment/).*
+*Part of [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/). Study the shared Week 2 teaching first: [Study before the Tasks](/mrc-tasks/tasks/weeks/2/#study-before-the-tasks) on the Week page (theory, the five categories, established vs forming, Q&A answers and a live worked example; expanded in [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/)). This page doesn't repeat it. This is Week 2's Task 1, not [standalone Task 1](/mrc-tasks/tasks/1/) or [Week 1's Task 1](/mrc-tasks/tasks/weeks/1/task-1/assignment/).*
 
 ## The task
 

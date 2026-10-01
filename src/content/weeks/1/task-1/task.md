@@ -7,7 +7,7 @@ mineGuide:
   - "Mentor feedback."
 ---
 
-*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) first; this page doesn't re-teach the zone types and rules. This is Week 1's Task 1, not [standalone Task 1](/mrc-tasks/tasks/1/).*
+*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study the shared Week 1 teaching first: [Study before the Tasks](/mrc-tasks/tasks/weeks/1/#study-before-the-tasks) on the Week page (zone types, rules, three levels, Q&A answers and the NY session mark-up; expanded in [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/)). This page doesn't repeat it. This is Week 1's Task 1, not [standalone Task 1](/mrc-tasks/tasks/1/).*
 
 ## The task
 

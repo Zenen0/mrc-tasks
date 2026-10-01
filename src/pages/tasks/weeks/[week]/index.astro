@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../../../../components/Layout.astro';
 import Breadcrumb from '../../../../components/Breadcrumb.astro';
+import Lightbox from '../../../../components/Lightbox.astro';
 import { withBase } from '../../../../lib/paths';
 import { parseWeekTaskId, partProgress, tasksForWeek, weekTaskLabel, workForWeekTask, workProgress } from '../../../../lib/weeks';
 
@@ -26,7 +27,7 @@ const base = import.meta.env.BASE_URL;
       { label: weekTitle },
     ]}
   />
-  <article class="week-page">
+  <article class="week-page chart-page">
     <header class="subtask-header week-header">
       <span class="subtask-badge mono">WEEK {week}</span>
       <h1>{entry.data.title}</h1>
@@ -72,4 +73,6 @@ const base = import.meta.env.BASE_URL;
       <Content />
     </div>
   </article>
+
+  <Lightbox />
 </Layout>

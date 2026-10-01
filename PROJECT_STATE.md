@@ -1,7 +1,9 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-10-01 (final mixed batch committed as `c96a629`, pushed and deployed; live verification passed).
+Last updated: 2026-10-01 (final site-wide consistency audit committed as "Complete final site-wide consistency audit", pushed and deployed).
+
+**Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -611,6 +613,37 @@ still done by hand.
     entry models; Psychology #2+ only implied by "#1". The Fundamentals "No Part 3
     announced" thread is closed.
 
+- **Final site-wide audit 2026-10-01** (all imported mentor material is
+  processed; this was the last infrastructure pass before the user starts doing
+  the Tasks). All 60 pages audited (Tasks home, standalone Tasks 1-3, Weeks 1-3,
+  Segments 1-3, Recap & Puzzle, Reference, Misc). User-approved fixes:
+  - Standalone Task assignment pages now use `chart-page` (their 42 charts were
+    capped at 760px; now up to native 1280px like Weeks/Segments/Reference).
+  - Misc entry pages no longer show an empty "Images · No images yet" block (all 7
+    did, including Worldview and Psychology, whose images are inline).
+  - Misc index meta description no longer calls Misc "reference material".
+  - Home Segments intro mentions the unnumbered Recap & Puzzle card.
+  - Segment 3 landing: "Next: Recap & Puzzle" (nav now matches Segments 1-2).
+  - site-conventions updated for the standalone `chart-page` change.
+  Verified: counters/labels match the analyses; no "Segment/Task/Week 4"; no
+  "(2025)" in the Fundamentals Series title or link text; no duplicate image files;
+  no stretched/broken images; no page overflow at 1280/375px; lightbox OK.
+  - **Week 1/2 self-containment (user chose Option A):** each landing now opens
+    its body with `## Study before the Tasks`, the shared Week teaching taken from
+    the approved analyses. Week 1: what zones are, the four zone types (Img 43-47),
+    the rules + Q&A answers (overlap, activation, which part of the wick, expiry,
+    reactions + Img 86), the weakest ATT FU in depth (Img 70-71), the three levels
+    (Img 48-49), live-time application, the NY session mark-up (Img 92-97); 16
+    charts. Week 2: what TFS is, the theory, five categories, the LTF/HTF statement,
+    the two ways (established / forming), TFS and zones, advanced hints, the Q&A
+    (how close is a retest, both sides established), and the live worked example
+    (Img 121-127, 129); 8 charts. All charts reuse the Reference asset files (no
+    copies). Week landing template is now `week-page chart-page` + lightbox (Week 3
+    differs only by that). Task pages' italic intros now point to the landing
+    section; Task wording, counts and My Work unchanged. Reference-only by
+    judgement (not needed to do the Tasks): Week 1's optional practice exercise
+    (Img 76-80) and later Week 3 refinement rules.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -619,12 +652,16 @@ charts, while the image under the unrelated "objectives" section
 (numbered 16) is the actual **1-min** chart. Very likely a numbering
 mixup when the user saved the files. Placed exactly per the user's
 given numbering as instructed, and flagged clearly - the user has not
-yet responded on whether to swap them.
+yet responded on whether to swap them. Confirmed 2026-10-01: not a
+blocker; leave unresolved unless future source material clarifies it. Do not
+alter the charts.
 
 ## Next session must start with
 
-1. The next batch - ideally the 3 xauusd-main-focus sessions (`/mentor-new
-   misc`), applying the "Task material stays self-contained" rule.
+1. The user is now completing the Tasks from the beginning; the first real My
+   Work import should shape the My Work workflow (don't pre-build it).
+2. Future mentor batches as they arrive - ideally the 3 xauusd-main-focus
+   sessions (`/mentor-new misc`), applying "Task material stays self-contained".
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2

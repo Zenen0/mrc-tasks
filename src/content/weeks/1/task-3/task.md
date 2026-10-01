@@ -8,7 +8,7 @@ mineGuide:
   - "Each entry: the 10 and 7 min zones, the LTF HCS refinement, and notes."
 ---
 
-*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) first; this page doesn't re-teach the zone types and rules. This is Week 1's Task 3, not [standalone Task 3](/mrc-tasks/tasks/3/).*
+*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study the shared Week 1 teaching first: [Study before the Tasks](/mrc-tasks/tasks/weeks/1/#study-before-the-tasks) on the Week page (zone types, rules, three levels, Q&A answers and the NY session mark-up; expanded in [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/)). This page doesn't repeat it. This is Week 1's Task 3, not [standalone Task 3](/mrc-tasks/tasks/3/).*
 
 ## The task
 
@@ -76,7 +76,7 @@ TFS and TS are taught in [standalone Task 3](/mrc-tasks/tasks/3/assignment/) ([t
 
 ## Then: the full mark-up for every session
 
-Straight after this Task he posted "the full zone mark up process for today's NY session (and every session after)", with his final clarity rule and six annotated charts: [Zones · Full zone mark-up for a NY session](/mrc-tasks/reference/zones/#full-zone-mark-up-for-a-ny-session).
+Straight after this Task he posted "the full zone mark up process for today's NY session (and every session after)", with his final clarity rule and six annotated charts: [Week 1 · Full zone mark-up for a NY session](/mrc-tasks/tasks/weeks/1/#full-zone-mark-up-for-a-ny-session) (also in [Zones](/mrc-tasks/reference/zones/#full-zone-mark-up-for-a-ny-session)).
 
 ---
 

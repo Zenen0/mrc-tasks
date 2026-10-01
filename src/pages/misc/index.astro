@@ -15,7 +15,7 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
 const entries = await getCollection('misc');
 const taskMetaEntries = await getCollection('taskMeta');
 ---
-<Layout title="Misc" description="Extra reference material that doesn't fit a task or subtask.">
+<Layout title="Misc" description="Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression.">
   {entries.length === 0 && <p class="empty-state">No misc entries yet.</p>}
   <div class="card-grid">
     {entries

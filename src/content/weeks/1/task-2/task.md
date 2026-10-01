@@ -8,7 +8,7 @@ mineGuide:
   - "Each entry: the pre-session untested HTF zones, the outcome, the 7/10/15 min and 1 min fill-in, and notes."
 ---
 
-*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) first; this page doesn't re-teach the zone types and rules. This is Week 1's Task 2, not [standalone Task 2](/mrc-tasks/tasks/2/).*
+*Part of [Week 1: Zones](/mrc-tasks/tasks/weeks/1/). Study the shared Week 1 teaching first: [Study before the Tasks](/mrc-tasks/tasks/weeks/1/#study-before-the-tasks) on the Week page (zone types, rules, three levels, Q&A answers and the NY session mark-up; expanded in [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/)). This page doesn't repeat it. This is Week 1's Task 2, not [standalone Task 2](/mrc-tasks/tasks/2/).*
 
 ## The task
 

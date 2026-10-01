@@ -8,7 +8,7 @@ mineGuide:
   - "Each entry: the 3hr+ charts with zones and the forming swing TFS (power POI) labelled per TF, then the 1hr/50 min zones and established TFS POI down to 30 min, and notes on the move's potential."
 ---
 
-*Part of [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/). Study [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) and [Zones](/mrc-tasks/reference/zones/) first; this page doesn't re-teach them. This is Week 2's Task 2, not [standalone Task 2](/mrc-tasks/tasks/2/) or [Week 1's Task 2](/mrc-tasks/tasks/weeks/1/task-2/assignment/).*
+*Part of [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/). Study the shared teaching of [Week 2](/mrc-tasks/tasks/weeks/2/#study-before-the-tasks) (TFS) and [Week 1](/mrc-tasks/tasks/weeks/1/#study-before-the-tasks) (zones) first; expanded in [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) and [Zones](/mrc-tasks/reference/zones/). This page doesn't repeat it. This is Week 2's Task 2, not [standalone Task 2](/mrc-tasks/tasks/2/) or [Week 1's Task 2](/mrc-tasks/tasks/weeks/1/task-2/assignment/).*
 
 ## The task
 

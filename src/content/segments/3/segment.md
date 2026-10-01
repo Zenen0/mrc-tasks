@@ -15,4 +15,4 @@ study:
   note: "The cycle, LAOL down the cycle, the three tradable points and LAOL / TS / TFS, gathered with Segments 1 and 2. Everything needed for this assignment is also on the Assignment page itself."
 ---
 
-*Previous: [Segment 2](/mrc-tasks/tasks/segments/2/). Segment 3 ends by pointing to a further "future (locked) final advanced segement" ([Still to come](/mrc-tasks/tasks/segments/3/assignment/#still-to-come)).*
+*Previous: [Segment 2](/mrc-tasks/tasks/segments/2/). Next: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/). Segment 3 ends by pointing to a further "future (locked) final advanced segement" ([Still to come](/mrc-tasks/tasks/segments/3/assignment/#still-to-come)).*

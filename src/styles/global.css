@@ -620,6 +620,16 @@ main {
   max-width: 820px;
 }
 
+/* Week landing with shared teaching charts ("Study before the Tasks"): charts go wide, the
+   Task rows keep the reading measure like the prose. */
+.week-page.chart-page {
+  max-width: 1280px;
+}
+
+.chart-page > .week-task {
+  max-width: 820px;
+}
+
 .week-task {
   margin: var(--space-5) 0;
   scroll-margin-top: 72px;

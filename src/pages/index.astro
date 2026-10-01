@@ -29,7 +29,7 @@ const segments = segmentNumbers(segmentMetaEntries);
   {segments.length > 0 && (
     <section class="task-group">
       <h2><a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments</a></h2>
-      <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme. Each Segment has one assignment.</p>
+      <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme, then the unnumbered Recap &amp; Puzzle follow-on. Each has one assignment.</p>
       <div class="card-grid">
         {segments.map((segment) => {
           const meta = segmentMetaEntries.find((entry) => entry.id === segment)!;

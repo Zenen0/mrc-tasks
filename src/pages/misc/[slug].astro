@@ -69,10 +69,12 @@ const ogImage = ogImageResult ? new URL(ogImageResult.src, Astro.site).toString(
       )}
     </section>
 
-    <section class="captures">
-      <h2>Images</h2>
-      {blocks.length > 0 ? <ThumbnailGrid blocks={blocks} /> : <p class="empty-state">No images yet.</p>}
-    </section>
+    {blocks.length > 0 && (
+      <section class="captures">
+        <h2>Images</h2>
+        <ThumbnailGrid blocks={blocks} />
+      </section>
+    )}
 
     <section class="response">
       {hasResponse ? <Content /> : <p class="empty-state">Pending.</p>}
