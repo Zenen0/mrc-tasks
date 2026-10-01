@@ -232,6 +232,7 @@ More on HCS: [Terminology · HCS](/mrc-tasks/reference/terminology/#hcs).
 
 - A "future (locked) final advanced segement", where Task C will be explored further. Segment 2 had called the third part "our third and final week - to be privately shared". Both are kept as he wrote them; nothing more is known about the advanced segment.
 - A "future origin lesson" (1 min chart: "hint is given for future origin lesson").
+- Next: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/), a recap of the swing / intraday direction layer and a puzzle chart. It is public and is not the locked advanced segment above.
 
 ---
 

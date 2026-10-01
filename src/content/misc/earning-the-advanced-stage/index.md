@@ -66,6 +66,16 @@ He follows "the progress, efforts, focus and how true one is in utilization of t
 - genuine use of what has already been taught;
 - the ability to follow instructions exactly.
 
+## Public and protected material (later)
+
+Introducing a later assignment ([Recap & Puzzle](/mrc-tasks/tasks/segments/4/)), he sets out what the public material is meant to do:
+
+> As much as is publicly allowed to be released, yet protecting from leaks. Without spelling out every mechanical interaction flow. There is a reason the most condensed information is written in charts - it takes effort to extract- it speaks to genuine learners. Yet these reflection tasks were made so by the end of it, those genuine learners have all the tools to attain elite profitability via a step by step structure.
+
+- **Independence.** From his [baseline trap](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#the-baseline-trap-trading-psychology-1) list: "The goal is independence, not endless dependency on new teaching." and "Advanced knowledge should not create entitlement."
+- **What comes next.** "Now the final explicit stages to bridge onto proper implementation." That is the Recap & Puzzle assignment, after which he will "advance through the stages of implementation step by step".
+- **Side by side, not reconciled.** Here the reflection tasks give "all the tools to attain elite profitability". Segment 3 still points to a "future (locked) final advanced segement" ([Segment 3 · Still to come](/mrc-tasks/tasks/segments/3/assignment/#still-to-come)). He does not say how the two relate.
+
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (see *Discipline: repetition, hours, self-reliance*)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (see *Discipline: repetition, hours, self-reliance*) · [Trading Psychology · The baseline trap](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#the-baseline-trap-trading-psychology-1) · [Recap & Puzzle](/mrc-tasks/tasks/segments/4/)

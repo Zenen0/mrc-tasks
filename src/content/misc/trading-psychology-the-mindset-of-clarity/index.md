@@ -8,8 +8,9 @@ mentorPrompt: |
   psychology, the practical mindset steps that follow from it, and the
   "underlying causes" that shape a trader's mind, from money and media to
   habits and faith. Posted after Task 3, as the base he set before his
-  practical rules of analysis. The worldview and faith passages are his own
-  views, given here as he framed them.
+  practical rules of analysis. Later additions include his numbered
+  "Trading Psychology #1 — The Baseline Trap". The worldview and faith
+  passages are his own views, given here as he framed them.
 ---
 
 ## Where this fits
@@ -176,12 +177,49 @@ The same principle, "Use its resource, do not be reliant", is in [Morality · Kn
 
 In [Segment 3](/mrc-tasks/tasks/segments/3/assignment/#choosing-a-style) he adds: "For traders struggling with psychology it is recommended to choose one of the three as your trading style." The three are the tradable points of the top-down cycle: Origin, Swing Intraday Activation and Intraday Continuation.
 
+## The baseline trap (Trading Psychology #1)
+
+A later post, headed "Trading Psychology #1 — The Baseline Trap": "An aspect that I believe is worth briefly highlighting for the team and a key trap many may fall into , awareness will break it so. One that applies to teaching, learning, and trading implementation alike." He offers it as "a gentle reminder and a form of mental recalibration".
+
+> The baseline trap is when repeated exposure to something exceptional makes it feel normal.
+
+"In trading, this can distort expectations around performance. In learning, it can make unique knowledge feel ordinary simply because you have had continued access to it."
+
+"Overcoming it matters because familiarity should not reduce perspective, gratitude, discipline, or the ability to recognise real value."
+
+The list he posted with it (transcribed from his three screenshots below):
+
+1. **Exceptional exposure becomes normalised.** If students are repeatedly given unusually advanced or unique material, they can start seeing it as the minimum rather than recognising its value.
+2. **The baseline keeps moving upward.** What once felt groundbreaking can quickly become “expected,” so students may constantly look for the next layer instead of mastering what they already have.
+3. **More teaching can reduce appreciation if perspective is lost.** The more access they receive, the easier it is to forget how uncommon that access actually is.
+4. **Advanced knowledge should not create entitlement.** Unique material is a privilege and responsibility, not something to endlessly demand more of.
+5. **Depth matters more than quantity.** A student can have fewer concepts but understand and execute them deeply, which is better than constantly accumulating new advanced information.
+6. **Implementation is the real test.** The question becomes: can they use what has already been taught consistently and independently?
+7. **Elite standards still require groundedness.** High-level students should recognise the difference between what is normal inside your environment and what is normal in the wider trading world.
+8. **Familiarity should not reduce perceived value.** Something does not become basic merely because they have seen it many times.
+9. **The goal is independence, not endless dependency on new teaching.** Eventually, advanced teaching should make the student need less explanation, not more.
+10. **Protecting IP is part of responsible teaching.** You can teach enough for genuine mastery without revealing every proprietary mechanism behind the framework.
+11. **The baseline should be mastery, not constant escalation.** Students should measure progress by how well they understand, execute, and apply—not by how much more secret or advanced material they receive.
+
+<details class="response-gallery">
+<summary>His original screenshots of the list (3 images)</summary>
+
+![The baseline trap list, points 1-4 (his screenshot)](../../../assets/misc/psychology/baseline-trap-1.jpg)
+![The baseline trap list, points 5-9 (his screenshot)](../../../assets/misc/psychology/baseline-trap-2.jpg)
+![The baseline trap list, points 10-11 (his screenshot)](../../../assets/misc/psychology/baseline-trap-3.jpg)
+
+</details>
+
+What this means for progression (independence, protected material, what comes next) is on [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/#public-and-protected-material-later).
+
 ## Still to come
 
 "This section will also be updated more in depth again in the future. It is much information condensed so was kept as much to the point as possible. I will always encourage all to study the points presented objectively, no matter how uncomfortable they may be."
+
+The baseline trap, numbered "#1", partly delivers this. The number implies further psychology posts; none has been announced.
 
 **"All you ever need for your trading psychology at the highest level."**
 
 ---
 
-Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) (including his [recommended viewing](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#recommended-viewing)) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/)
+Related: [Rationality & Backtesting Discipline](/mrc-tasks/misc/rationality-and-backtesting-discipline/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Earning the Advanced Stage](/mrc-tasks/misc/earning-the-advanced-stage/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) (including his [recommended viewing](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#recommended-viewing)) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/)

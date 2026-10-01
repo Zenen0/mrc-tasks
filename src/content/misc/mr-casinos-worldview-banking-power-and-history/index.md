@@ -24,7 +24,7 @@ This page documents how Mr Casino thinks, not a set of verified conclusions. Eac
 
 The trading-relevant parts of the same post live elsewhere: the principles on knowledge and verification in [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) (*Knowledge as an edge*), and the macro view of USD dominance in [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) (*The wider picture*).
 
-His 2025 Fundamentals series continues these themes (the banking "shadow web", the prophecies, Gaza, the media and the "hierarchy"): see [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
+His 2025 Fundamentals series continues these themes (the banking "shadow web", the prophecies, Gaza, the media and the "hierarchy"): see [Fundamentals Series: The Geopolitical State of the World](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
 
 ## Why he shares it
 
@@ -190,7 +190,7 @@ This restates the principle in [Trading Psychology · Underlying causes](/mrc-ta
 
 ### Still to come
 
-"In the next post we will discuss the political state of affairs the world is reaching for, I'm sure most are interested in what is to come (note how each passing month comes with a velocity of change like never before)." Only after this refresh, he says, "can we move forward with a even deeper exposé." It appears to have been delivered by his **Fundamentals Part 1** (July 2025), which opens as "our deepest exposé yet" and covers "The current "geopolitical" state of the world". See [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
+"In the next post we will discuss the political state of affairs the world is reaching for, I'm sure most are interested in what is to come (note how each passing month comes with a velocity of change like never before)." Only after this refresh, he says, "can we move forward with a even deeper exposé." It appears to have been delivered by his **Fundamentals Part 1** (July 2025), which opens as "our deepest exposé yet" and covers "The current "geopolitical" state of the world". See [Fundamentals Series: The Geopolitical State of the World](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/).
 
 ## His closing stance
 
@@ -200,4 +200,4 @@ This restates the principle in [Trading Psychology · Underlying causes](/mrc-ta
 
 ---
 
-Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Fundamentals Series (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/)
+Related: [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Fundamentals: USD, the Banks & Gold](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/) · [Fundamentals Series](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/) · [Trading Psychology: The Mindset of Clarity](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/) · [Fundamentals Series · Part 3.1](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/#part-31-the-noble-path-ai-and-the-media-war)

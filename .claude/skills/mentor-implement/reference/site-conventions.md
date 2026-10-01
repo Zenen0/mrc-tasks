@@ -81,6 +81,11 @@ pair per Segment, so there is **no `task-M` level**.
   - `segment.md`: `title`, `summary`, `purpose` (his own one-line purpose,
     shown on the Segments index), optional `keyQuote`, optional `study`
     (as `week.md`). Body = a short closing note on the landing page.
+    Optional `label` (added for "Recap & Puzzle", folder `4`): replaces
+    "Segment N" everywhere it is shown (index/home badges, landing h2,
+    breadcrumbs, pager, titles) via `segmentLabel()`. Use it for an unnumbered
+    follow-on so the folder number stays internal. Unlabelled Segments render
+    exactly as before.
   - `assignment.md`: `title`, `short` (landing row heading), `parts: [{key,
     label, target?, unit?}]` (required), optional `mineGuide`. Body = the
     assignment page (same conventions as a Week `task.md`).

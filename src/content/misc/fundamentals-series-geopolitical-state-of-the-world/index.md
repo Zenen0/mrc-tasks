@@ -1,10 +1,11 @@
 ---
-title: "Fundamentals Series: The Geopolitical State of the World (2025)"
+title: "Fundamentals Series: The Geopolitical State of the World"
 date: 2026-09-30
 order: 7
 mentorPrompt: |
-  Mr Casino's numbered Fundamentals series: Part 1 (July 2025) and Part 2
-  (autumn 2025, inferred). By his own definition, fundamentals are "true
+  Mr Casino's numbered Fundamentals series: Part 1 (July 2025), Part 2
+  (autumn 2025, inferred) and Part 3.1 (his "Reflection - Part 3", which
+  appears to continue the series). By his own definition, fundamentals are "true
   facts". This is mentor worldview and commentary, not trading instruction.
   Beliefs, opinions, forecasts and claims are his, and are marked by their
   evidential status. The market-relevant points are also set out in
@@ -15,7 +16,7 @@ mentorPrompt: |
 
 ## How to read this page
 
-This page records how Mr Casino read the world in 2025, in his order and largely in his words. It uses the same labels as [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#how-to-read-this-page):
+This page records how Mr Casino read the world in this series, in his order and largely in his words. It uses the same labels as [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#how-to-read-this-page):
 
 - **Documented**: background events, stated plainly. These lines are editorial and were checked against reliable sources.
 - **His interpretation / opinion**: his reading of events, attributed to him.
@@ -35,9 +36,10 @@ Quotation marks and quote blocks are his wording, spelling included. His own cav
 - **The market side.** The points that plug into his USD/banks/gold model (tariffs, the "big beautiful bill", China's gold, rate cuts, Venezuela, Iran's "economic route") are set out with the model in [Fundamentals: USD, the Banks & Gold · 2025](/mrc-tasks/misc/fundamentals-usd-banks-and-gold/#2025-tariffs-debt-and-the-dollar-fundamentals-series).
 - **What it delivers.** After Week 1 he announced: "After this 3 segments will be given related to fundamentals and the current geopolitical climate" ([Week 1](/mrc-tasks/tasks/weeks/1/#after-week-1)). Part 1 then introduces "Three final segments on fundamentals", and its three topics (the geopolitical state of the world, the Armageddon prophecies, and Gaza) appear to be those segments. His "war of disinformation" post had also promised "the political state of affairs the world is reaching for" and "a even deeper exposé"; Part 1 opens as "our deepest exposé yet" and appears to be that post ([Worldview · Still to come](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#still-to-come)). Both links are strong inferences; he does not state them.
 - **The level scale.** Part 2 opens: "Currently we can consider ourselves to have covered at level 4/10 , by the end of this segment that will be closer to 7/10. Each level takes a higher degree of free mindedness and calibre to understand, we take it one step at a time , from the roots up and firm foundations."
-- **Background.** Both Parts lean on the earlier [Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) page: the banking-system critique, Freemasonry, "red pill / blue pill", and the war of disinformation.
+- **Part 3.** A later post is titled "Reflection -Part 3." and calls itself "This reflection segment is 3.1". It appears to continue this series: Parts 1 and 2 also present themselves as "#reflection" pieces, 3.1 says "we finish now what we started in these reflection posts", it refers back to "the book 1984 concept" (Part 2) and the documentary *2073* shared earlier, and it returns to the same subjects (media, Gaza, Trump, freedom of mind). The link is strongly supported but not explicitly stated; his title says "Reflection", not "Fundamentals".
+- **Background.** Parts 1 and 2 lean on the earlier [Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) page: the banking-system critique, Freemasonry, "red pill / blue pill", and the war of disinformation.
 
-**Contents:** [Part 1 (July 2025)](#part-1-july-2025-the-geopolitical-state-of-the-world) · [Part 2 (autumn 2025)](#part-2-autumn-2025-inferred-four-subjects) · [Resources](#resources-shared-in-this-series) · [Open threads](#open-threads)
+**Contents:** [Part 1 (July 2025)](#part-1-july-2025-the-geopolitical-state-of-the-world) · [Part 2 (autumn 2025)](#part-2-autumn-2025-inferred-four-subjects) · [Part 3.1](#part-31-the-noble-path-ai-and-the-media-war) · [Resources](#resources-shared-in-this-series) · [Open threads](#open-threads)
 
 ## Part 1 (July 2025): the geopolitical state of the world
 
@@ -309,6 +311,125 @@ The market side of these updates is on [Fundamentals: USD, the Banks & Gold](/mr
 
 > Our minds should be free and unshakable - they can do what they want but never break our will. We know the truth of it all. And that. Is the ultimate freedom and success.
 
+## Part 3.1: the noble path, AI and the media war
+
+He titles this post "Reflection -Part 3." and calls it "This reflection segment is 3.1". It appears to continue this series: that is strongly supported but not explicitly stated (see [Where this series fits](#where-this-series-fits)). Parts 3.2 and 3.3 have not been posted ([Open threads](#open-threads)).
+
+"Disclaimer: this post is not ment to be read at once and contains many condensed points - for general knowledge and intelligence or simply :a different perspective"
+
+"Writing these reflection posts where we delve into deeper truths ... it is not easy to articulate always, a large force of manipulation we are all up against - but again not hard in the end - for the power of the noble path and truth - is strongest."
+
+### The noble path
+
+*Teaching, opinion and belief, in his words.*
+
+"What is the noble path? I do not refer to myself. It is a path whose rights we can only hope to fulfill and be worthy of."
+
+> It is the path of humility, a common want for good , standing up against injustice, the path of seeking knowledge and constant improvement. It is that path of #reflection. It is the matter of the heart , not any worldly success (apart from that which has benefited others - that lasting charity).
+
+- **His view as a mentor.** "The perspectives gained as an international mentor , is a special one*" lets him see "the common patterns that befall- and uniqueness of minds": "For all our sophistication it is interesting to see how our true wants are actually quite simple. Security, love, comfort, and helping others." Against that, "the deception. Of constantly being in competition with each other , or chasing power, individualism that makes one forget the real deeper matters. It won't be taken with one to the grave." His footnote: "*(although leadership is not sought out , and a test itself- and this kind of message is made for the next generation of leaders like yourselves)."
+- **True happiness.** *His opinion.* "True happiness is in the noble path." The richest or most famous "astray from this path - are not content and happy from within. They struggle with nihilism (lack of purpose), take drugs , can't sleep at night - the list goes on. Yet people will shape their whole lives as followers trying to emulate such persons."
+- **"The first lesson starts from redefining what we class as success.** Break the spell of influence they try and have over you.Be free minds, who know what really matters."
+- **No one is perfect.** "No human is perfect. Not me , not anyone." In "these times of global corruption" we may be "exposed to more vices. Yet vices do not define us." *Belief:* "The matters of the heart are only known by God and never to underestimate the power of a sincere intention and prayer."
+- **No "super fans".** "We are anti "super fan" mindset here. Yet take the good where you can and seek to compete in it (the good), and seek to fulfill your own impactful pursuit you were made for. Every single person has their own unique good destiny path - you only have to have some faith and take steps."
+- **Natural followers.** "we as humans are natural followers , no matter how much power one may seem to have acquired - it is within our wiring. You are a follower of society, or trends, or celebrities, or your own vain desires or your own perceived intellect. Or a follower of God and a higher guidance." He calls it "a fact, one once understood we can tame to hone our lives in the right direction."
+
+> You are what you are exposed to so always following something intrinsically. The deeper question is: what do you follow? What are your base tenets? What do you stand for as a person? The noble path or a mindless ultimately depressed consumer?
+
+The trading side of "what you are exposed to" is in [Trading Psychology · Underlying causes](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#underlying-causes-breaking-free-from-the-manipulation).
+
+### These times
+
+*His interpretation and belief.*
+
+- "The troubles we face are not unique to our times but extra amplified." In an interlinked world "where there is real potential for prosperity - the responsibility is also amplified and the consequences all the more real for failure to meet the just right."
+- "It had always been a battle between good and evil forces (even if it's just within ourselves). But these times are one of ever sinister deception. Many feel extra confused, or without direction, or have had the will beaten out of them unfortunately."
+- "No one is free from test and trial in this world. And "Upon no soul is a burden more than they can bear"." *The quoted line appears to echo Qur'an 2:286 ("Allah does not burden a soul beyond that it can bear"); he does not give a source.*
+- "Remember ultimately it is you and the noble path of which is true success ... So do always have hope, and do not become bitter or resentful (that is exactly how they would like you to be). And you will find it."
+- He then shares "a thought provoking video on the different dimensions of existence", so that we can "think and see beyond this temporary existence bound by space and time" ([Resources](#resources-shared-in-this-series)).
+
+### AI
+
+*His opinion, forecast and belief.*
+
+- *Opinion:* "They say a good tool in the right hands or a bad tool in the wrong hands. With the current leaders of the world we have? It's fair to say it is being used for its destructive power. Extreme surveillance and data profiles, automated warfare and espionage, or simply a tool to instruct on how to persuade evil agendas further. **But most worrying of all: the ability to befuddle and attempt to overtake or cloud the minds of users.** Even if one is not a user - you are still being selectively targeted."
+- "Its manipulation is subtle. Even the strongest minded users are not free from its influence." It is developing too fast "to assess its adverse effects. But even if they knew (and they do)- would they care?"
+- *Speculation, with his own hedge:* "Whole countries like China will (perhaps, a high likelihood) be run on AI if not already (for its strategic planning and then by definition "running the show"). Few governments today are free from its influence."
+- *Forecast:* "Soon that time will come where it will be better to go almost completely off the grid and preserve one's sanity, faith and happiness. Just your loved ones and nature , living in tune as your ancestors did once more." But "we are not at that level yet": "Temporary reteats to rest / to reflect/to reconnect are beneficial."
+- *Belief and forecast:* "The minds astray from the noble path will inevitably become a slave to AI. They will serve AI. They will seek to make AI their God. It is after all the higher power over humans , unless humans know of a higher power over it. The final test we fast approach into."
+- His own caveat: "To those less versed I'm sure the previous passage feels befuddling. If anything felt like a conspiracy theory it would be the previous. But that's the whole ploy now. This type of manipulation spell is stronger than the rest."
+
+His practical cautions on ChatGPT are in [Part 2 · Subject 2](#subject-2-social-media-and-news) and [Trading Psychology · Using ChatGPT](/mrc-tasks/misc/trading-psychology-the-mindset-of-clarity/#using-chatgpt).
+
+### The media war after October 7
+
+*His interpretation throughout. He does not name who "they" are in this post, and this page does not supply a referent. The background notes below are editorial; they do not identify "they" and do not confirm his reading.*
+
+- "They spent decades building up their media (propaganda) monopolies. They infiltrated high level governmental positions." *Unsupported: no evidence is given in the post.*
+- "Post October 7th, they saw to it so they could act with unchecked impunity. The lies that were peddled mainstream, justifying their genocide. Defending the cold blooded murder of 20,000 + children (with live documented footage). As if they were the good guys."
+  *Background: "genocide" is a disputed legal characterisation of the war in Gaza. A UN Commission of Inquiry concluded in September 2025 that Israel has committed genocide in Gaza; Israel rejects the finding. South Africa's genocide case against Israel at the International Court of Justice is ongoing. UNICEF reported at least 21,289 children killed in Gaza between 7 October 2023 and 3 February 2026.*
+- "But the illusion shattered fast. The good of the common people won. The protests and international pressure - it was no small pressure. They had failed. Their media campaigns couldn't hide the truth of their evil." Other world leaders get no credit: "They enabled it until as long as they could get away with it, but simply risked anarchy and a fall of global order and their own power affected with supply route constraints". *His interpretation.*
+- "They had also failed on the battlefield - for in real ground invasion - it is a battle of the hearts and courage which they lack." *His opinion.* The lesson he draws: **"1 noble soldier with heart fighting for justice is worth more than 100 better equipped tyrannical soldiers."** "Just a raw point for us to take lesson from (see the example - it is not about how much perceived power or wealth - do not feel hopeless against odds)."
+- "And now a multiple battle front opened unable to be closed until the end (Yemen, Lebanon, Iran, gulf countries, Iraq)." *Background: since October 2023 Hezbollah in Lebanon, the Houthis in Yemen, Iran-aligned militias in Iraq and Iran itself have attacked Israel, and Israel struck Hamas officials in Qatar in September 2025. "Unable to be closed until the end" is his forecast.*
+- "Yes the media campaign had failed. But now.. they would come with a sort of vengeance. Behold the rising fascism once more."
+  - "First the purchasing of Tiktok to sensor it." *Background: TikTok's US business passed in January 2026 to a joint venture majority-owned by US and other non-Chinese investors, led by Oracle, Silver Lake and MGX; ByteDance keeps 19.9%. "To sensor it" is his interpretation; the sale does not show it.*
+  - "Meta/Google controls the youtube , instagram and Facebook." *Background: Google owns YouTube; Meta owns Facebook and Instagram.*
+  - "X is now also part of their control (elon musk would have to comply if he would want to keep his wealth)." *Unsupported: no evidence is given.*
+  - "The control the mainstream algorithm that feeds minds daily." *His interpretation.*
+- "This time specific bots are created to push specific agendas online. They create a false public perception that is in fact not a resemblance of a majority. Truth does not matter on these platforms , but will just be swarmed out by fake opinions." He adds "their new AI weaponized propaganda alongside their increased vigor spending funding radicals that can push their agenda - preying and manipulating the weakness of a confused, hurt people." *Background: networks of fake accounts pushing political messaging are documented; Meta, for one, reports and removes such "coordinated inauthentic behavior" regularly. Who runs the campaigns he means, the "AI weaponized propaganda" and the "funding radicals" are his interpretation, unsupported in the post.*
+- "Everything we say here , they try for the opposite. They will not blame the banking system or their financial tyranny or corrupt leadership or wars for societies problems. They will have you become hateful and spiteful. They will have you justify genocide. They seek to divide and conquer." *His interpretation; his banking critique is on [Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/).*
+- "Treachery and manipulation is what they do best and they seek to have you among them. They will try to make you perceive their enemies (who are in fact steadfast on good and on the noble path) as their own. Their ploy is to dehumanise them, and fester hate- people wonder how cruel genocides of the past occurred and how the people allowed it so. Well it was like so not done in a vacuum overnight." *His interpretation.*
+- "Yes real problems, but the fault is with leadership and their unjust systems in place. However this ploy is meant to lead to this - have the people want change - and their attempted more radical replacement government through this agenda will be far worse." *Forecast.*
+
+### Trump, and the road to totalitarianism
+
+*His opinion.*
+
+"Just like how Trump came into power under the guise of stronger border control - yet a fascist and extremist who cares only for himself as one astray inevitably does."
+
+His caveat: "Trust talking about politics explicitly like this is not fun. I do not overstep or push a belief on anyone. But it is what most will not hear , a perspective that I see as my duty to share."
+
+> For know this: Without the noble path - all other paths risk paving the way to eventual totalitarianism.
+
+"We have spoken about this in previous segments - the documentary 2073 was shared , the book 1984 concept is not something new, and the weaponized AI of today seeking to enslave further." *2073* is on [Worldview · Recommended viewing](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/#recommended-viewing); *1984* is in this page's [Resources](#resources-shared-in-this-series).
+
+### The counter
+
+"But what is the counter to all this? A recap of important points has been done. A stark real conversation it may have felt but now you know- a little more prepared for the real world issues , and how to navigate staying on the path of truth, steadfastness and ultimate purpose." And: "it is not all doom and gloom ahead ... the time of great change is coming..."
+
+His practical advice:
+
+- "Hold each moment of life sacred. Always search for deeper truths."
+- "Do not judge people for you do not know their story or hearts or be harsh or to generalise."
+- "Focus on what unites us - and be extra diligence to protect your minds from the hateful manipulation."
+- "Learn to step back from the fast paced world. **Sit in silence for 10 mins daily.**"
+- "Live life as if it were your own story or movie- For that it is , and each action you take now echos in your eternity."
+- "Remember your blessings, the principle is to always look at those who have less than you , not more - but always aim high and trust in your life path for impact."
+
+### His base tenets
+
+*Belief and teaching.* "I will leave with some base tenets , principles I hold dear and they have helped me , and I share now with you. Perhaps you fill find them beneficial as I do. These are common good principles I believe anyone of sound rational mind will find hard to disagree with. The articulation and depth of meaning is far better than I could ever do:"
+
+1. "Plant a tree , even If the world was to end tomorrow"
+2. "Verily, the most complete of believers in faith are those with the best character and who are most kind to their families"
+3. "No one who has the weight of a seed of arrogance in his heart will enter Paradise"
+4. "The believer does not insult others, does not curse others, is not vulgar, and is not shameless"
+5. "Indeed, among the signs of the end of times are the removal of knowledge, the spread of ignorance.."
+6. "The most complete of believers in faith are those with the best character, and the best of you are the best in behavior to their women."
+7. "The tribulations will be presented to the hearts of people like a reed mat is woven, stick by stick. Any heart that absorbs it will have a black spot put on it. Any heart that rejects it will have a white spot put on it. The result is that hearts will be of two kinds: one white like a smooth stone, which will not be harmed by any tribulation as long as the heavens and earth endure. The other will be black and dust-colored, like an overturned vessel, not recognizing good nor rejecting evil, but rather being absorbed with its own desires..."
+8. "God has divided mercy into one hundred parts; and He retained with Him ninety-nine parts, and sent down to earth one part. Through this one part creatures deal with one another with compassion, so much so that an animal lifts its hoof over its young lest it should hurt it"
+
+*Editorial note: these appear to correspond to well-known hadith traditions (sayings attributed to the Prophet Muhammad). He does not name a source.*
+
+### Closing, and what remains
+
+- "This reflection segment is 3.1. 3.2 and 3.3 still remain where we will discuss and as events develop , yet as one may be able to tell even more intensity and I do not wish to just drone on... it is enough for today."
+- "A lesson and a reminder to myself first for the words I write are closer to my ears than yours. It was a little of a long one , but still not into the true surface , hopefully to be discussed further in our final reflection post when time is right."
+
+> For now the purpose of this post : for some common ground , for a common good worthy cause , seeking to be proudly free from the manipulation.
+
+Straight after it he turned back to trading with a new assignment: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/).
+
 ## Resources shared in this series
 
 Titles are from YouTube. The videos have not been watched or reviewed for this site; they are listed for where and why he shared them.
@@ -317,6 +438,7 @@ Titles are from YouTube. The videos have not been watched or reviewed for this s
 - [*I Exposed Racists In London*](https://youtu.be/ez1cn8d28_8) (YouTube). Part 2, Subject 1, on the UK: "A fun yet informative video that sums up the situation". Not reviewed here.
 - [*John F Kennedy Secret Society Speech*](https://youtu.be/RdUsJHeVXiE) (YouTube). Part 2, Subjects 3 and 4, between the Trump attempt and the hierarchy. Not reviewed here.
 - [*Blue or Red Pill? 💊 The Matrix (1999)*](https://youtube.com/shorts/OqUtvreMuXw) (YouTube Short). Part 2, Subjects 3 and 4, closing the point on rituals. Not reviewed here.
+- [*All 7 Dimensions Explained in Detail (From 0D to Infinity)*](https://www.youtube.com/watch?v=-gPFxMHWV8w) (YouTube). Part 3.1, *These times*: "a thought provoking video on the different dimensions of existence. I'm sure you will find it is interesting as I did." Not reviewed here.
 - George Orwell, *1984* (book). Part 2, the hierarchy: "I do not recommend it to all for the references sexual themes - but reading the works of George Orwells 1984 can paint the picture better."
 
 ## Open threads
@@ -326,6 +448,8 @@ What he explicitly left for later:
 - **China in depth:** "not until all the other fundamental foundations."
 - **The Armageddon prophecies in depth:** "intended to be explored more in Part 2"; Part 2 touches on them only briefly ("Some are more armageddon driven than others").
 - **Further incidents:** "It is expected we will have much more such incidents in the coming weeks and months."
+- **Parts 3.2 and 3.3:** "This reflection segment is 3.1. 3.2 and 3.3 still remain where we will discuss and as events develop".
+- **His "final reflection post":** "hopefully to be discussed further in our final reflection post when time is right."
 
 ---
 

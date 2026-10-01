@@ -19,7 +19,7 @@ mentorPrompt: |
 
 Task 2's third foundational objective already frames the markets, especially gold, as the banks' "printing machine" (see [Task 2](/mrc-tasks/tasks/2/assignment/)). This entry sets out *why*. It pairs with [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/): the banks are the opposing minds you need to understand.
 
-His own definition of the word, from his 2025 series: "fundamentals (definition: true facts — it will also help you in the markets)". His numbered Fundamentals series applies it to the geopolitical picture of 2025; that series has its own page, [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/). The points from it that bear on this model are in [2025: tariffs, debt and the dollar](#2025-tariffs-debt-and-the-dollar-fundamentals-series) below.
+His own definition of the word, from his 2025 series: "fundamentals (definition: true facts — it will also help you in the markets)". His numbered Fundamentals series applies it to the geopolitical picture of 2025; that series has its own page, [Fundamentals Series: The Geopolitical State of the World](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/). The points from it that bear on this model are in [2025: tariffs, debt and the dollar](#2025-tariffs-debt-and-the-dollar-fundamentals-series) below.
 
 ## The model, step by step
 
@@ -191,4 +191,4 @@ This discussion promised several follow-ups. Their status:
 
 ---
 
-Related: [Fundamentals Series: The Geopolitical State of the World (2025)](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/)
+Related: [Fundamentals Series: The Geopolitical State of the World](/mrc-tasks/misc/fundamentals-series-geopolitical-state-of-the-world/) · [Morality, Rationality & the Opposing Side](/mrc-tasks/misc/morality-rationality-and-the-opposing-side/) · [Mr Casino's Worldview](/mrc-tasks/misc/mr-casinos-worldview-banking-power-and-history/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/)

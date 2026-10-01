@@ -7,7 +7,7 @@ import { filterImagesForEntry, getCoverImage } from '../lib/images';
 import { withBase } from '../lib/paths';
 import { allTaskNumbers, getTaskTitle, subtasksForTask } from '../lib/tasks';
 import { tasksForWeek, weekNumbers } from '../lib/weeks';
-import { segmentNumbers } from '../lib/segments';
+import { segmentLabel, segmentNumbers } from '../lib/segments';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/tasks/**/*.{png,jpg,jpeg,webp}',
@@ -36,7 +36,7 @@ const segments = segmentNumbers(segmentMetaEntries);
           return (
             <TaskCard
               href={withBase(`/tasks/segments/${segment}/`, import.meta.env.BASE_URL)}
-              badge={`SEGMENT ${segment}`}
+              badge={segmentLabel(segment, meta.data.label).toUpperCase()}
               title={meta.data.title}
               cover={null}
             />

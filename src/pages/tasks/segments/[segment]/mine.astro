@@ -6,7 +6,7 @@ import Breadcrumb from '../../../../components/Breadcrumb.astro';
 import SubtaskCard from '../../../../components/SubtaskCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../../../../lib/images';
 import { withBase } from '../../../../lib/paths';
-import { workForSegment } from '../../../../lib/segments';
+import { segmentLabel, workForSegment } from '../../../../lib/segments';
 import { partProgress } from '../../../../lib/weeks';
 
 export async function getStaticPaths() {
@@ -18,7 +18,8 @@ const { entry } = Astro.props;
 const { segment } = Astro.params as { segment: string };
 
 const segmentMeta = (await getCollection('segmentMeta')).find((meta) => meta.id === segment);
-const segmentTitle = `Segment ${segment}: ${segmentMeta?.data.title ?? ''}`;
+const label = segmentLabel(segment, segmentMeta?.data.label);
+const segmentTitle = `${label}: ${segmentMeta?.data.title ?? ''}`;
 const work = workForSegment(await getCollection('segmentWork'), segment);
 const base = import.meta.env.BASE_URL;
 
@@ -27,7 +28,7 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
   { eager: true },
 );
 ---
-<Layout title={`Segment ${segment}: my work`} description={`My own backtesting work for Segment ${segment}: ${entry.data.title}.`}>
+<Layout title={`${label}: my work`} description={`My own backtesting work for ${label}: ${entry.data.title}.`}>
   <Breadcrumb
     items={[
       { label: 'Tasks', href: withBase('/', base) },
@@ -37,7 +38,7 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
     ]}
   />
   <header class="subtask-header week-header">
-    <span class="subtask-badge mono">SEGMENT {segment} · MY WORK</span>
+    <span class="subtask-badge mono">{label.toUpperCase()} · MY WORK</span>
     <h1>My work</h1>
   </header>
   <p class="page-intro">

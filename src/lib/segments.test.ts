@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { adjacentSegments, segmentNumbers, workForSegment } from './segments';
+import { adjacentSegments, segmentLabel, segmentNumbers, workForSegment } from './segments';
 
 const e = (id: string) => ({ id });
 
@@ -26,5 +26,15 @@ describe('adjacentSegments', () => {
     expect(adjacentSegments(['1', '2', '3'], '2')).toEqual({ prev: '1', next: '3' });
     expect(adjacentSegments(['1', '2', '3'], '3')).toEqual({ prev: '2', next: null });
     expect(adjacentSegments(['1'], '4')).toEqual({ prev: null, next: null });
+  });
+});
+
+describe('segmentLabel', () => {
+  it('defaults to "Segment N"', () => {
+    expect(segmentLabel('2')).toBe('Segment 2');
+  });
+
+  it('uses the label when one is set, never the internal number', () => {
+    expect(segmentLabel('4', 'Recap & Puzzle')).toBe('Recap & Puzzle');
   });
 });

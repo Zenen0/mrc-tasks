@@ -24,6 +24,11 @@ export function workForSegment<T extends IdLike>(segmentWork: T[], segment: stri
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
+/** Visible label for a Segment: its optional `label` (an unnumbered follow-on), else "Segment N". */
+export function segmentLabel(segment: string, label?: string): string {
+  return label ?? `Segment ${segment}`;
+}
+
 /** Previous and next Segment numbers around `segment`, or null at either end. */
 export function adjacentSegments(numbers: string[], segment: string): { prev: string | null; next: string | null } {
   const index = numbers.indexOf(segment);

@@ -11,7 +11,7 @@ import Breadcrumb from '../../../../../components/Breadcrumb.astro';
 import { buildEntryPageData } from '../../../../../lib/entry-page';
 import { withBase } from '../../../../../lib/paths';
 import { siblingSubtasks } from '../../../../../lib/tasks';
-import { workForSegment } from '../../../../../lib/segments';
+import { segmentLabel, workForSegment } from '../../../../../lib/segments';
 
 export async function getStaticPaths() {
   const work = await getCollection('segmentWork');
@@ -36,13 +36,14 @@ const { mentorImages, blocks, description, hasResponse } = buildEntryPageData(
 );
 
 const segmentMeta = (await getCollection('segmentMeta')).find((meta) => meta.id === segment);
-const segmentTitle = `Segment ${segment}: ${segmentMeta?.data.title ?? ''}`;
+const label = segmentLabel(segment, segmentMeta?.data.label);
+const segmentTitle = `${label}: ${segmentMeta?.data.title ?? ''}`;
 const siblings = workForSegment(await getCollection('segmentWork'), segment);
 const { prev, next } = siblingSubtasks(siblings, entry.id);
 const base = import.meta.env.BASE_URL;
 const mineHref = `/tasks/segments/${segment}/mine/`;
 ---
-<Layout title={`Segment ${segment} · ${entryId.toUpperCase()}: ${entry.data.title}`} description={description}>
+<Layout title={`${label} · ${entryId.toUpperCase()}: ${entry.data.title}`} description={description}>
   <Breadcrumb
     items={[
       { label: 'Tasks', href: withBase('/', base) },
@@ -68,7 +69,7 @@ const mineHref = `/tasks/segments/${segment}/mine/`;
   )}
   <article class="subtask">
     <header class="subtask-header week-header">
-      <span class="subtask-badge mono">S{segment} · {entryId.toUpperCase()}</span>
+      <span class="subtask-badge mono">{segmentMeta?.data.label ? label.toUpperCase() : `S${segment}`} · {entryId.toUpperCase()}</span>
       <h1>{entry.data.title}</h1>
     </header>
 

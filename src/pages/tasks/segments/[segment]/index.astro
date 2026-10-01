@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../../../components/Layout.astro';
 import Breadcrumb from '../../../../components/Breadcrumb.astro';
 import { withBase } from '../../../../lib/paths';
-import { workForSegment } from '../../../../lib/segments';
+import { segmentLabel, workForSegment } from '../../../../lib/segments';
 import { partProgress } from '../../../../lib/weeks';
 
 export async function getStaticPaths() {
@@ -14,7 +14,8 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { segment } = Astro.params as { segment: string };
 const { Content } = await render(entry);
-const segmentTitle = `Segment ${segment}: ${entry.data.title}`;
+const label = segmentLabel(segment, entry.data.label);
+const segmentTitle = `${label}: ${entry.data.title}`;
 const assignment = (await getCollection('segmentAssignments')).find((item) => item.id === segment);
 const work = workForSegment(await getCollection('segmentWork'), segment);
 const base = import.meta.env.BASE_URL;
@@ -29,7 +30,7 @@ const base = import.meta.env.BASE_URL;
   />
   <article class="week-page">
     <header class="subtask-header week-header">
-      <span class="subtask-badge mono">SEGMENT {segment}</span>
+      <span class="subtask-badge mono">{label.toUpperCase()}</span>
       <h1>{entry.data.title}</h1>
     </header>
 
@@ -45,7 +46,7 @@ const base = import.meta.env.BASE_URL;
 
     {assignment && (
       <section class="task-group week-task" id="assignment">
-        <h2>Segment {segment} · {assignment.data.short}</h2>
+        <h2>{label} · {assignment.data.short}</h2>
         <div class="branch-grid">
           <a class="branch-card" href={withBase(`/tasks/segments/${segment}/assignment/`, base)}>
             <span class="card-badge">MR CASINO&apos;S ASSIGNMENT</span>

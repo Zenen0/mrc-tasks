@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-10-01 (Segments 1-3 committed as `8a6c9da`, pushed and deployed; live verification passed).
+Last updated: 2026-10-01 (final mixed batch implemented and validated, NOT yet committed - awaiting user review).
 
 Note: `CLAUDE.md` (repo root) holds the permanent operating rules -
 read it first. `STATUS.md` also exists but is stale (pre-dates the
@@ -55,7 +55,7 @@ Each Task now has **two branches**, not a flat subtask list:
   optional `order: N` field: `/misc/` sorts by `order`, then `date`,
   then `title`. The current order is 1 Rationality, 2 Trading
   Psychology, 3 Morality, 4 Fundamentals, 5 Earning the Advanced Stage,
-  6 Mr Casino's Worldview, 7 Fundamentals Series (2025). Give new entries an explicit `order`.
+  6 Mr Casino's Worldview, 7 Fundamentals Series (title no longer says "(2025)"; slug unchanged). Give new entries an explicit `order`.
   Text-heavy Misc entries can opt into Task/Reference body styles by wrapping
   the body in `<div class="assignment-body">` (760px measure; see
   site-conventions).
@@ -128,6 +128,9 @@ Each Task now has **two branches**, not a flat subtask list:
   `unit` are now optional (Weeks too): an uncounted part shows "No set count ·
   Not started". `TaskCard` `subtaskCount` is optional (Segment cards show none).
   Images `src/assets/segments/N/`. Details in site-conventions.
+  Optional `segmentMeta.label` + `segmentLabel()` (added for folder `4` =
+  "Recap & Puzzle"): replaces "Segment N" in every visible place; unlabelled
+  Segments 1-3 render byte-identically.
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does
@@ -544,6 +547,69 @@ still done by hand.
   - Threads opened: "future (locked) final advanced segement"; "future origin
     lesson". Joined: "advanced entry models", FU closures below 3hr (C5).
 
+- **Final mixed batch 2026-10-01** (source + analysis in
+  `sources/misc/2026-10-01-misc-final-mixed-section/`; **§24 of its ANALYSIS.md
+  is authoritative**). Implemented and validated; **not committed** (awaiting
+  user review):
+  - New Segments follow-on `src/content/segments/4/` (`segment.md`,
+    `assignment.md`; folder number internal only) - visible label **"Recap &
+    Puzzle"**, title "Recap & the Direction Puzzle", routes `/tasks/segments/4/`,
+    `.../assignment/`, `.../mine/`. Never shown as Segment/Task/Week 4. Assignment:
+    Where this fits (L123), The puzzle (Img 168 large + lightbox, title/hint
+    transcribed incl. "catagory", L127, "answer not supplied"), The task (L131 as
+    `>`, "only only" kept; L133, L135), At a glance (his 6-step sequence), What to
+    recap (Segments 1-3 marked as inference; **the 3 xauusd-main-focus sessions
+    are not yet in this knowledge base**), Unresolved, Still to come. My Work: two
+    uncounted parts ("Compiled recap notes + own charts", "Puzzle markings" - No
+    set count · Not started); no `mine/` entries.
+  - Fundamentals Series: visible title drops "(2025)" (also in link text on
+    Fundamentals USD, Worldview and Week 1's `week.md` - Week 1's only change,
+    user-approved);
+    new `## Part 3.1: the noble path, AI and the media war` after Part 2 (noble
+    path, these times, AI, media war after October 7, Trump/totalitarianism, the
+    counter, base tenets, closing); "Where this fits" Part 3 bullet (strongly
+    supported, not stated); intro sentence "in 2025" -> "in this series";
+    Resources + YouTube (title from YouTube oEmbed, "Not reviewed here"); Open
+    threads + 3.2/3.3/final reflection post. "They" left unnamed.
+  - Trading Psychology: `## The baseline trap (Trading Psychology #1)` before
+    Still to come (definition, 11 bullets as text, Img 169-171 collapsed
+    `response-gallery`); Still to come notes "#1" only implies more; mentorPrompt;
+    Related.
+  - Earning the Advanced Stage: `## Public and protected material (later)` (L123
+    verbatim, independence/entitlement bullets, what comes next, Segment 3
+    locked-segment tension side by side, unreconciled); Related.
+  - Pointers: TFS (after the Segments TF line), Top-Down Extraction Cycle (intro);
+    Segment 3 Still to come "Next: Recap & Puzzle" (its pager now also links
+    forward); Segments index one sentence; Morality + Worldview Related -> Part 3.1.
+  - Images (cmp-verified): Img 168 -> `src/assets/segments/4/puzzle-xauusd-30min.png`;
+    169-171 -> `src/assets/misc/psychology/baseline-trap-{1,2,3}.jpg`.
+  - Fact verification (editorial notes only): UN CoI genocide finding 16 Sep
+    2025 + Israel's rejection (UN/UNISPAL, CNN); ICJ South Africa v. Israel
+    ongoing (ICJ case 192; 21 May 2026 order sets Reply Nov 2027, Rejoinder May
+    2029); children killed: UNICEF State of Palestine situation update (at least
+    21,289, 7 Oct 2023-3 Feb 2026); TikTok USDS joint venture closed 22 Jan 2026
+    (Oracle/Silver Lake/MGX, ByteDance 19.9%); fronts (Hezbollah, Houthis, Iraqi
+    militias, Iran direct attacks; Qatar strike Sep 2025 already on page); Google
+    owns YouTube, Meta owns Facebook/Instagram; Meta's Adversarial Threat Reports
+    (coordinated inauthentic behavior). Qur'an 2:286 echo noted ("appears to
+    echo"); hadith: one note "appear to correspond to well-known hadith
+    traditions", no collection citations. Protests and the "past genocides"
+    point left as his interpretation (no editorial fact added).
+  - Raw-only: the user's L137 note (and its 26/09/2026 date), "Pausing" aside,
+    all "xd". No dates published.
+  - Validation: 76 tests pass; clean build (61 pages); check-dist OK (1547 refs);
+    vs. the pre-change build every standalone Task / Segment 1-2 / Week 2-3 page is
+    byte-identical (Week 1 differs only by that link text); Segment 3 assignment differs only by the pager-next link and
+    the Next line; no "Segment/Task/Week 4" anywhere in dist; lightbox, collapsed
+    gallery, no console errors, no overflow at 1280/375px.
+  - Open threads: Reflection 3.2 and 3.3; "our final reflection post"; the next
+    implementation stages after the 3 reviewed examples; the puzzle answer /
+    "particular answers"; **the 3 xauusd-main-focus sessions (source gap - import
+    as their own batch, then link from Recap & Puzzle "What to recap")**; Segment
+    3's locked final advanced segment (not equated); x3 / x3 entry model; advanced
+    entry models; Psychology #2+ only implied by "#1". The Fundamentals "No Part 3
+    announced" thread is closed.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -556,8 +622,12 @@ yet responded on whether to swap them.
 
 ## Next session must start with
 
-1. The next mentor batch (`/mentor-new week 4` or `misc`), applying the
-   "Task material stays self-contained" rule.
+1. After user review: commit and push the final mixed batch (files in `git
+   status`, incl. the untracked source folder and `src/content/segments/4/`,
+   `src/assets/segments/4/`, `src/assets/misc/psychology/baseline-trap-*.jpg`),
+   then confirm the deploy (`gh run list --repo Zenen0/mrc-tasks --limit 1`).
+2. Then the next batch - ideally the 3 xauusd-main-focus sessions (`/mentor-new
+   misc`), applying the "Task material stays self-contained" rule.
 
 Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`), Misc batch 2026-09-25
 (`304b640`, `d820ad9`, `6acff89`), Task 3 (`628b69d`), Misc batch 2

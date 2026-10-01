@@ -58,6 +58,8 @@ He deliberately leaves this passage unexplained: **"Try to really understand thi
 
 *The Segments draw the swing on 3hr/4hr, the intraday on 30 min and the scalp on 10 min and on 5 min: see [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/#the-cycle).*
 
+*[Recap & Puzzle](/mrc-tasks/tasks/segments/4/) (after Segment 3) sets a puzzle chart with the hint "Established - TF catagory width". His answer has not been posted.*
+
 ## "The LTF builds the HTF but HTF commands the LTF"
 
 > Study now this statement : "The LTF builds the HTF but HTF commands the LTF".

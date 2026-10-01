@@ -16,6 +16,8 @@ Jump to: [The cycle](#the-cycle) · [The base execution and extraction model](#t
 
 The callout boxes are his exact wording. Each Segment builds one level of the cycle: [Segment 1](/mrc-tasks/tasks/segments/1/assignment/) direction through swing and intraday points, [Segment 2](/mrc-tasks/tasks/segments/2/assignment/) the scalp POI and its TS build, [Segment 3](/mrc-tasks/tasks/segments/3/assignment/) the whole cycle down to the LTF entry. His charts are XAUUSD.
 
+*After Segment 3 he set a recap of the swing / intraday direction layer and a puzzle: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/).*
+
 ## The cycle
 
 > Swing Campaign - Intraday Wave - Scalp Flow - LTF Timing. The top down fractal extraction cycle. Emphasis once again on how it all relates first to swing parameters - the main strongest premium to premium focus.

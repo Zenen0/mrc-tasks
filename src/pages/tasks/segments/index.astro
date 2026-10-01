@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../components/Layout.astro';
 import Breadcrumb from '../../../components/Breadcrumb.astro';
 import { withBase } from '../../../lib/paths';
-import { segmentNumbers } from '../../../lib/segments';
+import { segmentLabel, segmentNumbers } from '../../../lib/segments';
 
 const segmentMetaEntries = await getCollection('segmentMeta');
 const segments = segmentNumbers(segmentMetaEntries);
@@ -26,6 +26,7 @@ const base = import.meta.env.BASE_URL;
   <p class="page-intro">
     The framework taught across the three Segments is gathered on <a href={withBase('/reference/top-down-extraction-cycle/', base)}>The Top-Down Extraction Cycle</a> (Reference).
     Segment 3 ends by pointing to a further "future (locked) final advanced segement" (<a href={withBase('/tasks/segments/3/assignment/#still-to-come', base)}>open thread</a>).
+    After Segment 3 comes <a href={withBase('/tasks/segments/4/', base)}>Recap &amp; Puzzle</a>, a follow-on assignment he does not number.
   </p>
   {segments.length === 0 && <p class="empty-state">No segments yet.</p>}
   <div class="branch-grid">
@@ -33,7 +34,7 @@ const base = import.meta.env.BASE_URL;
       const meta = segmentMetaEntries.find((entry) => entry.id === segment)!;
       return (
         <a class="branch-card" href={withBase(`/tasks/segments/${segment}/`, base)}>
-          <span class="card-badge">SEGMENT {segment}</span>
+          <span class="card-badge">{segmentLabel(segment, meta.data.label).toUpperCase()}</span>
           <h3>{meta.data.title}</h3>
           <p>"{meta.data.purpose}"</p>
         </a>

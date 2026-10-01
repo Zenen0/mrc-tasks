@@ -84,6 +84,9 @@ const segmentMeta = defineCollection({
     summary: z.string(),
     // His own one-line purpose for the Segment (shown on the Segments index and home cards' page).
     purpose: z.string(),
+    // Optional visible label replacing "Segment N" everywhere it is shown (for an unnumbered follow-on such as
+    // "Recap & Puzzle"; the folder number is then internal only). See segmentLabel().
+    label: z.string().optional(),
     keyQuote: z.string().optional(),
     study: z.object({ label: z.string(), href: z.string(), note: z.string() }).optional(),
   }),
