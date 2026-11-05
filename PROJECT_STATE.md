@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-10-01 (final site-wide consistency audit committed as "Complete final site-wide consistency audit", pushed and deployed).
+Last updated: 2026-11-05 (Tasks home reordered into a chronological learning path; uncommitted, awaiting approval).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -106,8 +106,7 @@ Each Task now has **two branches**, not a flat subtask list:
   Assignment | My Work card pair per Task, rows `#task-M`),
   `/tasks/weeks/N/task-M/{assignment,mine}/`, `.../mine/<entry>/`,
   `.../task-M/` (redirect to the landing row). Week assignment pages use
-  `chart-page`. Home page: "Weekly Programme" section above "Standalone
-  tasks". Images `src/assets/weeks/N/task-M/`. Details in
+  `chart-page`. Home page order: see "Tasks home learning path" below. Images `src/assets/weeks/N/task-M/`. Details in
   `.claude/skills/mentor-implement/reference/site-conventions.md`.
   Standalone Tasks 1-3 untouched. Breadcrumbs now wrap on narrow screens
   (`.breadcrumb` flex-wrap, site-wide).
@@ -126,13 +125,23 @@ Each Task now has **two branches**, not a flat subtask list:
   -> `/tasks/segments/`, `/tasks/segments/N/`, `.../N/assignment/`
   (`chart-page`), `.../N/mine/`, `.../N/mine/<entry>/`. **No `task-M` level**
   (one Assignment | My Work pair per Segment; counted components are `parts`).
-  Home order: Segments -> Weekly Programme -> Standalone tasks. `parts[].target`/
+  Home order: see "Tasks home learning path" below. `parts[].target`/
   `unit` are now optional (Weeks too): an uncounted part shows "No set count ·
   Not started". `TaskCard` `subtaskCount` is optional (Segment cards show none).
   Images `src/assets/segments/N/`. Details in site-conventions.
   Optional `segmentMeta.label` + `segmentLabel()` (added for folder `4` =
   "Recap & Puzzle"): replaces "Segment N" in every visible place; unlabelled
   Segments 1-3 render byte-identically.
+
+- **Tasks home learning path** (2026-11-05): `src/pages/index.astro` opens with
+  "Your learning path" (three phase links + "Begin here: Task 1" CTA to `/tasks/1/`),
+  then sections in the order the mentor assigned them: `#foundations` (01 · standalone
+  Tasks 1-3) -> `#weekly-programme` (02 · Weeks) -> `#segments` (03 · Segments 1-3,
+  then the unnumbered Recap & Puzzle). Phase numbers are navigational only. Styles
+  `.learning-path`/`.path-*` in `global.css`. `TaskCard` takes optional `countLabel`
+  (tooltip/aria text for the corner count): Week count = formal Tasks in that Week.
+  Standalone Task cards on the home page show no count (it was My task subtasks,
+  0/0/0, easily misread next to the Week counts).
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does

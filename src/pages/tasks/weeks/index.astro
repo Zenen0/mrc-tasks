@@ -27,13 +27,15 @@ const weeks = weekNumbers(weekMetaEntries);
   <div class="card-grid">
     {weeks.map((week) => {
       const meta = weekMetaEntries.find((entry) => entry.id === week)!;
+      const taskCount = tasksForWeek(weekTaskEntries, week).length;
       return (
         <TaskCard
           href={withBase(`/tasks/weeks/${week}/`, import.meta.env.BASE_URL)}
           badge={`WEEK ${week}`}
           title={meta.data.title}
           cover={null}
-          subtaskCount={tasksForWeek(weekTaskEntries, week).length}
+          subtaskCount={taskCount}
+          countLabel={`${taskCount} formal Task${taskCount === 1 ? '' : 's'} in this Week`}
         />
       );
     })}

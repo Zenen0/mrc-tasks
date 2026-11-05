@@ -9,9 +9,11 @@ export interface Props {
   cover: ImageMetadata | null;
   /** Corner count; omitted (no badge) where a count has no meaning, e.g. Segment cards. */
   subtaskCount?: number;
+  /** What the corner count means (tooltip / screen-reader text), e.g. "3 formal Tasks in this Week". */
+  countLabel?: string;
 }
 
-const { href, badge, title, cover, subtaskCount } = Astro.props;
+const { href, badge, title, cover, subtaskCount, countLabel } = Astro.props;
 ---
 <a class="card task-card" href={href}>
   <div class="card-thumb">
@@ -20,7 +22,9 @@ const { href, badge, title, cover, subtaskCount } = Astro.props;
     ) : (
       <div class="card-thumb-title">{title}</div>
     )}
-    {subtaskCount !== undefined && <span class="card-count mono">{subtaskCount}</span>}
+    {subtaskCount !== undefined && (
+      <span class="card-count mono" title={countLabel} aria-label={countLabel}>{subtaskCount}</span>
+    )}
   </div>
   <div class="card-body task-card-body">
     <span class="card-badge task-card-badge">{badge}</span>

@@ -695,6 +695,91 @@ main {
   color: var(--color-text-muted);
 }
 
+/* Tasks home: "Your learning path" intro. Phase numbers are navigational, not mentor numbering. */
+.learning-path {
+  margin-bottom: calc(var(--space-6) * 1.5);
+}
+
+.learning-path h1 {
+  margin: 0 0 var(--space-2);
+}
+
+.path-steps {
+  list-style: none;
+  margin: 0 0 var(--space-4);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+
+.path-steps a {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-raised);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+
+.path-steps a:hover,
+.path-steps a:focus-visible {
+  border-color: var(--color-accent);
+}
+
+.path-num {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
+
+.path-name {
+  font-weight: 600;
+}
+
+.path-detail {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.path-start {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius);
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.path-start:hover,
+.path-start:focus-visible {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.path-start-label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.task-group h2 .phase-num {
+  color: var(--color-accent);
+}
+
+.task-group[id] {
+  scroll-margin-top: 72px;
+}
+
 .empty-state {
   color: var(--color-text-muted);
   font-family: var(--font-mono);

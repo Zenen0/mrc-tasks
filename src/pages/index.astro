@@ -24,54 +24,37 @@ const weeks = weekNumbers(weekMetaEntries);
 
 const segmentMetaEntries = await getCollection('segmentMeta');
 const segments = segmentNumbers(segmentMetaEntries);
+
+// Learning path: phases run in the order Mr Casino assigned the material
+// (standalone Tasks -> Weekly Programme -> Segments & Recap). Phase numbers are navigational only.
+const firstTask = taskNumbers[0];
+const firstTaskTitle = firstTask ? getTaskTitle(taskMetaEntries, firstTask) : undefined;
+const countNoun = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'}`;
 ---
 <Layout title="Tasks" description="Backtesting task review, organized by task.">
-  {segments.length > 0 && (
-    <section class="task-group">
-      <h2><a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments</a></h2>
-      <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme, then the unnumbered Recap &amp; Puzzle follow-on. Each has one assignment.</p>
-      <div class="card-grid">
-        {segments.map((segment) => {
-          const meta = segmentMetaEntries.find((entry) => entry.id === segment)!;
-          return (
-            <TaskCard
-              href={withBase(`/tasks/segments/${segment}/`, import.meta.env.BASE_URL)}
-              badge={segmentLabel(segment, meta.data.label).toUpperCase()}
-              title={meta.data.title}
-              cover={null}
-            />
-          );
-        })}
-      </div>
-    </section>
-  )}
-  {weeks.length > 0 && (
-    <section class="task-group">
-      <h2><a href={withBase('/tasks/weeks/', import.meta.env.BASE_URL)}>Weekly Programme</a></h2>
-      <p class="page-intro">Mr Casino's weekly programme: one topic per Week, each with its own formal Tasks. Week tasks are numbered within their Week.</p>
-      <div class="card-grid">
-        {weeks.map((week) => {
-          const meta = weekMetaEntries.find((entry) => entry.id === week)!;
-          return (
-            <TaskCard
-              href={withBase(`/tasks/weeks/${week}/`, import.meta.env.BASE_URL)}
-              badge={`WEEK ${week}`}
-              title={meta.data.title}
-              cover={null}
-              subtaskCount={tasksForWeek(weekTaskEntries, week).length}
-            />
-          );
-        })}
-      </div>
-    </section>
-  )}
-  <section class="task-group">
-    {weeks.length > 0 && (
-      <>
-        <h2>Standalone tasks</h2>
-        <p class="page-intro">The earlier assignments, given before the Weekly Programme. Separate from the Week tasks.</p>
-      </>
+  <section class="learning-path" aria-labelledby="learning-path-title">
+    <h1 id="learning-path-title">Your learning path</h1>
+    <p class="page-intro">Work through Mr Casino's material in the order he assigned it: the standalone Tasks first, then the Weekly Programme, then the Segments and Recap. Within each phase, follow his numbering.</p>
+    <ol class="path-steps">
+      <li><a href="#foundations"><span class="path-num mono">01</span><span class="path-name">Foundations</span><span class="path-detail">Standalone Tasks</span></a></li>
+      {weeks.length > 0 && (
+        <li><a href="#weekly-programme"><span class="path-num mono">02</span><span class="path-name">Weekly Programme</span><span class="path-detail">One topic per Week</span></a></li>
+      )}
+      {segments.length > 0 && (
+        <li><a href="#segments"><span class="path-num mono">03</span><span class="path-name">Segments &amp; Recap</span><span class="path-detail">Top-down programme, then the Recap</span></a></li>
+      )}
+    </ol>
+    {firstTask && (
+      <a class="path-start" href={withBase(`/tasks/${firstTask}/`, import.meta.env.BASE_URL)}>
+        <span class="path-start-label mono">Begin here</span>
+        <span>Task {firstTask} — {firstTaskTitle} &rarr;</span>
+      </a>
     )}
+  </section>
+
+  <section class="task-group" id="foundations">
+    <h2><span class="phase-num mono">01 ·</span> Foundations: Standalone tasks</h2>
+    <p class="page-intro">The earlier assignments, given before the Weekly Programme. Separate from the Week tasks.</p>
     {taskNumbers.length === 0 && <p class="empty-state">No tasks yet.</p>}
     <div class="card-grid">
       {taskNumbers.map((task) => {
@@ -94,10 +77,50 @@ const segments = segmentNumbers(segmentMetaEntries);
             badge={`TASK ${task}`}
             title={taskTitle}
             cover={cover}
-            subtaskCount={subtasks.length}
           />
         );
       })}
     </div>
   </section>
+  {weeks.length > 0 && (
+    <section class="task-group" id="weekly-programme">
+      <h2><span class="phase-num mono">02 ·</span> <a href={withBase('/tasks/weeks/', import.meta.env.BASE_URL)}>Weekly Programme</a></h2>
+      <p class="page-intro">Mr Casino's weekly programme: one topic per Week, each with its own formal Tasks. Week tasks are numbered within their Week.</p>
+      <div class="card-grid">
+        {weeks.map((week) => {
+          const meta = weekMetaEntries.find((entry) => entry.id === week)!;
+          const taskCount = tasksForWeek(weekTaskEntries, week).length;
+          return (
+            <TaskCard
+              href={withBase(`/tasks/weeks/${week}/`, import.meta.env.BASE_URL)}
+              badge={`WEEK ${week}`}
+              title={meta.data.title}
+              cover={null}
+              subtaskCount={taskCount}
+              countLabel={`${countNoun(taskCount, 'formal Task')} in this Week`}
+            />
+          );
+        })}
+      </div>
+    </section>
+  )}
+  {segments.length > 0 && (
+    <section class="task-group" id="segments">
+      <h2><span class="phase-num mono">03 ·</span> <a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments &amp; Recap</a></h2>
+      <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme, then the unnumbered Recap &amp; Puzzle follow-on. Each has one assignment.</p>
+      <div class="card-grid">
+        {segments.map((segment) => {
+          const meta = segmentMetaEntries.find((entry) => entry.id === segment)!;
+          return (
+            <TaskCard
+              href={withBase(`/tasks/segments/${segment}/`, import.meta.env.BASE_URL)}
+              badge={segmentLabel(segment, meta.data.label).toUpperCase()}
+              title={meta.data.title}
+              cover={null}
+            />
+          );
+        })}
+      </div>
+    </section>
+  )}
 </Layout>
