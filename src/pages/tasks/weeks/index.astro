@@ -35,6 +35,7 @@ const weeks = weekNumbers(weekMetaEntries);
           title={meta.data.title}
           cover={null}
           subtaskCount={taskCount}
+          countText={`${taskCount} Task${taskCount === 1 ? '' : 's'}`}
           countLabel={`${taskCount} formal Task${taskCount === 1 ? '' : 's'} in this Week`}
         />
       );

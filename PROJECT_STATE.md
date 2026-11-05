@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-11-05 (**site-wide visual overhaul implemented, UNCOMMITTED, awaiting user review/approval** - see "Visual design system" below. Before that: official site logo integrated: header, favicon, social image; committed and deployed as "Add MrC Tasks branding and site icons". Puzzle follow-up batch committed/deployed as `8e271d4`).
+Last updated: 2026-11-05 (**Visual refinement V2 implemented, UNCOMMITTED, awaiting user review/approval** - see "Visual design system" below. Before that: the first visual overhaul was committed/deployed as `84c59da`; logo as `c10af27`; puzzle follow-up batch as `8e271d4`).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -157,6 +157,15 @@ Each Task now has **two branches**, not a flat subtask list:
   scrolling tables, chevron disclosures, zoom-in cursor on charts. Misc entries
   (`article.misc-entry`) read as editorial serif at a 720px measure. Misc and Reference
   indexes gained an h1. Lightbox backdrop has no blur (blur caused a compositing glitch).
+  **V2 refinement (2026-11-05, uncommitted):** section colour system in `tokens.css`: gold =
+  Mr Casino/Tasks, teal = My Work, cobalt `--color-ref` = Reference, plum `--color-misc` = Misc.
+  `Layout.astro` sets `body[data-section]` (+ `data-mine` on `/mine/` pages); structural accents
+  (nav rule, card tick, h2 tick, body links, table heads) read `--tone`; gold callout blockquotes
+  and `strong` stay gold everywhere (= the mentor's words). Light theme is warm paper. h1s use the
+  display serif `--font-display`. Home hero: grid texture removed; serif headline + a "route" rail
+  of three phase stations (range labels computed, e.g. "Tasks 1-3"). Home grids use
+  `.card-grid--3` / `--4` (full width; 2 then 1 column responsively). `TaskCard` has an optional
+  `countText` ("3 Tasks").
 - **Branding / logo**: the user's official logo is kept unmodified at
   `src/assets/brand/mrc-tasks-logo.webp` (1254x1254 webp; do not redesign or
   edit it). `node scripts/generate-brand-assets.mjs` derives everything from it

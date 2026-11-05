@@ -9,11 +9,13 @@ export interface Props {
   cover: ImageMetadata | null;
   /** Count chip; omitted (no chip) where a count has no meaning, e.g. Segment cards. */
   subtaskCount?: number;
+  /** Visible chip text, e.g. "3 Tasks"; defaults to the bare number. */
+  countText?: string;
   /** What the count means (tooltip / screen-reader text), e.g. "3 formal Tasks in this Week". */
   countLabel?: string;
 }
 
-const { href, badge, title, cover, subtaskCount, countLabel } = Astro.props;
+const { href, badge, title, cover, subtaskCount, countText, countLabel } = Astro.props;
 ---
 <a class="card task-card" href={href}>
   {cover && (
@@ -25,7 +27,7 @@ const { href, badge, title, cover, subtaskCount, countLabel } = Astro.props;
     <div class="card-top">
       <span class="card-badge task-card-badge">{badge}</span>
       {subtaskCount !== undefined && (
-        <span class="card-count mono" title={countLabel} aria-label={countLabel}>{subtaskCount}</span>
+        <span class="card-count mono" title={countLabel} aria-label={countLabel}>{countText ?? subtaskCount}</span>
       )}
     </div>
     <h3 class="card-title">{title}</h3>

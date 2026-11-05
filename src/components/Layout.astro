@@ -23,6 +23,9 @@ const navItems = [
   { label: 'Reference', href: withBase('/reference/', import.meta.env.BASE_URL), active: path.startsWith(withBase('/reference/', import.meta.env.BASE_URL)) },
   { label: 'Misc', href: withBase('/misc/', import.meta.env.BASE_URL), active: path.startsWith(withBase('/misc/', import.meta.env.BASE_URL)) },
 ];
+// Colour tone for the page (tokens.css): the active section, plus teal on the user's own My Work pages.
+const section = (navItems.find((item) => item.active)?.label ?? 'Tasks').toLowerCase();
+const isMine = section === 'tasks' && /\/mine\//.test(path);
 ---
 <!doctype html>
 <html lang="en">
@@ -35,7 +38,7 @@ const navItems = [
     <link rel="icon" type="image/png" sizes="32x32" href={brand('favicon-32.png')} />
     <link rel="icon" type="image/png" sizes="192x192" href={brand('icon-192.png')} />
     <link rel="apple-touch-icon" sizes="180x180" href={brand('apple-touch-icon.png')} />
-    <meta name="theme-color" content="#0b0f17" />
+    <meta name="theme-color" content="#0a0e16" />
     <meta property="og:site_name" content="MrC Tasks" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -51,7 +54,7 @@ const navItems = [
       })();
     </script>
   </head>
-  <body id="top">
+  <body id="top" data-section={section} data-mine={isMine ? '' : undefined}>
     <header class="site-header">
       <div class="site-header-inner">
         <a class="site-title" href={home} aria-label="MrC Tasks home">

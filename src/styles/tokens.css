@@ -1,38 +1,60 @@
-/* Design tokens. Dark (default) = navy/charcoal terminal with a refined amber-gold accent;
-   light mirrors it. Every component reads these variables, so both themes stay in step. */
+/* Design tokens. Dark (default) = midnight ink with warm gold; light = warm paper with the same ink.
+   Every component reads these variables, so both themes stay in step.
+
+   Colour semantics (never decorative):
+     gold   = Mr Casino: his assignments, verbatim rules/deliverables, the Tasks section, the brand.
+     teal   = My Work: the user's own backtesting and progress.
+     cobalt = Reference: technical study material.
+     plum   = Misc: editorial / worldview reading.
+   Each top-level section sets --tone (see the [data-section] block at the end); structural accents
+   (nav rule, card edges, heading ticks, body links) read --tone so a section is coloured in one place. */
 :root {
   color-scheme: dark;
 
-  /* Surfaces: page < raised (cards, header) < sunken/inset (table heads, chips). */
-  --color-bg: #0b0f17;
-  --color-bg-raised: #111724;
-  --color-bg-inset: #161e2d;
-  --color-border: #222b3b;
-  --color-border-strong: #313c51;
+  /* Surfaces: page < raised (cards, header) < inset (table heads, chips, hero rail). */
+  --color-bg: #0a0e16;
+  --color-bg-raised: #10151f;
+  --color-bg-inset: #161c29;
+  --color-border: #212938;
+  --color-border-strong: #2f394c;
 
-  --color-text: #e7eaf0;
-  --color-text-muted: #97a1b3;
-  --color-text-subtle: #6f7a8e;
+  --color-text: #e8ebf1;
+  --color-text-muted: #a0a9ba;
+  --color-text-subtle: #808a9d;
 
-  /* Brand gold: Mr Casino / mentor material, links, active states. */
-  --color-accent: #e0a24a;
-  --color-accent-strong: #f0b862;
-  --color-accent-soft: rgba(224, 162, 74, 0.1);
-  --color-accent-line: rgba(224, 162, 74, 0.35);
-  --color-on-accent: #0b0f17;
+  /* Brand gold: Mr Casino / mentor material. */
+  --color-accent: #e2a54e;
+  --color-accent-strong: #f2bc6a;
+  --color-accent-soft: rgba(226, 165, 78, 0.1);
+  --color-accent-line: rgba(226, 165, 78, 0.36);
+  --color-on-accent: #0a0e16;
 
-  /* "My Work": the user's own backtesting, kept visually distinct from the mentor's. */
-  --color-mine: #7cc4d6;
-  --color-mine-soft: rgba(124, 196, 214, 0.1);
-  --color-mine-line: rgba(124, 196, 214, 0.35);
+  /* My Work: the user's own backtesting, kept visually distinct from the mentor's. */
+  --color-mine: #4fc7b6;
+  --color-mine-soft: rgba(79, 199, 182, 0.1);
+  --color-mine-line: rgba(79, 199, 182, 0.36);
+
+  /* Reference: technical study. */
+  --color-ref: #86a3f2;
+  --color-ref-soft: rgba(134, 163, 242, 0.1);
+  --color-ref-line: rgba(134, 163, 242, 0.36);
+
+  /* Misc: editorial reading. */
+  --color-misc: #c79be0;
+  --color-misc-soft: rgba(199, 155, 224, 0.1);
+  --color-misc-line: rgba(199, 155, 224, 0.36);
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 8px 24px -12px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.25);
-  --header-bg: rgba(11, 15, 23, 0.82);
+  --shadow-md: 0 14px 32px -18px rgba(0, 0, 0, 0.75), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --header-bg: rgba(10, 14, 22, 0.86);
+  /* Hairline highlight along the top edge of raised panels (dark theme only). */
+  --edge-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.035);
 
   --font-mono: ui-monospace, "Cascadia Code", "SF Mono", "JetBrains Mono", Consolas, monospace;
   --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --font-serif: "Charter", "Bitstream Charter", "Sitka Text", "Iowan Old Style", Cambria, Georgia, serif;
+  /* Display serif for page titles and phase numerals: one editorial voice across Tasks, Reference and Misc. */
+  --font-display: "Iowan Old Style", "Charter", "Sitka Heading", "Sitka Text", Cambria, Georgia, serif;
 
   /* Type scale. */
   --text-xs: 0.75rem;
@@ -42,7 +64,8 @@
   --text-lg: 1.1875rem;
   --text-xl: 1.4rem;
   --text-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
-  --text-3xl: clamp(1.85rem, 1.4rem + 1.9vw, 2.6rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2vw, 2.85rem);
+  --text-display: clamp(2.5rem, 1.6rem + 3.2vw, 4.25rem);
 
   --space-1: 4px;
   --space-2: 8px;
@@ -53,10 +76,12 @@
   --space-8: 32px;
   --space-10: 40px;
   --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
 
   --radius-sm: 6px;
   --radius: 10px;
-  --radius-lg: 14px;
+  --radius-lg: 16px;
 
   --measure: 760px;
   --measure-wide: 820px;
@@ -65,32 +90,70 @@
 
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   --dur: 160ms;
+  --dur-slow: 320ms;
 }
 
 [data-theme="light"] {
   color-scheme: light;
 
-  --color-bg: #f4f6f9;
-  --color-bg-raised: #ffffff;
-  --color-bg-inset: #eef1f6;
-  --color-border: #dde2ea;
-  --color-border-strong: #c6cdd8;
+  --color-bg: #f5f3ee;
+  --color-bg-raised: #fffdf9;
+  --color-bg-inset: #ece8e0;
+  --color-border: #e0dbd1;
+  --color-border-strong: #c9c2b5;
 
-  --color-text: #121722;
-  --color-text-muted: #525d6e;
-  --color-text-subtle: #7a8494;
+  --color-text: #141925;
+  --color-text-muted: #4f5869;
+  --color-text-subtle: #5c6473;
 
-  --color-accent: #9a5d12;
-  --color-accent-strong: #7d4a0b;
-  --color-accent-soft: rgba(154, 93, 18, 0.07);
-  --color-accent-line: rgba(154, 93, 18, 0.35);
+  --color-accent: #8a560f;
+  --color-accent-strong: #6f450b;
+  --color-accent-soft: rgba(138, 86, 15, 0.07);
+  --color-accent-line: rgba(138, 86, 15, 0.32);
   --color-on-accent: #ffffff;
 
-  --color-mine: #1d6f82;
-  --color-mine-soft: rgba(29, 111, 130, 0.07);
-  --color-mine-line: rgba(29, 111, 130, 0.35);
+  --color-mine: #0d6b62;
+  --color-mine-soft: rgba(13, 107, 98, 0.07);
+  --color-mine-line: rgba(13, 107, 98, 0.32);
 
-  --shadow-sm: 0 1px 2px rgba(18, 23, 34, 0.06);
-  --shadow-md: 0 10px 28px -14px rgba(18, 23, 34, 0.28), 0 2px 6px rgba(18, 23, 34, 0.06);
-  --header-bg: rgba(255, 255, 255, 0.85);
+  --color-ref: #2f50b3;
+  --color-ref-soft: rgba(47, 80, 179, 0.06);
+  --color-ref-line: rgba(47, 80, 179, 0.3);
+
+  --color-misc: #7d3d93;
+  --color-misc-soft: rgba(125, 61, 147, 0.06);
+  --color-misc-line: rgba(125, 61, 147, 0.3);
+
+  --shadow-sm: 0 1px 2px rgba(20, 25, 37, 0.05);
+  --shadow-md: 0 16px 34px -20px rgba(20, 25, 37, 0.35), 0 2px 6px rgba(20, 25, 37, 0.06);
+  --header-bg: rgba(255, 253, 249, 0.88);
+  --edge-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* Section tone. Tasks (incl. home) = gold; My Work pages = teal; Reference = cobalt; Misc = plum. */
+body {
+  --tone: var(--color-accent);
+  --tone-soft: var(--color-accent-soft);
+  --tone-line: var(--color-accent-line);
+  --nav-tone: var(--color-accent);
+}
+
+body[data-section="reference"] {
+  --tone: var(--color-ref);
+  --tone-soft: var(--color-ref-soft);
+  --tone-line: var(--color-ref-line);
+  --nav-tone: var(--color-ref);
+}
+
+body[data-section="misc"] {
+  --tone: var(--color-misc);
+  --tone-soft: var(--color-misc-soft);
+  --tone-line: var(--color-misc-line);
+  --nav-tone: var(--color-misc);
+}
+
+body[data-mine] {
+  --tone: var(--color-mine);
+  --tone-soft: var(--color-mine-soft);
+  --tone-line: var(--color-mine-line);
 }
