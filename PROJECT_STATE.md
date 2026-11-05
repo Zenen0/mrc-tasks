@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-11-05 (puzzle follow-up batch implemented: new Reference "The Step-by-Step Entry Sequence" + Recap & Puzzle debrief; uncommitted, awaiting user review).
+Last updated: 2026-11-05 (official site logo integrated: header, favicon, social image; committed and deployed as "Add MrC Tasks branding and site icons". Puzzle follow-up batch committed/deployed as `8e271d4`).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -142,6 +142,15 @@ Each Task now has **two branches**, not a flat subtask list:
   (tooltip/aria text for the corner count): Week count = formal Tasks in that Week.
   Standalone Task cards on the home page show no count (it was My task subtasks,
   0/0/0, easily misread next to the Week counts).
+- **Branding / logo**: the user's official logo is kept unmodified at
+  `src/assets/brand/mrc-tasks-logo.webp` (1254x1254 webp; do not redesign or
+  edit it). `node scripts/generate-brand-assets.mjs` derives everything from it
+  into `public/brand/` (header `logo-36/72/108.webp`, `favicon-32.png`,
+  `icon-192.png`, `apple-touch-icon.png`) plus `public/og-default.png` (logo
+  centred on `#060911`, the logo's own corner colour, 1200x630). This replaced `scripts/generate-og-default.mjs`.
+  `Layout.astro` shows the logo (36px, 30px at <=600px) beside the "MrC Tasks"
+  text in the home link; at <=480px the text is visually hidden and header
+  side padding drops to 16px so nav + theme toggle fit at 320-375px.
 
 See `ADDING-CONTENT.md` (updated this session) for the exact by-hand
 and local-form (`npm run add-content`) steps. The local form does
@@ -718,10 +727,6 @@ alter the charts.
 
 ## Next session must start with
 
-0. If not done yet: after user review, commit and push the puzzle follow-up batch
-   (`sources/misc/2026-11-05-misc-puzzle-followup/`, the new Reference page +
-   `src/assets/reference/entry-sequence/`, Recap & Puzzle, Terminology, TFS,
-   Cycle, PROJECT_STATE, site-conventions), then confirm the deploy.
 1. The user is now completing the Tasks from the beginning; the first real My
    Work import should shape the My Work workflow (don't pre-build it).
 2. Future mentor batches as they arrive - ideally the 3 xauusd-main-focus
@@ -732,7 +737,8 @@ Committed and deployed before this batch: Week 2 (`66bb7d9`), Week 1 (`8a3b374`)
 (`1f4853f`), mentor workflow skills (`3b766b5`), Misc batch 2026-09-30
 "trading reference" (`814bf9c`), chart-page house style (`4392a68`), Misc batch
 2026-09-30 "economy" (`d6605b5`), Misc batch 2026-09-30 "fundamentals"
-(`73ac2aa`), Segments 1-3 (`8a6c9da`), final mixed batch / Recap & Puzzle (`c96a629`).
+(`73ac2aa`), Segments 1-3 (`8a6c9da`), final mixed batch / Recap & Puzzle (`c96a629`),
+puzzle follow-up batch (`8e271d4`), site logo/branding ("Add MrC Tasks branding and site icons").
 
 ## Mentor workflow skills (project-local, `.claude/skills/`)
 

@@ -13,6 +13,7 @@ const { title, description = 'Backtesting task review.', ogImage } = Astro.props
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const resolvedOgImage = ogImage ?? new URL(withBase('/og-default.png', import.meta.env.BASE_URL), Astro.site).toString();
+const brand = (file: string) => withBase(`/brand/${file}`, import.meta.env.BASE_URL);
 ---
 <!doctype html>
 <html lang="en">
@@ -22,6 +23,11 @@ const resolvedOgImage = ogImage ?? new URL(withBase('/og-default.png', import.me
     <title>{title} · MrC Tasks</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/png" sizes="32x32" href={brand('favicon-32.png')} />
+    <link rel="icon" type="image/png" sizes="192x192" href={brand('icon-192.png')} />
+    <link rel="apple-touch-icon" sizes="180x180" href={brand('apple-touch-icon.png')} />
+    <meta name="theme-color" content="#0a0c0f" />
+    <meta property="og:site_name" content="MrC Tasks" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -38,7 +44,18 @@ const resolvedOgImage = ogImage ?? new URL(withBase('/og-default.png', import.me
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href={withBase('/', import.meta.env.BASE_URL)}>MrC Tasks</a>
+      <a class="site-title" href={withBase('/', import.meta.env.BASE_URL)} aria-label="MrC Tasks home">
+        <img
+          class="site-logo"
+          src={brand('logo-36.webp')}
+          srcset={`${brand('logo-36.webp')} 1x, ${brand('logo-72.webp')} 2x, ${brand('logo-108.webp')} 3x`}
+          width="36"
+          height="36"
+          alt=""
+          decoding="async"
+        />
+        <span>MrC Tasks</span>
+      </a>
       <nav>
         <a href={withBase('/', import.meta.env.BASE_URL)}>Tasks</a>
         <a href={withBase('/reference/', import.meta.env.BASE_URL)}>Reference</a>
