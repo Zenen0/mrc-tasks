@@ -14,16 +14,16 @@ export interface Props {
 const { href, title, cover, imageCount, relatedTaskLabel, badge = 'MISC' } = Astro.props;
 ---
 <a class="card task-card" href={href}>
-  <div class="card-thumb">
-    {cover ? (
+  {cover && (
+    <div class="card-thumb">
       <Image src={cover} width={320} alt="" />
-    ) : (
-      <div class="card-thumb-title">{title}</div>
-    )}
-    <span class="card-count mono">{imageCount}</span>
-  </div>
+      <span class="card-count mono">{imageCount}</span>
+    </div>
+  )}
   <div class="card-body task-card-body">
     <span class="card-badge task-card-badge">{badge}</span>
+    <h3 class="card-title">{title}</h3>
     {relatedTaskLabel && <span class="card-related mono">&rarr; {relatedTaskLabel}</span>}
+    <span class="card-cta" aria-hidden="true">Read</span>
   </div>
 </a>

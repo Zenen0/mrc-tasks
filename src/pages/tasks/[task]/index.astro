@@ -25,7 +25,10 @@ const subtaskCount = subtasksForTask(subtaskEntries, task).length;
       { label: taskTitle },
     ]}
   />
-  <h1>{taskTitle}</h1>
+  <header class="subtask-header">
+    <span class="subtask-badge mono">TASK {task}</span>
+    <h1>{taskTitle}</h1>
+  </header>
   <div class="branch-grid">
     {hasAssignment ? (
       <a class="branch-card" href={withBase(`/tasks/${task}/assignment/`, import.meta.env.BASE_URL)}>
@@ -40,7 +43,7 @@ const subtaskCount = subtasksForTask(subtaskEntries, task).length;
         <p class="empty-state">Not written up yet.</p>
       </div>
     )}
-    <a class="branch-card" href={withBase(`/tasks/${task}/mine/`, import.meta.env.BASE_URL)}>
+    <a class="branch-card branch-card--mine" href={withBase(`/tasks/${task}/mine/`, import.meta.env.BASE_URL)}>
       <span class="card-badge">MY TASK</span>
       <h2>My work</h2>
       <p>{subtaskCount > 0 ? `${subtaskCount} subtask${subtaskCount === 1 ? '' : 's'} so far.` : 'Nothing added yet.'}</p>

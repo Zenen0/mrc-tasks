@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-11-05 (official site logo integrated: header, favicon, social image; committed and deployed as "Add MrC Tasks branding and site icons". Puzzle follow-up batch committed/deployed as `8e271d4`).
+Last updated: 2026-11-05 (**site-wide visual overhaul implemented, UNCOMMITTED, awaiting user review/approval** - see "Visual design system" below. Before that: official site logo integrated: header, favicon, social image; committed and deployed as "Add MrC Tasks branding and site icons". Puzzle follow-up batch committed/deployed as `8e271d4`).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -134,7 +134,7 @@ Each Task now has **two branches**, not a flat subtask list:
   Segments 1-3 render byte-identically.
 
 - **Tasks home learning path** (2026-11-05): `src/pages/index.astro` opens with
-  "Your learning path" (three phase links + "Begin here: Task 1" CTA to `/tasks/1/`),
+  "Your learning path" (three phase links; the "Begin here" CTA was removed in the visual overhaul - Task 1 is reached via its card),
   then sections in the order the mentor assigned them: `#foundations` (01 · standalone
   Tasks 1-3) -> `#weekly-programme` (02 · Weeks) -> `#segments` (03 · Segments 1-3,
   then the unnumbered Recap & Puzzle). Phase numbers are navigational only. Styles
@@ -142,6 +142,21 @@ Each Task now has **two branches**, not a flat subtask list:
   (tooltip/aria text for the corner count): Week count = formal Tasks in that Week.
   Standalone Task cards on the home page show no count (it was My task subtasks,
   0/0/0, easily misread next to the Week counts).
+- **Visual design system** (2026-11-05 overhaul, presentation only - no content, URL,
+  slug or anchor changes; verified by a before/after dist text/link/id/image diff):
+  tokens in `src/styles/tokens.css` (navy/charcoal surfaces bg < raised < inset, gold
+  `--color-accent` for mentor material, teal `--color-mine` for My Work, type scale,
+  spacing incl. `--space-5`, radii, `--header-h`); one stylesheet `src/styles/global.css`
+  (sectioned). Header has an inner container, active-section nav (`aria-current`), SVG
+  theme toggle; minimal footer with "Back to top". Cards (`TaskCard`/`MiscCard`) put
+  badge + h3 title + "Open/Read" cue in the body (thumbnail only when a cover exists; Misc
+  "0" count no longer shown). Branch cards: gold rail = Mr Casino, `branch-card--mine`
+  teal rail = My Work; My Work page eyebrows use `subtask-badge--mine`. Page headers =
+  eyebrow badge above h1 everywhere (Misc/Reference badge reordered by CSS). Prose
+  (`.assignment-body`): real h2 section headings, tinted gold callout blockquotes, framed
+  scrolling tables, chevron disclosures, zoom-in cursor on charts. Misc entries
+  (`article.misc-entry`) read as editorial serif at a 720px measure. Misc and Reference
+  indexes gained an h1. Lightbox backdrop has no blur (blur caused a compositing glitch).
 - **Branding / logo**: the user's official logo is kept unmodified at
   `src/assets/brand/mrc-tasks-logo.webp` (1254x1254 webp; do not redesign or
   edit it). `node scripts/generate-brand-assets.mjs` derives everything from it

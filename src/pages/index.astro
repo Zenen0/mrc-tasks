@@ -27,8 +27,6 @@ const segments = segmentNumbers(segmentMetaEntries);
 
 // Learning path: phases run in the order Mr Casino assigned the material
 // (standalone Tasks -> Weekly Programme -> Segments & Recap). Phase numbers are navigational only.
-const firstTask = taskNumbers[0];
-const firstTaskTitle = firstTask ? getTaskTitle(taskMetaEntries, firstTask) : undefined;
 const countNoun = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'}`;
 ---
 <Layout title="Tasks" description="Backtesting task review, organized by task.">
@@ -44,16 +42,10 @@ const countNoun = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'
         <li><a href="#segments"><span class="path-num mono">03</span><span class="path-name">Segments &amp; Recap</span><span class="path-detail">Top-down programme, then the Recap</span></a></li>
       )}
     </ol>
-    {firstTask && (
-      <a class="path-start" href={withBase(`/tasks/${firstTask}/`, import.meta.env.BASE_URL)}>
-        <span class="path-start-label mono">Begin here</span>
-        <span>Task {firstTask} — {firstTaskTitle} &rarr;</span>
-      </a>
-    )}
   </section>
 
   <section class="task-group" id="foundations">
-    <h2><span class="phase-num mono">01 ·</span> Foundations: Standalone tasks</h2>
+    <h2><span class="phase-num mono" aria-hidden="true">01</span> Foundations: Standalone tasks</h2>
     <p class="page-intro">The earlier assignments, given before the Weekly Programme. Separate from the Week tasks.</p>
     {taskNumbers.length === 0 && <p class="empty-state">No tasks yet.</p>}
     <div class="card-grid">
@@ -84,7 +76,7 @@ const countNoun = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'
   </section>
   {weeks.length > 0 && (
     <section class="task-group" id="weekly-programme">
-      <h2><span class="phase-num mono">02 ·</span> <a href={withBase('/tasks/weeks/', import.meta.env.BASE_URL)}>Weekly Programme</a></h2>
+      <h2><span class="phase-num mono" aria-hidden="true">02</span> <a href={withBase('/tasks/weeks/', import.meta.env.BASE_URL)}>Weekly Programme</a></h2>
       <p class="page-intro">Mr Casino's weekly programme: one topic per Week, each with its own formal Tasks. Week tasks are numbered within their Week.</p>
       <div class="card-grid">
         {weeks.map((week) => {
@@ -106,7 +98,7 @@ const countNoun = (n: number, noun: string) => `${n} ${noun}${n === 1 ? '' : 's'
   )}
   {segments.length > 0 && (
     <section class="task-group" id="segments">
-      <h2><span class="phase-num mono">03 ·</span> <a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments &amp; Recap</a></h2>
+      <h2><span class="phase-num mono" aria-hidden="true">03</span> <a href={withBase('/tasks/segments/', import.meta.env.BASE_URL)}>Segments &amp; Recap</a></h2>
       <p class="page-intro">Mr Casino's three-part top-down programme, given after the Weekly Programme, then the unnumbered Recap &amp; Puzzle follow-on. Each has one assignment.</p>
       <div class="card-grid">
         {segments.map((segment) => {

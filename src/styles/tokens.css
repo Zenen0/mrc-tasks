@@ -1,25 +1,96 @@
+/* Design tokens. Dark (default) = navy/charcoal terminal with a refined amber-gold accent;
+   light mirrors it. Every component reads these variables, so both themes stay in step. */
 :root {
-  --color-bg: #0a0c0f;
-  --color-bg-raised: #12151a;
-  --color-border: #23272e;
-  --color-text: #e6e8eb;
-  --color-text-muted: #8b93a1;
-  --color-accent: #d99a3c;
-  --font-mono: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
-  --font-sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: dark;
+
+  /* Surfaces: page < raised (cards, header) < sunken/inset (table heads, chips). */
+  --color-bg: #0b0f17;
+  --color-bg-raised: #111724;
+  --color-bg-inset: #161e2d;
+  --color-border: #222b3b;
+  --color-border-strong: #313c51;
+
+  --color-text: #e7eaf0;
+  --color-text-muted: #97a1b3;
+  --color-text-subtle: #6f7a8e;
+
+  /* Brand gold: Mr Casino / mentor material, links, active states. */
+  --color-accent: #e0a24a;
+  --color-accent-strong: #f0b862;
+  --color-accent-soft: rgba(224, 162, 74, 0.1);
+  --color-accent-line: rgba(224, 162, 74, 0.35);
+  --color-on-accent: #0b0f17;
+
+  /* "My Work": the user's own backtesting, kept visually distinct from the mentor's. */
+  --color-mine: #7cc4d6;
+  --color-mine-soft: rgba(124, 196, 214, 0.1);
+  --color-mine-line: rgba(124, 196, 214, 0.35);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px -12px rgba(0, 0, 0, 0.6), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --header-bg: rgba(11, 15, 23, 0.82);
+
+  --font-mono: ui-monospace, "Cascadia Code", "SF Mono", "JetBrains Mono", Consolas, monospace;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Charter", "Bitstream Charter", "Sitka Text", "Iowan Old Style", Cambria, Georgia, serif;
+
+  /* Type scale. */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-prose: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.4rem;
+  --text-2xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+  --text-3xl: clamp(1.85rem, 1.4rem + 1.9vw, 2.6rem);
+
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
   --space-4: 16px;
+  --space-5: 20px;
   --space-6: 24px;
-  --radius: 3px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+
+  --measure: 760px;
+  --measure-wide: 820px;
+  --page-max: 1320px;
+  --header-h: 64px;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --dur: 160ms;
 }
 
 [data-theme="light"] {
-  --color-bg: #f4f5f6;
+  color-scheme: light;
+
+  --color-bg: #f4f6f9;
   --color-bg-raised: #ffffff;
-  --color-border: #d8dbe0;
-  --color-text: #14171a;
-  --color-text-muted: #5b6470;
-  --color-accent: #b5762a;
+  --color-bg-inset: #eef1f6;
+  --color-border: #dde2ea;
+  --color-border-strong: #c6cdd8;
+
+  --color-text: #121722;
+  --color-text-muted: #525d6e;
+  --color-text-subtle: #7a8494;
+
+  --color-accent: #9a5d12;
+  --color-accent-strong: #7d4a0b;
+  --color-accent-soft: rgba(154, 93, 18, 0.07);
+  --color-accent-line: rgba(154, 93, 18, 0.35);
+  --color-on-accent: #ffffff;
+
+  --color-mine: #1d6f82;
+  --color-mine-soft: rgba(29, 111, 130, 0.07);
+  --color-mine-line: rgba(29, 111, 130, 0.35);
+
+  --shadow-sm: 0 1px 2px rgba(18, 23, 34, 0.06);
+  --shadow-md: 0 10px 28px -14px rgba(18, 23, 34, 0.28), 0 2px 6px rgba(18, 23, 34, 0.06);
+  --header-bg: rgba(255, 255, 255, 0.85);
 }

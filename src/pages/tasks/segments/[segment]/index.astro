@@ -53,7 +53,7 @@ const base = import.meta.env.BASE_URL;
             <h3>Assignment</h3>
             <p>{assignment.data.title}</p>
           </a>
-          <a class="branch-card" href={withBase(`/tasks/segments/${segment}/mine/`, base)}>
+          <a class="branch-card branch-card--mine" href={withBase(`/tasks/segments/${segment}/mine/`, base)}>
             <span class="card-badge">MY WORK</span>
             <h3>My work</h3>
             {partProgress(work, assignment.data.parts).map((part) => <p>{part.label}: {part.text}</p>)}

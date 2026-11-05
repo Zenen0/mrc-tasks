@@ -16,6 +16,11 @@ const entries = await getCollection('misc');
 const taskMetaEntries = await getCollection('taskMeta');
 ---
 <Layout title="Misc" description="Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression.">
+  <header class="subtask-header">
+    <span class="subtask-badge mono">MISC</span>
+    <h1>Misc</h1>
+  </header>
+  <p class="page-intro">Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression.</p>
   {entries.length === 0 && <p class="empty-state">No misc entries yet.</p>}
   <div class="card-grid">
     {entries

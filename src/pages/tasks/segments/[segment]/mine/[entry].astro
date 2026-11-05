@@ -69,7 +69,7 @@ const mineHref = `/tasks/segments/${segment}/mine/`;
   )}
   <article class="subtask">
     <header class="subtask-header week-header">
-      <span class="subtask-badge mono">{segmentMeta?.data.label ? label.toUpperCase() : `S${segment}`} · {entryId.toUpperCase()}</span>
+      <span class="subtask-badge subtask-badge--mine mono">{segmentMeta?.data.label ? label.toUpperCase() : `S${segment}`} · {entryId.toUpperCase()}</span>
       <h1>{entry.data.title}</h1>
     </header>
 

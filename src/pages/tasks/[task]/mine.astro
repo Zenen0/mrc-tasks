@@ -33,7 +33,10 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
       { label: 'My task' },
     ]}
   />
-  <h1>{taskTitle}: my task</h1>
+  <header class="subtask-header">
+    <span class="subtask-badge subtask-badge--mine mono">TASK {task} · MY TASK</span>
+    <h1>{taskTitle}: my task</h1>
+  </header>
   {subtasks.length === 0 && <p class="empty-state">No subtasks yet.</p>}
   <div class="card-grid">
     {subtasks.map((entry) => {

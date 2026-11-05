@@ -14,6 +14,15 @@ const { title, description = 'Backtesting task review.', ogImage } = Astro.props
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const resolvedOgImage = ogImage ?? new URL(withBase('/og-default.png', import.meta.env.BASE_URL), Astro.site).toString();
 const brand = (file: string) => withBase(`/brand/${file}`, import.meta.env.BASE_URL);
+
+// Active top-level section for the header nav (Tasks covers the home page and everything under /tasks/).
+const home = withBase('/', import.meta.env.BASE_URL);
+const path = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const navItems = [
+  { label: 'Tasks', href: home, active: path === home || path.startsWith(withBase('/tasks/', import.meta.env.BASE_URL)) },
+  { label: 'Reference', href: withBase('/reference/', import.meta.env.BASE_URL), active: path.startsWith(withBase('/reference/', import.meta.env.BASE_URL)) },
+  { label: 'Misc', href: withBase('/misc/', import.meta.env.BASE_URL), active: path.startsWith(withBase('/misc/', import.meta.env.BASE_URL)) },
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -26,7 +35,7 @@ const brand = (file: string) => withBase(`/brand/${file}`, import.meta.env.BASE_
     <link rel="icon" type="image/png" sizes="32x32" href={brand('favicon-32.png')} />
     <link rel="icon" type="image/png" sizes="192x192" href={brand('icon-192.png')} />
     <link rel="apple-touch-icon" sizes="180x180" href={brand('apple-touch-icon.png')} />
-    <meta name="theme-color" content="#0a0c0f" />
+    <meta name="theme-color" content="#0b0f17" />
     <meta property="og:site_name" content="MrC Tasks" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -42,30 +51,41 @@ const brand = (file: string) => withBase(`/brand/${file}`, import.meta.env.BASE_
       })();
     </script>
   </head>
-  <body>
+  <body id="top">
     <header class="site-header">
-      <a class="site-title" href={withBase('/', import.meta.env.BASE_URL)} aria-label="MrC Tasks home">
-        <img
-          class="site-logo"
-          src={brand('logo-36.webp')}
-          srcset={`${brand('logo-36.webp')} 1x, ${brand('logo-72.webp')} 2x, ${brand('logo-108.webp')} 3x`}
-          width="36"
-          height="36"
-          alt=""
-          decoding="async"
-        />
-        <span>MrC Tasks</span>
-      </a>
-      <nav>
-        <a href={withBase('/', import.meta.env.BASE_URL)}>Tasks</a>
-        <a href={withBase('/reference/', import.meta.env.BASE_URL)}>Reference</a>
-        <a href={withBase('/misc/', import.meta.env.BASE_URL)}>Misc</a>
-      </nav>
-      <button id="theme-toggle" type="button" aria-label="Toggle theme">&#9680;</button>
+      <div class="site-header-inner">
+        <a class="site-title" href={home} aria-label="MrC Tasks home">
+          <img
+            class="site-logo"
+            src={brand('logo-36.webp')}
+            srcset={`${brand('logo-36.webp')} 1x, ${brand('logo-72.webp')} 2x, ${brand('logo-108.webp')} 3x`}
+            width="36"
+            height="36"
+            alt=""
+            decoding="async"
+          />
+          <span>MrC Tasks</span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          {navItems.map((item) => (
+            <a href={item.href} aria-current={item.active ? (item.href === path ? 'page' : 'true') : undefined}>{item.label}</a>
+          ))}
+        </nav>
+        <button id="theme-toggle" type="button" aria-label="Toggle light/dark theme" title="Toggle light/dark theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"></path></svg>
+        </button>
+      </div>
     </header>
     <main>
       <slot />
     </main>
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <span class="site-footer-brand">MrC Tasks</span>
+        <a href="#top">Back to top &uarr;</a>
+      </div>
+    </footer>
     <script src="../scripts/theme.js"></script>
   </body>
 </html>

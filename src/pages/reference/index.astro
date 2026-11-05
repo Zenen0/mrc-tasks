@@ -14,6 +14,10 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
 const entries = await getCollection('reference');
 ---
 <Layout title="Reference" description="Mr Casino's technical trading framework: terminology, rules and worked examples taught across the tasks.">
+  <header class="subtask-header">
+    <span class="subtask-badge mono">REFERENCE</span>
+    <h1>Reference</h1>
+  </header>
   <p class="page-intro">Technical trading knowledge Mr Casino has taught but not assigned: definitions, rules and worked examples that apply across every task.</p>
   {entries.length === 0 && <p class="empty-state">No reference entries yet.</p>}
   <div class="card-grid">
