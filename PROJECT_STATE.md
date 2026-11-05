@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-11-05 (Tasks home reordered into a chronological learning path; uncommitted, awaiting approval).
+Last updated: 2026-11-05 (puzzle follow-up batch implemented: new Reference "The Step-by-Step Entry Sequence" + Recap & Puzzle debrief; uncommitted, awaiting user review).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -653,6 +653,57 @@ still done by hand.
     judgement (not needed to do the Tasks): Week 1's optional practice exercise
     (Img 76-80) and later Week 3 refinement rules.
 
+- **Misc batch 2026-11-05 "puzzle follow-up"** (source + approved analysis in
+  `sources/misc/2026-11-05-misc-puzzle-followup/`; **§10 "Approved decisions"
+  and §13 of its ANALYSIS.md are authoritative**). The mentor's Recap & Puzzle
+  debrief, his "Step by step Sequence onto final clarification entry (level 1)"
+  (8 stages, one XAUUSD worked example 18hr -> 3 min), the base edge, "Further
+  advancements" and a later "level 2" post (HCS + limit orders). No new formal
+  assignment. **Implemented, uncommitted, awaiting user review.**
+  - New Reference `reference/step-by-step-entry-sequence/` (order 8): Where this
+    comes from, At a glance ("To memorise" callout + roles line + stage-map
+    table), the eight stages (`### N · Stage: question (TF)`, stage text as `>`
+    first, then charts with `####` headings + transcriptions), `#the-base-edge`
+    under stage 3, Further advancements, `## Level 2: HCS and the limit-order
+    approach` (separate, "posted later"; "A maximum of one entry before proper
+    establishment." bold inside its quote; cold-limit opinion attributed),
+    Unresolved (U1-U7, U9, U10), Related.
+  - Recap & Puzzle `assignment.md`: "answer not supplied" sentence replaced;
+    new `## His debrief (posted later)` with the content in a collapsed
+    `details.practice-answer` "Read after your own attempt" (L11-21 + Lesson,
+    D4 line-width description labelled as description, base edge, "not posted"
+    line, links); new `## What came next: the step-by-step sequence (level 1)`
+    (intro, memorise + roles, 8 stage questions, link; no charts per D2);
+    Unresolved and Still to come updated. `segment.md`, `parts`, `mineGuide`,
+    My Work unchanged (D6).
+  - Extensions only where §13 lists a source line: Terminology (HCS level 2
+    bullet, x3 note, EM evidence, Defined elsewhere: base edge / level 1-2 /
+    50% zone, Related); TFS (stale "His answer has not been posted" replaced,
+    write-down pointer, Related); Cycle (intro link, roles pointer after the
+    table, U10 clause in the timeframes note, EM Unresolved, Related).
+  - Images: 11 copied + `cmp`-verified to `src/assets/reference/entry-sequence/`
+    (names per ANALYSIS §8). `IMAGE LINK.png` = existing
+    `src/assets/segments/4/puzzle-xauusd-30min.png` (not copied).
+  - Deviation from the analysis wording: on the Recap & Puzzle page the Lesson
+    and the memorise line are bold/quoted text, not `>` (Task-page blockquote =
+    formal deliverable only, per site-conventions).
+  - Raw-only: L9/L98 user notes (incl. "a week later"), L82/L93 reply-context
+    prefixes; no dates published.
+  - Tooling note (not changed): `mentor-source.mjs` label regex does not match
+    `Image Puzzle N` labels; images were imported by hand.
+  - Validation: 76 tests pass; clean build (62 pages); check-dist OK (1701
+    refs); vs. the pre-change build only the 5 edited pages + `/reference/`
+    index differ (+ the new page); no "Segment/Task/Week 4" / "Reflection 3.2"
+    in dist; 11 images 200, lightbox OK, disclosure collapsed by default; no
+    page overflow at 375px (stage table scrolls in its own box).
+  - Threads: puzzle answer **partly delivered** (purpose + lesson; "particular
+    answers" / solved markings still open); next "stages of implementation"
+    **delivered (inferred)**; 3 reviewed examples still open; x3 by x3 / third
+    negation / EM still undefined (EM inference strengthened); early
+    buyers/sellers partly; **opened: "Further advancements ... To be
+    continued."** (5 topics). Reflection 3.2/3.3, xauusd-main-focus sessions,
+    locked final segment unchanged.
+
 ## Open question - flagged to user, unresolved
 
 In Task 2's assignment, images captioned under "keep the 1 min simple"
@@ -667,6 +718,10 @@ alter the charts.
 
 ## Next session must start with
 
+0. If not done yet: after user review, commit and push the puzzle follow-up batch
+   (`sources/misc/2026-11-05-misc-puzzle-followup/`, the new Reference page +
+   `src/assets/reference/entry-sequence/`, Recap & Puzzle, Terminology, TFS,
+   Cycle, PROJECT_STATE, site-conventions), then confirm the deploy.
 1. The user is now completing the Tasks from the beginning; the first real My
    Work import should shape the My Work workflow (don't pre-build it).
 2. Future mentor batches as they arrive - ideally the 3 xauusd-main-focus

@@ -133,7 +133,10 @@ count"). Never invent a target.
 - Pages so far: `terminology` (1), `rules-of-analysis` (2),
   `worked-example-3000-reversal` (3), `zones` (4), `timeframe-strength` (5),
   `liquidity` (6), `top-down-extraction-cycle` (7, images shared from
-`src/assets/segments/`). Stable anchors: Terminology `#fu`,
+`src/assets/segments/`), `step-by-step-entry-sequence` (8, images in
+`src/assets/reference/entry-sequence/`; anchors `#at-a-glance`,
+`#the-base-edge`, `#further-advancements`,
+`#level-2-hcs-and-the-limit-order-approach`). Stable anchors: Terminology `#fu`,
   `#attempted-fu`, `#negation`, `#hcs`, `#x3`, `#laol`, `#core-liquidity`;
   Rules `#1-leverage` ... `#12-optimism-and-pessimism`, `#entry-checklist`;
   Zones `#the-four-zone-types`, `#the-rules`, `#which-part-of-the-wick`,

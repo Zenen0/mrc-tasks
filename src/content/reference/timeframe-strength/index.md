@@ -58,7 +58,9 @@ He deliberately leaves this passage unexplained: **"Try to really understand thi
 
 *The Segments draw the swing on 3hr/4hr, the intraday on 30 min and the scalp on 10 min and on 5 min: see [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/#the-cycle).*
 
-*[Recap & Puzzle](/mrc-tasks/tasks/segments/4/) (after Segment 3) sets a puzzle chart with the hint "Established - TF catagory width". His answer has not been posted.*
+*[Recap & Puzzle](/mrc-tasks/tasks/segments/4/) (after Segment 3) sets a puzzle chart with the hint "Established - TF catagory width". He later posted its purpose ("thickest TS line - the most power"), but not solved markings: [his debrief](/mrc-tasks/tasks/segments/4/assignment/#his-debrief-posted-later), collapsed on that page.*
+
+*The TFS write-down in practice (each level's timeframes with its negation, x3, FU or HCS): the [Confirmation stage](/mrc-tasks/reference/step-by-step-entry-sequence/#4--confirmation-what-tfs-and-em-support-it-40-min) of the step-by-step entry sequence.*
 
 ## "The LTF builds the HTF but HTF commands the LTF"
 
@@ -250,4 +252,4 @@ Chart annotations (7 min):
 
 ---
 
-Related: [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/) · [Week 2: Timeframe Strength](/mrc-tasks/tasks/weeks/2/) ([Task 1](/mrc-tasks/tasks/weeks/2/task-1/assignment/), [Task 2](/mrc-tasks/tasks/weeks/2/task-2/assignment/)) · [Week 1: Zones](/mrc-tasks/tasks/weeks/1/) · [Week 3: Liquidity](/mrc-tasks/tasks/weeks/3/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Terminology](/mrc-tasks/reference/terminology/) · [Practical Rules of Analysis & Extraction § 8](/mrc-tasks/reference/rules-of-analysis/#8-tfs) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

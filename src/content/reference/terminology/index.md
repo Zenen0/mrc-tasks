@@ -99,6 +99,7 @@ The Segments add to the definition above; they do not replace it.
 - "Observing HCS refinement power - the retest of a true stop - a level above the ordinary FU retest - the first gist of entry (refinement and confirmation)" ([Segment 1](/mrc-tasks/tasks/segments/1/assignment/#the-segment-focus)).
 - "HCS auto assumes a TS from left is retested / VS Normal FU which is 1 TS only" ([Segment 2](/mrc-tasks/tasks/segments/2/assignment/#how-to-mark-10-min-scalp-fu-retest-and-hcs)).
 - "HCS is Inferred as entry model - it auto includes Liquidity manipulation and refinement point for reaction/TS retest" ([Segment 1 · Task 3](/mrc-tasks/tasks/segments/1/assignment/#task-3--hcs-points-base-executional-edge)).
+- (Level 2, after the puzzle) "What does the HCS represent? Price establishes a protected, manipulated level, clears its LAOL, and marks the beginning of genuine premium price formation." ([The Step-by-Step Entry Sequence · Level 2](/mrc-tasks/reference/step-by-step-entry-sequence/#level-2-hcs-and-the-limit-order-approach)).
 
 ![1 min - "What does HCS represent? FU formed-LAOL taken-respected"; FU body retest = weak, FU wick retest = strong refinement area](../../../assets/segments/3/what-hcs-represents-1min.jpg)
 
@@ -155,7 +156,7 @@ Chart annotations (1hr):
 
 He repeats the point in a later Q&A: "X3 self negation is weaker by default (not enough on its own for a strong POI)" (see the [worked example](/mrc-tasks/reference/worked-example-3000-reversal/#qa-why-the-big-4hr-candle-was-not-a-poi)).
 
-*x3 is defined here. The **"x3 entry model"** mentioned in [Task 3](/mrc-tasks/tasks/3/assignment/#11hr--1-min-swing-breakdown-worked-example) ("this is for the advanced stage based on x3 confirmation") and the phrase **"x3 by x3"** on a later 1 min chart are not defined anywhere yet, and are left undefined here.*
+*x3 is defined here. The **"x3 entry model"** mentioned in [Task 3](/mrc-tasks/tasks/3/assignment/#11hr--1-min-swing-breakdown-worked-example) ("this is for the advanced stage based on x3 confirmation") and the phrase **"x3 by x3"** on a later 1 min chart are not defined anywhere yet, and are left undefined here. The step-by-step sequence's charts use "x3 by x3" again ("Daily x3 by x3") and add **"third negation"** ("6hr-x3 third negation"); neither is defined ([Confirmation stage](/mrc-tasks/reference/step-by-step-entry-sequence/#4--confirmation-what-tfs-and-em-support-it-40-min)).*
 
 ## Strength at a glance
 
@@ -209,7 +210,7 @@ These appear on his charts but are not formally defined. The explanations are re
 - **EST**: his short form for *established*, the opposite of *forming* (e.g. "10 min TS EST").
 - **£**: marks on his charts that sit on liquidity levels (dojis, wicks to fill, retail liquidity).
 - **Adv HCS / Adv FU retest / weaker HCS / "Weaker HCS-using ATT FU" / HCS-adv**: grades on his Segment 1 and 2 charts ([Segment 1 · Task 1](/mrc-tasks/tasks/segments/1/assignment/#task-1--intraday-and-swing-fu-retest-closures)). Not defined in the source.
-- **EM**: on his Segment 2 charts ("this can become EM Or negation or later HCS origin"). Not spelled out; probably "entry model" (an inference, not confirmed).
+- **EM**: on his Segment 2 charts ("this can become EM Or negation or later HCS origin"). Not spelled out; probably "entry model" (an inference, not confirmed). The step-by-step sequence strengthens that reading without confirming it: its Confirmation stage asks "What TFS and EM support it?" and lists "negations, x3, FU or HCS", the LTF stage waits for a "qualifying EM", and the memorise line has "EM/TFS" ([The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/#4--confirmation-what-tfs-and-em-support-it-40-min)).
 
 ## Defined elsewhere
 
@@ -226,8 +227,11 @@ Used on these charts, but defined elsewhere. Their definitions stay where he gav
 - **TS build**, the **predictive POI** and the **base execution and extraction model**: [The Top-Down Extraction Cycle · TS build](/mrc-tasks/reference/top-down-extraction-cycle/#ts-build) (from Segment 2).
 - **Early buyers/sellers**: described only on his Segment 3 charts ("Attempted fu /x3 self negating high/low serves as early buyers/sellers check mostly"; "Early buyers/sellers or can be interpreted as LAOL"): [LAOL down the cycle](/mrc-tasks/reference/top-down-extraction-cycle/#laol-and-early-buyerssellers-3hr).
 - **Origin, Swing Intraday Activation, Intraday Continuation** (the three tradable points): [The Top-Down Extraction Cycle · The three tradable points](/mrc-tasks/reference/top-down-extraction-cycle/#the-three-tradable-points).
+- **Base edge**: "Swing retest , intraday closure within- the most fluent extraction area" ([The Step-by-Step Entry Sequence · The base edge](/mrc-tasks/reference/step-by-step-entry-sequence/#the-base-edge)).
+- **Level 1 / level 2** (his two levels of the entry: the full confirmed sequence, then earlier participation at a forming structure): [The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/).
+- **50% zone retest (optional)**: "Refine with the optional 50% zone" ([The Step-by-Step Entry Sequence · 3 min](/mrc-tasks/reference/step-by-step-entry-sequence/#3-min-the-optional-50-refinement)).
 - **POI**: used throughout but never spelled out. Task 3's aid gives "The base definition of a POI one must wait for on the 10 min + to establish" ([task aid](/mrc-tasks/tasks/3/assignment/#task-aid---clarifications-on-timeframe-strength)).
 
 ---
 
-Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)
+Related: [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [The Top-Down Extraction Cycle](/mrc-tasks/reference/top-down-extraction-cycle/) · [The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Task 1 - Major Liquidity](/mrc-tasks/tasks/1/assignment/) · [Task 2 - Top-Down Analysis](/mrc-tasks/tasks/2/assignment/) · [Task 3 - RR, Timeframe Strength & Timing](/mrc-tasks/tasks/3/assignment/)

@@ -16,7 +16,7 @@ Jump to: [The cycle](#the-cycle) · [The base execution and extraction model](#t
 
 The callout boxes are his exact wording. Each Segment builds one level of the cycle: [Segment 1](/mrc-tasks/tasks/segments/1/assignment/) direction through swing and intraday points, [Segment 2](/mrc-tasks/tasks/segments/2/assignment/) the scalp POI and its TS build, [Segment 3](/mrc-tasks/tasks/segments/3/assignment/) the whole cycle down to the LTF entry. His charts are XAUUSD.
 
-*After Segment 3 he set a recap of the swing / intraday direction layer and a puzzle: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/).*
+*After Segment 3 he set a recap of the swing / intraday direction layer and a puzzle: [Recap & Puzzle](/mrc-tasks/tasks/segments/4/). After that came his eight-stage entry sequence, one worked example from 18hr to 3 min: [The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/).*
 
 ## The cycle
 
@@ -31,9 +31,11 @@ The callout boxes are his exact wording. Each Segment builds one level of the cy
 | Scalp flow | 10 min (Segment 2), 5 min (Segment 3) | "Scalp =Flow" / "POI is refined to a select area" / "Ready to extract with local confirmed flow" |
 | LTF timing | 1 min | "LTF - Timing" / "Top down LAOL has found us our executeable areas with refined planned perspective" |
 
+Later he restated the four levels as roles: "Swing tells WHAT to follow. Intraday tells WHERE the main interaction is. Scalp tells HOW the movement is developing. LTF tells WHEN and WHERE to execute." ([The Step-by-Step Entry Sequence · At a glance](/mrc-tasks/reference/step-by-step-entry-sequence/#at-a-glance)).
+
 Segment 1 opened the programme as "the comprehensive top-down processes at its different levels of advancement (swing to final entry - assured profitable edge)". Its focus: use "swing + intraday for direction and using the same method on scalp + LTF to understand how to take a final entry, in alignment with correct HTF flow. Do not expect to get swing direction perfect, but enough to spot correct areas and entry potential".
 
-*Timeframes as drawn: the scalp is on 10 min in Segment 2 ("the normal 10 min (scalp)") and on 5 min in Segment 3; the intraday is on 30 min; the swing on 3hr and 4hr. The [five TFS categories](/mrc-tasks/reference/timeframe-strength/#the-five-tfs-categories) put 1-5 min in "LTF" and the scalp at 7-30 min, and [standalone Task 3's tiers](/mrc-tasks/tasks/3/assignment/#the-rules) put the scalp at 10 min + and the intraday at 1hr +. Each is kept as he wrote it; the source does not reconcile them.*
+*Timeframes as drawn: the scalp is on 10 min in Segment 2 ("the normal 10 min (scalp)") and on 5 min in Segment 3; the intraday is on 30 min; the swing on 3hr and 4hr. The [five TFS categories](/mrc-tasks/reference/timeframe-strength/#the-five-tfs-categories) put 1-5 min in "LTF" and the scalp at 7-30 min, and [standalone Task 3's tiers](/mrc-tasks/tasks/3/assignment/#the-rules) put the scalp at 10 min + and the intraday at 1hr +. The later [step-by-step sequence](/mrc-tasks/reference/step-by-step-entry-sequence/#5--scalp-how-is-the-swing-being-expressed-9-min-6-min) draws the scalp on 9 min and 6 min (nothing between 5 and 7 min is in the TFS categories). Each is kept as he wrote it; the source does not reconcile them.*
 
 ## The base execution and extraction model
 
@@ -326,7 +328,7 @@ Kept as written; the source does not define or settle these:
 - **"Estimated time taken: 1-3 hours each ×3"** (Segment 1): per Task in total or per day is not stated.
 - **"each needing at least half to negate..\*"** (Segment 1 extension): half of what is not stated; the "..\*" has no footnote.
 - **"Adv HCS", "Adv FU retest", "weaker HCS", "Weaker HCS-using ATT FU", "HCS-adv"**: chart grades, not defined.
-- **"EM"**: probably "entry model" (inference, not confirmed).
+- **"EM"**: probably "entry model" (inference, not confirmed). The later step-by-step sequence ("What TFS and EM support it?", "qualifying EM", "EM/TFS") makes that reading more likely but still does not spell it out.
 - **Segment 2's 30 days**: whether they also cover outcome 2 (TS build reading) is not stated.
 - **"Early buyers/sellers"**: only described by his 3hr and 1 min charts.
 - **"Macro calculation"**: not defined.
@@ -335,4 +337,4 @@ Kept as written; the source does not define or settle these:
 
 ---
 
-Related: [Segment 1](/mrc-tasks/tasks/segments/1/assignment/) · [Segment 2](/mrc-tasks/tasks/segments/2/assignment/) · [Segment 3](/mrc-tasks/tasks/segments/3/assignment/) · [Terminology](/mrc-tasks/reference/terminology/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/)
+Related: [Segment 1](/mrc-tasks/tasks/segments/1/assignment/) · [Segment 2](/mrc-tasks/tasks/segments/2/assignment/) · [Segment 3](/mrc-tasks/tasks/segments/3/assignment/) · [The Step-by-Step Entry Sequence](/mrc-tasks/reference/step-by-step-entry-sequence/) · [Terminology](/mrc-tasks/reference/terminology/) · [Timeframe Strength (TFS)](/mrc-tasks/reference/timeframe-strength/) · [Liquidity](/mrc-tasks/reference/liquidity/) · [Zones: Types, Rules & Refinement](/mrc-tasks/reference/zones/) · [Practical Rules of Analysis & Extraction](/mrc-tasks/reference/rules-of-analysis/) · [Worked Example: Backtest Sequence at the 3,000 Low](/mrc-tasks/reference/worked-example-3000-reversal/)
