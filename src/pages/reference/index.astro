@@ -5,6 +5,7 @@ import Layout from '../../components/Layout.astro';
 import MiscCard from '../../components/MiscCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../../lib/images';
 import { withBase } from '../../lib/paths';
+import { groupEntries, readingNumber, referenceGroups, relationshipCue } from '../../lib/index-groups';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/reference/**/*.{png,jpg,jpeg,webp}',
@@ -12,6 +13,17 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
 );
 
 const entries = await getCollection('reference');
+// Editorial reading order (src/lib/index-groups.ts): grouped stages, numbered 01..N across the whole index.
+const groups = groupEntries(entries, referenceGroups, 'More reference');
+
+const rangeOf = (positions: (number | null)[]) => {
+  const nums = positions.filter((p): p is number => p !== null);
+  if (nums.length === 0) return '';
+  const first = readingNumber(nums[0]);
+  const last = readingNumber(nums[nums.length - 1]);
+  return first === last ? first : `${first}–${last}`;
+};
+const shortName = (item: (typeof groups)[number]['items'][number]) => item.item?.short ?? item.entry.data.title;
 ---
 <Layout title="Reference" description="Mr Casino's technical trading framework: terminology, rules and worked examples taught across the tasks.">
   <header class="subtask-header">
@@ -20,27 +32,60 @@ const entries = await getCollection('reference');
   </header>
   <p class="page-intro">Technical trading knowledge Mr Casino has taught but not assigned: definitions, rules and worked examples that apply across every task.</p>
   {entries.length === 0 && <p class="empty-state">No reference entries yet.</p>}
-  <div class="card-grid">
-    {entries
-      .sort(
-        (a, b) =>
-          (a.data.order ?? Infinity) - (b.data.order ?? Infinity) ||
-          a.data.date.getTime() - b.data.date.getTime() ||
-          a.data.title.localeCompare(b.data.title),
-      )
-      .map((entry) => {
-        const images = filterImagesForEntry(globMap, `/src/content/reference/${entry.id}`, entry.data.captions ?? {});
-        const { cover, count } = getCoverImage(images);
-        return (
-          <MiscCard
-            href={withBase(`/reference/${entry.id}/`, import.meta.env.BASE_URL)}
-            title={entry.data.title}
-            cover={cover}
-            imageCount={count}
-            relatedTaskLabel={null}
-            badge="REFERENCE"
-          />
-        );
-      })}
-  </div>
+
+  {groups.length > 0 && (
+    <nav class="reading-guide" aria-labelledby="reading-guide-title">
+      <div class="reading-guide-head">
+        <h2 id="reading-guide-title" class="reading-guide-label">Suggested reading order</h2>
+        <p>An editorial route through these pages, from the language to entry execution, ordered by how the concepts build on each other. It is not an order Mr Casino set: every page stands on its own, and the Tasks link to each one where it is taught.</p>
+      </div>
+      <ol class="reading-stages">
+        {groups.map((group) => (
+          <li>
+            <a href={`#${group.id}`}>
+              <span class="reading-stage-range mono">{rangeOf(group.items.map((i) => i.position))}</span>
+              <span class="reading-stage-name">{group.title}</span>
+              <span class="reading-stage-pages">{group.items.map(shortName).join(' · ')}</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </nav>
+  )}
+
+  {groups.map((group) => (
+    <section class="index-group" id={group.id} aria-labelledby={`${group.id}-title`}>
+      <header class="index-group-head">
+        {rangeOf(group.items.map((i) => i.position)) && (
+          <span class="index-group-range mono">{rangeOf(group.items.map((i) => i.position))}</span>
+        )}
+        <h2 id={`${group.id}-title`}>
+          {group.title}
+          {group.tag && <span class="index-group-tag mono">{group.tag}</span>}
+        </h2>
+        {group.intro && <p class="page-intro">{group.intro}</p>}
+      </header>
+      <ol class="card-grid card-grid--3 index-cards">
+        {group.items.map(({ entry, item, position }) => {
+          const images = filterImagesForEntry(globMap, `/src/content/reference/${entry.id}`, entry.data.captions ?? {});
+          const { cover, count } = getCoverImage(images);
+          return (
+            <li>
+              <MiscCard
+                href={withBase(`/reference/${entry.id}/`, import.meta.env.BASE_URL)}
+                title={entry.data.title}
+                cover={cover}
+                imageCount={count}
+                relatedTaskLabel={null}
+                badge="REFERENCE"
+                step={position !== null ? readingNumber(position) : null}
+                summary={item?.summary}
+                cue={relationshipCue(groups, item)}
+              />
+            </li>
+          );
+        })}
+      </ol>
+    </section>
+  ))}
 </Layout>

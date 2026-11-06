@@ -6,6 +6,7 @@ import MiscCard from '../../components/MiscCard.astro';
 import { filterImagesForEntry, getCoverImage } from '../../lib/images';
 import { withBase } from '../../lib/paths';
 import { getTaskTitle } from '../../lib/tasks';
+import { groupEntries, miscGroups } from '../../lib/index-groups';
 
 const globMap = import.meta.glob<{ default: ImageMetadata }>(
   '/src/content/misc/**/*.{png,jpg,jpeg,webp}',
@@ -14,37 +15,63 @@ const globMap = import.meta.glob<{ default: ImageMetadata }>(
 
 const entries = await getCollection('misc');
 const taskMetaEntries = await getCollection('taskMeta');
+// Subject groups (src/lib/index-groups.ts): not a curriculum, so no reading numbers.
+const groups = groupEntries(entries, miscGroups, 'More');
+const countNoun = (n: number) => `${n} ${n === 1 ? 'piece' : 'pieces'}`;
 ---
 <Layout title="Misc" description="Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression.">
   <header class="subtask-header">
     <span class="subtask-badge mono">MISC</span>
     <h1>Misc</h1>
   </header>
-  <p class="page-intro">Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression.</p>
+  <p class="page-intro">Mr Casino's wider material: rationality, psychology, morality, fundamentals, worldview and progression. These are complementary teachings to explore by subject, not formal assignments; each piece stands on its own.</p>
   {entries.length === 0 && <p class="empty-state">No misc entries yet.</p>}
-  <div class="card-grid">
-    {entries
-      .sort(
-        (a, b) =>
-          (a.data.order ?? Infinity) - (b.data.order ?? Infinity) ||
-          a.data.date.getTime() - b.data.date.getTime() ||
-          a.data.title.localeCompare(b.data.title),
-      )
-      .map((entry) => {
-        const images = filterImagesForEntry(globMap, `/src/content/misc/${entry.id}`, entry.data.captions ?? {});
-        const { cover, count } = getCoverImage(images);
-        const relatedTaskLabel = entry.data.relatedTask
-          ? `Task ${entry.data.relatedTask}: ${getTaskTitle(taskMetaEntries, entry.data.relatedTask)}`
-          : null;
-        return (
-          <MiscCard
-            href={withBase(`/misc/${entry.id}/`, import.meta.env.BASE_URL)}
-            title={entry.data.title}
-            cover={cover}
-            imageCount={count}
-            relatedTaskLabel={relatedTaskLabel}
-          />
-        );
-      })}
-  </div>
+
+  {groups.length > 0 && (
+    <nav class="reading-guide reading-guide--subjects" aria-labelledby="reading-guide-title">
+      <div class="reading-guide-head">
+        <h2 id="reading-guide-title" class="reading-guide-label">Browse by subject</h2>
+      </div>
+      <ul class="reading-stages">
+        {groups.map((group) => (
+          <li>
+            <a href={`#${group.id}`}>
+              <span class="reading-stage-range mono">{countNoun(group.items.length)}</span>
+              <span class="reading-stage-name">{group.title}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  )}
+
+  {groups.map((group) => (
+    <section class="index-group" id={group.id} aria-labelledby={`${group.id}-title`}>
+      <header class="index-group-head">
+        <h2 id={`${group.id}-title`}>{group.title}</h2>
+        {group.intro && <p class="page-intro">{group.intro}</p>}
+      </header>
+      <ul class="card-grid card-grid--3 index-cards">
+        {group.items.map(({ entry, item }) => {
+          const images = filterImagesForEntry(globMap, `/src/content/misc/${entry.id}`, entry.data.captions ?? {});
+          const { cover, count } = getCoverImage(images);
+          const relatedTaskLabel = entry.data.relatedTask
+            ? `Task ${entry.data.relatedTask}: ${getTaskTitle(taskMetaEntries, entry.data.relatedTask)}`
+            : null;
+          return (
+            <li>
+              <MiscCard
+                href={withBase(`/misc/${entry.id}/`, import.meta.env.BASE_URL)}
+                title={entry.data.title}
+                cover={cover}
+                imageCount={count}
+                relatedTaskLabel={relatedTaskLabel}
+                summary={item?.summary}
+              />
+            </li>
+          );
+        })}
+      </ul>
+    </section>
+  ))}
 </Layout>

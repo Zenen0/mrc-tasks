@@ -9,9 +9,15 @@ export interface Props {
   imageCount: number;
   relatedTaskLabel: string | null;
   badge?: string;
+  /** Reading number ("01") shown in place of the badge on a sequenced index. */
+  step?: string | null;
+  /** One-line description (index grouping config). */
+  summary?: string | null;
+  /** Relationship cue, e.g. "Builds on 02 Zones". */
+  cue?: string | null;
 }
 
-const { href, title, cover, imageCount, relatedTaskLabel, badge = 'MISC' } = Astro.props;
+const { href, title, cover, imageCount, relatedTaskLabel, badge = 'MISC', step = null, summary = null, cue = null } = Astro.props;
 ---
 <a class="card task-card" href={href}>
   {cover && (
@@ -21,8 +27,10 @@ const { href, title, cover, imageCount, relatedTaskLabel, badge = 'MISC' } = Ast
     </div>
   )}
   <div class="card-body task-card-body">
-    <span class="card-badge task-card-badge">{badge}</span>
+    {step ? <span class="card-step">{step}</span> : <span class="card-badge task-card-badge">{badge}</span>}
     <h3 class="card-title">{title}</h3>
+    {summary && <p class="card-summary">{summary}</p>}
+    {cue && <span class="card-cue mono">{cue}</span>}
     {relatedTaskLabel && <span class="card-related mono">&rarr; {relatedTaskLabel}</span>}
     <span class="card-cta" aria-hidden="true">Read</span>
   </div>

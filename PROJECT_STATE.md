@@ -1,7 +1,7 @@
 # Project State
 
 Handoff doc for a fresh Claude Code session. Read this first.
-Last updated: 2026-11-05 (**Visual refinement V2 implemented, UNCOMMITTED, awaiting user review/approval** - see "Visual design system" below. Before that: the first visual overhaul was committed/deployed as `84c59da`; logo as `c10af27`; puzzle follow-up batch as `8e271d4`).
+Last updated: 2026-11-06 (**Reference & Misc index organisation implemented, UNCOMMITTED, awaiting user review/approval** - see "Reference & Misc index grouping" below. Before that: V2 visual refinement committed/deployed as `0447751`; first visual overhaul `84c59da`; logo `c10af27`; puzzle follow-up batch `8e271d4`).
 
 **Current state:** all currently available mentor source material is imported; the final site-wide consistency audit is complete (incl. Week 1/2 self-containment). The infrastructure is stable/frozen: future changes come from new mentor material or the user's real My Work data, not speculative site optimisation. Remaining items are genuine source gaps / unresolved mentor material only.
 
@@ -54,16 +54,16 @@ Each Task now has **two branches**, not a flat subtask list:
   `relatedTask: "N"` frontmatter field (added this session to
   `src/content.config.ts`), which shows a clickable "-> Task N: title"
   tag on both the Misc card and the entry page. They also support an
-  optional `order: N` field: `/misc/` sorts by `order`, then `date`,
-  then `title`. The current order is 1 Rationality, 2 Trading
-  Psychology, 3 Morality, 4 Fundamentals, 5 Earning the Advanced Stage,
-  6 Mr Casino's Worldview, 7 Fundamentals Series (title no longer says "(2025)"; slug unchanged). Give new entries an explicit `order`.
+  optional `order: N` field. Since 2026-11-06 the `/misc/` card order and
+  grouping come from `src/lib/index-groups.ts` (see "Reference & Misc index
+  grouping"); `order` (then `date`, then `title`) only sorts entries not yet
+  listed there. Give new entries an explicit `order` anyway. (Fundamentals Series title no longer says "(2025)"; slug unchanged.)
   Text-heavy Misc entries can opt into Task/Reference body styles by wrapping
   the body in `<div class="assignment-body">` (760px measure; see
   site-conventions).
 - **Reference section** (added 2026-09-30, nav **Tasks · Reference ·
   Misc**): `src/content/reference/<slug>/index.md` -> `/reference/<slug>/`,
-  index at `/reference/` (cards ordered by `order`). Collection `reference`
+  index at `/reference/` (grouped reading order from `src/lib/index-groups.ts`). Collection `reference`
   in `src/content.config.ts` (same schema as misc). Pages
   `src/pages/reference/index.astro` + `[slug].astro` (cloned from misc; the
   body renders in `.assignment-body` so it gets Task-style h2/h3/tables/
@@ -166,6 +166,20 @@ Each Task now has **two branches**, not a flat subtask list:
   of three phase stations (range labels computed, e.g. "Tasks 1-3"). Home grids use
   `.card-grid--3` / `--4` (full width; 2 then 1 column responsively). `TaskCard` has an optional
   `countText` ("3 Tasks").
+- **Reference & Misc index grouping** (2026-11-06, presentation only; no content, URL, slug or
+  frontmatter changes): `src/lib/index-groups.ts` lists each index's groups, card order, one-line card
+  summaries (drawn from each entry's Context) and Reference relationship cues; `groupEntries()` puts any
+  unlisted entry in a final "More" group so nothing drops off. `src/lib/index-groups.test.ts` fails until a
+  new Reference/Misc folder is added to that file (deliberate guard). **Reference** = an editorial
+  "Suggested reading order", explicitly not set by Mr Casino, numbered 01-08 in four stages: Language
+  (Terminology) -> Core concepts (Zones, TFS, Liquidity: Weeks 1-3 order) -> Analysis & extraction (Rules,
+  Worked example at 3,000 low) -> Top-down execution, tagged Advanced (Cycle, Step-by-Step Entry Sequence).
+  Cards show "Builds on 02 Zones"-style cues only where the pages themselves show the dependency.
+  **Misc** = "Browse by subject", no numbers: Mindset & discipline (Rationality, Morality, Trading
+  Psychology - his posting order), Fundamentals & worldview (USD/Banks/Gold, Worldview, Fundamentals
+  Series), Progression (Earning the Advanced Stage). Styles `.reading-guide`/`.reading-stages`/
+  `.index-group*`/`.card-step|summary|cue` in `global.css`; `MiscCard` gained optional `step`, `summary`,
+  `cue` props. Verified: only `/reference/` and `/misc/` HTML changed vs `0447751` (CSS hash aside).
 - **Branding / logo**: the user's official logo is kept unmodified at
   `src/assets/brand/mrc-tasks-logo.webp` (1254x1254 webp; do not redesign or
   edit it). `node scripts/generate-brand-assets.mjs` derives everything from it
